@@ -25,11 +25,12 @@ const Movilidades = (() => {
       const meta = document.getElementById('movilidades-meta');
       if (meta && data.fetched_at) {
         const d = new Date(data.fetched_at);
-        const fmt = isNaN(d.getTime()) ? data.fetched_at : d.toISOString().slice(0, 10);
-        meta.textContent = `Source: SALTO European Training Calendar · last fetched ${fmt}`;
+        const loc = I18N.lang === 'en' ? 'en-GB' : 'es-ES';
+        const fmt = isNaN(d.getTime()) ? data.fetched_at : d.toLocaleDateString(loc, { day: 'numeric', month: 'short', year: 'numeric' });
+        meta.textContent = _t('Fuente: SALTO European Training Calendar · actualizado el {fecha}', { fecha: fmt });
       }
     } catch (err) {
-      list.innerHTML = `<div class="col-span-full text-center text-error py-12 text-sm">Could not load mobilities: ${U.escapeHtml(err.message || 'unknown error')}</div>`;
+      list.innerHTML = `<div class="col-span-full text-center text-error py-12 text-sm">${_t('No se han podido cargar las movilidades: {error}', { error: U.escapeHtml(err.message || _t('error desconocido')) })}</div>`;
     }
   }
 
@@ -65,7 +66,7 @@ const Movilidades = (() => {
     if (counter) counter.textContent = items.length;
 
     if (!items.length) {
-      list.innerHTML = `<div class="col-span-full text-center text-on-surface-variant py-12 text-sm">No mobilities match your search.</div>`;
+      list.innerHTML = `<div class="col-span-full text-center text-on-surface-variant py-12 text-sm">${_t('No hay movilidades que coincidan con tu búsqueda.')}</div>`;
       return;
     }
     list.innerHTML = items.map(renderCard).join('');
@@ -82,7 +83,7 @@ const Movilidades = (() => {
       class="bg-cream rounded-3xl border border-transparent p-5 hover:shadow-lg hover:shadow-primary/10 hover:border-primary/25 transition-all cursor-pointer flex flex-col gap-3">
 
       <div class="flex items-start gap-2 justify-between">
-        <span class="text-[10px] font-bold uppercase tracking-wider text-primary">${U.escapeHtml(item.type || 'Activity')}</span>
+        <span class="text-[10px] font-bold uppercase tracking-wider text-primary">${U.escapeHtml(item.type || _t('Actividad'))}</span>
         ${U.deadlinePill(item)}
       </div>
 
@@ -93,14 +94,14 @@ const Movilidades = (() => {
       <div class="text-[12px] text-on-surface-variant space-y-1 mt-auto">
         ${place ? `<div class="flex items-center gap-1.5"><span class="material-symbols-outlined text-[14px]">place</span><span>${place}</span></div>` : ''}
         ${item.dates ? `<div class="flex items-center gap-1.5"><span class="material-symbols-outlined text-[14px]">event</span><span>${U.escapeHtml(item.dates)}</span></div>` : ''}
-        ${item.deadline_raw && !dl ? `<div class="flex items-center gap-1.5"><span class="material-symbols-outlined text-[14px]">schedule</span><span>Apply by <strong>${U.escapeHtml(item.deadline_raw)}</strong></span></div>` : ''}
+        ${item.deadline_raw && !dl ? `<div class="flex items-center gap-1.5"><span class="material-symbols-outlined text-[14px]">schedule</span><span>${_t('Inscripción hasta {fecha}', { fecha: '<strong>' + U.escapeHtml(item.deadline_raw) + '</strong>' })}</span></div>` : ''}
         ${dl ? '' : U.feeIconInline(item)}
       </div>
 
       ${dl ? `
       <div class="flex items-end justify-between gap-3">
         <div class="bg-white rounded-2xl px-3 py-2 min-w-[92px]" title="${U.escapeHtml(item.deadline_raw || '')}">
-          <div class="text-[9px] font-bold uppercase tracking-wider text-on-surface-variant">Apply by</div>
+          <div class="text-[9px] font-bold uppercase tracking-wider text-on-surface-variant">${_t('Inscripción hasta')}</div>
           <div class="flex items-baseline gap-1.5 text-primary">
             <span class="text-[30px] font-light leading-none tabular-nums">${U.escapeHtml(dl.day)}</span>
             <span class="text-[12px] leading-tight">${U.escapeHtml(dl.month)}<br>${U.escapeHtml(dl.year)}</span>
@@ -111,14 +112,14 @@ const Movilidades = (() => {
 
       <div class="flex items-center justify-between gap-2 pt-3 border-t border-outline-variant">
         <span class="text-[11px] text-on-surface-variant truncate">${U.escapeHtml(organiser)}</span>
-        <span class="text-[11px] font-bold text-primary whitespace-nowrap bg-secondary-fixed rounded-full px-3 py-1">View →</span>
+        <span class="text-[11px] font-bold text-primary whitespace-nowrap bg-secondary-fixed rounded-full px-3 py-1">${_t('Ver →')}</span>
       </div>
     </article>`;
   }
 
   function openDetail(saltoId) {
     // Muro de login: explorar el listado es libre; abrir el detalle exige cuenta.
-    if (typeof App !== 'undefined' && App.requireLogin && !App.requireLogin({ what: 'el detalle de esta movilidad' })) return;
+    if (typeof App !== 'undefined' && App.requireLogin && !App.requireLogin({ what: 'el detalle de esta movilidad' })) return; // i18n-no (requireLogin no usa «what»)
     const item = allItems.find(i => String(i.salto_id) === String(saltoId));
     if (!item) return;
     if (typeof Track !== 'undefined') Track.event('mobility_opened', { route: 'movilidades', ref_id: saltoId });

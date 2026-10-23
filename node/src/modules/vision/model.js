@@ -6,6 +6,7 @@ const db = require('../../utils/db');
 const genUUID = require('../../utils/uuid');
 const intakeModel = require('../intake/model');
 const claudeCli = require('../../utils/claude-cli');
+const { tl } = require('../../utils/i18n');
 
 const s = (v, n) => (v == null ? null : String(v).slice(0, n));
 const jsonOrNull = (v) => {
@@ -146,13 +147,13 @@ async function removeReference(id, userId, refId) {
 }
 
 /* ── Promote to Intake — crea proyecto semilla y enlaza ─────────────── */
-async function promote(id, userId) {
+async function promote(id, userId, lang = 'es') {
   const v = await getById(id);
   if (!v || v.user_id !== userId) return { error: 'NOT_FOUND' };
   if (v.project_id) return { project_id: v.project_id, already: true };
 
   const project = await intakeModel.createProject(userId, {
-    name: v.title || (v.programme ? `Visión · ${v.programme}` : 'Visión Erasmus+'),
+    name: v.title || (v.programme ? tl(lang, 'Visión · {programa}', { programa: v.programme }) : tl(lang, 'Visión Erasmus+')),
     // El Intake casa el proyecto con su convocatoria por action_type (= call_id).
     // `programme` es solo "Erasmus+": guardarlo como tipo dejaba la acción vacía y bloqueada.
     type: v.call_id || v.programme || null,
@@ -207,7 +208,7 @@ async function listInterest(visionId, userId) {
 
 function _list(a, n = 6) { return (Array.isArray(a) ? a : []).slice(0, n).map(x => '- ' + String(x)).join('\n'); }
 
-function buildVisionPrompt(v, refs, call = {}) {
+function buildVisionPrompt(v, refs, call = {}, lang = 'es') {
   const money = (x) => (x == null ? null : Number(x).toLocaleString('es-ES') + ' €');
   const budget = [money(call.budget_per_project_min_eur), money(call.budget_per_project_max_eur)].filter(Boolean).join(' – ');
   const refsBlock = (refs || []).map((r, i) => {
@@ -216,9 +217,15 @@ function buildVisionPrompt(v, refs, call = {}) {
     return `${i + 1}. ${r.title || r.project_identifier}${r.coordinator_country ? ' (' + r.coordinator_country + ')' : ''}${desc ? '\n   ' + String(desc).slice(0, 600) : ''}`;
   }).join('\n');
 
+  // i18n-no-inicio (prompt para la IA: no lo ve la persona)
+  // Idioma de respuesta = idioma de la interfaz. El resto del prompt no se traduce.
+  const writeIn = lang === 'en'
+    ? 'Escribe en inglés británico (British English), claro y directo: la persona usa la aplicación en inglés. El título y el texto de la visión, en inglés.'
+    : 'Escribe en español claro y directo.';
+
   return `Eres un experto en propuestas de proyectos europeos (Erasmus+, Horizon, CERV, LIFE, ESF+…). Tu tarea es dar forma a la VISIÓN inicial de un proyecto: un resumen breve, concreto y con lógica de financiación europea, para que el promotor lo comparta con socios potenciales y lo lleve a redacción.
 
-Escribe en español claro y directo. Nada de jerga vacía ni promesas huecas. No inventes cifras ni datos duros (presupuestos, socios, fechas) que no aparezcan abajo. No uses herramientas ni leas ficheros: responde solo con el JSON pedido.
+${writeIn} Nada de jerga vacía ni promesas huecas. No inventes cifras ni datos duros (presupuestos, socios, fechas) que no aparezcan abajo. No uses herramientas ni leas ficheros: responde solo con el JSON pedido.
 
 ## LO QUE PIDE LA CONVOCATORIA
 Convocatoria: ${call.title || v.call_title || v.call_id || '—'} (${call.programme || v.programme || '—'})
@@ -251,6 +258,7 @@ Devuelve SOLO un JSON válido, sin markdown ni texto alrededor, con esta forma e
   "title": "título corto y evocador de la visión (máx. 90 caracteres)",
   "vision_text": "primer párrafo…\\n\\nsegundo párrafo…"
 }`;
+  // i18n-no-fin
 }
 
 function _parseJson(raw) {
@@ -263,11 +271,11 @@ function _parseJson(raw) {
   return JSON.parse(s);
 }
 
-async function generateDraft(id, userId, callContext = {}) {
+async function generateDraft(id, userId, callContext = {}, lang = 'es') {
   const v = await getById(id);
   if (!v || v.user_id !== userId) return { error: 'NOT_FOUND' };
   const refs = await listReferences(id);
-  const prompt = buildVisionPrompt(v, refs, callContext || {});
+  const prompt = buildVisionPrompt(v, refs, callContext || {}, lang);
   const raw = await claudeCli.runSubscription(prompt, { timeoutMs: 180000 });
   let parsed;
   try { parsed = _parseJson(raw); }

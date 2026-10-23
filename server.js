@@ -214,6 +214,8 @@ app.use('/v1/estadisticas', require('./node/src/modules/estadisticas/routes'));
 app.use('/v1/presentaciones', require('./node/src/modules/presentaciones/routes'));
 app.use('/v1/convocatorias', require('./node/src/modules/convocatorias/routes'));
 app.use('/v1/vision',        require('./node/src/modules/vision/routes'));
+// Traducir bajo demanda lo que escribe otra persona (botón «Traducir»).
+app.use('/v1/translate',     require('./node/src/modules/translate/routes'));
 
 // Future modules:
 // app.use('/v1/planner',     require('./node/src/modules/planner/routes'));

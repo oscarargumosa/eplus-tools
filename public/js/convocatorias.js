@@ -21,6 +21,7 @@ const Convocatorias = (() => {
       ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c])
     );
   }
+  const LOCALE = () => (I18N.lang === 'en' ? 'en-GB' : 'es-ES');
   function todayISO() { return new Date().toISOString().slice(0, 10); }
   function debounce(fn, ms) { let t; return (...a) => { clearTimeout(t); t = setTimeout(() => fn(...a), ms); }; }
 
@@ -36,19 +37,19 @@ const Convocatorias = (() => {
   function deadlinePill(item) {
     const base = 'text-[10px] font-bold px-2.5 py-0.5 rounded-full whitespace-nowrap';
     if (item.status === 'forthcoming') {
-      return `<span class="${base} bg-lavender-soft text-violet">Próxima</span>`;
+      return `<span class="${base} bg-lavender-soft text-violet">${_t('Próxima')}</span>`;
     }
     const d = daysUntil(item.deadline);
     if (d === null) {
       return item.status === 'open'
-        ? `<span class="${base} bg-white text-primary border border-outline-variant">Abierta</span>`
+        ? `<span class="${base} bg-white text-primary border border-outline-variant">${_t('Abierta')}</span>`
         : '';
     }
-    if (d < 0)    return `<span class="${base} bg-surface-container-high text-on-surface-variant">Cerrada</span>`;
-    if (d === 0)  return `<span class="${base} bg-primary text-white">Hoy</span>`;
-    if (d <= 7)   return `<span class="${base} bg-violet text-white">${d} día${d === 1 ? '' : 's'}</span>`;
-    if (d <= 30)  return `<span class="${base} bg-lavender-soft text-primary">${d} días</span>`;
-    return         `<span class="${base} bg-white text-on-surface-variant border border-outline-variant">${d} días</span>`;
+    if (d < 0)    return `<span class="${base} bg-surface-container-high text-on-surface-variant">${_t('Cerrada')}</span>`;
+    if (d === 0)  return `<span class="${base} bg-primary text-white">${_t('Hoy')}</span>`;
+    if (d <= 7)   return `<span class="${base} bg-violet text-white">${d === 1 ? _t('1 día') : _t('{n} días', { n: d })}</span>`;
+    if (d <= 30)  return `<span class="${base} bg-lavender-soft text-primary">${_t('{n} días', { n: d })}</span>`;
+    return         `<span class="${base} bg-white text-on-surface-variant border border-outline-variant">${_t('{n} días', { n: d })}</span>`;
   }
 
   function fmtMoney(n) {
@@ -64,7 +65,7 @@ const Convocatorias = (() => {
     if (!iso) return '';
     const d = new Date(iso + 'T00:00:00');
     if (isNaN(d.getTime())) return iso;
-    return d.toLocaleDateString('es-ES', { day: '2-digit', month: 'short', year: 'numeric' });
+    return d.toLocaleDateString(LOCALE(), { day: '2-digit', month: 'short', year: 'numeric' });
   }
 
   // Partes de la fecha para la caja «día grande + mes/año».
@@ -74,16 +75,21 @@ const Convocatorias = (() => {
     if (isNaN(d.getTime())) return null;
     return {
       day:   String(d.getDate()).padStart(2, '0'),
-      month: d.toLocaleDateString('es-ES', { month: 'short' }).replace('.', ''),
+      month: d.toLocaleDateString(LOCALE(), { month: 'short' }).replace('.', ''),
       year:  String(d.getFullYear()),
     };
+  }
+
+  // Resumen en el idioma de la interfaz si la convocatoria lo trae (es dato: no se traduce).
+  function pickSummary(item) {
+    return (I18N.lang === 'en' ? (item.summary_en || item.summary_es) : (item.summary_es || item.summary_en)) || '';
   }
 
   function sourceBadge(src) {
     const map = {
       sedia:  { label: 'EU · SEDIA', class: 'bg-white text-primary border-primary/20' },
-      salto:  { label: 'Erasmus+ Youth', class: 'bg-lavender-soft text-violet border-lavender/30' },
-      bdns:   { label: 'ES · BDNS', class: 'bg-white text-violet border-violet/20' },
+      salto:  { label: 'Erasmus+ Youth', class: 'bg-lavender-soft text-violet border-lavender/30' },   // i18n-no (nombre de la fuente)
+      bdns:   { label: 'ES · BDNS', class: 'bg-white text-violet border-violet/20' },   // i18n-no (nombre de la fuente)
     };
     const m = map[src] || { label: src || '—', class: 'bg-white text-on-surface-variant border-outline-variant' };
     return `<span class="inline-flex items-center text-[10px] font-bold uppercase tracking-wider px-2.5 py-0.5 rounded-full border ${m.class}">${escapeHtml(m.label)}</span>`;
@@ -100,12 +106,12 @@ const Convocatorias = (() => {
       data-title="${escapeHtml(item.title || '')}"
       data-deadline="${escapeHtml(item.deadline || '')}"
       data-grant="${escapeHtml(String(item.budget_per_project_max_eur || ''))}"
-      title="Crear un proyecto vinculado a esta convocatoria">
+      title="${_t('Crear un proyecto vinculado a esta convocatoria')}">
       ${locked
         ? `<span class="material-symbols-outlined text-[12px]" style="font-variation-settings:'FILL' 1">lock</span>
-      Crear proyecto <span class="beta-tag">Beta</span>`
+      ${_t('Crear proyecto')} <span class="beta-tag">Beta</span>`
         : `<span class="material-symbols-outlined text-[12px]" style="font-variation-settings:'FILL' 1">check_circle</span>
-      Disponible → Crear proyecto`}
+      ${_t('Disponible → Crear proyecto')}`}
     </button>`;
   }
 
@@ -126,11 +132,11 @@ const Convocatorias = (() => {
     if (!host || host.querySelector('[data-curation]')) return;
     const html = `
       <span class="text-[10px] text-on-surface-variant ml-3 mr-1 self-center">|  Admin:</span>
-      <button type="button" data-curation="" class="conv-chip is-active">Todas</button>
-      <button type="button" data-curation="unreviewed" class="conv-chip">Sin revisar</button>
-      <button type="button" data-curation="reviewed"   class="conv-chip">Revisadas</button>
-      <button type="button" data-curation="in_efs"     class="conv-chip">En Studio</button>
-      <button type="button" data-curation="hidden"     class="conv-chip">Ocultas</button>`;
+      <button type="button" data-curation="" class="conv-chip is-active">${_t('Todas')}</button>
+      <button type="button" data-curation="unreviewed" class="conv-chip">${_t('Sin revisar')}</button>
+      <button type="button" data-curation="reviewed"   class="conv-chip">${_t('Revisadas')}</button>
+      <button type="button" data-curation="in_efs"     class="conv-chip">${_t('En Studio')}</button>
+      <button type="button" data-curation="hidden"     class="conv-chip">${_t('Ocultas')}</button>`;
     host.insertAdjacentHTML('beforeend', html);
     host.addEventListener('click', (e) => {
       const btn = e.target.closest('[data-curation]');
@@ -165,10 +171,11 @@ const Convocatorias = (() => {
         const open = allItems.filter(r => String(r.status || '').toLowerCase() === 'open').length;
         const fc   = allItems.filter(r => String(r.status || '').toLowerCase() === 'forthcoming').length;
         const ts   = data.meta && data.meta.generatedAt ? new Date(data.meta.generatedAt).toISOString().slice(0, 10) : null;
-        meta.textContent = `Fuente: SEDIA + BDNS · ${open} abiertas · ${fc} próximas${ts ? ' · actualizado ' + ts : ''}`;
+        meta.textContent = _t('Fuente: SEDIA + BDNS · {open} abiertas · {fc} próximas', { open, fc })
+          + (ts ? ' · ' + _t('actualizado {fecha}', { fecha: ts }) : '');
       }
     } catch (err) {
-      list.innerHTML = `<div class="col-span-full text-center text-error py-12 text-sm">No se pudieron cargar las convocatorias: ${escapeHtml(err.message || 'error desconocido')}</div>`;
+      list.innerHTML = `<div class="col-span-full text-center text-error py-12 text-sm">${escapeHtml(_t('No se pudieron cargar las convocatorias: {error}', { error: err.message || _t('error desconocido') }))}</div>`;
     }
   }
 
@@ -245,7 +252,7 @@ const Convocatorias = (() => {
       if (visionBtn) {
         e.preventDefault();
         e.stopPropagation();
-        if (typeof App !== 'undefined' && App.requireLogin && !App.requireLogin({ what: 'empezar tu visión' })) return;
+        if (typeof App !== 'undefined' && App.requireLogin && !App.requireLogin({ what: _t('empezar tu visión') })) return;
         if (typeof Vision !== 'undefined') Vision.startForCall(visionBtn.dataset.callId);
         return;
       }
@@ -269,12 +276,12 @@ const Convocatorias = (() => {
   async function runSemanticSearch(query) {
     if (!query || query.trim().length < 3) return;
     const list = document.getElementById('convocatorias-list');
-    list.innerHTML = '<div class="col-span-full text-center text-on-surface-variant py-12 text-sm"><span class="spinner"></span> Buscando con IA…</div>';
+    list.innerHTML = '<div class="col-span-full text-center text-on-surface-variant py-12 text-sm"><span class="spinner"></span> ' + _t('Buscando con IA…') + '</div>';
     try {
       const res = await API.get('/convocatorias/search-semantic?q=' + encodeURIComponent(query) + '&top=12');
       const items = res.items || [];
       if (!items.length) {
-        list.innerHTML = '<div class="col-span-full text-center text-on-surface-variant py-12 text-sm">Sin resultados. Prueba con otras palabras clave.</div>';
+        list.innerHTML = '<div class="col-span-full text-center text-on-surface-variant py-12 text-sm">' + _t('Sin resultados. Prueba con otras palabras clave.') + '</div>';
         return;
       }
       // Marry semantic results with full feed data (for budget, badges, etc.)
@@ -289,7 +296,7 @@ const Convocatorias = (() => {
       }).join('');
       document.getElementById('convocatorias-semantic-clear')?.classList.remove('hidden');
     } catch (e) {
-      list.innerHTML = `<div class="col-span-full text-center text-error py-12 text-sm">Error: ${escapeHtml(e.message || e)}</div>`;
+      list.innerHTML = `<div class="col-span-full text-center text-error py-12 text-sm">${escapeHtml(_t('Error: {error}', { error: e.message || e }))}</div>`;
     }
   }
 
@@ -309,7 +316,7 @@ const Convocatorias = (() => {
         await openNotesModal(item);
         return;
       } else if (action === 'import') {
-        if (!confirm(`¿Importar "${item.title}" a Data E+ (queda INACTIVA, abre el editor)?`)) return;
+        if (!confirm(_t('¿Importar "{titulo}" a Data E+ (queda INACTIVA, abre el editor)?', { titulo: item.title }))) return;
         const r = await API.post('/admin/data/programs/import-from-feed', { source_id: sourceId });
         // Navigate to Admin and open the editor for this program — same flow
         // as the "Importar de catálogo EU" modal in admin.
@@ -325,7 +332,7 @@ const Convocatorias = (() => {
       }
       render();
     } catch (e) {
-      alert('Error: ' + (e.message || e));
+      alert(_t('Error: {error}', { error: e.message || e }));
     }
   }
 
@@ -333,7 +340,7 @@ const Convocatorias = (() => {
     if (!iso) return '';
     const d = new Date(iso);
     if (isNaN(d)) return iso;
-    return d.toLocaleString('es-ES', { day: '2-digit', month: 'short', year: 'numeric', hour: '2-digit', minute: '2-digit' });
+    return d.toLocaleString(LOCALE(), { day: '2-digit', month: 'short', year: 'numeric', hour: '2-digit', minute: '2-digit' });
   }
 
   async function openNotesModal(item) {
@@ -345,7 +352,7 @@ const Convocatorias = (() => {
     const renderInner = () => {
       const log = (item.curation && item.curation.notes_log) || [];
       const entries = log.length === 0
-        ? '<p class="text-sm text-on-surface-variant text-center py-6">Sin notas aún. Añade la primera abajo.</p>'
+        ? '<p class="text-sm text-on-surface-variant text-center py-6">' + _t('Sin notas aún. Añade la primera abajo.') + '</p>'
         : log.map((n, i) => `
           <div class="flex gap-3 px-3 py-3 rounded-lg bg-surface-container-low border border-outline-variant/15">
             <div class="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
@@ -356,7 +363,7 @@ const Convocatorias = (() => {
                 <div class="text-[11px] font-bold text-on-surface">${escapeHtml(n.author_name || '—')}</div>
                 <div class="flex items-center gap-2">
                   <span class="text-[10px] text-on-surface-variant">${escapeHtml(fmtTimestamp(n.created_at))}</span>
-                  <button type="button" class="conv-note-del text-on-surface-variant/40 hover:text-error transition-colors" data-idx="${i}" title="Eliminar">
+                  <button type="button" class="conv-note-del text-on-surface-variant/40 hover:text-error transition-colors" data-idx="${i}" title="${_t('Eliminar')}">
                     <span class="material-symbols-outlined text-[14px]">delete</span>
                   </button>
                 </div>
@@ -369,7 +376,7 @@ const Convocatorias = (() => {
         <div class="bg-white rounded-2xl shadow-2xl w-full max-w-2xl mt-10 max-h-[85vh] flex flex-col">
           <div class="flex items-center justify-between px-6 py-4 border-b border-outline-variant/20">
             <div class="min-w-0 flex-1 pr-3">
-              <h3 class="font-headline text-base font-bold text-primary truncate">Notas admin · ${escapeHtml(item.title || '')}</h3>
+              <h3 class="font-headline text-base font-bold text-primary truncate">${_t('Notas admin')} · ${escapeHtml(item.title || '')}</h3>
               <p class="text-[11px] text-on-surface-variant mt-0.5 font-mono">${escapeHtml(item.source_id || '')}</p>
             </div>
             <button id="conv-notes-close" type="button" class="text-on-surface-variant hover:text-error flex-shrink-0">
@@ -380,11 +387,11 @@ const Convocatorias = (() => {
             ${entries}
           </div>
           <div class="px-6 py-4 border-t border-outline-variant/20 bg-surface-container-low rounded-b-2xl">
-            <textarea id="conv-note-text" rows="2" placeholder="Escribe una nota (visible solo para admins)…"
+            <textarea id="conv-note-text" rows="2" placeholder="${_t('Escribe una nota (visible solo para admins)…')}"
               class="w-full px-3 py-2 rounded-lg border border-outline-variant/40 focus:border-primary focus:outline-none text-sm resize-y"></textarea>
             <div class="flex items-center justify-end mt-2">
               <button id="conv-note-add" type="button" class="inline-flex items-center gap-1.5 px-4 py-2 rounded-full bg-primary text-white text-xs font-bold hover:bg-violet disabled:opacity-50">
-                <span class="material-symbols-outlined text-[14px]">add</span> Añadir nota
+                <span class="material-symbols-outlined text-[14px]">add</span> ${_t('Añadir nota')}
               </button>
             </div>
           </div>
@@ -406,16 +413,16 @@ const Convocatorias = (() => {
           ta.value = '';
           renderInner();
           render();
-        } catch (e) { alert('Error: ' + (e.message || e)); btn.disabled = false; }
+        } catch (e) { alert(_t('Error: {error}', { error: e.message || e })); btn.disabled = false; }
       });
       modal.querySelectorAll('.conv-note-del').forEach(b => b.addEventListener('click', async () => {
-        if (!confirm('¿Eliminar esta nota?')) return;
+        if (!confirm(_t('¿Eliminar esta nota?'))) return;
         try {
           const updated = await API.patch(`/convocatorias/curation/${encodeURIComponent(item.source_id)}`, { delete_note_index: parseInt(b.dataset.idx, 10) });
           item.curation = updated;
           renderInner();
           render();
-        } catch (e) { alert('Error: ' + (e.message || e)); }
+        } catch (e) { alert(_t('Error: {error}', { error: e.message || e })); }
       }));
     };
     document.body.appendChild(modal);
@@ -442,7 +449,7 @@ const Convocatorias = (() => {
 
     btn.disabled = true;
     const originalHtml = btn.innerHTML;
-    btn.innerHTML = '<span class="spinner inline-block"></span> Creando…';
+    btn.innerHTML = '<span class="spinner inline-block"></span> ' + _t('Creando…');
     try {
       const project = await API.post('/intake/projects', {
         name: title.slice(0, 200),
@@ -459,7 +466,7 @@ const Convocatorias = (() => {
     } catch (err) {
       btn.disabled = false;
       btn.innerHTML = originalHtml;
-      alert('Error creando proyecto: ' + (err.message || err));
+      alert(_t('Error creando proyecto: {error}', { error: err.message || err }));
     }
   }
 
@@ -526,7 +533,7 @@ const Convocatorias = (() => {
     if (counter) counter.textContent = items.length;
 
     if (!items.length) {
-      list.innerHTML = `<div class="col-span-full text-center text-on-surface-variant py-12 text-sm">No hay convocatorias que coincidan con la búsqueda.</div>`;
+      list.innerHTML = `<div class="col-span-full text-center text-on-surface-variant py-12 text-sm">${_t('No hay convocatorias que coincidan con la búsqueda.')}</div>`;
       return;
     }
     list.innerHTML = items.map(renderCard).join('');
@@ -535,7 +542,7 @@ const Convocatorias = (() => {
   function renderCard(item) {
     const id        = escapeHtml(item.call_id);
     const programme = item.sub_programme || item.programme || '';
-    const summary   = item.summary_es || item.summary_en || '';
+    const summary   = pickSummary(item);
     const totalBudget = fmtMoney(item.budget_total_eur);
     const perProj   = fmtMoney(item.budget_per_project_max_eur || item.budget_per_project_min_eur);
 
@@ -545,23 +552,23 @@ const Convocatorias = (() => {
     const deadlineCell = item.deadline
       ? (dl
           ? `<div class="bg-white rounded-2xl px-3 py-2 min-w-[92px]">
-               <div class="text-[9px] font-bold uppercase tracking-wider text-on-surface-variant">Deadline</div>
+               <div class="text-[9px] font-bold uppercase tracking-wider text-on-surface-variant">${_t('Deadline')}</div>
                <div class="flex items-baseline gap-1.5 text-primary">
                  <span class="text-[30px] font-light leading-none tabular-nums">${escapeHtml(dl.day)}</span>
                  <span class="text-[12px] leading-tight">${escapeHtml(dl.month)}<br>${escapeHtml(dl.year)}</span>
                </div>
              </div>`
-          : `<div class="text-[12px] text-on-surface"><span class="text-on-surface-variant">Deadline:</span> <strong>${escapeHtml(fmtDate(item.deadline))}</strong></div>`)
+          : `<div class="text-[12px] text-on-surface"><span class="text-on-surface-variant">${_t('Deadline:')}</span> <strong>${escapeHtml(fmtDate(item.deadline))}</strong></div>`)
       : '';
 
     const perProjCell = perProj
       ? `<div class="text-right text-primary min-w-0">
-           <div class="text-[10px] font-semibold text-on-surface-variant">Hasta</div>
-           <div class="leading-none"><span class="text-[24px] font-light tabular-nums">${escapeHtml(perProj)}</span><span class="text-[11px] font-medium">/proyecto</span></div>
+           <div class="text-[10px] font-semibold text-on-surface-variant">${_t('Hasta')}</div>
+           <div class="leading-none"><span class="text-[24px] font-light tabular-nums">${escapeHtml(perProj)}</span><span class="text-[11px] font-medium">${_t('/proyecto')}</span></div>
          </div>`
       : (totalBudget
           ? `<div class="text-right text-primary min-w-0">
-               <div class="leading-none"><span class="text-[24px] font-light tabular-nums">${escapeHtml(totalBudget)}</span> <span class="text-[11px] font-medium">total</span></div>
+               <div class="leading-none"><span class="text-[24px] font-light tabular-nums">${escapeHtml(totalBudget)}</span> <span class="text-[11px] font-medium">${_t('total')}</span></div>
              </div>`
           : '');
 
@@ -586,21 +593,21 @@ const Convocatorias = (() => {
     const adminToolbar = isAdmin ? `
       <div class="conv-admin-toolbar absolute top-2 right-2 flex items-center gap-1 bg-white/95 backdrop-blur rounded-full px-1.5 py-1 shadow-sm border border-outline-variant/20" data-source-id="${escapeHtml(item.source_id || '')}">
         <button type="button" class="conv-admin-act w-7 h-7 rounded-full flex items-center justify-center hover:bg-surface-container transition-colors ${isHidden ? 'text-primary' : 'text-on-surface-variant/50'}"
-          data-act="hidden" title="${isHidden ? 'Oculta — click para mostrar' : 'Ocultar al público'}">
+          data-act="hidden" title="${isHidden ? _t('Oculta — click para mostrar') : _t('Ocultar al público')}">
           <span class="material-symbols-outlined text-[16px]" style="font-variation-settings:'FILL' ${isHidden ? 1 : 0}">${isHidden ? 'visibility_off' : 'visibility'}</span>
         </button>
         <button type="button" class="conv-admin-act w-7 h-7 rounded-full flex items-center justify-center hover:bg-surface-container transition-colors ${isReviewed ? 'text-primary' : 'text-on-surface-variant/50'}"
-          data-act="reviewed" title="${isReviewed ? 'Revisada' + (cur.reviewed_at ? ' ('+cur.reviewed_at.slice(0,10)+')' : '') + ' — click para desmarcar' : 'Marcar como revisada'}">
+          data-act="reviewed" title="${isReviewed ? (cur.reviewed_at ? _t('Revisada ({fecha}) — click para desmarcar', { fecha: cur.reviewed_at.slice(0,10) }) : _t('Revisada — click para desmarcar')) : _t('Marcar como revisada')}">
           <span class="material-symbols-outlined text-[16px]" style="font-variation-settings:'FILL' ${isReviewed ? 1 : 0}">${isReviewed ? 'task_alt' : 'radio_button_unchecked'}</span>
         </button>
         <button type="button" class="conv-admin-act relative w-7 h-7 rounded-full flex items-center justify-center hover:bg-surface-container transition-colors ${notesCount ? 'text-violet' : 'text-on-surface-variant/50'}"
-          data-act="notes" title="${notesCount ? notesCount + ' nota'+(notesCount!==1?'s':'')+' · última: ' + escapeHtml((lastNote.author_name||'?')) + ' ' + escapeHtml((lastNote.created_at||'').slice(0,10)) : 'Añadir nota admin'}">
+          data-act="notes" title="${notesCount ? (notesCount === 1 ? _t('1 nota') : _t('{n} notas', { n: notesCount })) + ' · ' + _t('última: {autor} {fecha}', { autor: escapeHtml(lastNote.author_name || '?'), fecha: escapeHtml((lastNote.created_at || '').slice(0,10)) }) : _t('Añadir nota admin')}">
           <span class="material-symbols-outlined text-[16px]" style="font-variation-settings:'FILL' ${notesCount ? 1 : 0}">${notesCount ? 'sticky_note_2' : 'edit_note'}</span>
           ${notesCount ? `<span class="absolute -top-1 -right-1 min-w-[14px] h-[14px] px-[3px] rounded-full bg-violet text-white text-[8px] font-bold flex items-center justify-center">${notesCount}</span>` : ''}
         </button>
         ${isInEfs
-          ? `<span class="w-7 h-7 rounded-full flex items-center justify-center text-primary" title="Ya importada en Studio"><span class="material-symbols-outlined text-[16px]" style="font-variation-settings:'FILL' 1">verified</span></span>`
-          : `<button type="button" class="conv-admin-act w-7 h-7 rounded-full flex items-center justify-center hover:bg-primary/10 text-primary transition-colors" data-act="import" title="Importar a Studio"><span class="material-symbols-outlined text-[16px]">download</span></button>`}
+          ? `<span class="w-7 h-7 rounded-full flex items-center justify-center text-primary" title="${_t('Ya importada en Studio')}"><span class="material-symbols-outlined text-[16px]" style="font-variation-settings:'FILL' 1">verified</span></span>`
+          : `<button type="button" class="conv-admin-act w-7 h-7 rounded-full flex items-center justify-center hover:bg-primary/10 text-primary transition-colors" data-act="import" title="${_t('Importar a Studio')}"><span class="material-symbols-outlined text-[16px]">download</span></button>`}
       </div>` : '';
 
     return `
@@ -626,12 +633,12 @@ const Convocatorias = (() => {
         <span class="text-[11px] text-on-surface-variant truncate font-mono">${escapeHtml(item.source_id || '')}</span>
         <span class="flex items-center gap-3 whitespace-nowrap">
           <button type="button" class="conv-card-vision inline-flex items-center gap-1 text-[11px] font-semibold text-on-surface-variant hover:text-primary transition-colors"
-            data-call-id="${id}" title="Empezar mi visión sobre esta convocatoria">
-            <span class="material-symbols-outlined" style="font-size:14px;line-height:1;">explore</span>Visión
+            data-call-id="${id}" title="${_t('Empezar mi visión sobre esta convocatoria')}">
+            <span class="material-symbols-outlined" style="font-size:14px;line-height:1;">explore</span>${_t('Visión')}
           </button>
           ${isInEfs
-            ? `<span class="text-[11px] font-bold text-primary">Ver →</span>`
-            : `<span class="text-[11px] font-bold text-primary bg-secondary-fixed rounded-full px-3 py-1">Ver →</span>`}
+            ? `<span class="text-[11px] font-bold text-primary">${_t('Ver →')}</span>`
+            : `<span class="text-[11px] font-bold text-primary bg-secondary-fixed rounded-full px-3 py-1">${_t('Ver →')}</span>`}
         </span>
       </div>
     </article>`;
@@ -659,39 +666,39 @@ const Convocatorias = (() => {
     // 20-row structured summary table (per Oscar's spec). Uses AI-extracted
     // fields when feed lacks them.
     const fmt = (v) => (v === null || v === undefined || v === '' || (Array.isArray(v) && v.length === 0)) ? null : v;
-    const money = (n) => n ? `€${Number(n).toLocaleString('es-ES')}` : null;
+    const money = (n) => n ? `€${Number(n).toLocaleString(LOCALE())}` : null;
     const pct = (n) => n != null ? `${n}%` : null;
     const list = (arr) => Array.isArray(arr) && arr.length ? arr.join(' · ') : null;
 
     const rows = [
-      ['Programa',                            fmt(item.programme)],
-      ['Código de la convocatoria',           fmt(item.source_id)],
-      ['Objetivo principal',                  fmt(item.main_objective)],
-      ['Presupuesto total',                   money(item.budget_total_eur)],
-      ['Presupuesto por proyecto',            money(item.budget_per_project_max_eur) || money(item.budget_per_project_min_eur)],
-      ['Nº estimado de proyectos',            fmt(item.expected_grants)],
-      ['% financiación europea',              pct(item.cofinancing_pct)],
-      ['Cofinanciación requerida',            item.cofinancing_pct != null ? `${100 - Number(item.cofinancing_pct)}% del solicitante` : null],
-      ['Fecha de publicación',                fmt(fmtDate(item.publication_date))],
-      ['Fecha de apertura',                   fmt(fmtDate(item.open_date))],
-      ['Deadline',                            fmt(fmtDate(item.deadline))],
-      ['Duración del proyecto',               item.duration_months ? `${item.duration_months} meses` : null],
-      ['Tipo de convocatoria',                fmt(item.call_type) || fmt(item.deadline_model)],
-      ['Dirección General / Agencia',         fmt(item.managing_agency)],
-      ['Plataforma de presentación',          fmt(item.submission_platform) || 'EU Funding & Tenders Portal'],
-      ['Nº mínimo de socios',                 fmt(item.min_partners) || fmt(item.min_countries)],
-      ['Países mínimos requeridos',           fmt(item.min_countries)],
-      ['Tipos de socios elegibles',           list(item.eligible_entity_types)],
-      ['Tipo de coordinador permitido',       list(item.coordinator_types_allowed)],
-      ['Actividades financiables',            list(item.eligible_activities)],
-      ['Público objetivo',                    fmt(item.audience_ai) || fmt(item.audience)],
-      ['Prioridades temáticas',               list(item.themes_ai) || list(item.crossCuttingPriorities)],
+      [_t('Programa'),                            fmt(item.programme)],
+      [_t('Código de la convocatoria'),           fmt(item.source_id)],
+      [_t('Objetivo principal'),                  fmt(item.main_objective)],
+      [_t('Presupuesto total'),                   money(item.budget_total_eur)],
+      [_t('Presupuesto por proyecto'),            money(item.budget_per_project_max_eur) || money(item.budget_per_project_min_eur)],
+      [_t('Nº estimado de proyectos'),            fmt(item.expected_grants)],
+      [_t('% financiación europea'),              pct(item.cofinancing_pct)],
+      [_t('Cofinanciación requerida'),            item.cofinancing_pct != null ? _t('{pct}% del solicitante', { pct: 100 - Number(item.cofinancing_pct) }) : null],
+      [_t('Fecha de publicación'),                fmt(fmtDate(item.publication_date))],
+      [_t('Fecha de apertura'),                   fmt(fmtDate(item.open_date))],
+      [_t('Deadline'),                            fmt(fmtDate(item.deadline))],
+      [_t('Duración del proyecto'),               item.duration_months ? (Number(item.duration_months) === 1 ? _t('1 mes') : _t('{n} meses', { n: item.duration_months })) : null],
+      [_t('Tipo de convocatoria'),                fmt(item.call_type) || fmt(item.deadline_model)],
+      [_t('Dirección General / Agencia'),         fmt(item.managing_agency)],
+      [_t('Plataforma de presentación'),          fmt(item.submission_platform) || 'EU Funding & Tenders Portal'],
+      [_t('Nº mínimo de socios'),                 fmt(item.min_partners) || fmt(item.min_countries)],
+      [_t('Países mínimos requeridos'),           fmt(item.min_countries)],
+      [_t('Tipos de socios elegibles'),           list(item.eligible_entity_types)],
+      [_t('Tipo de coordinador permitido'),       list(item.coordinator_types_allowed)],
+      [_t('Actividades financiables'),            list(item.eligible_activities)],
+      [_t('Público objetivo'),                    fmt(item.audience_ai) || fmt(item.audience)],
+      [_t('Prioridades temáticas'),               list(item.themes_ai) || list(item.crossCuttingPriorities)],
     ];
     const present = rows.filter(([, v]) => v !== null);
     if (!present.length) return '';
     return `
       <div>
-        <div class="text-[10px] font-bold uppercase tracking-wider text-on-surface-variant mb-2">Tabla resumen</div>
+        <div class="text-[10px] font-bold uppercase tracking-wider text-on-surface-variant mb-2">${_t('Tabla resumen')}</div>
         <table class="w-full text-sm">
           <tbody>
             ${present.map(([k, v]) => `
@@ -739,10 +746,10 @@ const Convocatorias = (() => {
     if (!visible.length) return '';
     const hiddenCount = item.faq.length - visible.length;
     const hiddenNote = hiddenCount > 0
-      ? `<span class="text-[10px] text-on-surface-variant/60 ml-2">(${hiddenCount} pregunta${hiddenCount !== 1 ? 's' : ''} sin respuesta clara ocultas)</span>` : '';
+      ? `<span class="text-[10px] text-on-surface-variant/60 ml-2">(${hiddenCount === 1 ? _t('1 pregunta sin respuesta clara oculta') : _t('{n} preguntas sin respuesta clara ocultas', { n: hiddenCount })})</span>` : '';
     return `
       <div>
-        <div class="text-[10px] font-bold uppercase tracking-wider text-on-surface-variant mb-2">Preguntas frecuentes${hiddenNote}</div>
+        <div class="text-[10px] font-bold uppercase tracking-wider text-on-surface-variant mb-2">${_t('Preguntas frecuentes')}${hiddenNote}</div>
         <div class="space-y-1.5">
           ${visible.map((f, i) => `
             <details class="group rounded-lg bg-cream border border-transparent px-3 py-2.5 ${i === 0 ? 'open' : ''}" ${i === 0 ? 'open' : ''}>
@@ -771,7 +778,7 @@ const Convocatorias = (() => {
 
   function renderDetail(item) {
     const programme = [item.programme, item.sub_programme].filter(Boolean).join(' · ');
-    const summary   = item.summary_es || item.summary_en || '';
+    const summary   = pickSummary(item);
     const budget    = fmtMoney(item.budget_total_eur);
     const minProj   = fmtMoney(item.budget_per_project_min_eur);
     const maxProj   = fmtMoney(item.budget_per_project_max_eur);
@@ -784,12 +791,12 @@ const Convocatorias = (() => {
             data-call-id="${escapeHtml(item.call_id || '')}"
             class="inline-flex items-center gap-2 px-6 py-2.5 rounded-full bg-secondary-fixed text-primary text-sm font-bold hover:bg-secondary-fixed-dim transition-colors">
             <span class="material-symbols-outlined" style="font-size:18px;line-height:1;">explore</span>
-            <span>Empezar mi visión</span>
+            <span>${_t('Empezar mi visión')}</span>
           </button>`;
     const applyExternal = item.apply_url
       ? `<a href="${escapeHtml(item.apply_url)}" target="_blank" rel="noopener"
             class="inline-flex items-center gap-1 text-[12px] text-on-surface-variant hover:text-primary hover:underline">
-            <span>Solicitar en el portal oficial</span>
+            <span>${_t('Solicitar en el portal oficial')}</span>
             <span class="material-symbols-outlined" style="font-size:14px;line-height:1;">open_in_new</span>
           </a>`
       : '';
@@ -797,7 +804,7 @@ const Convocatorias = (() => {
     const details = item.details_url
       ? `<a href="${escapeHtml(item.details_url)}" target="_blank" rel="noopener"
             class="inline-flex items-center gap-1.5 px-5 py-2.5 rounded-full bg-transparent border border-primary text-primary text-sm font-bold hover:bg-lavender-soft transition-colors">
-            <span>Ver en portal</span>
+            <span>${_t('Ver en portal')}</span>
             <span class="material-symbols-outlined" style="font-size:16px;line-height:1;">open_in_new</span>
           </a>`
       : '';
@@ -829,17 +836,17 @@ const Convocatorias = (() => {
 
         ${renderSummaryTable(item)}
 
-        ${renderListSection('Actividades financiables', item.eligible_activities, 'check_circle')}
-        ${renderListSection('Gastos elegibles', item.eligible_costs, 'paid')}
-        ${renderListSection('Gastos NO permitidos', item.non_eligible_costs, 'block')}
-        ${renderListSection('Resultados esperados', item.expected_outcomes, 'rocket_launch')}
+        ${renderListSection(_t('Actividades financiables'), item.eligible_activities, 'check_circle')}
+        ${renderListSection(_t('Gastos elegibles'), item.eligible_costs, 'paid')}
+        ${renderListSection(_t('Gastos NO permitidos'), item.non_eligible_costs, 'block')}
+        ${renderListSection(_t('Resultados esperados'), item.expected_outcomes, 'rocket_launch')}
 
         ${renderFaq(item)}
 
-        ${priorities ? `<div><div class="text-[10px] font-bold uppercase tracking-wider text-on-surface-variant mb-2">Prioridades transversales</div><div class="flex flex-wrap gap-1.5">${priorities}</div></div>` : ''}
-        ${keywords ? `<div><div class="text-[10px] font-bold uppercase tracking-wider text-on-surface-variant mb-2">Palabras clave</div><div class="flex flex-wrap gap-1.5">${keywords}</div></div>` : ''}
+        ${priorities ? `<div><div class="text-[10px] font-bold uppercase tracking-wider text-on-surface-variant mb-2">${_t('Prioridades transversales')}</div><div class="flex flex-wrap gap-1.5">${priorities}</div></div>` : ''}
+        ${keywords ? `<div><div class="text-[10px] font-bold uppercase tracking-wider text-on-surface-variant mb-2">${_t('Palabras clave')}</div><div class="flex flex-wrap gap-1.5">${keywords}</div></div>` : ''}
 
-        ${docs ? `<div><div class="text-[10px] font-bold uppercase tracking-wider text-on-surface-variant mb-2">Documentos oficiales</div><ul class="list-disc list-inside space-y-1">${docs}</ul></div>` : ''}
+        ${docs ? `<div><div class="text-[10px] font-bold uppercase tracking-wider text-on-surface-variant mb-2">${_t('Documentos oficiales')}</div><ul class="list-disc list-inside space-y-1">${docs}</ul></div>` : ''}
 
         <div class="pt-4 border-t border-outline-variant/20">
           <button type="button" id="conv-chat-open"
@@ -847,7 +854,7 @@ const Convocatorias = (() => {
             data-title="${escapeHtml(item.title || '')}"
             class="w-full inline-flex items-center justify-center gap-2 px-5 py-3 rounded-full bg-lavender-soft text-primary text-sm font-bold hover:bg-[#dcd3ee] transition-colors">
             <span class="material-symbols-outlined text-[18px]" style="font-variation-settings:'FILL' 1">smart_toy</span>
-            Chat con esta convocatoria
+            ${_t('Chat con esta convocatoria')}
           </button>
         </div>
 
@@ -872,23 +879,23 @@ const Convocatorias = (() => {
             <span class="material-symbols-outlined">arrow_back</span>
           </button>
           <div class="flex-1 min-w-0">
-            <div class="text-[10px] uppercase tracking-wider text-on-surface-variant">Chat con la convocatoria</div>
+            <div class="text-[10px] uppercase tracking-wider text-on-surface-variant">${_t('Chat con la convocatoria')}</div>
             <div class="text-sm font-bold text-on-surface truncate">${escapeHtml(title)}</div>
           </div>
         </div>
         <div id="conv-chat-messages" class="flex-1 overflow-y-auto space-y-3 mb-3 min-h-[300px]">
           <div class="text-xs text-on-surface-variant text-center py-6">
-            Pregúntame lo que quieras sobre esta convocatoria: presupuesto, quién puede aplicar, criterios de evaluación, fechas, qué entregar… Solo respondo en base al documento oficial.
+            ${_t('Pregúntame lo que quieras sobre esta convocatoria: presupuesto, quién puede aplicar, criterios de evaluación, fechas, qué entregar… Solo respondo en base al documento oficial.')}
           </div>
         </div>
         <div class="border-t border-outline-variant/20 pt-3">
           <form id="conv-chat-form" class="flex gap-2">
-            <input id="conv-chat-input" type="text" placeholder="Escribe tu pregunta..."
+            <input id="conv-chat-input" type="text" placeholder="${_t('Escribe tu pregunta…')}"
               class="flex-1 px-4 py-2 rounded-full border border-outline-variant focus:border-primary focus:outline-none text-sm">
-            <button type="submit" class="px-5 py-2 rounded-full bg-primary text-white text-sm font-bold hover:bg-violet">Enviar</button>
+            <button type="submit" class="px-5 py-2 rounded-full bg-primary text-white text-sm font-bold hover:bg-violet">${_t('Enviar')}</button>
           </form>
           <div class="mt-2 flex flex-wrap gap-1.5 text-[10px]">
-            ${['¿Cuál es el presupuesto?','¿Quién puede aplicar?','¿Qué documentos hay que entregar?','¿Cuáles son los criterios de evaluación?'].map(s =>
+            ${[_t('¿Cuál es el presupuesto?'), _t('¿Quién puede aplicar?'), _t('¿Qué documentos hay que entregar?'), _t('¿Cuáles son los criterios de evaluación?')].map(s =>
               `<button type="button" class="conv-chat-suggest px-2 py-1 rounded-full bg-cream hover:bg-lavender-soft text-primary" data-q="${escapeHtml(s)}">${escapeHtml(s)}</button>`
             ).join('')}
           </div>
@@ -924,12 +931,12 @@ const Convocatorias = (() => {
     const thinkingId = 'thinking_' + Date.now();
     msgs.insertAdjacentHTML('beforeend', `
       <div id="${thinkingId}" class="flex justify-start">
-        <div class="max-w-[80%] px-3 py-2 rounded-2xl rounded-tl-sm bg-cream text-on-surface-variant text-sm"><span class="spinner inline-block"></span> Pensando…</div>
+        <div class="max-w-[80%] px-3 py-2 rounded-2xl rounded-tl-sm bg-cream text-on-surface-variant text-sm"><span class="spinner inline-block"></span> ${_t('Pensando…')}</div>
       </div>`);
     msgs.scrollTop = msgs.scrollHeight;
     try {
       const res = await API.post(`/convocatorias/${encodeURIComponent(sourceId)}/chat`, { messages: _chatThread });
-      const ans = res.answer || '(sin respuesta)';
+      const ans = res.answer || _t('(sin respuesta)');
       _chatThread.push({ role: 'assistant', content: ans });
       document.getElementById(thinkingId)?.remove();
       msgs.insertAdjacentHTML('beforeend', `
@@ -940,8 +947,8 @@ const Convocatorias = (() => {
     } catch (e) {
       document.getElementById(thinkingId)?.remove();
       const msg = (e && (e.code === 'NO_VECTORS' || /no vectors/i.test(e.message || '')))
-        ? 'Esta convocatoria aún no está indexada para chat. Aparecerán pronto las nuevas.'
-        : 'Error: ' + (e.message || e);
+        ? _t('Esta convocatoria aún no está indexada para chat. Aparecerán pronto las nuevas.')
+        : _t('Error: {error}', { error: e.message || e });
       msgs.insertAdjacentHTML('beforeend', `
         <div class="flex justify-start">
           <div class="max-w-[85%] px-3 py-2 rounded-2xl rounded-tl-sm bg-error-container/50 border border-error/20 text-error text-sm">${escapeHtml(msg)}</div>
@@ -952,7 +959,7 @@ const Convocatorias = (() => {
   async function openDetail(callId) {
     // Muro de login: el teaser deja explorar las cards, pero abrir el
     // detalle de una call exige cuenta (lead-gen).
-    if (typeof App !== 'undefined' && App.requireLogin && !App.requireLogin({ what: 'el detalle de esta convocatoria' })) return;
+    if (typeof App !== 'undefined' && App.requireLogin && !App.requireLogin({ what: _t('el detalle de esta convocatoria') })) return;
     const item = allItems.find(i => String(i.call_id) === String(callId));
     if (!item) return;
     if (typeof Track !== 'undefined') Track.event('call_opened', { route: 'convocatorias', ref_id: callId, programme: item.programme });

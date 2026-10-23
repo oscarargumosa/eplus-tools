@@ -18,8 +18,9 @@ const Vision = (() => {
 
   const $root = () => document.getElementById('vision-root');
   const esc = (s) => String(s == null ? '' : s).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
-  const eur = (n) => n == null ? null : Number(n).toLocaleString('es-ES') + ' €';
-  const fmtDate = (d) => { if (!d) return null; try { return new Date(d).toLocaleDateString('es-ES', { day: 'numeric', month: 'short', year: 'numeric' }); } catch { return d; } };
+  const LOC = () => (I18N.lang === 'en' ? 'en-GB' : 'es-ES');
+  const eur = (n) => n == null ? null : (I18N.lang === 'en' ? '€' + Number(n).toLocaleString(LOC()) : Number(n).toLocaleString(LOC()) + ' €');
+  const fmtDate = (d) => { if (!d) return null; try { return new Date(d).toLocaleDateString(LOC(), { day: 'numeric', month: 'short', year: 'numeric' }); } catch { return d; } };
   const daysLeft = (d) => { if (!d) return null; const ms = new Date(d) - new Date(); return ms > 0 ? Math.round(ms / 86400000) : null; };
   const arr = (x) => Array.isArray(x) ? x : [];
   // Renderiza un texto multipárrafo (separado por saltos de línea) en <p>.
@@ -31,34 +32,42 @@ const Vision = (() => {
   const flag = (cc) => { try { return String(cc).toUpperCase().replace(/[A-Z]/g, c => String.fromCodePoint(127397 + c.charCodeAt(0))); } catch { return ''; } };
   // EU27 + países del programa Erasmus+ (acceso rápido)
   const EU_CODES = ['AT', 'BE', 'BG', 'HR', 'CY', 'CZ', 'DK', 'EE', 'FI', 'FR', 'DE', 'GR', 'HU', 'IE', 'IT', 'LV', 'LT', 'LU', 'MT', 'NL', 'PL', 'PT', 'RO', 'SK', 'SI', 'ES', 'SE', 'IS', 'LI', 'NO', 'MK', 'RS', 'TR'];
-  const WORLD = Object.fromEntries(('AF:Afganistán,AL:Albania,DZ:Argelia,AD:Andorra,AO:Angola,AG:Antigua y Barbuda,AR:Argentina,AM:Armenia,AU:Australia,AT:Austria,AZ:Azerbaiyán,BS:Bahamas,BH:Baréin,BD:Bangladés,BB:Barbados,BY:Bielorrusia,BE:Bélgica,BZ:Belice,BJ:Benín,BT:Bután,BO:Bolivia,BA:Bosnia y Herzegovina,BW:Botsuana,BR:Brasil,BN:Brunéi,BG:Bulgaria,BF:Burkina Faso,BI:Burundi,CV:Cabo Verde,KH:Camboya,CM:Camerún,CA:Canadá,CF:República Centroafricana,TD:Chad,CL:Chile,CN:China,CO:Colombia,KM:Comoras,CG:Congo,CD:Rep. Dem. del Congo,CR:Costa Rica,CI:Costa de Marfil,HR:Croacia,CU:Cuba,CY:Chipre,CZ:Chequia,DK:Dinamarca,DJ:Yibuti,DM:Dominica,DO:República Dominicana,EC:Ecuador,EG:Egipto,SV:El Salvador,GQ:Guinea Ecuatorial,ER:Eritrea,EE:Estonia,SZ:Esuatini,ET:Etiopía,FJ:Fiyi,FI:Finlandia,FR:Francia,GA:Gabón,GM:Gambia,GE:Georgia,DE:Alemania,GH:Ghana,GR:Grecia,GD:Granada,GT:Guatemala,GN:Guinea,GW:Guinea-Bisáu,GY:Guyana,HT:Haití,HN:Honduras,HU:Hungría,IS:Islandia,IN:India,ID:Indonesia,IR:Irán,IQ:Irak,IE:Irlanda,IL:Israel,IT:Italia,JM:Jamaica,JP:Japón,JO:Jordania,KZ:Kazajistán,KE:Kenia,KI:Kiribati,KW:Kuwait,KG:Kirguistán,LA:Laos,LV:Letonia,LB:Líbano,LS:Lesoto,LR:Liberia,LY:Libia,LI:Liechtenstein,LT:Lituania,LU:Luxemburgo,MG:Madagascar,MW:Malaui,MY:Malasia,MV:Maldivas,ML:Malí,MT:Malta,MH:Islas Marshall,MR:Mauritania,MU:Mauricio,MX:México,FM:Micronesia,MD:Moldavia,MC:Mónaco,MN:Mongolia,ME:Montenegro,MA:Marruecos,MZ:Mozambique,MM:Birmania,NA:Namibia,NR:Nauru,NP:Nepal,NL:Países Bajos,NZ:Nueva Zelanda,NI:Nicaragua,NE:Níger,NG:Nigeria,MK:Macedonia del Norte,NO:Noruega,OM:Omán,PK:Pakistán,PW:Palaos,PS:Palestina,PA:Panamá,PG:Papúa Nueva Guinea,PY:Paraguay,PE:Perú,PH:Filipinas,PL:Polonia,PT:Portugal,QA:Catar,RO:Rumanía,RU:Rusia,RW:Ruanda,KN:San Cristóbal y Nieves,LC:Santa Lucía,VC:San Vicente y las Granadinas,WS:Samoa,SM:San Marino,ST:Santo Tomé y Príncipe,SA:Arabia Saudita,SN:Senegal,RS:Serbia,SC:Seychelles,SL:Sierra Leona,SG:Singapur,SK:Eslovaquia,SI:Eslovenia,SB:Islas Salomón,SO:Somalia,ZA:Sudáfrica,KR:Corea del Sur,SS:Sudán del Sur,ES:España,LK:Sri Lanka,SD:Sudán,SR:Surinam,SE:Suecia,CH:Suiza,SY:Siria,TW:Taiwán,TJ:Tayikistán,TZ:Tanzania,TH:Tailandia,TL:Timor Oriental,TG:Togo,TO:Tonga,TT:Trinidad y Tobago,TN:Túnez,TR:Turquía,TM:Turkmenistán,TV:Tuvalu,UG:Uganda,UA:Ucrania,AE:Emiratos Árabes Unidos,GB:Reino Unido,US:Estados Unidos,UY:Uruguay,UZ:Uzbekistán,VU:Vanuatu,VA:Ciudad del Vaticano,VE:Venezuela,VN:Vietnam,YE:Yemen,ZM:Zambia,ZW:Zimbabue').split(',').map(p => { const i = p.indexOf(':'); return [p.slice(0, i), p.slice(i + 1)]; }));
+  // Nombres en español; en inglés se sacan del navegador (Intl.DisplayNames). Se guardan códigos ISO.
+  const WORLD_ES = Object.fromEntries(('AF:Afganistán,AL:Albania,DZ:Argelia,AD:Andorra,AO:Angola,AG:Antigua y Barbuda,AR:Argentina,AM:Armenia,AU:Australia,AT:Austria,AZ:Azerbaiyán,BS:Bahamas,BH:Baréin,BD:Bangladés,BB:Barbados,BY:Bielorrusia,BE:Bélgica,BZ:Belice,BJ:Benín,BT:Bután,BO:Bolivia,BA:Bosnia y Herzegovina,BW:Botsuana,BR:Brasil,BN:Brunéi,BG:Bulgaria,BF:Burkina Faso,BI:Burundi,CV:Cabo Verde,KH:Camboya,CM:Camerún,CA:Canadá,CF:República Centroafricana,TD:Chad,CL:Chile,CN:China,CO:Colombia,KM:Comoras,CG:Congo,CD:Rep. Dem. del Congo,CR:Costa Rica,CI:Costa de Marfil,HR:Croacia,CU:Cuba,CY:Chipre,CZ:Chequia,DK:Dinamarca,DJ:Yibuti,DM:Dominica,DO:República Dominicana,EC:Ecuador,EG:Egipto,SV:El Salvador,GQ:Guinea Ecuatorial,ER:Eritrea,EE:Estonia,SZ:Esuatini,ET:Etiopía,FJ:Fiyi,FI:Finlandia,FR:Francia,GA:Gabón,GM:Gambia,GE:Georgia,DE:Alemania,GH:Ghana,GR:Grecia,GD:Granada,GT:Guatemala,GN:Guinea,GW:Guinea-Bisáu,GY:Guyana,HT:Haití,HN:Honduras,HU:Hungría,IS:Islandia,IN:India,ID:Indonesia,IR:Irán,IQ:Irak,IE:Irlanda,IL:Israel,IT:Italia,JM:Jamaica,JP:Japón,JO:Jordania,KZ:Kazajistán,KE:Kenia,KI:Kiribati,KW:Kuwait,KG:Kirguistán,LA:Laos,LV:Letonia,LB:Líbano,LS:Lesoto,LR:Liberia,LY:Libia,LI:Liechtenstein,LT:Lituania,LU:Luxemburgo,MG:Madagascar,MW:Malaui,MY:Malasia,MV:Maldivas,ML:Malí,MT:Malta,MH:Islas Marshall,MR:Mauritania,MU:Mauricio,MX:México,FM:Micronesia,MD:Moldavia,MC:Mónaco,MN:Mongolia,ME:Montenegro,MA:Marruecos,MZ:Mozambique,MM:Birmania,NA:Namibia,NR:Nauru,NP:Nepal,NL:Países Bajos,NZ:Nueva Zelanda,NI:Nicaragua,NE:Níger,NG:Nigeria,MK:Macedonia del Norte,NO:Noruega,OM:Omán,PK:Pakistán,PW:Palaos,PS:Palestina,PA:Panamá,PG:Papúa Nueva Guinea,PY:Paraguay,PE:Perú,PH:Filipinas,PL:Polonia,PT:Portugal,QA:Catar,RO:Rumanía,RU:Rusia,RW:Ruanda,KN:San Cristóbal y Nieves,LC:Santa Lucía,VC:San Vicente y las Granadinas,WS:Samoa,SM:San Marino,ST:Santo Tomé y Príncipe,SA:Arabia Saudita,SN:Senegal,RS:Serbia,SC:Seychelles,SL:Sierra Leona,SG:Singapur,SK:Eslovaquia,SI:Eslovenia,SB:Islas Salomón,SO:Somalia,ZA:Sudáfrica,KR:Corea del Sur,SS:Sudán del Sur,ES:España,LK:Sri Lanka,SD:Sudán,SR:Surinam,SE:Suecia,CH:Suiza,SY:Siria,TW:Taiwán,TJ:Tayikistán,TZ:Tanzania,TH:Tailandia,TL:Timor Oriental,TG:Togo,TO:Tonga,TT:Trinidad y Tobago,TN:Túnez,TR:Turquía,TM:Turkmenistán,TV:Tuvalu,UG:Uganda,UA:Ucrania,AE:Emiratos Árabes Unidos,GB:Reino Unido,US:Estados Unidos,UY:Uruguay,UZ:Uzbekistán,VU:Vanuatu,VA:Ciudad del Vaticano,VE:Venezuela,VN:Vietnam,YE:Yemen,ZM:Zambia,ZW:Zimbabue').split(',').map(p => { const i = p.indexOf(':'); return [p.slice(0, i), p.slice(i + 1)]; }));  // i18n-no (en inglés: Intl.DisplayNames)
+  const WORLD = (() => {
+    if (I18N.lang !== 'en') return WORLD_ES;
+    try {
+      const dn = new Intl.DisplayNames(['en-GB'], { type: 'region' });
+      return Object.fromEntries(Object.keys(WORLD_ES).map(c => [c, dn.of(c) || WORLD_ES[c]]));
+    } catch { return WORLD_ES; }
+  })();
   const cName = (cc) => WORLD[String(cc).toUpperCase()] || cc;
 
   /* Tipos de socio — perfiles de entidad habituales en proyectos europeos
      (Erasmus+, Horizon, CERV, ESF+…). El usuario puede además escribir uno
      propio si no está en la lista. */
   const PARTNER_TYPES = [
-    'ONG / Organización sin ánimo de lucro', 'Asociación', 'Fundación',
-    'Universidad / Educación superior', 'Centro de investigación', 'Instituto tecnológico',
-    'Escuela (infantil / primaria / secundaria)', 'Centro de Formación Profesional (FP/VET)',
-    'Organización de educación de adultos', 'Organización juvenil', 'Grupo informal de jóvenes',
-    'Cooperativa', 'Empresa social', 'PYME', 'Gran empresa', 'Startup', 'Incubadora / Aceleradora',
-    'Consultora', 'Cámara de comercio / industria', 'Clúster empresarial',
-    'Administración pública local (ayuntamiento)', 'Administración pública regional',
-    'Administración pública nacional', 'Agencia pública', 'Organismo intermedio',
-    'Organización cultural', 'Museo', 'Biblioteca', 'Archivo', 'Teatro / Compañía artística',
-    'Club o federación deportiva', 'Organización sanitaria / hospital', 'Centro social',
-    'Sindicato', 'Organización de empleadores', 'Think tank', 'Red / Federación europea',
-    'Organización internacional', 'Medio de comunicación', 'Organización de voluntariado',
-    'Entidad religiosa', 'Cooperativa agraria / agrupación de agricultores',
-    'Grupo de Acción Local (LEADER)', 'Parque científico / tecnológico',
+    _t('ONG / Organización sin ánimo de lucro'), _t('Asociación'), _t('Fundación'),
+    _t('Universidad / Educación superior'), _t('Centro de investigación'), _t('Instituto tecnológico'),
+    _t('Escuela (infantil / primaria / secundaria)'), _t('Centro de Formación Profesional (FP/VET)'),
+    _t('Organización de educación de adultos'), _t('Organización juvenil'), _t('Grupo informal de jóvenes'),
+    _t('Cooperativa'), _t('Empresa social'), _t('PYME'), _t('Gran empresa'), _t('Startup'), _t('Incubadora / Aceleradora'),
+    _t('Consultora'), _t('Cámara de comercio / industria'), _t('Clúster empresarial'),
+    _t('Administración pública local (ayuntamiento)'), _t('Administración pública regional'),
+    _t('Administración pública nacional'), _t('Agencia pública'), _t('Organismo intermedio'),
+    _t('Organización cultural'), _t('Museo'), _t('Biblioteca'), _t('Archivo'), _t('Teatro / Compañía artística'),
+    _t('Club o federación deportiva'), _t('Organización sanitaria / hospital'), _t('Centro social'),
+    _t('Sindicato'), _t('Organización de empleadores'), _t('Think tank'), _t('Red / Federación europea'),
+    _t('Organización internacional'), _t('Medio de comunicación'), _t('Organización de voluntariado'),
+    _t('Entidad religiosa'), _t('Cooperativa agraria / agrupación de agricultores'),
+    _t('Grupo de Acción Local (LEADER)'), _t('Parque científico / tecnológico'),
   ];
   function resolveCountry(raw) {
     if (!raw) return null;
     const v = String(raw).trim(); if (!v) return null;
     const up = v.toUpperCase(); if (WORLD[up]) return up;
     const low = v.toLowerCase();
-    for (const [c, n] of Object.entries(WORLD)) if (n.toLowerCase() === low) return c;
+    for (const names of [WORLD, WORLD_ES]) for (const [c, n] of Object.entries(names)) if (n.toLowerCase() === low) return c;
     return null;
   }
 
@@ -94,29 +103,33 @@ const Vision = (() => {
       return `
         <div class="vz-card" data-act="open" data-id="${v.id}">
           <div class="vz-row-between">
-            <span class="vz-pill ${complete ? 'vz-pill-ok' : 'vz-pill-draft'}">${complete ? '✓ Completa' : '● Borrador'}</span>
-            <span class="vz-pill ${pub ? 'vz-pill-ok' : 'vz-pill-priv'}">${pub ? '🌍 Pública' : '🔒 Privada'}</span>
+            <span class="vz-pill ${complete ? 'vz-pill-ok' : 'vz-pill-draft'}">${complete ? '✓ ' + _t('Completa') : '● ' + _t('Borrador')}</span>
+            <span class="vz-pill ${pub ? 'vz-pill-ok' : 'vz-pill-priv'}">${pub ? '🌍 ' + _t('Pública') : '🔒 ' + _t('Privada')}</span>
           </div>
-          <h3>${esc(v.title || 'Visión sin título')}</h3>
-          <span class="vz-callchip">🎯 <b>${esc(v.programme || 'Convocatoria')}</b> · ${esc(v.call_title || v.call_id)}</span>
-          <div class="vz-muted vz-sm">${complete ? (pub ? `Publicada · ${v.interest_count || 0} interesados` : 'Lista para publicar') : `Paso ${v.current_step || 1} de 5`}</div>
+          <h3>${esc(v.title || _t('Visión sin título'))}</h3>
+          <span class="vz-callchip">🎯 <b>${esc(v.programme || _t('Convocatoria'))}</b> · ${esc(v.call_title || v.call_id)}</span>
+          <div class="vz-muted vz-sm">${complete
+            ? (pub
+              ? (Number(v.interest_count) === 1 ? _t('Publicada · 1 interesado') : _t('Publicada · {n} interesados', { n: v.interest_count || 0 }))
+              : _t('Lista para publicar'))
+            : _t('Paso {n} de {total}', { n: v.current_step || 1, total: 5 })}</div>
         </div>`;
     }).join('');
 
     $root().innerHTML = `
       <div class="vz-head">
         <div>
-          <div class="vz-eyebrow">Paso 0 · antes de diseñar</div>
-          <h1 class="vz-h1">Mis Visiones</h1>
-          <p class="vz-lead">Da forma a tu idea en 5–10 minutos: el reto, a quién buscas y por qué importa a Europa. Compártela con la comunidad y llévala a Diseñar.</p>
+          <div class="vz-eyebrow">${_t('Paso 0 · antes de diseñar')}</div>
+          <h1 class="vz-h1">${_t('Mis Visiones')}</h1>
+          <p class="vz-lead">${_t('Da forma a tu idea en 5–10 minutos: el reto, a quién buscas y por qué importa a Europa. Compártela con la comunidad y llévala a Diseñar.')}</p>
         </div>
-        <button class="vz-btn vz-btn-primary" data-act="new">+ Nueva visión</button>
+        <button class="vz-btn vz-btn-primary" data-act="new">+ ${_t('Nueva visión')}</button>
       </div>
       <div class="vz-grid">
         <div class="vz-card vz-card-new" data-act="new">
           <div class="vz-plus">+</div>
-          <h3>Empezar una visión</h3>
-          <div class="vz-muted vz-sm">Elige una convocatoria y te guiamos</div>
+          <h3>${_t('Empezar una visión')}</h3>
+          <div class="vz-muted vz-sm">${_t('Elige una convocatoria y te guiamos')}</div>
         </div>
         ${cards}
       </div>`;
@@ -127,20 +140,20 @@ const Vision = (() => {
     view = 'picker';
     $root().innerHTML = `
       <div class="vz-head"><div>
-        <div class="vz-eyebrow">Nueva visión · paso previo</div>
-        <h1 class="vz-h1">¿Sobre qué convocatoria?</h1>
-        <p class="vz-lead">Tu visión se construye sobre una convocatoria concreta: de ella sacamos criterios, presupuesto y tipo de socio, para preguntarte solo lo tuyo.</p>
+        <div class="vz-eyebrow">${_t('Nueva visión · paso previo')}</div>
+        <h1 class="vz-h1">${_t('¿Sobre qué convocatoria?')}</h1>
+        <p class="vz-lead">${_t('Tu visión se construye sobre una convocatoria concreta: de ella sacamos criterios, presupuesto y tipo de socio, para preguntarte solo lo tuyo.')}</p>
       </div></div>
-      <div class="vz-eyebrow" style="margin:6px 0 10px">Convocatorias principales · Studio te acompaña de principio a fin</div>
-      <div id="vz-call-main" class="vz-call-list"><div class="vz-muted vz-sm">Cargando convocatorias…</div></div>
+      <div class="vz-eyebrow" style="margin:6px 0 10px">${_t('Convocatorias principales · Studio te acompaña de principio a fin')}</div>
+      <div id="vz-call-main" class="vz-call-list"><div class="vz-muted vz-sm">${_t('Cargando convocatorias…')}</div></div>
       <div class="vz-pk-row">
-        <div><h2 class="vz-pk-h2">Otras convocatorias abiertas</h2>
-          <p class="vz-muted vz-sm" style="margin:0">De otros programas europeos. Búscala aquí o explórala con todos los filtros en Convocatorias.</p></div>
-        <button class="vz-btn vz-btn-ghost vz-btn-sm" data-act="go-convocatorias">Explorar en Convocatorias →</button>
+        <div><h2 class="vz-pk-h2">${_t('Otras convocatorias abiertas')}</h2>
+          <p class="vz-muted vz-sm" style="margin:0">${_t('De otros programas europeos. Búscala aquí o explórala con todos los filtros en Convocatorias.')}</p></div>
+        <button class="vz-btn vz-btn-ghost vz-btn-sm" data-act="go-convocatorias">${_t('Explorar en Convocatorias')} →</button>
       </div>
       <div class="vz-call-filters">
-        <input id="vz-call-q" class="vz-input" type="search" placeholder="Buscar por título, programa o código" aria-label="Buscar convocatoria">
-        <select id="vz-call-prog" class="vz-input" aria-label="Programa"><option value="">Todos los programas</option></select>
+        <input id="vz-call-q" class="vz-input" type="search" placeholder="${_t('Buscar por título, programa o código')}" aria-label="${_t('Buscar convocatoria')}">
+        <select id="vz-call-prog" class="vz-input" aria-label="${_t('Programa')}"><option value="">${_t('Todos los programas')}</option></select>
       </div>
       <div id="vz-call-list" class="vz-call-list"></div>
       <div id="vz-call-more" style="margin-top:12px"></div>`;
@@ -150,17 +163,24 @@ const Vision = (() => {
       const r = await API.get('/convocatorias?limit=2000');
       all = arr(r.items).filter(c => c.deadline).sort((a, b) => String(a.deadline).localeCompare(String(b.deadline)));
     } catch (e) {
-      document.getElementById('vz-call-main').innerHTML = `<div class="vz-muted vz-sm">No se pudieron cargar las convocatorias. <a href="#convocatorias">Ir a Convocatorias</a></div>`;
+      document.getElementById('vz-call-main').innerHTML = `<div class="vz-muted vz-sm">${_t('No se pudieron cargar las convocatorias.')} <a href="#convocatorias">${_t('Ir a Convocatorias')}</a></div>`;
       return;
     }
     if (view !== 'picker') return;
 
     // Una sola cifra: lo máximo por proyecto si se conoce; si no, el total de la convocatoria.
-    const short = (n) => n >= 1e6 ? `${(n / 1e6).toLocaleString('es-ES', { maximumFractionDigits: 1 })} M€` : eur(n);
+    const short = (n) => {
+      if (n < 1e6) return eur(n);
+      const m = (n / 1e6).toLocaleString(LOC(), { maximumFractionDigits: 1 });
+      return I18N.lang === 'en' ? `€${m}M` : `${m} M€`;
+    };
     const money = (c) => {
       const pp = c.budget_per_project_max_eur ?? c.budget_per_project_min_eur;
-      if (pp) return `<div class="vz-callrow-dl">por proyecto<b>${pp === c.budget_per_project_max_eur && c.budget_per_project_min_eur && c.budget_per_project_min_eur !== pp ? 'hasta ' : ''}${short(pp)}</b></div>`;
-      if (c.budget_total_eur) return `<div class="vz-callrow-dl">presupuesto total<b>${short(c.budget_total_eur)}</b></div>`;
+      if (pp) {
+        const upTo = pp === c.budget_per_project_max_eur && c.budget_per_project_min_eur && c.budget_per_project_min_eur !== pp;
+        return `<div class="vz-callrow-dl">${_t('por proyecto')}<b>${upTo ? _t('hasta {importe}', { importe: short(pp) }) : short(pp)}</b></div>`;
+      }
+      if (c.budget_total_eur) return `<div class="vz-callrow-dl">${_t('presupuesto total')}<b>${short(c.budget_total_eur)}</b></div>`;
       return '';
     };
     const row = (c) => `
@@ -171,7 +191,7 @@ const Vision = (() => {
           <div class="vz-muted vz-sm">${esc(c.main_objective || c.summary_es || c.sub_programme || '')}</div>
         </div>
         ${money(c)}
-        <div class="vz-callrow-dl">deadline<b>${fmtDate(c.deadline) || '—'}</b></div>
+        <div class="vz-callrow-dl">${_t('deadline')}<b>${fmtDate(c.deadline) || '—'}</b></div>
         <span class="vz-go">›</span>
       </div>`;
 
@@ -181,18 +201,18 @@ const Vision = (() => {
     const main = all.filter(c => c.available_in_efs);
     const PROXIMAMENTE = [
       { label: 'KA3 · European Youth Together', re: /YOUTH-TOG|european youth together/i },
-      { label: 'Capacity Building · Juventud', re: /capacity building|\bCBY\b|CB-Y|CBHE|CB-YOUTH/i },
-      { label: 'KA2 · Asociaciones de cooperación', re: /\bKA2\d*\b|KA220|KA210|cooperation partnership|small-scale/i },
+      { label: _t('Capacity Building · Juventud'), re: /capacity building|\bCBY\b|CB-Y|CBHE|CB-YOUTH/i },
+      { label: _t('KA2 · Asociaciones de cooperación'), re:/\bKA2\d*\b|KA220|KA210|cooperation partnership|small-scale/i },
     ].filter(f => !main.some(c => f.re.test(`${c.title} ${c.source_id}`)));
     document.getElementById('vz-call-main').innerHTML = main.map(row).join('') + PROXIMAMENTE.map(f => `
       <div class="vz-callrow vz-callrow-soon" aria-disabled="true">
         <span class="vz-badge">ERASMUS+</span>
-        <div class="vz-callrow-main"><h3>${esc(f.label)}</h3><div class="vz-muted vz-sm">Próximamente en Studio</div></div>
+        <div class="vz-callrow-main"><h3>${esc(f.label)}</h3><div class="vz-muted vz-sm">${_t('Próximamente en Studio')}</div></div>
       </div>`).join('');
 
     // Abajo, el resto, con buscador y filtro por programa.
     const rest = all.filter(c => !c.available_in_efs);
-    const progs = [...new Set(rest.map(c => c.programme).filter(Boolean))].sort((a, b) => a.localeCompare(b, 'es'));
+    const progs = [...new Set(rest.map(c => c.programme).filter(Boolean))].sort((a, b) => a.localeCompare(b, I18N.lang === 'en' ? 'en-GB' : 'es-ES'));
     const sel = document.getElementById('vz-call-prog');
     sel.insertAdjacentHTML('beforeend', progs.map(p => `<option>${esc(p)}</option>`).join(''));
     const qBox = document.getElementById('vz-call-q');
@@ -204,10 +224,11 @@ const Vision = (() => {
         (!q || [c.title, c.programme, c.sub_programme, c.source_id, c.summary_es, c.summary_en].filter(Boolean).join(' ').toLowerCase().includes(q)));
       document.getElementById('vz-call-list').innerHTML = hits.length
         ? hits.slice(0, shown).map(row).join('')
-        : `<div class="vz-muted vz-sm">Ninguna convocatoria abierta coincide con la búsqueda.</div>`;
+        : `<div class="vz-muted vz-sm">${_t('Ninguna convocatoria abierta coincide con la búsqueda.')}</div>`;
       const more = document.getElementById('vz-call-more');
-      more.innerHTML = hits.length > shown
-        ? `<button class="vz-btn vz-btn-ghost vz-btn-sm" id="vz-call-more-btn">Ver más (${hits.length - shown} restantes)</button>` : '';
+      const left = hits.length - shown;
+      more.innerHTML = left > 0
+        ? `<button class="vz-btn vz-btn-ghost vz-btn-sm" id="vz-call-more-btn">${left === 1 ? _t('Ver más (1 restante)') : _t('Ver más ({n} restantes)', { n: left })}</button>` : '';
       document.getElementById('vz-call-more-btn')?.addEventListener('click', () => { shown += PAGE; paint(); });
     };
     qBox.addEventListener('input', () => { shown = PAGE; paint(); });
@@ -231,7 +252,7 @@ const Vision = (() => {
       suggestions = [];
       renderComposer();
     } catch (e) {
-      Toast.show(e.message || 'No se pudo crear la visión', 'error');
+      Toast.show(e.message || _t('No se pudo crear la visión'), 'error');
     }
   }
 
@@ -245,7 +266,7 @@ const Vision = (() => {
       if (V.call_id) { try { call = await API.get('/convocatorias/' + encodeURIComponent(V.call_id)); } catch (e) {} }
       if (V.status === 'complete') { renderBrief(); }
       else { renderComposer(); }
-    } catch (e) { Toast.show(e.message || 'No se pudo abrir la visión', 'error'); }
+    } catch (e) { Toast.show(e.message || _t('No se pudo abrir la visión'), 'error'); }
   }
 
   /* ══ Composer: TODO en una sola ventana ══════════════════════════
@@ -259,62 +280,62 @@ const Vision = (() => {
     const themes = arr(call?.themes_ai);
     const min = call?.budget_per_project_min_eur, max = call?.budget_per_project_max_eur;
     const bOpts = [];
-    if (min != null) bOpts.push({ v: min, l: 'Mínimo por proyecto' });
-    if (max != null && max !== min) bOpts.push({ v: max, l: 'Máximo por proyecto' });
+    if (min != null) bOpts.push({ v: min, l: _t('Mínimo por proyecto') });
+    if (max != null && max !== min) bOpts.push({ v: max, l: _t('Máximo por proyecto') });
     const budgetHtml = bOpts.length
-      ? `<div class="vz-radio-row">${bOpts.map(o => `<div class="vz-radio ${Number(V.budget_option_eur) === Number(o.v) ? 'vz-sel' : ''}" data-act="pick-budget" data-v="${o.v}" data-l="${esc(o.l)}"><div class="vz-amt">${eur(o.v)}</div><div class="vz-rlbl">${o.l}</div></div>`).join('')}</div>`
-      : `<input type="number" class="vz-field" id="vz-budget" placeholder="Presupuesto objetivo (€)" value="${V.budget_option_eur != null ? V.budget_option_eur : ''}">`;
+      ? `<div class="vz-radio-row">${bOpts.map(o => `<div class="vz-radio ${Number(V.budget_option_eur) === Number(o.v) ? 'vz-sel' : ''}" data-act="pick-budget" data-v="${o.v}" data-l="${esc(o.l)}"><div class="vz-amt">${eur(o.v)}</div><div class="vz-rlbl">${esc(o.l)}</div></div>`).join('')}</div>`
+      : `<input type="number" class="vz-field" id="vz-budget" placeholder="${_t('Presupuesto objetivo (€)')}" value="${V.budget_option_eur != null ? V.budget_option_eur : ''}">`;
 
     $root().innerHTML = `
       <div class="vz-comp-head">
-        <div><span class="vz-tag-navy">CONVOCATORIA</span> <b>${esc(V.call_title || V.call_id)}</b>
-          <span class="vz-muted vz-sm"> · deadline ${fmtDate(V.call_deadline) || '—'}${dl != null ? ` · ${dl} días` : ''}</span></div>
-        <button class="vz-btn vz-btn-ghost vz-btn-sm" data-act="back-list">← Mis visiones</button>
+        <div><span class="vz-tag-navy">${_t('CONVOCATORIA')}</span> <b>${esc(V.call_title || V.call_id)}</b>
+          <span class="vz-muted vz-sm"> · ${_t('deadline {fecha}', { fecha: fmtDate(V.call_deadline) || '—' })}${dl != null ? ' · ' + (dl === 1 ? _t('1 día') : _t('{n} días', { n: dl })) : ''}</span></div>
+        <button class="vz-btn vz-btn-ghost vz-btn-sm" data-act="back-list">← ${_t('Mis visiones')}</button>
       </div>
 
       <div id="vz-callpanel-top"></div>
 
       <div class="vz-main vz-comp-single">
           <div class="vz-block">
-            <div class="vz-block-h"><span class="vz-num-badge">1</span> Cuéntanos tu idea</div>
-            <p class="vz-help">Con tus palabras, sencillo y cercano. Luego la IA la convierte en una visión clara.</p>
-            <textarea class="vz-field" id="vz-idea" rows="4" placeholder="Lo que quieres hacer, el problema que ves…">${esc(V.problem || '')}</textarea>
-            ${themes.length ? `<div class="vz-chip-hint">Temas de la convocatoria — marca los que encajen:</div>
+            <div class="vz-block-h"><span class="vz-num-badge">1</span> ${_t('Cuéntanos tu idea')}</div>
+            <p class="vz-help">${_t('Con tus palabras, sencillo y cercano. Luego la IA la convierte en una visión clara.')}</p>
+            <textarea class="vz-field" id="vz-idea" rows="4" placeholder="${_t('Lo que quieres hacer, el problema que ves…')}">${esc(V.problem || '')}</textarea>
+            ${themes.length ? `<div class="vz-chip-hint">${_t('Temas de la convocatoria — marca los que encajen:')}</div>
               <div class="vz-chips">${themes.slice(0, 10).map(t => `<span class="vz-chip ${arr(V.themes).includes(t) ? 'vz-sel' : ''}" data-act="toggle-theme" data-v="${esc(t)}">${esc(t)}</span>`).join('')}</div>` : ''}
           </div>
 
           <div class="vz-block">
-            <div class="vz-block-h"><span class="vz-num-badge">2</span> Proyectos de referencia <span class="vz-muted vz-sm"> · opcional</span></div>
-            <p class="vz-help">Busca proyectos aprobados parecidos a tu idea y elige los que te inspiren.</p>
+            <div class="vz-block-h"><span class="vz-num-badge">2</span> ${_t('Proyectos de referencia')} <span class="vz-muted vz-sm"> · ${_t('opcional')}</span></div>
+            <p class="vz-help">${_t('Busca proyectos aprobados parecidos a tu idea y elige los que te inspiren.')}</p>
             <div class="vz-ref-search">
-              <input class="vz-field" id="vz-ref-q" placeholder="Tema o palabras clave (por defecto, tu idea)…" autocomplete="off">
-              <button class="vz-btn vz-btn-navy vz-btn-sm" data-act="suggest">🔎 Buscar</button>
+              <input class="vz-field" id="vz-ref-q" placeholder="${_t('Tema o palabras clave (por defecto, tu idea)…')}" autocomplete="off">
+              <button class="vz-btn vz-btn-navy vz-btn-sm" data-act="suggest">🔎 ${_t('Buscar')}</button>
             </div>
             <div id="vz-refs-area"></div>
           </div>
 
           <div class="vz-block">
-            <div class="vz-block-h"><span class="vz-num-badge">3</span> Tu visión <span class="vz-muted vz-sm"> · un solo texto</span></div>
-            <p class="vz-help">La IA combina tu idea + lo que pide la convocatoria + los proyectos elegidos en un texto claro para cualquiera. Edítalo a tu gusto.</p>
-            <button class="vz-btn vz-btn-primary" data-act="ai-generate" style="margin-bottom:10px">✨ Generar mi visión con IA</button>
-            <input class="vz-field" id="vz-title" placeholder="Título de la visión" value="${esc(V.title || '')}" style="margin-bottom:10px">
-            <textarea class="vz-field" id="vz-vision" rows="7" placeholder="Aquí aparecerá tu visión redactada… (o escríbela tú)">${esc(V.vision_text || '')}</textarea>
+            <div class="vz-block-h"><span class="vz-num-badge">3</span> ${_t('Tu visión')} <span class="vz-muted vz-sm"> · ${_t('un solo texto')}</span></div>
+            <p class="vz-help">${_t('La IA combina tu idea + lo que pide la convocatoria + los proyectos elegidos en un texto claro para cualquiera. Edítalo a tu gusto.')}</p>
+            <button class="vz-btn vz-btn-primary" data-act="ai-generate" style="margin-bottom:10px">✨ ${_t('Generar mi visión con IA')}</button>
+            <input class="vz-field" id="vz-title" placeholder="${_t('Título de la visión')}" value="${esc(V.title || '')}" style="margin-bottom:10px">
+            <textarea class="vz-field" id="vz-vision" rows="7" placeholder="${_t('Aquí aparecerá tu visión redactada… (o escríbela tú)')}">${esc(V.vision_text || '')}</textarea>
           </div>
 
           <div class="vz-block">
-            <div class="vz-block-h"><span class="vz-num-badge">4</span> Detalles</div>
-            <label class="vz-lbl">Escala</label>
+            <div class="vz-block-h"><span class="vz-num-badge">4</span> ${_t('Detalles')}</div>
+            <label class="vz-lbl">${_t('Escala')}</label>
             ${budgetHtml}
             <div class="vz-num-row" style="margin-top:12px">
-              <span class="vz-muted vz-sm">Paquetes de trabajo:</span>
-              <div class="vz-num"><button data-act="wp-dec">–</button><div class="vz-num-v" id="vz-wp">${V.wp_count || 3}</div><button data-act="wp-inc">+</button></div>
+              <span class="vz-muted vz-sm">${_t('Paquetes de trabajo:')}</span>
+              <div class="vz-num"><button data-act="wp-dec" aria-label="${_t('Quitar un paquete de trabajo')}">–</button><div class="vz-num-v" id="vz-wp">${V.wp_count || 3}</div><button data-act="wp-inc" aria-label="${_t('Añadir un paquete de trabajo')}">+</button></div>
             </div>
             <div id="vz-consorcio-area" style="margin-top:16px"></div>
           </div>
 
           <div class="vz-btns">
             <span></span>
-            <button class="vz-btn vz-btn-primary" data-act="review">Revisar ficha →</button>
+            <button class="vz-btn vz-btn-primary" data-act="review">${_t('Revisar ficha')} →</button>
           </div>
       </div>`;
 
@@ -327,15 +348,15 @@ const Vision = (() => {
     const host = document.getElementById('vz-refs-area');
     if (!host) return;
     const selected = refs.length
-      ? `<div class="vz-chips" style="margin:10px 0 4px">${refs.map(r => `<span class="vz-chip vz-sel" data-act="remove-ref" data-id="${r.id}">${esc(r.title || r.project_identifier)} ✕</span>`).join('')}</div>`
+      ? `<div class="vz-chips" style="margin:10px 0 4px">${refs.map(r => `<span class="vz-chip vz-sel" data-act="remove-ref" data-id="${r.id}" title="${_t('Quitar')}">${esc(r.title || r.project_identifier)} ✕</span>`).join('')}</div>`
       : '';
     const cards = suggestions.length
       ? `<div class="vz-simi-grid" style="margin-top:10px">${suggestions.map((p, i) => `
           <div class="vz-scard" data-act="open-proj" data-i="${i}">
-            <span class="vz-score">◆ ${(p.score != null ? Number(p.score).toFixed(2) : '—')} match</span>
+            <span class="vz-score">◆ ${_t('{puntos} match', { puntos: p.score != null ? Number(p.score).toFixed(2) : '—' })}</span>
             <h4>${esc(p.title || p.project_identifier)}</h4>
             <div class="vz-muted vz-sm">${esc(p.programme || '')} ${p.funding_year ? '· ' + p.funding_year : ''} ${p.coordinator_country ? '· ' + esc(p.coordinator_country) : ''}</div>
-            <div class="vz-add">📖 Abrir y leer →</div>
+            <div class="vz-add">📖 ${_t('Abrir y leer')} →</div>
           </div>`).join('')}</div>`
       : '';
     host.innerHTML = selected + cards;
@@ -349,15 +370,15 @@ const Vision = (() => {
     const typeList = PARTNER_TYPES.map(t => `<option value="${esc(t)}">`).join('');
     const ctyList = Object.entries(WORLD).map(([c, n]) => `<option value="${esc(n)}">`).join('');
     host.innerHTML = `
-      <label class="vz-lbl">Tu entidad (OID del directorio — necesario para publicar)</label>
-      <input type="text" class="vz-field" id="vz-entity" placeholder="p.ej. E10151149" value="${esc(V.entity_oid || '')}">
-      <label class="vz-lbl" style="margin-top:14px">Tipo de socio que buscas</label>
-      ${types.length ? `<div class="vz-chips" style="margin-bottom:8px">${types.map(t => `<span class="vz-chip vz-sel" data-act="remove-type" data-v="${esc(t)}">${esc(t)} ✕</span>`).join('')}</div>` : ''}
-      <input type="text" class="vz-field" id="vz-type-input" list="vz-types-list" placeholder="Escribe o elige un tipo de socio…" autocomplete="off">
+      <label class="vz-lbl">${_t('Tu entidad (OID del directorio — necesario para publicar)')}</label>
+      <input type="text" class="vz-field" id="vz-entity" placeholder="${_t('p. ej. {ejemplo}', { ejemplo: 'E10151149' })}" value="${esc(V.entity_oid || '')}">
+      <label class="vz-lbl" style="margin-top:14px">${_t('Tipo de socio que buscas')}</label>
+      ${types.length ? `<div class="vz-chips" style="margin-bottom:8px">${types.map(t => `<span class="vz-chip vz-sel" data-act="remove-type" data-v="${esc(t)}" title="${_t('Quitar')}">${esc(t)} ✕</span>`).join('')}</div>` : ''}
+      <input type="text" class="vz-field" id="vz-type-input" list="vz-types-list" placeholder="${_t('Escribe o elige un tipo de socio…')}" autocomplete="off">
       <datalist id="vz-types-list">${typeList}</datalist>
-      <label class="vz-lbl" style="margin-top:14px">Países — UE y cualquier país del mundo</label>
-      ${countries.length ? `<div class="vz-chips" style="margin-bottom:8px">${countries.map(c => `<span class="vz-chip vz-sel" data-act="remove-cty" data-v="${c}">${flag(c)} ${esc(cName(c))} ✕</span>`).join('')}</div>` : ''}
-      <input type="text" class="vz-field" id="vz-cty-input" list="vz-world" placeholder="Escribe o elige un país…" autocomplete="off">
+      <label class="vz-lbl" style="margin-top:14px">${_t('Países — UE y cualquier país del mundo')}</label>
+      ${countries.length ? `<div class="vz-chips" style="margin-bottom:8px">${countries.map(c => `<span class="vz-chip vz-sel" data-act="remove-cty" data-v="${c}" title="${_t('Quitar')}">${flag(c)} ${esc(cName(c))} ✕</span>`).join('')}</div>` : ''}
+      <input type="text" class="vz-field" id="vz-cty-input" list="vz-world" placeholder="${_t('Escribe o elige un país…')}" autocomplete="off">
       <datalist id="vz-world">${ctyList}</datalist>`;
   }
 
@@ -370,16 +391,16 @@ const Vision = (() => {
     host.innerHTML = `
       <div class="vz-cp-bar ${callPanelOpen ? 'vz-open' : ''}">
         <button class="vz-cp-toggle" data-act="toggle-callpanel">
-          <span>📋 Lo que pide la convocatoria</span>
-          <span class="vz-muted vz-sm" style="margin-left:auto;margin-right:8px;font-weight:500">${callPanelOpen ? '' : 'objetivo, actividades y financiación'}</span>
+          <span>📋 ${_t('Lo que pide la convocatoria')}</span>
+          <span class="vz-muted vz-sm" style="margin-left:auto;margin-right:8px;font-weight:500">${callPanelOpen ? '' : _t('objetivo, actividades y financiación')}</span>
           <span class="vz-chev">${callPanelOpen ? '▾' : '▸'}</span>
         </button>
         ${callPanelOpen ? `<div class="vz-cp-body">
-          ${item('Objetivo', esc(call.main_objective || call.summary_es || ''))}
-          ${arr(call.eligible_activities).length ? `<div class="vz-rc-item"><div class="vz-rc-k">Actividades esperadas</div><div class="vz-rc-v">${arr(call.eligible_activities).slice(0, 6).map(esc).join(' · ')}</div></div>` : ''}
-          ${arr(call.expected_outcomes).length ? `<div class="vz-rc-item"><div class="vz-rc-k">Resultados esperados</div><div class="vz-rc-v">${arr(call.expected_outcomes).slice(0, 4).map(esc).join(' · ')}</div></div>` : ''}
-          ${budget.length ? item('Financiación', budget.join(' – ') + (call.cofinancing_pct ? ` · UE ${call.cofinancing_pct}%` : '')) : ''}
-          ${arr(call.coordinator_types_allowed).length ? `<div class="vz-rc-item"><div class="vz-rc-k">Quién puede liderar</div><div class="vz-rc-tags">${arr(call.coordinator_types_allowed).slice(0, 6).map(t => `<span class="vz-rc-tag">${esc(t)}</span>`).join('')}</div></div>` : ''}
+          ${item(_t('Objetivo'), esc(call.main_objective || call.summary_es || ''))}
+          ${arr(call.eligible_activities).length ? `<div class="vz-rc-item"><div class="vz-rc-k">${_t('Actividades esperadas')}</div><div class="vz-rc-v">${arr(call.eligible_activities).slice(0, 6).map(esc).join(' · ')}</div></div>` : ''}
+          ${arr(call.expected_outcomes).length ? `<div class="vz-rc-item"><div class="vz-rc-k">${_t('Resultados esperados')}</div><div class="vz-rc-v">${arr(call.expected_outcomes).slice(0, 4).map(esc).join(' · ')}</div></div>` : ''}
+          ${budget.length ? item(_t('Financiación'), budget.join(' – ') + (call.cofinancing_pct ? ' · ' + _t('UE {pct}%', { pct: call.cofinancing_pct }) : '')) : ''}
+          ${arr(call.coordinator_types_allowed).length ? `<div class="vz-rc-item"><div class="vz-rc-k">${_t('Quién puede liderar')}</div><div class="vz-rc-tags">${arr(call.coordinator_types_allowed).slice(0, 6).map(t => `<span class="vz-rc-tag">${esc(t)}</span>`).join('')}</div></div>` : ''}
         </div>` : ''}
       </div>`;
   }
@@ -388,9 +409,9 @@ const Vision = (() => {
     await saveComposer(); // persistir la idea antes de buscar
     const qBox = document.getElementById('vz-ref-q');
     const q = [(qBox && qBox.value.trim()) || V.problem, arr(V.themes).join(' '), arr(call?.themes_ai).join(' ')].filter(Boolean).join('. ').slice(0, 1500);
-    if (q.trim().length < 6) { Toast.show('Escribe tu idea o unas palabras clave para buscar', 'error'); return; }
+    if (q.trim().length < 6) { Toast.show(_t('Escribe tu idea o unas palabras clave para buscar'), 'error'); return; }
     const btn = document.querySelector('[data-act="suggest"]');
-    if (btn) { btn.textContent = 'Buscando…'; btn.disabled = true; }
+    if (btn) { btn.textContent = _t('Buscando…'); btn.disabled = true; }
     try {
       const d = await API.post('/vision/suggest-projects', { query_text: q, entity_oid: V.entity_oid || undefined, k: 6 });
       const list = arr(d.results || d.projects || d);
@@ -402,11 +423,11 @@ const Vision = (() => {
         funding_year: p.funding_year || p.year,
         coordinator_country: p.coordinator_country || p.country,
       }));
-      if (!suggestions.length) Toast.show('No se encontraron proyectos parecidos', 'ok');
+      if (!suggestions.length) Toast.show(_t('No se encontraron proyectos parecidos'), 'ok');
     } catch (e) {
-      Toast.show(e.code === 'AI_UNAVAILABLE' ? 'El buscador de proyectos no está disponible ahora' : 'No se pudieron cargar proyectos', 'error');
+      Toast.show(e.code === 'AI_UNAVAILABLE' ? _t('El buscador de proyectos no está disponible ahora') : _t('No se pudieron cargar proyectos'), 'error');
     } finally {
-      if (btn) { btn.textContent = '🔎 Buscar'; btn.disabled = false; }
+      if (btn) { btn.textContent = '🔎 ' + _t('Buscar'); btn.disabled = false; }
       renderRefs();
     }
   }
@@ -417,11 +438,11 @@ const Vision = (() => {
     if (!p) return;
     ensureDrawer();
     const ov = document.getElementById('vz-drawer-ov'), dr = document.getElementById('vz-drawer');
-    document.getElementById('vz-dr-score').textContent = '◆ ' + (p.score != null ? Number(p.score).toFixed(2) : '—') + ' match';
+    document.getElementById('vz-dr-score').textContent = '◆ ' + _t('{puntos} match', { puntos: p.score != null ? Number(p.score).toFixed(2) : '—' });
     document.getElementById('vz-dr-title').textContent = p.title || p.project_identifier;
     document.getElementById('vz-dr-meta').textContent = [p.programme, p.funding_year, p.coordinator_country].filter(Boolean).join(' · ');
     const body = document.getElementById('vz-dr-body');
-    body.innerHTML = `<div class="vz-muted vz-sm">Cargando resumen…</div>`;
+    body.innerHTML = `<div class="vz-muted vz-sm">${_t('Cargando resumen…')}</div>`;
     ov.classList.add('vz-on'); dr.classList.add('vz-on');
     dr.dataset.ref = i;
     try {
@@ -429,13 +450,13 @@ const Vision = (() => {
       const summary = f.project_summary_full || f.summary || f.project_summary || '';
       const secs = [];
       const addSec = (label, val) => { if (val && String(val).trim()) secs.push(`<div class="vz-dr-sec"><div class="vz-eyebrow">${label}</div><p>${esc(val)}</p></div>`); };
-      addSec('De qué iba', summary);
-      addSec('Objetivos', f.summary_objectives || f.report_objectives);
-      addSec('Actividades', f.summary_activities || f.report_implementation);
-      addSec('Impacto / resultados', f.summary_impact || f.report_results);
-      body.innerHTML = secs.join('') || `<div class="vz-muted vz-sm">Este proyecto aún no tiene resumen ampliado.</div>`;
+      addSec(_t('De qué iba'), summary);
+      addSec(_t('Objetivos'), f.summary_objectives || f.report_objectives);
+      addSec(_t('Actividades'), f.summary_activities || f.report_implementation);
+      addSec(_t('Impacto / resultados'), f.summary_impact || f.report_results);
+      body.innerHTML = secs.join('') || `<div class="vz-muted vz-sm">${_t('Este proyecto aún no tiene resumen ampliado.')}</div>`;
     } catch (e) {
-      body.innerHTML = `<div class="vz-muted vz-sm">No se pudo cargar el resumen del proyecto.</div>`;
+      body.innerHTML = `<div class="vz-muted vz-sm">${_t('No se pudo cargar el resumen del proyecto.')}</div>`;
     }
   }
 
@@ -445,14 +466,14 @@ const Vision = (() => {
     const dr = document.createElement('aside'); dr.id = 'vz-drawer'; dr.className = 'vz-drawer';
     dr.innerHTML = `
       <div class="vz-dr-top">
-        <button class="vz-dr-close" data-act="close-drawer">✕</button>
+        <button class="vz-dr-close" data-act="close-drawer" aria-label="${_t('Cerrar')}">✕</button>
         <span class="vz-dr-score" id="vz-dr-score"></span>
         <h2 id="vz-dr-title"></h2>
         <div class="vz-dr-meta" id="vz-dr-meta"></div>
       </div>
       <div class="vz-dr-body" id="vz-dr-body"></div>
       <div class="vz-dr-actions">
-        <button class="vz-btn vz-btn-primary" style="flex:1;justify-content:center" data-act="take-ref">+ Tomar como referencia</button>
+        <button class="vz-btn vz-btn-primary" style="flex:1;justify-content:center" data-act="take-ref">+ ${_t('Tomar como referencia')}</button>
       </div>`;
     document.body.appendChild(ov); document.body.appendChild(dr);
     ov.addEventListener('click', closeDrawer);
@@ -469,10 +490,10 @@ const Vision = (() => {
         project_identifier: p.project_identifier, title: p.title, programme: p.programme,
         funding_year: p.funding_year, coordinator_country: p.coordinator_country, match_score: p.score,
       });
-      Toast.show('Referencia añadida', 'ok');
+      Toast.show(_t('Referencia añadida'), 'ok');
       closeDrawer();
       renderRefs();
-    } catch (e) { Toast.show(e.message || 'No se pudo añadir', 'error'); }
+    } catch (e) { Toast.show(e.message || _t('No se pudo añadir'), 'error'); }
   }
 
   /* ── Autosave del composer (una sola ventana) ─────────────────── */
@@ -496,7 +517,7 @@ const Vision = (() => {
   /* ── VIEW: Ficha ──────────────────────────────────────────────── */
   async function review() {
     await saveComposer();
-    if (!V.title) { const t = (V.vision_text || V.problem || 'Mi visión').split(/[.\n]/)[0].slice(0, 80); await API.patch('/vision/' + V.id, { title: t }); }
+    if (!V.title) { const t = (V.vision_text || V.problem || _t('Mi visión')).split(/[.\n]/)[0].slice(0, 80); await API.patch('/vision/' + V.id, { title: t }); }
     V = await API.get('/vision/' + V.id).then(d => { refs = d.references || []; return d.vision; });
     renderBrief();
   }
@@ -507,33 +528,33 @@ const Vision = (() => {
     const seek = (k, v) => `<div class="vz-seek"><div class="vz-seek-k">${k}</div><div class="vz-seek-v">${v || '—'}</div></div>`;
     $root().innerHTML = `
       <div class="vz-head" style="margin-bottom:16px"><div>
-        <div class="vz-eyebrow">Ficha de visión</div>
-        <h1 class="vz-h1">Tu visión, lista para compartir</h1>
+        <div class="vz-eyebrow">${_t('Ficha de visión')}</div>
+        <h1 class="vz-h1">${_t('Tu visión, lista para compartir')}</h1>
       </div>
       <div style="display:flex;gap:10px">
-        <button class="vz-btn vz-btn-ghost" data-act="edit">✎ Seguir editando</button>
-        <button class="vz-btn vz-btn-ghost" data-act="back-list">Mis visiones</button>
+        <button class="vz-btn vz-btn-ghost" data-act="edit">✎ ${_t('Seguir editando')}</button>
+        <button class="vz-btn vz-btn-ghost" data-act="back-list">${_t('Mis visiones')}</button>
       </div></div>
       <div class="vz-brief-wrap">
         <article class="vz-brief">
           <div class="vz-brief-hero">
-            <div class="vz-eyebrow" style="color:var(--vz-lavsoft)">${esc(V.programme || 'Convocatoria')} · ${pub ? 'buscando socios' : 'borrador privado'}</div>
-            <h1>${esc(V.title || 'Mi visión')}</h1>
+            <div class="vz-eyebrow" style="color:var(--vz-lavsoft)">${esc(V.programme || _t('Convocatoria'))} · ${pub ? _t('buscando socios') : _t('borrador privado')}</div>
+            <h1>${esc(V.title || _t('Mi visión'))}</h1>
             <div class="vz-hero-meta">
               ${V.budget_option_eur != null ? `<span class="vz-hm vz-hm-y">${eur(V.budget_option_eur)}</span>` : ''}
-              ${V.wp_count ? `<span class="vz-hm">${V.wp_count} paquetes de trabajo</span>` : ''}
-              ${V.call_deadline ? `<span class="vz-hm">Deadline ${fmtDate(V.call_deadline)}</span>` : ''}
+              ${V.wp_count ? `<span class="vz-hm">${Number(V.wp_count) === 1 ? _t('1 paquete de trabajo') : _t('{n} paquetes de trabajo', { n: V.wp_count })}</span>` : ''}
+              ${V.call_deadline ? `<span class="vz-hm">${_t('Deadline {fecha}', { fecha: fmtDate(V.call_deadline) })}</span>` : ''}
             </div>
           </div>
           <div class="vz-brief-body">
-            <div class="vz-bsec vz-euval"><div class="vz-eyebrow">La visión</div>${paras(V.vision_text || V.problem)}
+            <div class="vz-bsec vz-euval"><div class="vz-eyebrow">${_t('La visión')}</div>${paras(V.vision_text || V.problem)}
               ${arr(V.themes).length ? `<div class="vz-chips" style="margin-top:12px">${arr(V.themes).map(t => `<span class="vz-rc-tag">${esc(t)}</span>`).join('')}</div>` : ''}
             </div>
-            <div class="vz-bsec"><div class="vz-eyebrow">A quién busco</div>
+            <div class="vz-bsec"><div class="vz-eyebrow">${_t('A quién busco')}</div>
               <div class="vz-seek-grid">
-                ${seek('Tipo de socio', esc(arr(V.partner_types).join(' · ')))}
-                ${seek('Países', arr(V.partner_countries).map(c => flag(c) + ' ' + esc(cName(c))).join(' · '))}
-                ${seek('Mi entidad', esc(V.entity_oid || 'sin vincular'))}
+                ${seek(_t('Tipo de socio'), esc(arr(V.partner_types).join(' · ')))}
+                ${seek(_t('Países'), arr(V.partner_countries).map(c => flag(c) + ' ' + esc(cName(c))).join(' · '))}
+                ${seek(_t('Mi entidad'), esc(V.entity_oid || _t('sin vincular')))}
               </div>
             </div>
           </div>
@@ -541,15 +562,15 @@ const Vision = (() => {
         <aside class="vz-brief-side">
           <div class="vz-toggle-card">
             <div class="vz-toggle-row">
-              <div><h4>Visibilidad</h4><div class="vz-muted vz-sm" style="max-width:24ch">Nace privada. Publícala cuando quieras que la comunidad la vea.</div></div>
-              <div class="vz-switch ${pub ? 'vz-on' : ''}" data-act="toggle-vis"></div>
+              <div><h4>${_t('Visibilidad')}</h4><div class="vz-muted vz-sm" style="max-width:24ch">${_t('Nace privada. Publícala cuando quieras que la comunidad la vea.')}</div></div>
+              <div class="vz-switch ${pub ? 'vz-on' : ''}" data-act="toggle-vis" role="switch" aria-checked="${pub}" aria-label="${_t('Visión pública')}"></div>
             </div>
-            <div class="vz-vis-state ${pub ? 'vz-vis-pub' : 'vz-vis-priv'}" id="vz-vis-state">${pub ? '🌍 Pública · visible para la comunidad' : '🔒 Privada · solo tú la ves'}</div>
+            <div class="vz-vis-state ${pub ? 'vz-vis-pub' : 'vz-vis-priv'}" id="vz-vis-state">${pub ? '🌍 ' + _t('Pública · visible para la comunidad') : '🔒 ' + _t('Privada · solo tú la ves')}</div>
           </div>
           <div style="display:flex;flex-direction:column;gap:9px">
-            <button class="vz-btn vz-btn-primary" style="justify-content:center" data-act="promote">🏗️ Llevar a Diseñar${(typeof BetaAccess !== 'undefined' && !BetaAccess.has('proyectos')) ? '<span class="beta-tag"><svg class="beta-lock" aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="currentColor"><path d="M17 8h-1V6a4 4 0 0 0-8 0v2H7a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V10a2 2 0 0 0-2-2zm-7-2a2 2 0 0 1 4 0v2h-4V6z"/></svg>Beta</span>' : ''}</button>
+            <button class="vz-btn vz-btn-primary" style="justify-content:center" data-act="promote">🏗️ ${_t('Llevar a Diseñar')}${(typeof BetaAccess !== 'undefined' && !BetaAccess.has('proyectos')) ? '<span class="beta-tag"><svg class="beta-lock" aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="currentColor"><path d="M17 8h-1V6a4 4 0 0 0-8 0v2H7a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V10a2 2 0 0 0-2-2zm-7-2a2 2 0 0 1 4 0v2h-4V6z"/></svg>Beta</span>' : ''}</button>
           </div>
-          <div class="vz-note vz-sm" style="display:block">Al publicarla, otras entidades podrán marcar “Me interesa participar”. Los invitados podrán verla, pero no mostrar interés.</div>
+          <div class="vz-note vz-sm" style="display:block">${_t('Al publicarla, otras entidades podrán marcar “Me interesa participar”. Los invitados podrán verla, pero no mostrar interés.')}</div>
         </aside>
       </div>`;
   }
@@ -559,11 +580,11 @@ const Vision = (() => {
     try {
       V = await API.post('/vision/' + V.id + '/publish', { visibility: next });
       renderBrief();
-      Toast.show(next === 'public' ? 'Visión publicada' : 'Visión ahora privada', 'ok');
+      Toast.show(next === 'public' ? _t('Visión publicada') : _t('Visión ahora privada'), 'ok');
     } catch (e) {
-      if (e.code === 'ENTITY_REQUIRED') Toast.show('Vincula tu entidad (OID) antes de publicar — edita el paso Consorcio', 'error');
-      else if (e.code === 'INCOMPLETE') Toast.show('Completa la visión antes de publicar', 'error');
-      else Toast.show(e.message || 'No se pudo publicar', 'error');
+      if (e.code === 'ENTITY_REQUIRED') Toast.show(_t('Vincula tu entidad (OID) antes de publicar: edita el paso Detalles'), 'error');
+      else if (e.code === 'INCOMPLETE') Toast.show(_t('Completa la visión antes de publicar'), 'error');
+      else Toast.show(e.message || _t('No se pudo publicar'), 'error');
     }
   }
 
@@ -572,21 +593,21 @@ const Vision = (() => {
     if (typeof BetaAccess !== 'undefined' && !BetaAccess.guard('proyectos')) return;
     try {
       const r = await API.post('/vision/' + V.id + '/promote', {});
-      Toast.show(r.already ? 'Ya estaba en Diseñar — abriendo…' : 'Proyecto creado en Diseñar', 'ok');
+      Toast.show(r.already ? _t('Ya estaba en Diseñar — abriendo…') : _t('Proyecto creado en Diseñar'), 'ok');
       if (r.project_id && typeof Intake !== 'undefined') { App.navigate('intake'); Intake.openProject(r.project_id); }
       else App.navigate('my-projects');
-    } catch (e) { Toast.show(e.message || 'No se pudo llevar a Diseñar', 'error'); }
+    } catch (e) { Toast.show(e.message || _t('No se pudo llevar a Diseñar'), 'error'); }
   }
 
   /* ── Redacción asistida por IA (Claude de suscripción) — rellena en línea ── */
   async function genAI() {
     await saveComposer(); // persistir la idea escrita antes de generar
     if (!V.problem && !refs.length && !arr(V.themes).length) {
-      Toast.show('Escribe tu idea, marca algún tema o añade un proyecto de referencia primero', 'error');
+      Toast.show(_t('Escribe tu idea, marca algún tema o añade un proyecto de referencia primero'), 'error');
       return;
     }
     const btn = document.querySelector('[data-act="ai-generate"]');
-    if (btn) { btn.dataset.label = btn.textContent; btn.textContent = 'Generando… (~15s)'; btn.disabled = true; }
+    if (btn) { btn.dataset.label = btn.textContent; btn.textContent = _t('Generando… (~15 s)'); btn.disabled = true; }
     try {
       const cc = call ? {
         title: call.title, programme: call.programme, main_objective: call.main_objective, summary_es: call.summary_es,
@@ -599,14 +620,14 @@ const Vision = (() => {
       if (tEl && draft.title) tEl.value = draft.title;
       if (vEl && draft.vision_text) vEl.value = draft.vision_text;
       await saveComposer();
-      Toast.show('Visión generada — revísala y edítala a tu gusto', 'ok');
+      Toast.show(_t('Visión generada — revísala y edítala a tu gusto'), 'ok');
     } catch (e) {
-      const msg = e.code === 'AI_UNAVAILABLE' ? 'La IA de suscripción no está disponible en este entorno'
-        : e.code === 'AI_TIMEOUT' ? 'La IA tardó demasiado. Inténtalo de nuevo.'
-        : (e.message || 'No se pudo generar la visión');
+      const msg = e.code === 'AI_UNAVAILABLE' ? _t('La IA de suscripción no está disponible en este entorno')
+        : e.code === 'AI_TIMEOUT' ? _t('La IA tardó demasiado. Inténtalo de nuevo.')
+        : (e.message || _t('No se pudo generar la visión'));
       Toast.show(msg, 'error');
     } finally {
-      if (btn) { btn.textContent = btn.dataset.label || '✨ Generar mi visión con IA'; btn.disabled = false; }
+      if (btn) { btn.textContent = btn.dataset.label || '✨ ' + _t('Generar mi visión con IA'); btn.disabled = false; }
     }
   }
 
@@ -628,7 +649,7 @@ const Vision = (() => {
       'open-proj': () => openProject(parseInt(t.dataset.i, 10)),
       'close-drawer': () => closeDrawer(),
       'take-ref': () => takeRef(),
-      'remove-ref': async () => { try { refs = await API.del('/vision/' + V.id + '/references/' + t.dataset.id); renderRefs(); } catch (e) { Toast.show('No se pudo quitar', 'error'); } },
+      'remove-ref': async () => { try { refs = await API.del('/vision/' + V.id + '/references/' + t.dataset.id); renderRefs(); } catch (e) { Toast.show(_t('No se pudo quitar'), 'error'); } },
       'toggle-callpanel': () => { callPanelOpen = !callPanelOpen; renderCallPanel(); },
       'pick-budget': () => { V.budget_option_eur = Number(t.dataset.v); V.budget_label = t.dataset.l; saveComposer({ budget_option_eur: Number(t.dataset.v), budget_label: t.dataset.l }); document.querySelectorAll('[data-act="pick-budget"]').forEach(el => el.classList.toggle('vz-sel', el === t)); },
       'wp-inc': () => { V.wp_count = Math.min(20, (V.wp_count || 3) + 1); document.getElementById('vz-wp').textContent = V.wp_count; saveComposer({ wp_count: V.wp_count }); },
@@ -664,7 +685,7 @@ const Vision = (() => {
   // Añadir país desde el input/datalist (Enter o selección del datalist).
   function addCountryFromInput(inp) {
     const code = resolveCountry(inp.value);
-    if (!code) { if (inp.value.trim()) Toast.show('País no reconocido: ' + inp.value, 'error'); return; }
+    if (!code) { if (inp.value.trim()) Toast.show(_t('País no reconocido: {pais}', { pais: inp.value }), 'error'); return; }
     const s = new Set(arr(V.partner_countries)); s.add(code); V.partner_countries = [...s];
     inp.value = '';
     saveComposer({ partner_countries: V.partner_countries });
@@ -692,7 +713,7 @@ const Vision = (() => {
   /* ── Estilos (scoped, prefijo vz-) ────────────────────────────── */
   function injectStyles() {
     if (stylesInjected) return; stylesInjected = true;
-    const css = `
+    const css = /* i18n-no (estilos) */ `
     /* Tokens del manual de marca: azul, violeta, tinta, lavanda, lima, crema. «green» = estado activo (azul + lima suave) */
     #vision-root{--vz-navy:#4312d8;--vz-navy2:#7349f0;--vz-ink:#1b0759;--vz-muted:#55577a;--vz-line:#efe8fe;--vz-line2:#d6d3dc;--vz-yellow:#e9ff60;--vz-lav:#b392f6;--vz-lavsoft:#efe8fe;--vz-violet:#7349f0;--vz-green:#4312d8;--vz-greensoft:#f8ffd9;--vz-card:#fff;--vz-ground:#f2f2f2;color:var(--vz-ink);font-family:inherit}
     #vision-root h1,#vision-root h2,#vision-root h3,#vision-root h4{margin:0}

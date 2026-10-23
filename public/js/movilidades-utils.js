@@ -27,11 +27,11 @@ const MovilidadesUtils = (() => {
     const d = daysUntil(item.deadline_iso);
     if (d === null) return '';
     const base = 'text-[10px] font-bold px-2.5 py-0.5 rounded-full whitespace-nowrap';
-    if (d < 0)    return `<span class="${base} bg-surface-container-high text-on-surface-variant">Closed</span>`;
-    if (d === 0)  return `<span class="${base} bg-primary text-white">Today</span>`;
-    if (d <= 7)   return `<span class="${base} bg-violet text-white">${d} day${d === 1 ? '' : 's'} left</span>`;
-    if (d <= 30)  return `<span class="${base} bg-lavender-soft text-primary">${d} days left</span>`;
-    return         `<span class="${base} bg-white text-on-surface-variant border border-outline-variant">${d} days left</span>`;
+    if (d < 0)    return `<span class="${base} bg-surface-container-high text-on-surface-variant">${_t('Cerrada')}</span>`;
+    if (d === 0)  return `<span class="${base} bg-primary text-white">${_t('Hoy')}</span>`;
+    if (d <= 7)   return `<span class="${base} bg-violet text-white">${d === 1 ? _t('Queda {n} día', { n: d }) : _t('Quedan {n} días', { n: d })}</span>`;
+    if (d <= 30)  return `<span class="${base} bg-lavender-soft text-primary">${_t('Quedan {n} días', { n: d })}</span>`;
+    return         `<span class="${base} bg-white text-on-surface-variant border border-outline-variant">${_t('Quedan {n} días', { n: d })}</span>`;
   }
 
   // Partes de la fecha para la caja «día grande + mes/año» de la tarjeta.
@@ -41,7 +41,7 @@ const MovilidadesUtils = (() => {
     if (isNaN(d.getTime())) return null;
     return {
       day:   String(d.getDate()).padStart(2, '0'),
-      month: d.toLocaleDateString('en-GB', { month: 'short' }),
+      month: d.toLocaleDateString(I18N.lang === 'en' ? 'en-GB' : 'es-ES', { month: 'short' }),
       year:  String(d.getFullYear()),
     };
   }
@@ -57,18 +57,18 @@ const MovilidadesUtils = (() => {
   ─────────────────────────────────────────────────────────────────── */
 
   function feeCoverage(item) {
-    if (item.fee_type === 'free') return { status: 'covered', short: 'Free', detail: item.fee_text || 'No participation fee' };
+    if (item.fee_type === 'free') return { status: 'covered', short: _t('Gratis'), detail: item.fee_text || _t('Sin cuota de participación') };
     if (item.fee_type === 'paid') {
-      const amt = item.fee_amount_eur ? `€${item.fee_amount_eur}` : 'Paid';
-      return { status: 'cost', short: amt, detail: item.fee_text || `Participation fee: ${amt}` };
+      const amt = item.fee_amount_eur ? `€${item.fee_amount_eur}` : _t('De pago');
+      return { status: 'cost', short: amt, detail: item.fee_text || _t('Cuota de participación: {importe}', { importe: amt }) };
     }
-    if (item.fee_type === 'mixed') return { status: 'partial', short: 'Mixed', detail: item.fee_text || 'Mixed fee model — check details' };
-    return { status: 'unknown', short: '?', detail: item.fee_text || 'Fee model not specified' };
+    if (item.fee_type === 'mixed') return { status: 'partial', short: _t('Mixta'), detail: item.fee_text || _t('Cuota mixta: revisa los detalles') };
+    return { status: 'unknown', short: '?', detail: item.fee_text || _t('Cuota no indicada') };
   }
 
   function analyseTextCoverage(text) {
     if (!text || text === 'N/A' || !text.trim()) {
-      return { status: 'unknown', short: '?', detail: 'Not specified' };
+      return { status: 'unknown', short: '?', detail: _t('No indicado') };
     }
     const t = text.toLowerCase();
 
@@ -76,14 +76,14 @@ const MovilidadesUtils = (() => {
     if (/^online\b|^free \(online\)|online activity|this is an online activity/.test(t) ||
         /no accommodation or food is provided.*online/.test(t) ||
         /no travel reimbursement is provided.*online/.test(t)) {
-      return { status: 'na', short: 'Online', detail: 'Online activity — not applicable' };
+      return { status: 'na', short: _t('En línea'), detail: _t('Actividad en línea: no aplica') };
     }
 
     // Negative — explicitly NOT covered
     if (/no (travel|accommodation|food|reimbursement)\b.{0,40}(provided|covered|reimburs)/.test(t) ||
         /at (their|your) own (cost|expense)/.test(t) ||
         /\bnot (covered|reimbursed|included|provided)\b/.test(t)) {
-      return { status: 'cost', short: 'Not covered', detail: text.slice(0, 200) };
+      return { status: 'cost', short: _t('No cubierto'), detail: text.slice(0, 200) };
     }
 
     // Capped / Erasmus+ distance bands → partial
@@ -92,14 +92,14 @@ const MovilidadesUtils = (() => {
     const hasCovered = /covered|reimburs|included|provided|will be covered/.test(t);
 
     if (hasCap || (hasAmount && hasCovered)) {
-      return { status: 'partial', short: 'Capped', detail: text.slice(0, 200) };
+      return { status: 'partial', short: _t('Con tope'), detail: text.slice(0, 200) };
     }
 
     // Positive — fully covered
     if (hasCovered ||
         /all costs|fully covered|free of charge|organi[sz]e.*accommodation|funds of erasmus/.test(t) ||
         /co.financ/.test(t)) {
-      return { status: 'covered', short: 'Covered', detail: text.slice(0, 200) };
+      return { status: 'covered', short: _t('Cubierto'), detail: text.slice(0, 200) };
     }
 
     return { status: 'unknown', short: '?', detail: text.slice(0, 200) };
@@ -135,9 +135,9 @@ const MovilidadesUtils = (() => {
         ${c ? escapeHtml(info.short) : escapeHtml(label + ' ' + info.short)}
       </span>`;
     return [
-      chip('payments',       'Fee',           cov.fee,           cov.fee.status),
-      chip('flight_takeoff', 'Travel',        cov.travel,        cov.travel.status),
-      chip('hotel',          'Accommodation', cov.accommodation, cov.accommodation.status),
+      chip('payments',       _t('Cuota'),           cov.fee,           cov.fee.status),
+      chip('flight_takeoff', _t('Viaje'),        cov.travel,        cov.travel.status),
+      chip('hotel',          _t('Alojamiento'), cov.accommodation, cov.accommodation.status),
     ].join('');
   }
 
@@ -185,7 +185,7 @@ const MovilidadesUtils = (() => {
     const apply = item.application_url
       ? `<a href="${escapeHtml(item.application_url)}" target="_blank" rel="noopener"
             class="inline-flex items-center gap-2 px-6 py-2.5 rounded-full bg-secondary-fixed text-primary text-sm font-bold hover:bg-secondary-fixed-dim transition-colors">
-            <span>Apply on SALTO</span>
+            <span>${_t('Inscribirse en SALTO')}</span>
             <span class="material-symbols-outlined" style="font-size:18px;line-height:1;">open_in_new</span>
           </a>`
       : '';
@@ -193,7 +193,7 @@ const MovilidadesUtils = (() => {
     const moreInfo = item.url
       ? `<a href="${escapeHtml(item.url)}" target="_blank" rel="noopener"
             class="inline-flex items-center gap-1.5 px-5 py-2.5 rounded-full bg-transparent border border-primary text-primary text-sm font-bold hover:bg-lavender-soft transition-colors">
-            <span>View on SALTO</span>
+            <span>${_t('Ver en SALTO')}</span>
             <span class="material-symbols-outlined" style="font-size:16px;line-height:1;">open_in_new</span>
           </a>`
       : '';
@@ -202,7 +202,9 @@ const MovilidadesUtils = (() => {
       .filter(x => x && x !== 'N/A').join(' · ');
 
     const participants = item.participants_count
-      ? `${item.participants_count}${item.participants_countries ? ' from ' + item.participants_countries : ''}`
+      ? (item.participants_countries
+        ? _t('{n} de {paises}', { n: item.participants_count, paises: item.participants_countries })
+        : String(item.participants_count))
       : item.participants_countries;
 
     const description = item.description_text
@@ -213,7 +215,7 @@ const MovilidadesUtils = (() => {
       <div class="space-y-5">
         <div>
           <div class="flex items-center gap-2 flex-wrap mb-2">
-            <span class="text-[11px] font-bold uppercase tracking-wider text-primary">${escapeHtml(item.type || 'Activity')}</span>
+            <span class="text-[11px] font-bold uppercase tracking-wider text-primary">${escapeHtml(item.type || _t('Actividad'))}</span>
             ${deadlinePill(item)}
           </div>
           <h2 class="text-xl font-bold text-primary leading-tight pr-12">${escapeHtml(item.title || '')}</h2>
@@ -226,20 +228,20 @@ const MovilidadesUtils = (() => {
         ${item.summary ? `<p class="text-sm text-on-surface-variant">${escapeHtml(item.summary)}</p>` : ''}
 
         <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 p-4 bg-cream rounded-2xl">
-          ${row('Location', item.location_raw || [item.city, item.country].filter(Boolean).join(', '))}
-          ${row('Dates', item.dates)}
-          ${row('Application deadline', item.deadline_raw)}
-          ${row('Selection date', item.selection_date)}
-          ${row('Participants', participants)}
-          ${row('Working languages', item.working_languages)}
-          ${row('Organiser', `${item.organiser_name || ''}${item.organiser_type ? ' (' + item.organiser_type + ')' : ''}`.trim())}
-          ${row('Contact', contact)}
+          ${row(_t('Lugar'), item.location_raw || [item.city, item.country].filter(Boolean).join(', '))}
+          ${row(_t('Fechas'), item.dates)}
+          ${row(_t('Plazo de inscripción'), item.deadline_raw)}
+          ${row(_t('Fecha de selección'), item.selection_date)}
+          ${row(_t('Participantes'), participants)}
+          ${row(_t('Idiomas de trabajo'), item.working_languages)}
+          ${row(_t('Organizador'), `${item.organiser_name || ''}${item.organiser_type ? ' (' + item.organiser_type + ')' : ''}`.trim())}
+          ${row(_t('Contacto'), contact)}
         </div>
 
-        ${block('Fee', item.fee_text)}
-        ${block('Accommodation & food', item.accommodation_food_text)}
-        ${block('Travel reimbursement', item.travel_reimbursement_text)}
-        ${block('Description', description)}
+        ${block(_t('Cuota'), item.fee_text)}
+        ${block(_t('Alojamiento y comida'), item.accommodation_food_text)}
+        ${block(_t('Reembolso del viaje'), item.travel_reimbursement_text)}
+        ${block(_t('Descripción'), description)}
 
         <div class="flex items-center justify-between pt-4 border-t border-outline-variant/20 flex-wrap gap-3">
           <div>${moreInfo}</div>

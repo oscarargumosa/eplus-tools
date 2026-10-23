@@ -12,14 +12,14 @@ let _client = null;
 const { tl, isLang } = require('./i18n');
 
 /* Idioma de los correos a una persona: el que eligió en la interfaz
-   (users.ui_lang). Sin cuenta o sin elegir, español. */
+   (users.ui_lang). Sin elegir, inglés, como la app (utils/i18n.js). */
 async function langForEmail(to, lang) {
   if (isLang(lang)) return lang;
   try {
     const db = require('./db');
     const [[u]] = await db.query('SELECT ui_lang FROM users WHERE email = ? LIMIT 1', [String(to || '').toLowerCase().trim()]);
-    return u && isLang(u.ui_lang) ? u.ui_lang : 'es';
-  } catch { return 'es'; }
+    return u && isLang(u.ui_lang) ? u.ui_lang : 'en';
+  } catch { return 'en'; }
 }
 
 function getClient() {
