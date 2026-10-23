@@ -1,0 +1,1211 @@
+/* Script de academy.html: en fichero aparte (no en línea) por la CSP. */
+window.NOTES = {};  // notas de revisión (lessonId → anchor → [notas]); se llena vía fetch
+const BLOQUES = {
+ A:"Fundamentos",B:"Ecosistema/actores",C:"Antes de escribir",D:"Formulario",
+ E:"Criterios eval.",F:"Técnicas redacción",G:"Presupuesto",H:"Impacto/difusión",
+ I:"Gestión post",J:"Errores comunes"};
+const ESP = {1:"KA1 Juventud",2:"KA1 Adultos",3:"KA1 Escolar",4:"KA1 FP/VET",
+ 5:"KA2 Coop (KA220)",6:"KA2 Small-scale (KA210)",7:"KA3/Políticas",8:"Capacity Building",9:"Deporte"};
+
+const DATA = [
+{id:"kb-0001",t:"Erasmus+ Programme Guide 2026 (web, 24 idiomas)",u:"https://erasmus-plus.ec.europa.eu/resources-and-tools/documents-and-guidelines/erasmus-programme-guide-2026",i:"EN/ES",tipo:"Oficial UE",b:"A,B,C,D,E,G",e:"Transversal",q:5,s:"mejorar",n:"Documento madre. Reinterpretar, no copiar literal."},
+{id:"kb-0002",t:"Programme Guide 2026 (PDF completo, ~700 pp)",u:"https://erasmus-plus.ec.europa.eu/sites/default/files/2025-11/programme-guide-2026_en.pdf",i:"EN",tipo:"Oficial UE",b:"A,D,E,G",e:"Transversal",q:5,s:"descartar",n:"Mismo contenido que la web; para citar/extraer. Incluye CB VET (pp.332-342)."},
+{id:"kb-0003",t:"Part A — Información general / Introducción",u:"https://erasmus-plus.ec.europa.eu/programme-guide/part-a",i:"EN/ES",tipo:"Oficial UE",b:"A",e:"Transversal",q:5,s:"mejorar",n:"Estructura del programa, KA1/KA2/KA3, objetivos. Base de Fundamentos."},
+{id:"kb-0004",t:"Prioridades del programa (4 horizontales)",u:"https://erasmus-plus.ec.europa.eu/about-erasmus/programme-priorities",i:"EN/ES",tipo:"Oficial UE",b:"A",e:"Transversal",q:5,s:"mejorar",n:"Inclusión, digital, verde, participación. Obligatorias en todo proyecto."},
+{id:"kb-0005",t:"Priorities of the Erasmus+ Programme (Part A)",u:"https://erasmus-plus.ec.europa.eu/programme-guide/part-a/priorities-of-the-erasmus-programme",i:"EN/ES",tipo:"Oficial UE",b:"A",e:"Transversal",q:4,s:"mejorar",n:"Versión Programme-Guide con matices sectoriales."},
+{id:"kb-0006",t:"Who implements the Programme (Comisión/EACEA/NAs)",u:"https://erasmus-plus.ec.europa.eu/programme-guide/part-a/priorities-of-the-erasmus-programme/implements",i:"EN/ES",tipo:"Oficial UE",b:"B",e:"Transversal",q:4,s:"mejorar",n:"Mapa de actores: quién hace qué."},
+{id:"kb-0007",t:"National Agencies (directorio)",u:"https://erasmus-plus.ec.europa.eu/about-erasmus/contacts/national-agencies",i:"EN/ES",tipo:"Oficial UE",b:"B",e:"Transversal",q:4,s:"descartar",n:"Lista oficial de AN; enlazar, no copiar (cambia)."},
+{id:"kb-0008",t:"Step 1: Registration (ORS/OID, Part C)",u:"https://erasmus-plus.ec.europa.eu/programme-guide/part-c/registration",i:"EN/ES",tipo:"Oficial UE",b:"B,C",e:"Transversal",q:5,s:"mejorar",n:"Cómo registrar la organización (OID) antes de aplicar."},
+{id:"kb-0009",t:"Registering your organisation (ORS)",u:"https://erasmus-plus.ec.europa.eu/resources-and-tools/how-to-apply/registering-your-organisation",i:"EN/ES",tipo:"Oficial UE",b:"B,C",e:"Transversal",q:4,s:"mejorar",n:"Alta en ORS con documentación requerida."},
+{id:"kb-0010",t:"Organisation Registration System (portal ORS)",u:"https://webgate.ec.europa.eu/erasmus-esc/organisation-registration",i:"EN",tipo:"Oficial UE",b:"B",e:"Transversal",q:4,s:"descartar",n:"Herramienta viva (se obtiene el OID); enlazar."},
+{id:"kb-0011",t:"How to apply (hub)",u:"https://erasmus-plus.ec.europa.eu/resources-and-tools/how-to-apply",i:"EN/ES",tipo:"Oficial UE",b:"C",e:"Transversal",q:5,s:"mejorar",n:"Itinerario idea→solicitud. Esqueleto natural de un curso."},
+{id:"kb-0012",t:"Part C — Information for applicants",u:"https://erasmus-plus.ec.europa.eu/programme-guide/part-c",i:"EN/ES",tipo:"Oficial UE",b:"C,E",e:"Transversal",q:5,s:"mejorar",n:"Admisibilidad, elegibilidad, capacidad y evaluación."},
+{id:"kb-0013",t:"Part C — Compliance with programme criteria",u:"https://erasmus-plus.ec.europa.eu/programme-guide/part-c/compliance",i:"EN/ES",tipo:"Oficial UE",b:"C,E",e:"Transversal",q:4,s:"mejorar",n:"Checklist de criterios formales."},
+{id:"kb-0014",t:"Part C — Fill in and submit the application form",u:"https://erasmus-plus.ec.europa.eu/programme-guide/part-c/submission",i:"EN/ES",tipo:"Oficial UE",b:"D",e:"Transversal",q:4,s:"mejorar",n:"Mecánica de cumplimentación y envío."},
+{id:"kb-0015",t:"Part C — What happens once submitted (evaluación)",u:"https://erasmus-plus.ec.europa.eu/programme-guide/part-c/what-happens-submission",i:"EN/ES",tipo:"Oficial UE",b:"E",e:"Transversal",q:4,s:"mejorar",n:"Comité de evaluación y expertos; contexto del scoring."},
+{id:"kb-0016",t:"Part D — Glossary (common terms)",u:"https://erasmus-plus.ec.europa.eu/programme-guide/part-d/glossary-common-terms",i:"EN/ES",tipo:"Oficial UE",b:"A",e:"Transversal",q:5,s:"mejorar",n:"Glosario oficial. Base para nuestro glosario coherente con la jerga del evaluador."},
+{id:"kb-0017",t:"Documents and guidelines (templates Part B)",u:"https://erasmus-plus.ec.europa.eu/resources-and-tools/documents-and-guidelines",i:"EN/ES",tipo:"Oficial UE",b:"D",e:"Transversal",q:5,s:"mejorar",n:"Repositorio de formularios-plantilla 2026 por acción."},
+{id:"kb-0018",t:"Handbook on the KA2 lump sum funding model (EC PDF)",u:"https://wikis.ec.europa.eu/download/attachments/75759701/Handbook%20on%20KA2%20lump%20sums.pdf",i:"EN",tipo:"Oficial UE",b:"G",e:"Transversal",q:5,s:"mejorar",n:"Manual oficial lump sums KA2: work packages, 20% gestión, coherencia."},
+{id:"kb-0019",t:"Lump sums & unit costs decision — E+ 2021-2027 (PDF)",u:"https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/erasmus/guidance/ls-and-unit-cost-decision_erasmus_en.pdf",i:"EN",tipo:"Oficial UE",b:"G",e:"Transversal",q:5,s:"copiar",n:"Decisión legal con tablas de importes a tanto alzado (KA1 y Sport)."},
+{id:"kb-0020",t:"Beneficiary module guide (EC wiki NAITDOC)",u:"https://wikis.ec.europa.eu/spaces/NAITDOC/pages/90281389/Beneficiary+module+guide",i:"EN",tipo:"Oficial UE",b:"I",e:"Transversal",q:5,s:"mejorar",n:"Guía oficial del Beneficiary Module: encode actividades, informes."},
+{id:"kb-0021",t:"How to submit the beneficiary report (NAITDOC)",u:"https://wikis.ec.europa.eu/display/NAITDOC/How+to+submit+the+beneficiary+report+in+Beneficiary+module",i:"EN",tipo:"Oficial UE",b:"I",e:"Transversal",q:4,s:"mejorar",n:"Procedimiento de envío del informe a la AN."},
+{id:"kb-0022",t:"Budget in KA122 applications (EC Public Wiki)",u:"https://wikis.ec.europa.eu/display/NAITDOC/Budget+in+KA122+applications",i:"EN",tipo:"Oficial UE",b:"G",e:"Transversal",q:5,s:"copiar",n:"Reglas presupuestarias detalladas de proyectos cortos KA122."},
+{id:"kb-0023",t:"EU Funding & Tenders Portal (SEDIA, home)",u:"https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/home",i:"EN",tipo:"Oficial UE",b:"B,D",e:"Transversal",q:5,s:"descartar",n:"Punto de envío para acciones centralizadas EACEA. Enlazar."},
+{id:"kb-0024",t:"F&T Online Manual — Submit a proposal",u:"https://webgate.ec.europa.eu/funding-tenders-opportunities/spaces/OM/pages/1867927/Submit+a+proposal",i:"EN",tipo:"Oficial UE",b:"D",e:"Transversal",q:4,s:"mejorar",n:"Manual del sistema de envío electrónico (acciones EACEA)."},
+{id:"kb-0025",t:"F&T Online Manual — Award criteria",u:"https://webgate.ec.europa.eu/funding-tenders-opportunities/spaces/OM/pages/1867948/Award+criteria",i:"EN",tipo:"Oficial UE",b:"E",e:"Transversal",q:4,s:"copiar",n:"Manual oficial de criterios de adjudicación y umbrales."},
+{id:"kb-0026",t:"SALTO-YOUTH (portal)",u:"https://www.salto-youth.net/",i:"EN",tipo:"Oficial UE",b:"B,C,F,H",e:"Transversal",q:5,s:"mejorar",n:"Red de centros de recursos UE; cantera de metodología no-formal."},
+{id:"kb-0027",t:"SALTO Toolbox — Basic steps for writing a project",u:"https://www.salto-youth.net/tools/toolbox/tool/basic-steps-for-writing-a-project.1646/",i:"EN",tipo:"Oficial UE",b:"C,F",e:"Transversal",q:4,s:"mejorar",n:"Pasos idea→proyecto. Base de antes de escribir."},
+{id:"kb-0028",t:"SALTO Toolbox — Erasmus+ Quality Handbook",u:"https://www.salto-youth.net/tools/toolbox/tool/erasmus-quality-handbook.1626/",i:"EN",tipo:"Oficial UE",b:"C,F,H,I",e:"Transversal",q:5,s:"copiar",n:"Manual de calidad fase a fase; tips para newcomers. Sin sesgo."},
+{id:"kb-0029",t:"SALTO Otlas — Partner Finding Tool",u:"https://www.salto-youth.net/tools/otlas-partner-finding/",i:"EN",tipo:"Oficial UE",b:"C",e:"Transversal",q:4,s:"descartar",n:"Buscador oficial de socios (14k+ orgs); enlazar."},
+{id:"kb-0030",t:"Youthpass (SALTO)",u:"https://www.salto-youth.net/rc/training-and-cooperation/youthpass/",i:"EN",tipo:"Oficial UE",b:"H,I",e:"Transversal",q:4,s:"descartar",n:"Reconocimiento del aprendizaje no formal; impacto/calidad."},
+{id:"kb-0031",t:"EPALE — Erasmus+ for Adult Education",u:"https://epale.ec.europa.eu/en/erasmus-adult-education",i:"EN/ES",tipo:"Oficial UE",b:"B,C,H",e:"Transversal",q:4,s:"mejorar",n:"Plataforma adultos + partner search; ecosistema y difusión."},
+{id:"kb-0032",t:"European School Education Platform / eTwinning",u:"https://school-education.ec.europa.eu/en/etwinning",i:"EN/ES",tipo:"Oficial UE",b:"B,C",e:"Transversal",q:4,s:"mejorar",n:"Comunidad escolar UE; búsqueda de socios y formación."},
+{id:"kb-0033",t:"EPALE — ¿Cómo escribir una buena propuesta E+?",u:"https://epale.ec.europa.eu/es/resource-centre/content/como-escribir-una-buena-propuesta-de-proyecto-erasmus",i:"ES",tipo:"Oficial UE",b:"C,D,F",e:"Transversal",q:4,s:"copiar",n:"Guía práctica oficial EN ESPAÑOL: proceso colaborativo, coherencia interna. Sin sesgo."},
+{id:"kb-0034",t:"SEPIE — Convocatoria 2026 Educación Escolar",u:"http://sepie.es/educacion-escolar/convocatoria.html",i:"ES",tipo:"Agencia Nacional",b:"D,E,F",e:"3",q:4,s:"copiar",n:"Hub con formularios comentados, guías e indicaciones técnicas KA1/KA2 escolar."},
+{id:"kb-0035",t:"SEPIE — Convocatoria 2026 Formación Profesional",u:"http://sepie.es/formacion-profesional/convocatoria.html",i:"ES",tipo:"Agencia Nacional",b:"D,E,F",e:"4",q:4,s:"copiar",n:"Hub VET: formularios comentados KA121/KA122-VET y jornadas."},
+{id:"kb-0036",t:"SEPIE — Convocatoria 2026 Educación de Adultos",u:"http://sepie.es/educacion-adultos/convocatoria.html",i:"ES",tipo:"Agencia Nacional",b:"D,F",e:"2",q:4,s:"copiar",n:"Hub adultos: formulario comentado y guía KA121/KA122-ADU."},
+{id:"kb-0037",t:"SEPIE — Formulario comentado KA122-VET 2026 (PDF)",u:"http://sepie.es/doc/convocatoria/2026/ka1/formulario_comentado_ka122vet_2026.pdf",i:"ES",tipo:"Agencia Nacional",b:"D,F",e:"4",q:5,s:"copiar",n:"ORO: form anotado pregunta a pregunta. Técnicas de redacción del eForm VET."},
+{id:"kb-0038",t:"SEPIE — Formulario comentado KA121-VET 2026 (PDF)",u:"http://sepie.es/doc/convocatoria/2026/ka1/formulario_comentado_ka121vet_2026.pdf",i:"ES",tipo:"Agencia Nacional",b:"D,F,I",e:"4",q:5,s:"copiar",n:"Form comentado para acreditados VET; objetivos (máx.5) y plan."},
+{id:"kb-0039",t:"SEPIE — Formulario comentado KA122-SCH 2025 (PDF)",u:"http://sepie.es/doc/convocatoria/2025/EE/formulario_comentado_ka122_sch_2025.pdf",i:"ES",tipo:"Agencia Nacional",b:"D,F",e:"3",q:5,s:"copiar",n:"Versión escolar del form anotado; qué escribir en cada apartado."},
+{id:"kb-0040",t:"SEPIE — Formulario comentado KA220 2026 (PDF)",u:"http://sepie.es/doc/convocatoria/2026/ka2/1_formulario_comentado_ka220_2026.pdf",i:"ES",tipo:"Agencia Nacional",b:"D,F",e:"5",q:5,s:"copiar",n:"Guía sección a sección del KA220 2026 con orientaciones de redacción."},
+{id:"kb-0041",t:"SEPIE — Formulario comentado KA210 2026 (PDF)",u:"https://sepie.es/doc/convocatoria/2026/ka2/1_formulario_comentado_KA210_2026.pdf",i:"ES",tipo:"Agencia Nacional",b:"D,F",e:"6",q:5,s:"copiar",n:"Guía sección a sección del KA210 con consejos de redacción."},
+{id:"kb-0042",t:"SEPIE — Guía básica KA220-ADU 2025 (PDF)",u:"http://sepie.es/doc/convocatoria/2025/EA/guia_basica_ka220_adu_2025.pdf",i:"ES",tipo:"Agencia Nacional",b:"D",e:"5",q:4,s:"copiar",n:"Guía básica KA220: calendario, requisitos, criterios."},
+{id:"kb-0043",t:"SEPIE — Indicaciones técnicas para solicitantes 2026 (PDF)",u:"http://sepie.es/doc/convocatoria/2026/ka1/1_indicaciones_tecnicas_2026.pdf",i:"ES",tipo:"Agencia Nacional",b:"D,J",e:"Transversal",q:4,s:"copiar",n:"Procedimiento, firma electrónica de declaraciones y erratas a evitar."},
+{id:"kb-0044",t:"SEPIE — FAQ proyectos corta duración KA122-VET (PDF)",u:"http://sepie.es/doc/convocatoria/2025/FP/preguntas_frecuentes_ka122vet.pdf",i:"ES",tipo:"Agencia Nacional",b:"C,J",e:"4",q:4,s:"copiar",n:"FAQ que aclara dudas recurrentes (errores comunes)."},
+{id:"kb-0045",t:"SEPIE — KA2 Asociaciones para la cooperación",u:"http://sepie.es/asociaciones-cooperacion/convocatoria.html",i:"ES",tipo:"Agencia Nacional",b:"D,E",e:"5",q:3,s:"mejorar",n:"Landing KA2 multisectorial; índice, contenido disperso."},
+{id:"kb-0046",t:"INJUVE — Programas E+ Juventud y Deporte (portada)",u:"https://www.injuve.es/erasmusplus",i:"ES",tipo:"Agencia Nacional",b:"B,D",e:"1",q:4,s:"copiar",n:"Hub AN de Juventud: guías, formularios y documentación KA1/KA2 youth."},
+{id:"kb-0047",t:"INJUVE — Convocatoria 2026 Juventud y Deporte",u:"https://programaseuropeos.injuve.es/erasmus/erasmus-juventud-y-deporte-convocatoria-2026",i:"ES",tipo:"Agencia Nacional",b:"A,B,D",e:"1",q:5,s:"copiar",n:"Convocatoria viva: plazos, prioridades, formularios juventud/deporte."},
+{id:"kb-0048",t:"INJUVE — Guías y documentación E+ Juventud",u:"https://www.injuve.es/erasmusplus/noticia/guias-y-documentacion-del-programa-erasmus-plus-juventud",i:"ES",tipo:"Agencia Nacional",b:"D,H,I",e:"1",q:4,s:"copiar",n:"Plantillas de convenio, anexos KA1/KA2 y guía de difusión de resultados."},
+{id:"kb-0049",t:"INJUVE — Formación a solicitantes (TCA/NET, KA2 Sin Secretos)",u:"https://programaseuropeos.injuve.es/en/formacion",i:"ES/EN",tipo:"Agencia Nacional",b:"F,C",e:"1",q:4,s:"copiar",n:"Cursos de redacción y diseño de proyecto. (No siempre queda como doc reutilizable.)"},
+{id:"kb-0050",t:"INJUVE — Acreditaciones juventud (KA150)",u:"https://programaseuropeos.injuve.es/en/erasmus/accreditations-youth-field",i:"ES/EN",tipo:"Agencia Nacional",b:"C",e:"1",q:4,s:"mejorar",n:"Acreditación juventud explicada por la AN española."},
+{id:"kb-0051",t:"Léargas (IRL) — Applying for Erasmus+ Partnerships",u:"https://www.leargas.ie/application-process/projects/applying-for-erasmus-partnerships/",i:"EN",tipo:"Agencia Nacional",b:"D,E",e:"5",q:3,s:"mejorar",n:"Proceso KA2 + feedback de evaluadores; poca técnica concreta."},
+{id:"kb-0052",t:"Léargas (IRL) — Handbook lump sum KA2 (Call 2025)",u:"https://www.leargas.ie/resource/handbook-on-the-lump-sum-funding-model-ka2-partnerships-for-cooperation-call-2025/",i:"EN",tipo:"Agencia Nacional",b:"G,D,I",e:"5",q:5,s:"copiar",n:"Manual del modelo lump sum: imprescindible para presupuesto y ciclo de vida KA2."},
+{id:"kb-0053",t:"Léargas (IRL) — KA220 Application Clinic 2026",u:"https://www.leargas.ie/event/erasmus-ka220-application-clinic-for-cooperation-partnerships-2026/",i:"EN",tipo:"Agencia Nacional",b:"F,C",e:"5",q:3,s:"mejorar",n:"Clínica de solicitudes KA220; valor según materiales publicados."},
+{id:"kb-0054",t:"Léargas (IRL) — KA220 application roadmap (PDF)",u:"https://www.leargas.ie/wp-content/uploads/2024/04/Leargas_KA2roadmap_2024-1.pdf",i:"EN",tipo:"Agencia Nacional",b:"C,D",e:"5",q:3,s:"mejorar",n:"Roadmap visual del proceso; bueno para estructura."},
+{id:"kb-0055",t:"OEAD (AUT) — Erasmus+ VET overview",u:"https://erasmusplus.oead.at/en/berufsbildung/ueberblick",i:"EN/DE",tipo:"Agencia Nacional",b:"A,B,D",e:"4",q:4,s:"copiar",n:"VET con Final Checks (consultas sobre el borrador de solicitud)."},
+{id:"kb-0056",t:"Agence Erasmus+ France/ÉF — Appel à propositions 2026",u:"https://agence.erasmusplus.fr/programme-erasmus/appel-a-propositions/",i:"FR",tipo:"Agencia Nacional",b:"A,D",e:"Transversal",q:4,s:"copiar",n:"Convocatoria + webinars Ready for Erasmus+! de acompañamiento."},
+{id:"kb-0057",t:"Agence E+ Jeunesse (FR) — Webinaires accompagnement 2026",u:"https://www.erasmusplus-jeunesse.fr/annonce_webinaires_accompagnement_2026",i:"FR",tipo:"Agencia Nacional",b:"F,D",e:"1",q:4,s:"copiar",n:"Incluye KA2: comment rédiger une candidature de qualité + formulaire commenté."},
+{id:"kb-0058",t:"AN E+ Portugal — Guia de apoio Projetos KA2",u:"https://erasmusmais.pt/guia-de-apoio-projetos-ka2/",i:"PT",tipo:"Agencia Nacional",b:"D,G,I",e:"5",q:4,s:"copiar",n:"Guía de ciclo de vida KA2 (candidatura→gestión→relatórios) con PDF."},
+{id:"kb-0059",t:"JUGEND für Europa (DE) — Erasmus+ Jugend (hub)",u:"https://www.jugendfuereuropa.de/erasmus-jugend",i:"DE",tipo:"Agencia Nacional",b:"B,D",e:"1",q:4,s:"copiar",n:"AN de Juventud alemana: KA1/KA2 youth y consultas (Sprechstunden)."},
+{id:"kb-0060",t:"Specific guidance for KA1 VET projects (OPH, Finlandia)",u:"https://www.oph.fi/en/programmes/specific-guidance-erasmus-ka1-projects-vocational-education-and-training-vet",i:"EN",tipo:"Agencia Nacional",b:"C",e:"4",q:4,s:"copiar",n:"Guía práctica VET de la AN finlandesa; buen detalle operativo."},
+{id:"kb-0061",t:"Léargas / VET Mobility Projects (IRL)",u:"https://www.leargas.ie/erasmus-plus/mobility-projects/vet/",i:"EN",tipo:"Agencia Nacional",b:"A",e:"4",q:4,s:"copiar",n:"Descripción clara de tipos de movilidad VET."},
+{id:"kb-0062",t:"KA1 — Learning Mobility of Individuals (índice)",u:"https://erasmus-plus.ec.europa.eu/programme-guide/part-b/key-action-1",i:"EN",tipo:"Oficial UE",b:"A",e:"1,2,3,4",q:5,s:"copiar",n:"Raíz del Programme Guide para toda la KA1."},
+{id:"kb-0063",t:"KA1 — What is a mobility project?",u:"https://erasmus-plus.ec.europa.eu/programme-guide/part-b/key-action-1/what-is-a-mobility-project",i:"EN",tipo:"Oficial UE",b:"A",e:"1,2,3,4",q:5,s:"copiar",n:"Lógica del proyecto de movilidad común a los 4 sectores."},
+{id:"kb-0064",t:"KA1 — Learning Mobility (intro, principios)",u:"https://erasmus-plus.ec.europa.eu/programme-guide/part-b/key-action-1/introduction",i:"EN/ES",tipo:"Oficial UE",b:"A,C",e:"1,2,3,4",q:4,s:"mejorar",n:"Principios transversales: educativa/transnacional/estructurada/estratégica."},
+{id:"kb-0065",t:"Youth Exchanges (intercambios juveniles)",u:"https://erasmus-plus.ec.europa.eu/programme-guide/part-b/key-action-1/youth-exchanges",i:"EN",tipo:"Oficial UE",b:"E",e:"1",q:5,s:"copiar",n:"Criterios, duración y reglas de intercambios juveniles."},
+{id:"kb-0066",t:"Mobility projects for youth workers",u:"https://erasmus-plus.ec.europa.eu/programme-guide/part-b/key-action-1/youth-workers",i:"EN",tipo:"Oficial UE",b:"E",e:"1",q:5,s:"copiar",n:"Desarrollo profesional de trabajadores juveniles."},
+{id:"kb-0067",t:"Youth participation activities",u:"https://erasmus-plus.ec.europa.eu/programme-guide/part-b/key-action-1/youth-participation",i:"EN",tipo:"Oficial UE",b:"A",e:"1",q:5,s:"copiar",n:"Formato grass-root flexible de participación cívica."},
+{id:"kb-0068",t:"DiscoverEU Inclusion Action",u:"https://erasmus-plus.ec.europa.eu/programme-guide/part-b/key-action-1/discovereu-action",i:"EN",tipo:"Oficial UE",b:"A",e:"1",q:5,s:"copiar",n:"Acción DiscoverEU para jóvenes con menos oportunidades (18-21)."},
+{id:"kb-0069",t:"Erasmus accreditation in the field of youth (KA150)",u:"https://erasmus-plus.ec.europa.eu/programme-guide/part-b/key-action-1/accreditation-youth",i:"EN",tipo:"Oficial UE",b:"C",e:"1",q:5,s:"copiar",n:"Vía de acreditación en juventud (distinta de KA151/KA152)."},
+{id:"kb-0070",t:"Mobility for accredited orgs (youth, KA151)",u:"https://erasmus-plus.ec.europa.eu/programme-guide/part-b/key-action-1/mobility-accredited-youth",i:"EN",tipo:"Oficial UE",b:"C",e:"1",q:4,s:"copiar",n:"Reglas para organizaciones ya acreditadas en juventud."},
+{id:"kb-0071",t:"Mobility for adult learners and staff",u:"https://erasmus-plus.ec.europa.eu/programme-guide/part-b/key-action-1/adult-learners-and-staff",i:"EN",tipo:"Oficial UE",b:"A",e:"2",q:5,s:"copiar",n:"Sección oficial del sector adultos."},
+{id:"kb-0072",t:"Mobility for pupils and staff in school education",u:"https://erasmus-plus.ec.europa.eu/programme-guide/part-b/key-action-1/mobility-school",i:"EN",tipo:"Oficial UE",b:"A",e:"3",q:5,s:"copiar",n:"Sección oficial del sector escolar."},
+{id:"kb-0073",t:"Mobility for learners and staff in VET",u:"https://erasmus-plus.ec.europa.eu/programme-guide/part-b/key-action-1/mobility-vet",i:"EN",tipo:"Oficial UE",b:"A",e:"4",q:5,s:"copiar",n:"Sección oficial VET; incluye ErasmusPro y movilidad de grupo."},
+{id:"kb-0074",t:"Erasmus accreditation in VET, school and adult",u:"https://erasmus-plus.ec.europa.eu/programme-guide/part-b/key-action-1/erasmus-accreditation-vet-school-adult",i:"EN",tipo:"Oficial UE",b:"C",e:"2,3,4",q:5,s:"copiar",n:"Acreditación y Erasmus Plan para los 3 sectores de educación."},
+{id:"kb-0075",t:"Call 2026 KA122-SCH Short-term projects (PDF)",u:"https://erasmus-plus.ec.europa.eu/sites/default/files/2025-11/Call%202026%20Short-term%20projects%20for%20mobility%20of%20learners%20and%20staff%20in%20school%20education%20(KA122-SCH)_watermark.pdf",i:"EN",tipo:"Oficial UE",b:"D",e:"3",q:5,s:"copiar",n:"Formato oficial de solicitud KA122 escolar 2026."},
+{id:"kb-0076",t:"SALTO — Youthpass (qué es)",u:"https://www.salto-youth.net/rc/training-and-cooperation/youthpass/",i:"EN",tipo:"Oficial UE",b:"H",e:"1",q:4,s:"copiar",n:"Reconocimiento de aprendizaje; impacto y validación (juventud)."},
+{id:"kb-0077",t:"KA2 — Partnerships for Cooperation (Part B)",u:"https://erasmus-plus.ec.europa.eu/programme-guide/part-b/key-action-2/partnerships-cooperation",i:"EN/ES",tipo:"Oficial UE",b:"A,C,G",e:"5,6",q:5,s:"mejorar",n:"Define Cooperation vs Small-scale, actividades tipo y prioridades 2026."},
+{id:"kb-0078",t:"Cooperation partnerships — Programme Guide (KA220)",u:"https://erasmus-plus.ec.europa.eu/programme-guide/part-b/key-action-2/cooperation-partnerships",i:"EN/ES",tipo:"Oficial UE",b:"D,E,G",e:"5",q:5,s:"copiar",n:"Canónica: elegibilidad, prioridades, criterios y lump sums (120k/250k/400k)."},
+{id:"kb-0079",t:"Template application form KA220-YOU",u:"https://erasmus-plus.ec.europa.eu/resources-and-tools/documents-and-guidelines/template-application-form-cooperation-partnerships-in-youth-ka220-you-0",i:"EN",tipo:"Oficial UE",b:"D",e:"5",q:5,s:"copiar",n:"Plantilla oficial con las secciones reales del Part B."},
+{id:"kb-0080",t:"Small-scale partnerships — Programme Guide (KA210)",u:"https://erasmus-plus.ec.europa.eu/programme-guide/part-b/key-action-2/small-scale-partnerships",i:"EN/ES",tipo:"Oficial UE",b:"D,E,G",e:"6",q:5,s:"copiar",n:"Canónica: criterios (30/30/20/20, umbral 60) y lump sums 30k/60k."},
+{id:"kb-0081",t:"Template application form KA210-YOU 2026",u:"https://erasmus-plus.ec.europa.eu/resources-and-tools/documents-and-guidelines/2026-template-application-form-small-scale-partnerships-in-youth-ka210-you",i:"EN",tipo:"Oficial UE",b:"D",e:"6",q:4,s:"copiar",n:"Landing del formulario 2026 de juventud; remite al eForm."},
+{id:"kb-0082",t:"Template application form KA210-SCH 2026",u:"https://erasmus-plus.ec.europa.eu/document/2026-template-application-form-small-scale-partnerships-in-school-education-ka210-sch",i:"EN",tipo:"Oficial UE",b:"D",e:"6",q:4,s:"copiar",n:"Plantilla 2026 educación escolar; mapear secciones por sector."},
+{id:"kb-0083",t:"KA3 — Support to policy development (Part B)",u:"https://erasmus-plus.ec.europa.eu/programme-guide/part-b/key-action-3",i:"EN",tipo:"Oficial UE",b:"A",e:"7",q:4,s:"copiar",n:"Índice oficial de KA3 con las 6 categorías de acciones."},
+{id:"kb-0084",t:"European Youth Together (Part B / KA3)",u:"https://erasmus-plus.ec.europa.eu/programme-guide/part-b/key-action-3/youth-together",i:"EN",tipo:"Oficial UE",b:"D,E,G",e:"7",q:5,s:"copiar",n:"Canónica: elegibilidad, criterios (30/30/20/20) y lump sum 80% hasta 500k€."},
+{id:"kb-0085",t:"European Youth Together — topic page (F&T)",u:"https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/topic-details/erasmus-youth-2024-youth-tog",i:"EN",tipo:"Oficial UE",b:"D",e:"7",q:5,s:"copiar",n:"Convocatoria: plantilla Part B (70 pp), presupuesto y plazos."},
+{id:"kb-0086",t:"Call fiche Civil Society Cooperation (PDF)",u:"https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/erasmus/wp-call/2023/call-fiche_erasmus-2023-csc-og-sga_en.pdf",i:"EN",tipo:"Oficial UE",b:"D",e:"7",q:4,s:"mejorar",n:"Ficha de Civil Society Cooperation (operating grants); ejemplo de estructura KA3."},
+{id:"kb-0087",t:"Capacity building in the field of youth (Part B)",u:"https://erasmus-plus.ec.europa.eu/programme-guide/part-b/key-action-2/capacity-youth",i:"EN",tipo:"Oficial UE",b:"D,E,G",e:"8",q:5,s:"copiar",n:"Canónica CB Youth: regiones, prioridades, criterios, lump sum 300k/450k€."},
+{id:"kb-0088",t:"Capacity building in VET (CB VET) — action page",u:"https://erasmus-plus.ec.europa.eu/opportunities/organisations/cooperation-among-organisations-and-institutions/capacity-building-vet",i:"EN",tipo:"Oficial UE",b:"A,D",e:"8",q:4,s:"copiar",n:"Resumen CB VET: consorcio mín.4 orgs/3 países, 1-3 años, qué financia."},
+{id:"kb-0089",t:"Capacity Building in VET 2026: how to apply? (EACEA)",u:"https://www.eacea.ec.europa.eu/news-events/news/capacity-building-vocational-education-and-training-cb-vet-2026-how-apply-2026-01-23_en",i:"EN",tipo:"Oficial UE",b:"D",e:"8",q:5,s:"copiar",n:"Convocatoria 2026: Part B máx.40 pp, grant máx.500k€, deadline y tips."},
+{id:"kb-0090",t:"Tips for applicants — ERASMUS-EDU-2025-CB-VET (PDF)",u:"https://www.eacea.ec.europa.eu/document/download/80f30c0e-3c7d-492f-83cf-59e843e379fc_en?filename=Tips+for+applicants+-+ERASMUS-EDU-2025-CB-VET.pdf",i:"EN",tipo:"Oficial UE",b:"E,F,J",e:"8",q:5,s:"copiar",n:"GUÍA OFICIAL DE REDACCIÓN: errores frecuentes y cómo puntuar alto por criterio."},
+{id:"kb-0091",t:"SALTO — Useful links for CB youth applicants (PDF)",u:"https://www.salto-youth.net/downloads/4-17-3647/Useful%20links%20for%20applicants%20of%20Capacity-building%20in%20the%20field%20of%20youth.pdf",i:"EN",tipo:"Oficial UE",b:"C",e:"8",q:4,s:"mejorar",n:"Recopilatorio de enlaces de apoyo CB Youth; actualizar a convocatoria vigente."},
+{id:"kb-0092",t:"Not-for-profit European Sport Events (Part B)",u:"https://erasmus-plus.ec.europa.eu/programme-guide/part-b/key-action-2/sport",i:"EN",tipo:"Oficial UE",b:"D,E,G",e:"9",q:5,s:"copiar",n:"Canónica eventos deporte: criterios (100 pts) y lump sums 200k/300k/450k."},
+{id:"kb-0093",t:"Cooperation Partnerships – Sport Actions",u:"https://erasmus-plus.ec.europa.eu/opportunities/opportunities-for-organisations/sport-actions/cooperation-partnerships",i:"EN",tipo:"Oficial UE",b:"A",e:"9",q:4,s:"mejorar",n:"Acción de deporte: objetivos, actividades, prioridades sectoriales."},
+{id:"kb-0094",t:"Small-scale Partnerships – Sport Actions",u:"https://erasmus-plus.ec.europa.eu/opportunities/opportunities-for-organisations/sport-actions/small-scale-partnerships",i:"EN",tipo:"Oficial UE",b:"A",e:"9",q:4,s:"mejorar",n:"Pequeña escala en deporte (newcomers, base); no detalla lump sums/criterios."},
+{id:"kb-0095",t:"Guide for Experts on Quality Assessment 2025 (PDF)",u:"https://www.erasmusplus.it/wp-content/uploads/2025/02/IV.1a-Erasmus-Plus-Guide-for-experts-on-quality-assessment_2025.pdf",i:"EN",tipo:"Oficial UE",b:"E",e:"Transversal",q:5,s:"copiar",n:"LA RÚBRICA REAL con la que puntúan los evaluadores. Fuente primaria. Sin sesgo."},
+{id:"kb-0096",t:"Guide for Experts on Quality Assessment 2023 (PDF)",u:"https://erasmus-plus.ec.europa.eu/sites/default/files/2023-11/IV.1a%20-%20E+Guide%20for%20experts%20on%20quality%20assessment_2023_corr_final.pdf",i:"EN",tipo:"Oficial UE",b:"E,F,J",e:"Transversal",q:5,s:"mejorar",n:"Versión 2023 (dominio madre). No asumir lo no escrito."},
+{id:"kb-0097",t:"Uni-Graz — How to write a good E+ proposal (PDF)",u:"https://static.uni-graz.at/fileadmin/bib/downloads/koop_projekte/projekte/bibwww_recommends_good_e_proposal.pdf",i:"EN",tipo:"Académico",b:"C,D,F,H",e:"Transversal",q:4,s:"copiar",n:"Recomendaciones concretas: objetivos medibles, target groups cuantificados. Sin sesgo."},
+{id:"kb-0098",t:"Youth Networks — E+ Project Quality Assessment Guide",u:"https://youthnetworks.net/erasmus-project-quality-assessment-guide/",i:"EN",tipo:"Blog/Consultora",b:"E,H",e:"1",q:4,s:"copiar",n:"Cómo se evalúa la calidad; perspectiva de assessment. Sesgo bajo."},
+{id:"kb-0099",t:"SALTO — Mastering the Art of Writing your First KA1",u:"https://www.salto-youth.net/tools/toolbox/tool/mastering-the-art-of-writing-and-funding-your-first-ka1-project-a-comprehensive-course.3645/",i:"EN",tipo:"Oficial UE",b:"C,D,F",e:"1",q:4,s:"copiar",n:"Curso gratuito 14 pasos para primer KA1 (OID, PIF, problema-relevancia). Sin sesgo."},
+{id:"kb-0100",t:"Future Needs — KA2 proposal writing handbook",u:"https://futureneeds.eu/erasmus-ka2-proposal-writing-practical-handbook-for-applicants/",i:"EN",tipo:"Blog/Consultora",b:"D,F,G,J",e:"5",q:4,s:"copiar",n:"Muy concreto sobre lump-sum y WPs; errores reales. SESGO COMERCIAL."},
+{id:"kb-0101",t:"Euneos — Evaluation criteria for E+ proposals",u:"https://www.euneoscourses.eu/what-are-the-evaluation-criteria-for-erasmus-funding-proposals/",i:"EN",tipo:"Blog/Consultora",b:"E",e:"Transversal",q:4,s:"copiar",n:"Desglosa los 4 criterios + umbrales. SESGO COMERCIAL."},
+{id:"kb-0102",t:"Euneos — How to write a successful E+ proposal",u:"https://www.euneoscourses.eu/how-to-write-a-successful-erasmus-funding-proposal/",i:"EN",tipo:"Blog/Consultora",b:"C,D,F,H",e:"Transversal",q:4,s:"copiar",n:"Técnica divide la pregunta en sub-preguntas + bullets para el evaluador. SESGO."},
+{id:"kb-0103",t:"Erasmus.courses — KA121 vs KA122 strong proposal",u:"https://erasmus.courses/blog/how-to-write-a-successful-erasmus-project-proposal-ka121-ka122/",i:"EN",tipo:"Blog/Consultora",b:"C,F,H",e:"1",q:4,s:"copiar",n:"Cadena necesidades→objetivos→actividades→resultados con indicadores. SESGO."},
+{id:"kb-0104",t:"Europa Media — Common mistakes writing a proposal",u:"https://europamediatrainings.com/blog/post/586/common-mistakes-when-writing-a-proposal",i:"EN",tipo:"Blog/Consultora",b:"J,F",e:"Transversal",q:4,s:"copiar",n:"Errores de redacción a nivel proposal EU. SESGO (trainings)."},
+{id:"kb-0105",t:"Zeus Consulting — 12 Common EU Grant Mistakes",u:"https://zeusconsulting.com/insights/eu-funding-proposal-mistakes",i:"EN",tipo:"Blog/Consultora",b:"J",e:"Transversal",q:4,s:"copiar",n:"Errores densos: objetivos vagos, mismatch narrativa-presupuesto. SESGO."},
+{id:"kb-0106",t:"GrowthProjects — E+ Lump Sum Grants (KA210/KA220)",u:"https://www.growthprojects.eu/erasmus-lump-sum-grant/",i:"EN",tipo:"Blog/Consultora",b:"G",e:"6",q:3,s:"mejorar",n:"Checklist para elegir tramo lump sum y errores. SESGO COMERCIAL."},
+{id:"kb-0107",t:"AUPEX — Cómo preparar una propuesta KA2 (adultos)",u:"https://erasmusplus.aupex.org/movilidades/propuesta-proyecto-alianzas-erasmus-ka2/",i:"ES",tipo:"Blog/Consultora",b:"C,D,F",e:"2",q:3,s:"mejorar",n:"Guía paso a paso KA2 adultos EN ESPAÑOL; selección de socios, máx 5 objetivos."},
+{id:"kb-0108",t:"Adiper — Errores comunes proyectos europeos",u:"https://www.adiper.es/errores-comunes-al-presentar-proyectos-europeos-y-como-evitarlos/",i:"ES",tipo:"Blog/Consultora",b:"J,C,H",e:"Transversal",q:3,s:"mejorar",n:"6 errores EN ESPAÑOL; práctico pero genérico. Sesgo leve."},
+{id:"kb-0109",t:"COMPASSS (CERMI) — 6 recomendaciones diseño E+",u:"https://compasss.cermi.es/blog/6-recomendaciones-para-disenar-tu-proyecto-erasmus-2023",i:"ES",tipo:"Blog/Consultora",b:"C,F,E",e:"Transversal",q:3,s:"mejorar",n:"Consejos de diseño (palabras clave, valor añadido). Enfoque inclusión."},
+{id:"kb-0110",t:"LinkedIn (Martinelli) — Cómo escribir un buen E+",u:"https://es.linkedin.com/pulse/c%C3%B3mo-escribir-un-buen-proyecto-erasmus-plus-aqu%C3%AD-unos-martinelli",i:"ES",tipo:"Blog/Consultora",b:"C,F,H",e:"Transversal",q:3,s:"mejorar",n:"Post práctico EN ESPAÑOL: socios de confianza, objetivos medibles. Sin sesgo directo."},
+{id:"kb-0111",t:"Erasmusly — Preparing Guide KA210 (ebook)",u:"https://www.erasmusly.com/preparing-guide-for-erasmus-ka210-project-proposals-ebook-41509.html",i:"EN",tipo:"Académico",b:"C,D,G,H,J",e:"6",q:3,s:"mejorar",n:"Ebook KA210: estructura, checklist partnership, budgeting. SESGO (ebook de pago)."},
+{id:"kb-0112",t:"Youth Networks — Small-Scale Partnerships E+",u:"https://youthnetworks.net/small-scale-partnerships-erasmus/",i:"EN",tipo:"Blog/Consultora",b:"C,D,E",e:"6",q:3,s:"mejorar",n:"Guía KA210 + criterios de calidad. Sesgo bajo."},
+{id:"kb-0113",t:"Lina Edu — KA2 Tips & Tricks for Schools",u:"https://linaedu.eu/erasmus-ka2-tips-trick-for-schools/",i:"EN",tipo:"Blog/Consultora",b:"C,F,J",e:"3",q:3,s:"mejorar",n:"Trucos KA2 para centros escolares. Sesgo moderado."},
+{id:"kb-0114",t:"GrowthProjects — E+ Proposal Writing Service",u:"https://www.growthprojects.eu/erasmus-proposal-writing-service-how-experts-help-you-win-funding/",i:"EN",tipo:"Blog/Consultora",b:"E,F",e:"Transversal",q:3,s:"mejorar",n:"El gap 60→85+ puntos y lenguaje que el evaluador reconoce. SESGO fuerte."},
+{id:"kb-0115",t:"portal365.org — 10 Common Mistakes in Proposals",u:"https://portal365.org/en/posts/10%20Common%20Mistakes%20in%20Writing%20Project%20Proposals%20and%20How%20to%20Avoid%20Them",i:"EN",tipo:"Blog/Consultora",b:"J",e:"Transversal",q:3,s:"mejorar",n:"10 errores genéricos; útil como checklist base. Sesgo bajo."},
+{id:"kb-0116",t:"Teacher Academy — E+ KA1 how does it work",u:"https://www.teacheracademy.eu/erasmus-plus/ka1/",i:"EN",tipo:"Blog/Consultora",b:"F",e:"2,3",q:3,s:"mejorar",n:"Divulgativa, movilidad de personal docente. SESGO (cursos)."}
+];
+
+const ESTADOS = ["copiar","mejorar","crear","descartar","sin"];
+const STORE = "kb_estados_v1";
+let overrides = JSON.parse(localStorage.getItem(STORE) || "{}");
+DATA.forEach(d => { if(overrides[d.id]) d.s = overrides[d.id]; });
+
+const filters = {bloque:new Set(),esp:new Set(),tipo:new Set(),idioma:new Set(),estado:new Set(),q:""};
+
+function uniq(key,split){const s=new Set();DATA.forEach(d=>{(split?String(d[key]).split(","):[d[key]]).forEach(v=>s.add(v.trim()))});return [...s];}
+
+function chipBar(containerId,values,fkey,labelFn){
+  const c=document.getElementById(containerId);
+  values.forEach(v=>{
+    const el=document.createElement("span");el.className="chip";el.textContent=labelFn?labelFn(v):v;
+    el.onclick=()=>{el.classList.toggle("on");filters[fkey].has(v)?filters[fkey].delete(v):filters[fkey].add(v);render();};
+    c.appendChild(el);
+  });
+}
+chipBar("f-bloque","ABCDEFGHIJ".split(""),"bloque",v=>v+" · "+BLOQUES[v]);
+chipBar("f-esp",["Transversal","1","2","3","4","5","6","7","8","9"],"esp",v=>ESP[v]?v+" "+ESP[v]:v);
+chipBar("f-tipo",["Oficial UE","Agencia Nacional","Blog/Consultora","Académico"],"tipo");
+chipBar("f-idioma",["ES","EN","EN/ES","ES/EN","FR","PT","EN/DE"],"idioma");
+chipBar("f-estado",["copiar","mejorar","crear","descartar"],"estado");
+
+document.getElementById("q").oninput=e=>{filters.q=e.target.value.toLowerCase();render();};
+document.getElementById("reset").onclick=()=>{
+  Object.keys(filters).forEach(k=>k==="q"?filters.q="":filters[k].clear());
+  document.getElementById("q").value="";
+  document.querySelectorAll(".chip.on").forEach(c=>c.classList.remove("on"));
+  render();
+};
+document.getElementById("export").onclick=()=>{
+  const out=DATA.map(d=>({id:d.id,titulo:d.t,url:d.u,idioma:d.i,tipo:d.tipo,bloque:d.b,especialidad:d.e,calidad:d.q,estado:d.s==="sin"?"":d.s,notas:d.n}));
+  const blob=new Blob([JSON.stringify(out,null,2)],{type:"application/json"});
+  const a=document.createElement("a");a.href=URL.createObjectURL(blob);a.download="sources.json";a.click();
+};
+
+function matchMulti(field,set,split){
+  if(!set.size)return true;
+  const vals=split?String(field).split(",").map(x=>x.trim()):[field];
+  return vals.some(v=>set.has(v));
+}
+function passes(d){
+  if(!matchMulti(d.b,filters.bloque,true))return false;
+  if(!matchMulti(d.e,filters.esp,true))return false;
+  if(filters.tipo.size&&!filters.tipo.has(d.tipo))return false;
+  if(filters.idioma.size&&!filters.idioma.has(d.i))return false;
+  if(filters.estado.size&&!filters.estado.has(d.s))return false;
+  if(filters.q){const hay=(d.t+" "+d.n+" "+d.u+" "+d.id).toLowerCase();if(!hay.includes(filters.q))return false;}
+  return true;
+}
+function stars(q){return '<span class="star">'+'★'.repeat(q)+'</span>'+'☆'.repeat(5-q);}
+function tags(str,cls){return str.split(",").map(x=>`<span class="tag ${cls||''}">${x.trim()}</span>`).join("");}
+function estadoLabel(s){return s==="sin"?"sin decidir":s;}
+
+function cycle(d){
+  const i=ESTADOS.indexOf(d.s);d.s=ESTADOS[(i+1)%ESTADOS.length];
+  overrides[d.id]=d.s;localStorage.setItem(STORE,JSON.stringify(overrides));
+  render();
+}
+
+function render(){
+  const tb=document.getElementById("rows");tb.innerHTML="";
+  let shown=0;
+  DATA.forEach(d=>{
+    if(!passes(d))return;shown++;
+    const tr=document.createElement("tr");
+    tr.innerHTML=`
+      <td><a class="ttl" href="${d.u}" target="_blank" rel="noopener">${d.t}</a><span class="url">${d.u}</span></td>
+      <td><span class="idioma">${d.i}</span></td>
+      <td>${d.tipo}</td>
+      <td>${tags(d.b)}</td>
+      <td>${d.e==="Transversal"?'<span class="tag">Transv.</span>':tags(d.e,"esp")}</td>
+      <td class="qual" title="${d.q}/5">${stars(d.q)}</td>
+      <td></td>
+      <td class="notas">${d.n}</td>`;
+    const est=document.createElement("button");
+    est.className="estado "+d.s;est.textContent=estadoLabel(d.s);
+    est.title="Clic para cambiar el estado";est.onclick=()=>cycle(d);
+    tr.children[6].appendChild(est);
+    tb.appendChild(tr);
+  });
+  document.getElementById("shown").textContent=shown;
+  document.getElementById("total").textContent=DATA.length;
+  document.getElementById("empty").style.display=shown?"none":"block";
+  renderCounters();
+}
+function renderCounters(){
+  const c=document.getElementById("counters");c.innerHTML="";
+  const counts={copiar:0,mejorar:0,crear:0,descartar:0,sin:0};
+  DATA.forEach(d=>counts[d.s]++);
+  const add=(label,cls,n)=>{const p=document.createElement("span");p.className="pill";p.innerHTML=(cls?`<span class="dot ${cls}"></span>`:"")+`${label} <b>${n}</b>`;c.appendChild(p);};
+  add("Total","",DATA.length);
+  add("Copiar","copiar",counts.copiar);
+  add("Mejorar","mejorar",counts.mejorar);
+  add("Crear","crear",counts.crear);
+  add("Descartar","descartar",counts.descartar);
+  if(counts.sin)add("Sin decidir","",counts.sin);
+}
+render();
+
+/* ===================== CURRÍCULO / PLAN FORMATIVO ===================== */
+const CURRICULUM = {
+ nota:"Los módulos del TRONCO COMÚN se reutilizan en todos los cursos. Un curso = tronco común (completo o un subconjunto, según el nivel) + 1 itinerario de especialidad. Lección con estado «A crear» = no existe buena fuente: es contenido propio a producir (vuestro valor diferenciador, sobre todo en español). Haz clic en un código kb-XXXX para ver esa fuente en el Catálogo.",
+ tronco:[
+  {c:"M1",t:"Fundamentos: ¿Qué es Erasmus+?",b:"A,B",nivel:"Iniciación",ls:[
+   {t:"¿Qué es Erasmus+? El programa en 10 minutos",s:"borrador",src:["kb-0001","kb-0003"]},
+   {t:"KA1, KA2, KA3: el mapa de acciones",s:"borrador",src:["kb-0003"]},
+   {t:"Las 4 prioridades horizontales (inclusión, digital, verde, participación)",s:"borrador",src:["kb-0004","kb-0005"]},
+   {t:"Quién es quién: Comisión, EACEA y Agencias Nacionales",s:"borrador",src:["kb-0006","kb-0007"]},
+   {t:"Glosario esencial del solicitante (versión cercana)",s:"borrador",src:["kb-0016"],n:"Reescrito accesible (Término · Qué es · Por qué importa)."}
+  ]},
+  {c:"M2",t:"Prepara tu organización",b:"B,C",nivel:"Iniciación",ls:[
+   {t:"Registro en ORS y obtención del OID, paso a paso",s:"tenemos",src:["kb-0008","kb-0009","kb-0010"]},
+   {t:"Buscar socios: Otlas, EPALE y eTwinning",s:"tenemos",src:["kb-0029","kb-0031","kb-0032"]},
+   {t:"Cómo elegir buenos socios (criterios y señales de alarma)",s:"crear"},
+   {t:"La acreditación Erasmus: ¿me conviene?",s:"tenemos",src:["kb-0069","kb-0074"]}
+  ]},
+  {c:"M3",t:"De la idea al proyecto",b:"C",nivel:"Intermedio",ls:[
+   {t:"Análisis de necesidades: del problema real al proyecto",s:"parcial",src:["kb-0011","kb-0027"],n:"Hay base, falta método propio."},
+   {t:"Teoría del cambio / lógica de intervención",s:"crear",n:"Hueco premium: la Comisión no lo publica como método."},
+   {t:"Convertir una idea difusa en objetivos claros",s:"crear"},
+   {t:"Diseñar el consorcio y repartir roles",s:"parcial",src:["kb-0077"]}
+  ]},
+  {c:"M4",t:"Anatomía del formulario",b:"D",nivel:"Intermedio",ls:[
+   {t:"El Application Form / Part B por dentro",s:"tenemos",src:["kb-0017","kb-0079"]},
+   {t:"Secciones EACEA y límites de caracteres",s:"tenemos",src:["kb-0014","kb-0017"]},
+   {t:"eForm de Agencia Nacional vs portal EACEA (SEDIA)",s:"tenemos",src:["kb-0023","kb-0024"]},
+   {t:"Recorrido por un formulario comentado (SEPIE)",s:"tenemos",src:["kb-0037","kb-0040","kb-0041"]}
+  ]},
+  {c:"M5",t:"Cómo te evalúan",b:"E",nivel:"Intermedio",ls:[
+   {t:"Los 4 criterios y los umbrales de puntuación",s:"tenemos",src:["kb-0078","kb-0080","kb-0025"]},
+   {t:"La rúbrica del evaluador por dentro (Guide for Experts)",s:"tenemos",src:["kb-0095","kb-0096"]},
+   {t:"Escribe para el evaluador: qué busca en cada criterio",s:"crear",src:["kb-0090","kb-0101"],n:"Apoyo en fuentes, pero el contenido es propio."}
+  ]},
+  {c:"M6",t:"Redacción ganadora",b:"F",nivel:"Avanzado",ls:[
+   {t:"Objetivos SMART e indicadores medibles",s:"crear",src:["kb-0097"]},
+   {t:"Evidencia vs afirmación: demostrar lo que dices",s:"crear"},
+   {t:"Work packages: la columna vertebral del proyecto",s:"parcial",src:["kb-0018","kb-0100"]},
+   {t:"Los errores de redacción más comunes (y cómo evitarlos)",s:"parcial",src:["kb-0104","kb-0105","kb-0115"]}
+  ]},
+  {c:"M7",t:"El presupuesto sin miedo",b:"G",nivel:"Intermedio",ls:[
+   {t:"Lump sums: qué son y por qué lo cambian todo",s:"tenemos",src:["kb-0019"]},
+   {t:"El modelo de financiación KA2 a fondo (Handbook KA2 lump sums)",s:"borrador",src:["kb-0018","kb-0052"],n:"⭐ Borrador completo listo para revisar. Haz clic para abrirlo y dejar notas."},
+   {t:"Coherencia actividad ↔ coste",s:"tenemos",src:["kb-0022","kb-0018"]},
+   {t:"Cómo justificar el tramo de presupuesto",s:"crear"}
+  ]},
+  {c:"M8",t:"Impacto, difusión y sostenibilidad",b:"H",nivel:"Intermedio",ls:[
+   {t:"DEOR: difusión y explotación de resultados",s:"parcial",src:["kb-0026","kb-0033"]},
+   {t:"El impacto: distinguir resultados de beneficios reales",s:"crear",n:"Hueco premium: lo peor desarrollado en las solicitudes."},
+   {t:"Reconocimiento del aprendizaje (Youthpass)",s:"tenemos",src:["kb-0030","kb-0076"]}
+  ]},
+  {c:"M9",t:"Después del «sí»: gestión",b:"I",nivel:"Avanzado",ls:[
+   {t:"Beneficiary Module e informes",s:"tenemos",src:["kb-0020","kb-0021"]},
+   {t:"Calidad en la ejecución del proyecto",s:"parcial",src:["kb-0028"]}
+  ]},
+  {c:"M10",t:"Aprender de los errores",b:"J",nivel:"Avanzado",ls:[
+   {t:"Catálogo de errores que tumban una solicitud",s:"crear",n:"Activo defensible: a partir de cartas de evaluador reales (módulo Diagnose)."},
+   {t:"Casos reales comentados",s:"crear",src:["kb-0090"]}
+  ]}
+ ],
+ esp:[
+  {c:"S1",t:"KA1 Juventud",esp:"1",ls:[
+   {t:"Intercambios juveniles",s:"tenemos",src:["kb-0065"]},
+   {t:"Movilidad de youth workers",s:"tenemos",src:["kb-0066"]},
+   {t:"Participación juvenil y DiscoverEU",s:"tenemos",src:["kb-0067","kb-0068"]},
+   {t:"Acreditación en juventud (KA150/KA151)",s:"tenemos",src:["kb-0069","kb-0070"]},
+   {t:"Redactar un KA1 de juventud en español",s:"crear"}
+  ]},
+  {c:"S2",t:"KA1 Educación de Adultos",esp:"2",ls:[
+   {t:"Movilidad en educación de adultos",s:"tenemos",src:["kb-0071"]},
+   {t:"Convocatoria y formulario comentado (SEPIE)",s:"tenemos",src:["kb-0036"]},
+   {t:"Particularidades de redacción en adultos (ES)",s:"crear"}
+  ]},
+  {c:"S3",t:"KA1 Educación Escolar",esp:"3",ls:[
+   {t:"Movilidad de alumnado y personal escolar",s:"tenemos",src:["kb-0072"]},
+   {t:"KA122-SCH: proyecto corto paso a paso",s:"tenemos",src:["kb-0075","kb-0039","kb-0034"]},
+   {t:"Criterios y errores en la solicitud escolar (ES)",s:"crear"}
+  ]},
+  {c:"S4",t:"KA1 FP / VET",esp:"4",ls:[
+   {t:"Movilidad en FP, incluido ErasmusPro",s:"parcial",src:["kb-0073"],n:"ErasmusPro (90-365 días) apenas cubierto → ampliar/crear."},
+   {t:"Formularios comentados KA121/KA122-VET",s:"tenemos",src:["kb-0037","kb-0038","kb-0035"]},
+   {t:"Rol de organizaciones de apoyo/intermediarias",s:"crear"}
+  ]},
+  {c:"S5",t:"KA2 Cooperation Partnerships (KA220)",esp:"5",ls:[
+   {t:"Qué es una Cooperation Partnership",s:"tenemos",src:["kb-0078","kb-0077"]},
+   {t:"La plantilla Part B de KA220",s:"tenemos",src:["kb-0079","kb-0040"]},
+   {t:"WPs y presupuesto lump sum en KA220",s:"parcial",src:["kb-0018","kb-0052","kb-0100"]},
+   {t:"Redacción ganadora de un KA220 (ES)",s:"crear"}
+  ]},
+  {c:"S6",t:"KA2 Small-scale Partnerships (KA210)",esp:"6",ls:[
+   {t:"Qué es una Small-scale Partnership",s:"tenemos",src:["kb-0080"]},
+   {t:"Part B de KA210 y criterios",s:"tenemos",src:["kb-0081","kb-0041","kb-0112"]},
+   {t:"Justificar el tramo lump sum (30k/60k)",s:"crear",src:["kb-0106","kb-0111"]}
+  ]},
+  {c:"S7",t:"KA3 / Apoyo a políticas",esp:"7",ls:[
+   {t:"El mapa de acciones KA3",s:"tenemos",src:["kb-0083"]},
+   {t:"European Youth Together paso a paso",s:"tenemos",src:["kb-0084","kb-0085"]},
+   {t:"Redactar acciones EACEA en español",s:"crear",n:"Hueco: todo el material canónico está en inglés."}
+  ]},
+  {c:"S8",t:"Capacity Building (Youth/VET)",esp:"8",ls:[
+   {t:"CB Youth: regiones, criterios, presupuesto",s:"tenemos",src:["kb-0087"]},
+   {t:"CB VET: cómo se solicita (EACEA)",s:"tenemos",src:["kb-0088","kb-0089"]},
+   {t:"Tips del evaluador CB-VET aplicados",s:"tenemos",src:["kb-0090"]},
+   {t:"Material de Capacity Building en español",s:"crear",n:"Hueco: SEPIE/INJUVE no gestionan estas acciones EACEA."}
+  ]},
+  {c:"S9",t:"Deporte (Sport)",esp:"9",ls:[
+   {t:"Not-for-profit European Sport Events",s:"tenemos",src:["kb-0092"]},
+   {t:"Cooperation / Small-scale en deporte",s:"tenemos",src:["kb-0093","kb-0094"]},
+   {t:"Redactar un proyecto de deporte (ES)",s:"crear",n:"Hueco: sin fuente española verificable."}
+  ]}
+ ]
+};
+const ST_LABEL={tenemos:"Tenemos material",parcial:"Parcial",crear:"A crear",borrador:"Borrador listo"};
+
+function switchView(v){
+  document.querySelectorAll('.tab').forEach(t=>t.classList.toggle('on',t.dataset.view===v));
+  ['cursos','catalogo','curriculo','sas','eacea','deepdives'].forEach(name=>{
+    document.getElementById('view-'+name).style.display=v===name?'':'none';
+  });
+}
+document.querySelectorAll('.tab').forEach(t=>t.onclick=()=>switchView(t.dataset.view));
+
+function lessonRow(l, mcode, idx){
+  const id = `${mcode}.${idx+1}`;
+  const chips=(l.src||[]).map(s=>`<span class="lsrc" data-id="${s}">${s}</span>`).join('');
+  const nc = noteCount(id);
+  const badge = nc?`<span class="lnote-badge">📝 ${nc}</span>`:'';
+  return `<div class="lesson clickable" data-lesson="${id}" data-title="${escAttr(l.t)}" data-action="acad.abrirLeccion" data-args="${Acciones.args(String(id))}">
+    <span class="lstatus ${l.s}">${ST_LABEL[l.s]||l.s}</span>
+    <div class="lmeta"><span class="lt">${l.t} <span class="lt-open">— abrir ›</span></span>${l.n?`<span class="ln">${l.n}</span>`:''}${chips?`<span class="lsrcs">${chips}</span>`:''}</div>
+    ${badge}
+  </div>`;
+}
+function modCard(m){
+  const tag=m.tag?m.tag:(m.b?`Bloque ${m.b}`:`Especialidad ${m.esp} · ${ESP[m.esp]||''}`);
+  const nNotes=(m.ls||[]).reduce((s,l,i)=>s+noteCount(`${m.c}.${i+1}`),0);
+  const nBadge=nNotes?`<span class="mc-notebadge" style="margin-left:auto">📝 ${nNotes}</span>`:'';
+  return `<div class="modcard">
+    <h3><span class="mc-code">${m.c}</span> ${m.t} <span class="mc-bloque">${tag}</span>${m.nivel?`<span class="mc-nivel">${m.nivel}</span>`:''}${nBadge}</h3>
+    ${m.desc?`<p class="mc-desc">${m.desc}</p>`:''}
+    ${m.ls.map((l,i)=>lessonRow(l,m.c,i)).join('')}
+  </div>`;
+}
+function renderCurriculo(){
+  const all=[...CURRICULUM.tronco,...CURRICULUM.esp];
+  let nLes=0,nTen=0,nPar=0,nCre=0,nBor=0;
+  all.forEach(m=>m.ls.forEach(l=>{nLes++;l.s==='tenemos'?nTen++:l.s==='parcial'?nPar++:l.s==='borrador'?nBor++:nCre++;}));
+  document.getElementById('cur-head').innerHTML=`
+    <div class="cur-counters">
+      <span class="pill"><b>${all.length}</b> módulos</span>
+      <span class="pill"><b>${nLes}</b> lecciones</span>
+      <span class="pill"><span class="dot tenemos"></span>Tenemos material <b>${nTen}</b></span>
+      <span class="pill"><span class="dot parcial"></span>Parcial <b>${nPar}</b></span>
+      <span class="pill"><span class="dot crear"></span>A crear <b>${nCre}</b></span>
+      ${nBor?`<span class="pill"><span class="dot" style="background:var(--ink)"></span>Borrador listo <b>${nBor}</b></span>`:''}
+    </div>
+    <p class="cur-note">${CURRICULUM.nota}</p>`;
+  document.getElementById('cur-body').innerHTML=`
+    <h2 class="cur-sec">🧱 Tronco común <small>— reutilizable en todos los cursos</small></h2>
+    ${CURRICULUM.tronco.map(modCard).join('')}
+    <h2 class="cur-sec">🎯 Itinerarios de especialidad <small>— se acoplan al tronco común</small></h2>
+    ${CURRICULUM.esp.map(modCard).join('')}`;
+  document.querySelectorAll('#cur-body .lsrc').forEach(el=>el.onclick=(e)=>{
+    e.stopPropagation();
+    switchView('catalogo');
+    const id=el.dataset.id;
+    document.getElementById('q').value=id;filters.q=id.toLowerCase();render();
+    window.scrollTo({top:0,behavior:'smooth'});
+  });
+}
+renderCurriculo();
+
+/* ===================== MÓDULO SAS (la plataforma, paso a paso) ===================== */
+const SAS_NOTA = "El Módulo SAS sigue, en el mismo orden, el recorrido que la plataforma usa para ayudarte a escribir un proyecto: desde elegir convocatoria hasta presentarlo. La idea: cada fase de la plataforma tendrá un vídeo breve que la explica y anima a registrarse en estos cursos para profundizar. Casi todo es contenido propio (vuestra plataforma no la enseña nadie más) → mayoría «A crear». Esto es un borrador a partir de tu lluvia de ideas — revísalo y corrígeme (sobre todo lo marcado con ¿?).";
+const SAS = [
+ {c:"SAS-1",t:"Antes de empezar",tag:"Paso 1 · Plataforma",ls:[
+  {t:"¿Cómo elegir el proyecto correcto entre todas las convocatorias?",s:"crear"},
+  {t:"Registra tu organización en el directorio (la «neorganización»)",s:"crear"},
+  {t:"Completa todos los datos de tu organización",s:"crear"},
+  {t:"Pide a tus potenciales socios que registren sus datos en el directorio",s:"crear",n:"Así toda la información está disponible luego en el proyecto."},
+  {t:"Cómo organizar un consorcio para tu proyecto",s:"parcial",src:["kb-0077"]}
+ ]},
+ {c:"SAS-2",t:"Los números base del proyecto",tag:"Paso 2 · Economía",ls:[
+  {t:"La banda oficial de kilómetros y los viajes ecológicos",s:"crear",src:["kb-0019"]},
+  {t:"Cómo calcular los precios de transporte",s:"crear"},
+  {t:"Per diem / dietas",s:"crear",src:["kb-0019"]},
+  {t:"Salarios profesionales: cost pm y posiciones laborales",s:"crear",src:["kb-0018"]}
+ ]},
+ {c:"SAS-3",t:"La estructura: paquetes de trabajo y actividades",tag:"Paso 3 · Estructura",ls:[
+  {t:"El esqueleto de los paquetes de trabajo (WP)",s:"parcial",src:["kb-0018"]},
+  {t:"Actividad · Management",s:"crear"},
+  {t:"Actividad · Transnational meetings",s:"crear"},
+  {t:"Actividad · LTTA / staff mobilities (learning, teaching, training)",s:"crear"},
+  {t:"Actividad · Intellectual outputs",s:"crear"},
+  {t:"Actividad · Multiplier events",s:"crear"},
+  {t:"Actividad · Local workshops",s:"crear"},
+  {t:"Actividad · Personnel work",s:"crear"},
+  {t:"Actividad · Dissemination",s:"crear"},
+  {t:"Actividad · Website",s:"crear"},
+  {t:"Actividad · Artistic (trabajo artístico)",s:"crear",n:"¿«Artistic Fish»? confírmame el concepto exacto."},
+  {t:"Actividad · Equipment / equipamiento",s:"crear"},
+  {t:"Actividad · Consumables / otros gastos",s:"crear"},
+  {t:"Actividad · Apoyo financiero a terceras partes (FSTP)",s:"crear",src:["kb-0100"]},
+  {t:"Actividad · Otros costes",s:"crear"}
+ ]},
+ {c:"SAS-4",t:"Presupuestar el proyecto",tag:"Paso 4 · Presupuesto",ls:[
+  {t:"Cómo se presupuesta un proyecto EACEA (agencias europeas)",s:"parcial",src:["kb-0018","kb-0078"]},
+  {t:"Cómo se presupuesta en los formularios de Agencia Nacional",s:"crear",src:["kb-0037"]},
+  {t:"Presupuesto coherente, actividad a actividad",s:"crear"}
+ ]},
+ {c:"SAS-5",t:"Planificar en el tiempo",tag:"Paso 5 · Planificación",ls:[
+  {t:"El Gantt del proyecto: planificar cada actividad",s:"crear"},
+  {t:"Adecuar los perfiles de trabajadores y entidades a los objetivos",s:"crear"}
+ ]},
+ {c:"SAS-6",t:"Narrar y justificar",tag:"Paso 6 · Narrativa",ls:[
+  {t:"La relevancia del proyecto: el apartado estrella del evaluador",s:"parcial",src:["kb-0095","kb-0078"]},
+  {t:"Definir con claridad cada actividad metida en el presupuesto",s:"crear"},
+  {t:"Relación de tareas por actividad: quién lidera y quién participa",s:"crear"}
+ ]},
+ {c:"SAS-7",t:"Tareas, deliverables y milestones",tag:"Paso 7 · El trío clave",ls:[
+  {t:"Las tareas: qué son y cómo se definen",s:"crear"},
+  {t:"Los deliverables (entregables): qué son",s:"crear"},
+  {t:"Los milestones (hitos): qué son",s:"crear"},
+  {t:"Cómo se relacionan tareas ↔ deliverables ↔ milestones",s:"crear",n:"Casi un módulo en sí mismo."},
+  {t:"Los códigos del formulario EACEA: tipo de entregable, nivel de difusión, numeración y plazos",s:"parcial",src:["kb-0017"]}
+ ]},
+ {c:"SAS-8",t:"Escribir el formulario, pregunta a pregunta",tag:"Paso 8 · Redacción",ls:[
+  {t:"Cada convocatoria, su formulario: una clase por pregunta",s:"crear",n:"Base de datos: docs/form_part_b_eacea.json (ya en el repo)."},
+  {t:"EACEA · Relevancia (una clase por cada pregunta)",s:"parcial",src:["kb-0095","kb-0090"]},
+  {t:"EACEA · Calidad del diseño y la implementación",s:"parcial",src:["kb-0095"]},
+  {t:"EACEA · Calidad del partenariado",s:"parcial",src:["kb-0095"]},
+  {t:"EACEA · Impacto",s:"parcial",src:["kb-0095"]},
+  {t:"EACEA · Work packages (descripción de cada uno)",s:"parcial",src:["kb-0079"]},
+  {t:"Adaptar la redacción a los formularios de Agencia Nacional",s:"crear",src:["kb-0037","kb-0041"]}
+ ]},
+ {c:"SAS-9",t:"Presentación oficial",tag:"Paso 9 · Submission",ls:[
+  {t:"Comprueba el registro: OID y PIC number actualizados",s:"parcial",src:["kb-0008"]},
+  {t:"Las firmas de las declaraciones de honor de todos los socios",s:"crear"},
+  {t:"Presentar el proyecto en la plataforma europea",s:"parcial",src:["kb-0024"]}
+ ]},
+ {c:"SAS-10",t:"El presupuesto final",tag:"Paso 10 · Cierre",ls:[
+  {t:"Cómo se presenta el presupuesto una vez escrito todo el proyecto",s:"crear"}
+ ]}
+];
+
+function renderSAS(){
+  let nLes=0,nTen=0,nPar=0,nCre=0;
+  SAS.forEach(m=>m.ls.forEach(l=>{nLes++;l.s==='tenemos'?nTen++:l.s==='parcial'?nPar++:nCre++;}));
+  document.getElementById('sas-head').innerHTML=`
+    <div class="cur-counters">
+      <span class="pill"><b>${SAS.length}</b> bloques</span>
+      <span class="pill"><b>${nLes}</b> clases</span>
+      <span class="pill"><span class="dot tenemos"></span>Tenemos material <b>${nTen}</b></span>
+      <span class="pill"><span class="dot parcial"></span>Parcial <b>${nPar}</b></span>
+      <span class="pill"><span class="dot crear"></span>A crear <b>${nCre}</b></span>
+    </div>
+    <p class="cur-note">${SAS_NOTA}</p>`;
+  document.getElementById('sas-body').innerHTML=SAS.map(modCard).join('');
+  document.querySelectorAll('#sas-body .lsrc').forEach(el=>el.onclick=(e)=>{
+    e.stopPropagation();
+    switchView('catalogo');
+    const id=el.dataset.id;
+    document.getElementById('q').value=id;filters.q=id.toLowerCase();render();
+    window.scrollTo({top:0,behavior:'smooth'});
+  });
+}
+renderSAS();
+
+/* ===================== CURSO EACEA — Part B, pregunta a pregunta ===================== */
+const EACEA_NOTA = "Curso de redacción del formulario EACEA Part B (proyectos centralizados: KA220, KA3, Capacity Building, Deporte…). Una clase por cada pregunta del formulario: cómo responderla con los indicadores y lo que el evaluador espera leer. El 📋 indica qué pide LITERALMENTE el formulario; el contenido de «cómo responder» es nuestro (de ahí el azul «A crear»). Apoyo experto: la rúbrica del evaluador (kb-0095) y los Tips de EACEA (kb-0090). Estructura extraída de un Part B real (Sustrai); encaja con docs/form_part_b_eacea.json del repo, que ya tiene el detalle para automatizar. Reutilizable en todos los cursos de vía EACEA.";
+const EACEA = [
+ {c:"PS",t:"Project Summary",tag:"Resumen",ls:[
+  {t:"Project Summary / Abstract",s:"crear",n:"📋 Resumen del proyecto (se toma del Abstract de la Part A). Clase: cómo escribir un abstract que enganche dentro del límite de caracteres."}
+ ]},
+ {c:"1",t:"RELEVANCE",tag:"Criterio · Relevance",ls:[
+  {t:"1.1 Background and general objectives",s:"crear",src:["kb-0095","kb-0078"],n:"📋 Describe el contexto y la justificación. ¿Cómo encaja en el scope de la convocatoria? ¿Cómo aborda los objetivos generales? ¿Contribución a las prioridades?"},
+  {t:"1.2 Needs analysis and specific objectives",s:"crear",src:["kb-0095","kb-0097"],n:"📋 Análisis de necesidades sólido alineado con los objetivos específicos. ¿Qué problema/reto/gap aborda? Objetivos claros, medibles, realistas y alcanzables; por cada uno: indicador con unidad, valor base y valor objetivo."},
+  {t:"1.3 Complementarity & innovation — European added value",s:"crear",src:["kb-0095"],n:"📋 Cómo se apoya en actividades previas; aspectos innovadores; complementariedad con otras acciones; dimensión transnacional; interés para la UE; uso de resultados en otros países; cooperación transfronteriza; referencias a proyectos previos."}
+ ]},
+ {c:"2.1",t:"QUALITY · Diseño e implementación",tag:"Criterio · Quality of design & implementation",ls:[
+  {t:"2.1.1 Concept and methodology",s:"crear",src:["kb-0095"],n:"📋 Expón el enfoque y la metodología. Explica por qué son los más adecuados para lograr los objetivos."},
+  {t:"2.1.2 Project management, QA, monitoring & evaluation",s:"crear",src:["kb-0095"],n:"📋 Medidas para asegurar calidad y plazos; métodos de calidad/seguimiento/planificación/control; métodos de evaluación e indicadores (cuant. y cual.) con unidad, base y objetivo."},
+  {t:"2.1.3 Project teams, staff and experts",s:"crear",n:"📋 Describe los equipos y cómo trabajarán juntos; lista el personal por función/perfil (project manager, expertos senior/junior, formadores, técnico, administrativo…) y sus tareas; CVs si se requieren."},
+  {t:"2.1.4 Cost effectiveness and financial management",s:"crear",src:["kb-0018"],n:"📋 Medidas para lograr resultados de forma coste-eficiente; gestión financiera; cómo se asignan y gestionan los recursos en el consorcio."},
+  {t:"2.1.5 Risk management",s:"crear",n:"📋 Riesgos críticos, incertidumbres y dificultades + medidas de mitigación; para cada riesgo: impacto y probabilidad (alto/medio/bajo)."}
+ ]},
+ {c:"2.2",t:"QUALITY · Partenariado y cooperación",tag:"Criterio · Quality of partnership",ls:[
+  {t:"2.2.1 Consortium set-up",s:"crear",src:["kb-0095"],n:"📋 Describe a los participantes (Beneficiarios, Entidades Afiliadas, Socios Asociados) y cómo trabajarán juntos. ¿Cómo reúnen la experiencia necesaria? ¿Cómo se complementan?"},
+  {t:"2.2.2 Consortium management and decision-making",s:"crear",n:"📋 Estructuras de gestión y mecanismos de toma de decisiones; cómo se decide y se asegura la comunicación regular y eficaz; planificación y control."}
+ ]},
+ {c:"3",t:"IMPACT",tag:"Criterio · Impact",ls:[
+  {t:"3.1 Impact and ambition",s:"crear",src:["kb-0095"],n:"📋 Efectos esperados a corto, medio y largo plazo. ¿Quiénes son los grupos destinatarios? ¿Cómo se benefician concretamente y qué cambia para ellos?"},
+  {t:"3.2 Communication, dissemination and visibility",s:"crear",src:["kb-0026"],n:"📋 Actividades de comunicación y difusión para promover resultados y maximizar impacto (a quién, formato, cuántos); cómo llegar a destinatarios/stakeholders/policymakers/público; elección de canales; visibilidad de la financiación UE."},
+  {t:"3.3 Sustainability and continuation",s:"crear",n:"📋 Seguimiento tras el fin de la financiación; cómo se sostiene el impacto; qué se continúa/mantiene; recursos necesarios; uso de los resultados."}
+ ]},
+ {c:"4",t:"WORK PLAN, WORK PACKAGES, ACTIVITIES, RESOURCES & TIMING",tag:"Plan de trabajo",ls:[
+  {t:"4.1 Work plan",s:"crear",n:"📋 Descripción breve de la estructura global del plan de trabajo (lista de WPs o diagrama PERT)."},
+  {t:"4.2 Work packages (por cada WP)",s:"parcial",src:["kb-0079"],n:"📋 Objetivos específicos a los que se vincula el WP; tareas (nombre + número); participantes (COO/BEN/AE/AP, líder en negrita)."},
+  {t:"· Staff effort",s:"crear",n:"📋 Persona/mes por WP, con el líder en negrita. (n/a en Lump Sum)."},
+  {t:"· Subcontracting",s:"crear",n:"📋 Tareas subcontratadas y por qué (frente a ejecución directa). (n/a en Lump Sum prefijado)."},
+  {t:"· Events, meetings and mobility",s:"crear",n:"📋 Tipo, ubicación, nº de personas asistentes, etc."},
+  {t:"· Timetable",s:"crear",n:"📋 Cronograma / Gantt de todo el proyecto."}
+ ]},
+ {c:"5",t:"OTHER",tag:"Otros",ls:[
+  {t:"5.1 Ethics",s:"crear",n:"📋 Cómo aseguras la perspectiva de género (gender mainstreaming) y los derechos de la infancia en las actividades."},
+  {t:"5.2 Security",s:"crear",n:"📋 Aspectos sensibles de seguridad (si aplica)."}
+ ]},
+ {c:"6",t:"DECLARATIONS & ANNEXES",tag:"Cierre",ls:[
+  {t:"6. Declarations",s:"crear",n:"📋 Declaraciones (incluida la prohibición estricta de doble financiación del presupuesto UE)."},
+  {t:"Anexo · List of previous projects",s:"crear",n:"📋 Lista de tus proyectos de los últimos 4 años (si lo pide la convocatoria)."}
+ ]}
+];
+
+// Las 24 lecciones EACEA ya tienen borrador de contenido redactado.
+EACEA.forEach(m=>m.ls.forEach(l=>{l.s='borrador';}));
+function renderEACEA(){
+  let nLes=0,nBor=0;
+  EACEA.forEach(m=>m.ls.forEach(l=>{nLes++;if(l.s==='borrador')nBor++;}));
+  document.getElementById('eacea-head').innerHTML=`
+    <div class="cur-counters">
+      <span class="pill"><b>${EACEA.length}</b> apartados</span>
+      <span class="pill"><b>${nLes}</b> clases (1 por pregunta)</span>
+      <span class="pill"><span class="dot" style="background:var(--ink)"></span>Borrador listo <b>${nBor}</b></span>
+    </div>
+    <p class="cur-note">${EACEA_NOTA}</p>`;
+  document.getElementById('eacea-body').innerHTML=EACEA.map(modCard).join('');
+  document.querySelectorAll('#eacea-body .lsrc').forEach(el=>el.onclick=(e)=>{
+    e.stopPropagation();
+    switchView('catalogo');
+    const id=el.dataset.id;
+    document.getElementById('q').value=id;filters.q=id.toLowerCase();render();
+    window.scrollTo({top:0,behavior:'smooth'});
+  });
+}
+renderEACEA();
+
+/* ===================== DOCUMENTOS DESGRANADOS (deep-dives de docs UE densos) ===================== */
+const DD_NOTA = "Documentos europeos densos y difíciles, desgranados sección por sección y traducidos a lenguaje comprensible — sin dejar nada atrás. Cada lección = una sección del documento original, con su cabecera pedagógica (punto de dolor · qué comprender · objetivo · confusión habitual · por qué importa). Hoy en texto; después, cada lección se convertirá en vídeo, carrusel y PDF lead-magnet. Haz clic en una lección para abrir su contenido y dejar notas.";
+const DEEPDIVES = [
+ {c:"LS",t:"El Handbook del modelo lump sum KA2, desgranado",tag:"Fuente kb-0018 · Call 2026 · 37 pp",ls:[
+  {t:"Qué es este Handbook y para qué te sirve",s:"borrador",src:["kb-0018"]},
+  {t:"Qué son las Asociaciones de Cooperación y qué persiguen",s:"borrador",src:["kb-0018","kb-0077"]},
+  {t:"Las cuatro fases de una asociación (de la idea al seguimiento)",s:"borrador",src:["kb-0018"]},
+  {t:"El modelo de financiación a tanto alzado: visión general",s:"borrador",src:["kb-0018","kb-0019"]},
+  {t:"Los tramos de lump sum, la cofinanciación y el principio de no-beneficio",s:"borrador",src:["kb-0018","kb-0019"]},
+  {t:"Qué actividades cubre el lump sum",s:"borrador",src:["kb-0018"]},
+  {t:"Gestionar el presupuesto y pedir modificaciones (amendments)",s:"borrador",src:["kb-0018"]},
+  {t:"KA210 Small-scale: cómo se rellena la solicitud",s:"borrador",src:["kb-0018","kb-0080"]},
+  {t:"KA210: el informe final y cómo se evalúa (escala de reducción)",s:"borrador",src:["kb-0018"]},
+  {t:"KA220 Cooperation: solicitud, work packages e indicadores",s:"borrador",src:["kb-0018","kb-0078"]},
+  {t:"KA220: el informe final y la puntuación por work package",s:"borrador",src:["kb-0018"]},
+  {t:"Asociaciones Europeas para el Desarrollo Escolar: qué cambia",s:"borrador",src:["kb-0018"]},
+  {t:"Seguimiento, controles y auditorías: qué te pueden pedir",s:"borrador",src:["kb-0018"]},
+  {t:"Anexo 1 · Diseñar el proyecto: necesidades y objetivos SMART",s:"borrador",src:["kb-0018","kb-0097"]},
+  {t:"Anexo 2 · Cómo construir tus indicadores (R.A.C.E.R.)",s:"borrador",src:["kb-0018"]},
+  {t:"Anexo 3 · El acuerdo de partenariado entre socios",s:"borrador",src:["kb-0018"]}
+ ]}
+];
+function renderDeepdives(){
+  let nLes=0,nBor=0,nCre=0;
+  DEEPDIVES.forEach(m=>m.ls.forEach(l=>{nLes++;l.s==='borrador'?nBor++:nCre++;}));
+  document.getElementById('dd-head').innerHTML=`
+    <div class="cur-counters">
+      <span class="pill"><b>${DEEPDIVES.length}</b> documento</span>
+      <span class="pill"><b>${nLes}</b> lecciones</span>
+      <span class="pill"><span class="dot" style="background:var(--ink)"></span>Borrador listo <b>${nBor}</b></span>
+      ${nCre?`<span class="pill"><span class="dot crear"></span>A crear <b>${nCre}</b></span>`:''}
+    </div>
+    <p class="cur-note">${DD_NOTA}</p>`;
+  document.getElementById('dd-body').innerHTML=DEEPDIVES.map(modCard).join('');
+  document.querySelectorAll('#dd-body .lsrc').forEach(el=>el.onclick=(e)=>{
+    e.stopPropagation();switchView('catalogo');
+    const id=el.dataset.id;document.getElementById('q').value=id;filters.q=id.toLowerCase();render();
+    window.scrollTo({top:0,behavior:'smooth'});
+  });
+}
+renderDeepdives();
+
+/* ===================== CURSOS OFICIALES (lo que se vende) ===================== */
+const COURSES_NOTA = "Estos son los cursos oficiales que vamos a vender. Cada curso son 8 semanas = 8 módulos, y cada módulo entre 5 y 10 lecciones (cada lección, un tema concreto). Esto es una PROPUESTA de estructura para que la revises y anotes ANTES de crear el contenido didáctico: despliega un curso, haz clic en cualquier lección para abrirla y deja ahí tus notas (enfoque, orden, qué añadir o quitar, tono). El resto de pestañas (Currículo, SAS, EACEA, Documentos) son el material con el que alimentaremos estos cursos. Los códigos kb-XXXX enlazan a la fuente en el Catálogo.";
+const COURSES = [
+ {code:"ECO",t:"Ecosistema Erasmus",nivel:"Iniciación",
+  desc:"Curso panorámico e introductorio: una visión general de qué es Erasmus+, cómo está organizado y qué oportunidades ofrece cada programa. Para quien llega nuevo y quiere entender el mapa completo antes de especializarse. No enseña a redactar un proyecto concreto: da la brújula del ecosistema.",
+  mods:[
+   {c:"ECO1",t:"¿Qué es Erasmus+?",tag:"Semana 1 · El programa",desc:"El programa en su conjunto: origen, valores, para qué existe y qué cambió en 2021-2027.",ls:[
+    {t:"Erasmus+ en 10 minutos: la idea central",s:"borrador",src:["kb-0001","kb-0003"],n:"Qué es, a quién sirve y por qué la UE invierte en movilidad y cooperación."},
+    {t:"De 1987 a hoy: breve historia del programa",s:"crear",n:"De las becas universitarias al Erasmus+ que hoy integra todos los sectores educativos, juventud y deporte."},
+    {t:"El presupuesto 2021-2027 y qué significa para ti",s:"crear",src:["kb-0003"],n:"Cuánto dinero hay, cómo se reparte y qué implica el aumento respecto al periodo anterior."},
+    {t:"Educación, juventud y deporte: los tres grandes ámbitos",s:"crear",src:["kb-0003"],n:"Cómo Erasmus+ agrupa sectores muy distintos bajo un mismo paraguas."},
+    {t:"Las 4 prioridades horizontales",s:"borrador",src:["kb-0004","kb-0005"],n:"Inclusión, digital, verde y participación: obligatorias en todo proyecto, sea del tipo que sea."},
+    {t:"Mitos y realidades sobre Erasmus+",s:"crear",n:"«Es solo para universitarios», «es imposible que te lo aprueben»: desmontamos las creencias que frenan a las organizaciones."}
+   ]},
+   {c:"ECO2",t:"La arquitectura: KA1, KA2, KA3",tag:"Semana 2 · El mapa de acciones",desc:"La columna vertebral del programa y cómo distinguir cada acción clave.",ls:[
+    {t:"El mapa de acciones de un vistazo",s:"borrador",src:["kb-0003"],n:"KA1, KA2 y KA3 explicadas con un único esquema mental."},
+    {t:"KA1 · Movilidad de las personas",s:"crear",src:["kb-0003"],n:"Qué es la acción clave 1 y qué tipo de experiencias financia."},
+    {t:"KA2 · Cooperación entre organizaciones",s:"crear",src:["kb-0078"],n:"Qué es la acción clave 2 y qué proyectos de cooperación permite."},
+    {t:"KA3 · Apoyo a la reforma de políticas",s:"crear",src:["kb-0083"],n:"Qué es la acción clave 3 y por qué es la más «política» del programa."},
+    {t:"Jean Monnet y Deporte: el resto del mapa",s:"crear",n:"Las acciones que no encajan en el esquema KA1-KA3 y a quién sirven."},
+    {t:"¿Qué acción encaja con mi organización?",s:"crear",n:"Un árbol de decisión sencillo para orientarte antes de profundizar."}
+   ]},
+   {c:"ECO3",t:"Los sectores del programa",tag:"Semana 3 · Sectores",desc:"Cómo se concreta Erasmus+ en cada sector educativo y social.",ls:[
+    {t:"Educación superior",s:"crear",n:"Qué ofrece Erasmus+ a universidades y estudiantes."},
+    {t:"Formación Profesional (FP/VET)",s:"crear",src:["kb-0035"],n:"Movilidad y cooperación en el ámbito de la FP."},
+    {t:"Educación escolar",s:"crear",src:["kb-0034"],n:"Oportunidades para centros, profesorado y alumnado."},
+    {t:"Educación de personas adultas",s:"crear",src:["kb-0036","kb-0031"],n:"Qué financia Erasmus+ en el aprendizaje a lo largo de la vida."},
+    {t:"Juventud y el ámbito no formal",s:"crear",src:["kb-0065","kb-0026"],n:"Intercambios, participación juvenil y trabajo con jóvenes."},
+    {t:"Deporte",s:"crear",src:["kb-0092"],n:"El sector más joven del programa y qué tipo de proyectos apoya."}
+   ]},
+   {c:"ECO4",t:"Quién es quién",tag:"Semana 4 · Actores",desc:"El ecosistema de instituciones que gestionan el programa.",ls:[
+    {t:"Comisión Europea, EACEA y Agencias Nacionales",s:"borrador",src:["kb-0006","kb-0007"],n:"Quién decide, quién gestiona lo centralizado y quién lo descentralizado."},
+    {t:"Acciones descentralizadas vs centralizadas",s:"crear",src:["kb-0006"],n:"Por qué unas se solicitan en tu país y otras en Bruselas: la distinción que lo cambia todo."},
+    {t:"El SEPIE y las agencias nacionales españolas",s:"crear",src:["kb-0034","kb-0035","kb-0036"],n:"Quién gestiona Erasmus+ en España y qué sectores cubre cada agencia."},
+    {t:"La red SALTO y los centros de recursos",s:"crear",src:["kb-0026"],n:"Apoyo, formación y metodología no formal a tu disposición."},
+    {t:"Plataformas: EPALE, eTwinning, Portal de la Juventud",s:"crear",src:["kb-0031","kb-0032"],n:"Dónde encontrar socios, recursos y comunidad según tu sector."}
+   ]},
+   {c:"ECO5",t:"Los programas de movilidad (KA1)",tag:"Semana 5 · Movilidad",desc:"Un recorrido por las oportunidades de movilidad para personas.",ls:[
+    {t:"Qué es una movilidad y cómo funciona",s:"crear",n:"El concepto de aprendizaje en el extranjero como base de KA1."},
+    {t:"Movilidad en juventud: intercambios y youth workers",s:"tenemos",src:["kb-0065","kb-0066"],n:"Las dos grandes vías de KA1 en el ámbito juvenil."},
+    {t:"Movilidad en FP, escolar y adultos",s:"tenemos",src:["kb-0072","kb-0073","kb-0071"],n:"Cómo se concreta la movilidad en cada sector educativo."},
+    {t:"DiscoverEU y la participación juvenil",s:"tenemos",src:["kb-0067","kb-0068"],n:"Las oportunidades individuales y de participación dentro de KA1."},
+    {t:"La acreditación Erasmus: la vía rápida a la movilidad",s:"tenemos",src:["kb-0069","kb-0074"],n:"Qué es acreditarse y por qué simplifica futuras solicitudes."}
+   ]},
+   {c:"ECO6",t:"Cooperación (KA2) y políticas (KA3)",tag:"Semana 6 · Proyectos",desc:"Los proyectos entre organizaciones, del más sencillo al más ambicioso.",ls:[
+    {t:"Qué es cooperar en Erasmus+",s:"crear",src:["kb-0078"],n:"La lógica de trabajar con socios de otros países hacia un objetivo común."},
+    {t:"KA210 Small-scale: la puerta de entrada",s:"tenemos",src:["kb-0080"],n:"El proyecto de cooperación más accesible para newcomers."},
+    {t:"KA220 Cooperation Partnerships: el proyecto estrella",s:"tenemos",src:["kb-0078","kb-0079"],n:"La cooperación de mayor alcance y presupuesto."},
+    {t:"Capacity Building: cooperar con terceros países",s:"tenemos",src:["kb-0087","kb-0088"],n:"Cuando la cooperación sale de la UE."},
+    {t:"KA3 y la incidencia política",s:"tenemos",src:["kb-0083","kb-0084"],n:"Proyectos que buscan influir en las políticas, no solo en las personas."}
+   ]},
+   {c:"ECO7",t:"Cómo se participa",tag:"Semana 7 · De la idea a la solicitud",desc:"El itinerario práctico desde el registro hasta presentar una solicitud.",ls:[
+    {t:"El calendario Erasmus+: convocatorias y plazos",s:"crear",n:"Cómo se estructura el año y cuándo hay que estar listo."},
+    {t:"Registrar tu organización: ORS y el OID",s:"tenemos",src:["kb-0008","kb-0009","kb-0010"],n:"El primer paso obligatorio antes de solicitar nada."},
+    {t:"Encontrar socios: Otlas, EPALE, eTwinning",s:"tenemos",src:["kb-0029","kb-0031","kb-0032"],n:"Dónde y cómo buscar aliados para tu proyecto."},
+    {t:"Del portal de la Agencia Nacional al portal EACEA",s:"tenemos",src:["kb-0023","kb-0024"],n:"Los dos entornos de solicitud y cuándo usas cada uno."},
+    {t:"Anatomía de una convocatoria",s:"crear",src:["kb-0011"],n:"Cómo leer una call: prioridades, plazos, presupuesto y requisitos."}
+   ]},
+   {c:"ECO8",t:"Financiación, evaluación y resultados",tag:"Semana 8 · Cómo se paga y se puntúa",desc:"Cómo se paga, cómo se puntúa y cómo se reconoce un proyecto Erasmus+.",ls:[
+    {t:"Lump sums: la financiación a tanto alzado",s:"tenemos",src:["kb-0019"],n:"Qué son y por qué cambian la forma de presupuestar."},
+    {t:"Cómo te evalúan: los criterios y los umbrales",s:"tenemos",src:["kb-0025","kb-0078"],n:"La lógica de puntuación común a casi todas las acciones."},
+    {t:"Qué pasa tras presentar: del comité a la resolución",s:"tenemos",src:["kb-0015"],n:"El recorrido de tu solicitud una vez enviada."},
+    {t:"Reconocer el aprendizaje: Youthpass y otras herramientas",s:"tenemos",src:["kb-0030"],n:"Cómo se certifica lo aprendido en un proyecto."},
+    {t:"Después del «sí»: qué implica gestionar un proyecto",s:"parcial",src:["kb-0020","kb-0028"],n:"Una primera idea de las obligaciones tras la aprobación."},
+    {t:"Tu siguiente paso en la Academia",s:"crear",n:"Cómo elegir el curso especializado (KA2, KA3, Capacity Building o Deporte) según tu objetivo."}
+   ]}
+  ]},
+
+ {code:"KA2",t:"Proyectos KA2 · Cooperación",nivel:"Intermedio",
+  desc:"Curso completo para diseñar y redactar un proyecto de cooperación KA2 (KA210 Small-scale y KA220 Cooperation Partnerships): del concepto al formulario, con foco en la redacción que convence al evaluador y en el modelo de financiación a tanto alzado.",
+  mods:[
+   {c:"KA2-1",t:"Fundamentos de la cooperación",tag:"Semana 1 · Fundamentos",desc:"Qué es un proyecto de cooperación, para quién y qué lugar ocupa en el programa.",ls:[
+    {t:"Qué es un proyecto de cooperación y para quién",s:"tenemos",src:["kb-0078","kb-0077"],n:"La lógica KA2: organizaciones que se unen para crear algo que ninguna lograría sola."},
+    {t:"El lugar de KA2 en el programa",s:"crear",src:["kb-0003"],n:"Cómo encaja la cooperación en el mapa de acciones y qué la diferencia de la movilidad."},
+    {t:"Las 4 prioridades horizontales aplicadas a KA2",s:"parcial",src:["kb-0004"],n:"Cómo integrar inclusión, digital, verde y participación sin que suene a relleno."},
+    {t:"Cómo son los proyectos KA2 aprobados",s:"crear",n:"Ejemplos reales para calibrar ambición, tamaño y tipo de resultados."},
+    {t:"El itinerario del curso: de la idea a la solicitud enviada",s:"crear",n:"El mapa de las 8 semanas y qué habrás producido al final."}
+   ]},
+   {c:"KA2-2",t:"KA210 vs KA220",tag:"Semana 2 · Elegir tu asociación",desc:"Las dos modalidades de cooperación y cómo decidir cuál te conviene.",ls:[
+    {t:"Small-scale (KA210): el proyecto de entrada",s:"tenemos",src:["kb-0080"],n:"Para quién, con qué presupuesto y con qué nivel de exigencia."},
+    {t:"Cooperation Partnerships (KA220): alto alcance",s:"tenemos",src:["kb-0078"],n:"Qué lo distingue del KA210 y cuándo merece la pena."},
+    {t:"Tabla comparativa: cuál elegir",s:"crear",n:"Presupuesto, socios, duración, resultados y esfuerzo enfrentados."},
+    {t:"Los tramos de presupuesto lump sum",s:"crear",src:["kb-0106","kb-0111"],n:"30.000/60.000 € en KA210 y los tramos de KA220: qué implican."},
+    {t:"Tu decisión: qué asociación vas a diseñar",s:"crear",n:"Ejercicio guiado para elegir el tipo de proyecto adecuado a tu organización."}
+   ]},
+   {c:"KA2-3",t:"De la idea al consorcio",tag:"Semana 3 · Diseño",desc:"Del problema real a un consorcio sólido con objetivos claros.",ls:[
+    {t:"Análisis de necesidades: del problema real al proyecto",s:"parcial",src:["kb-0011","kb-0027"],n:"Cómo fundamentar que tu proyecto responde a una necesidad demostrable."},
+    {t:"Teoría del cambio y lógica de intervención",s:"crear",n:"Conectar problema → objetivos → actividades → resultados de forma coherente."},
+    {t:"Convertir una idea difusa en objetivos claros",s:"crear",n:"De la intuición a objetivos específicos, medibles y realistas."},
+    {t:"Diseñar el consorcio y repartir roles",s:"parcial",src:["kb-0077"],n:"Cuántos socios, de qué países y con qué complementariedad."},
+    {t:"Cómo elegir buenos socios (y señales de alarma)",s:"crear",n:"Criterios para no arrastrar un socio que hunda la evaluación."},
+    {t:"Buscar socios en la práctica",s:"tenemos",src:["kb-0029","kb-0031"],n:"Herramientas y estrategia para encontrar aliados de calidad."}
+   ]},
+   {c:"KA2-4",t:"El formulario por dentro",tag:"Semana 4 · El formulario",desc:"Recorrido por el Application Form / Part B de KA2.",ls:[
+    {t:"El Application Form / Part B de KA2",s:"tenemos",src:["kb-0017","kb-0079"],n:"Recorrido por la estructura del formulario y su lógica."},
+    {t:"KA220: secciones y límites de caracteres",s:"tenemos",src:["kb-0079","kb-0040"],n:"Qué pide cada apartado del formulario de Cooperation Partnerships."},
+    {t:"KA210: el formulario simplificado",s:"tenemos",src:["kb-0081","kb-0041"],n:"Las diferencias del formulario de Small-scale."},
+    {t:"Recorrido por un formulario comentado (SEPIE)",s:"tenemos",src:["kb-0040","kb-0041"],n:"Aprender de las anotaciones oficiales, pregunta a pregunta."},
+    {t:"El abstract/resumen que engancha",s:"crear",n:"Cómo escribir el resumen del proyecto dentro del límite de caracteres."}
+   ]},
+   {c:"KA2-5",t:"Cómo te evalúan",tag:"Semana 5 · Evaluación",desc:"Los criterios, los umbrales y la rúbrica del evaluador.",ls:[
+    {t:"Los 4 criterios y los umbrales",s:"tenemos",src:["kb-0078","kb-0025"],n:"Relevancia, calidad del diseño, partenariado e impacto: pesos y mínimos."},
+    {t:"La rúbrica del evaluador por dentro",s:"tenemos",src:["kb-0095","kb-0096"],n:"Qué lee y qué puntúa un experto (Guide for Experts)."},
+    {t:"Escribir para el evaluador",s:"crear",src:["kb-0090"],n:"Qué busca exactamente en cada criterio y cómo dárselo."},
+    {t:"Autoevaluación: puntúa tu propio borrador",s:"crear",n:"Aplicar la rúbrica a tu texto antes de presentar."}
+   ]},
+   {c:"KA2-6",t:"Redacción ganadora",tag:"Semana 6 · Redacción",desc:"Las técnicas de redacción que distinguen una solicitud aprobada.",ls:[
+    {t:"Relevancia: justificar por qué tu proyecto importa",s:"parcial",src:["kb-0095","kb-0078"],n:"El apartado que más pesa y cómo construirlo."},
+    {t:"Objetivos SMART e indicadores medibles",s:"crear",src:["kb-0097"],n:"Objetivos con unidad, valor base y valor objetivo."},
+    {t:"Evidencia vs afirmación",s:"crear",n:"Demostrar lo que dices en lugar de solo declararlo."},
+    {t:"Calidad del partenariado y de la gestión",s:"parcial",src:["kb-0095"],n:"Cómo describir consorcio, reparto de tareas y toma de decisiones."},
+    {t:"Los errores de redacción más comunes",s:"parcial",src:["kb-0104","kb-0105"],n:"Fallos que tumban solicitudes y cómo evitarlos."}
+   ]},
+   {c:"KA2-7",t:"Work packages y presupuesto",tag:"Semana 7 · WPs y dinero",desc:"La estructura de trabajo y el modelo de financiación a tanto alzado.",ls:[
+    {t:"Work packages: la columna vertebral",s:"parcial",src:["kb-0018","kb-0100"],n:"Qué son, cuántos y cómo estructurarlos."},
+    {t:"El modelo de financiación KA2 a fondo (Handbook lump sums)",s:"borrador",src:["kb-0018","kb-0052"],n:"El manual oficial del modelo a tanto alzado, desgranado."},
+    {t:"Tareas, entregables e hitos",s:"crear",n:"El trío que da estructura al plan de trabajo."},
+    {t:"Coherencia actividad ↔ coste",s:"tenemos",src:["kb-0022","kb-0018"],n:"Que cada euro del tramo tenga su actividad detrás."},
+    {t:"Justificar el tramo de presupuesto",s:"crear",n:"Cómo argumentar que el lump sum elegido es el adecuado."}
+   ]},
+   {c:"KA2-8",t:"Impacto, difusión y cierre",tag:"Semana 8 · Impacto y envío",desc:"Cerrar la solicitud: impacto, difusión, sostenibilidad y presentación.",ls:[
+    {t:"Impacto: distinguir resultados de beneficios reales",s:"crear",n:"El apartado peor desarrollado en las solicitudes, bien hecho."},
+    {t:"DEOR: difusión y explotación de resultados",s:"parcial",src:["kb-0026","kb-0033"],n:"Plan de difusión que el evaluador se cree."},
+    {t:"Sostenibilidad: qué queda cuando acaba la financiación",s:"crear",n:"Cómo demostrar continuidad e impacto duradero."},
+    {t:"Presentar el proyecto: checklist final",s:"parcial",src:["kb-0008","kb-0024"],n:"OID, firmas, anexos y envío sin sobresaltos."},
+    {t:"Después del «sí»: informes y gestión",s:"tenemos",src:["kb-0020","kb-0021"],n:"Beneficiary Module y obligaciones básicas de ejecución."}
+   ]}
+  ]},
+
+ {code:"KA3",t:"Proyectos KA3 · Apoyo a políticas",nivel:"Avanzado",
+  desc:"Curso para abordar las acciones KA3 de apoyo a la reforma de políticas y otras acciones centralizadas gestionadas por la EACEA. Foco en la dimensión política, el impacto sistémico y la redacción del Part B europeo, un terreno donde casi todo el material canónico está en inglés: aquí lo trabajamos en español.",
+  mods:[
+   {c:"KA3-1",t:"Qué es KA3",tag:"Semana 1 · Fundamentos",desc:"La acción clave 3 y por qué juega en otra liga.",ls:[
+    {t:"La acción clave 3 en el conjunto del programa",s:"tenemos",src:["kb-0083"],n:"Qué persigue KA3 y por qué es distinta de KA1 y KA2."},
+    {t:"De influir en personas a influir en políticas",s:"crear",n:"El salto de escala: del beneficiario individual al cambio sistémico."},
+    {t:"Quién puede y quién suele presentar KA3",s:"crear",n:"El perfil típico de solicitante y consorcio."},
+    {t:"Las prioridades políticas de la UE que enmarcan KA3",s:"crear",src:["kb-0004"],n:"Cómo alinear tu proyecto con la agenda política europea."},
+    {t:"El itinerario del curso",s:"crear",n:"Mapa de las 8 semanas y entregable final."}
+   ]},
+   {c:"KA3-2",t:"El mapa de acciones KA3",tag:"Semana 2 · Las acciones",desc:"Las convocatorias que caben bajo el paraguas KA3.",ls:[
+    {t:"Panorámica de las acciones KA3",s:"tenemos",src:["kb-0083"],n:"Las distintas convocatorias del ámbito KA3."},
+    {t:"European Youth Together",s:"tenemos",src:["kb-0084","kb-0085"],n:"La acción KA3 más conocida en el ámbito juvenil, paso a paso."},
+    {t:"Experimentaciones de política y otras líneas",s:"crear",n:"Policy experimentation y acciones afines."},
+    {t:"Cómo leer una convocatoria EACEA de KA3",s:"crear",src:["kb-0025"],n:"Topics, scope y expected outcomes: la jerga de las calls centralizadas."},
+    {t:"Elegir la acción KA3 adecuada",s:"crear",n:"Ejercicio de encaje entre tu idea y la convocatoria."}
+   ]},
+   {c:"KA3-3",t:"El ecosistema centralizado",tag:"Semana 3 · EACEA y portal",desc:"El entorno de las acciones centralizadas: EACEA y el F&T Portal.",ls:[
+    {t:"EACEA: la agencia que gestiona lo centralizado",s:"tenemos",src:["kb-0006"],n:"Quién es y en qué se diferencia de tu Agencia Nacional."},
+    {t:"El F&T Portal (SEDIA) por dentro",s:"parcial",src:["kb-0023","kb-0024"],n:"El entorno donde se buscan calls y se presentan las acciones centralizadas."},
+    {t:"Registro en el portal: del OID al PIC",s:"parcial",src:["kb-0008"],n:"Los identificadores que necesitas para presentar en EACEA."},
+    {t:"Buscar y entender una call en el portal",s:"crear",src:["kb-0024"],n:"Cómo navegar Topics y documentación oficial de la convocatoria."},
+    {t:"El manual online del F&T",s:"tenemos",src:["kb-0024"],n:"La documentación de referencia para el sistema de envío."}
+   ]},
+   {c:"KA3-4",t:"De la idea a la propuesta",tag:"Semana 4 · Diseño",desc:"Diseñar un proyecto con dimensión política e impacto sistémico.",ls:[
+    {t:"Análisis del problema con dimensión política",s:"parcial",src:["kb-0027"],n:"Fundamentar una necesidad que trascienda lo local."},
+    {t:"Mapear stakeholders y decisores",s:"crear",n:"Identificar a quién hay que implicar para lograr cambio real."},
+    {t:"Teoría del cambio a escala sistémica",s:"crear",n:"Conectar actividades con transformación de políticas o prácticas."},
+    {t:"Construir un consorcio con peso político",s:"parcial",src:["kb-0077"],n:"Socios que aportan legitimidad, alcance y capacidad de incidencia."},
+    {t:"Dimensión europea y transnacionalidad",s:"crear",src:["kb-0095"],n:"Por qué el proyecto necesita hacerse a nivel europeo."}
+   ]},
+   {c:"KA3-5",t:"El formulario EACEA Part B",tag:"Semana 5 · El formulario",desc:"El formulario europeo de las acciones centralizadas, apartado a apartado.",ls:[
+    {t:"La estructura del Part B europeo",s:"borrador",src:["kb-0079","kb-0095"],n:"Recorrido por las secciones del formulario centralizado."},
+    {t:"Project Summary / Abstract",s:"borrador",n:"El resumen que abre la propuesta y fija la primera impresión."},
+    {t:"Relevance en clave KA3",s:"borrador",src:["kb-0095","kb-0078"],n:"Background, objetivos generales y contribución a prioridades políticas."},
+    {t:"Quality of design and implementation",s:"borrador",src:["kb-0095"],n:"Metodología, gestión, calidad y riesgos."},
+    {t:"Partnership e Impact",s:"borrador",src:["kb-0095","kb-0026"],n:"Consorcio, gobernanza, impacto y sostenibilidad."}
+   ]},
+   {c:"KA3-6",t:"Cómo te evalúan",tag:"Semana 6 · Evaluación",desc:"Los criterios de adjudicación de las acciones EACEA.",ls:[
+    {t:"Los award criteria de las acciones EACEA",s:"tenemos",src:["kb-0025"],n:"Criterios y umbrales de las convocatorias centralizadas."},
+    {t:"La rúbrica del evaluador (Guide for Experts)",s:"tenemos",src:["kb-0095","kb-0096"],n:"Qué lee y puntúa el experto de la EACEA."},
+    {t:"Tips del evaluador aplicados a KA3",s:"tenemos",src:["kb-0090"],n:"Consejos de la propia agencia trasladados a tu texto."},
+    {t:"Autoevaluación con la rúbrica",s:"crear",n:"Puntuar tu borrador antes de presentarlo."}
+   ]},
+   {c:"KA3-7",t:"Redacción y work packages",tag:"Semana 7 · Redacción",desc:"Redactar el impacto sistémico y estructurar el plan de trabajo.",ls:[
+    {t:"Redactar la relevancia política",s:"crear",src:["kb-0095"],n:"Cómo argumentar el impacto en políticas sin caer en generalidades."},
+    {t:"Objetivos e indicadores de cambio sistémico",s:"crear",src:["kb-0097"],n:"Medir lo difícil de medir: influencia, adopción, escalabilidad."},
+    {t:"Work packages en acciones centralizadas",s:"parcial",src:["kb-0079"],n:"Estructura del plan de trabajo del Part B europeo."},
+    {t:"Staff effort, subcontratación y eventos",s:"crear",src:["kb-0017"],n:"Los apartados de recursos del work plan EACEA."},
+    {t:"Redactar acciones EACEA en español",s:"crear",n:"Cómo trabajar en español un formulario cuyo material canónico está en inglés."}
+   ]},
+   {c:"KA3-8",t:"Presupuesto, presentación y gestión",tag:"Semana 8 · Cierre",desc:"Presupuestar, presentar en el portal y sostener el impacto político.",ls:[
+    {t:"El presupuesto en acciones EACEA",s:"parcial",src:["kb-0018","kb-0078"],n:"Cómo se presupuestan las acciones centralizadas frente al lump sum de NA."},
+    {t:"Comunicación, difusión y visibilidad",s:"parcial",src:["kb-0026"],n:"Llegar a decisores y público, y dar visibilidad a la financiación UE."},
+    {t:"Sostenibilidad e incidencia tras el proyecto",s:"crear",n:"Cómo consolidar el cambio de política logrado."},
+    {t:"Presentar en el F&T Portal",s:"parcial",src:["kb-0024"],n:"La mecánica de envío electrónico de acciones centralizadas."},
+    {t:"Ethics, security y declaraciones",s:"crear",n:"Los apartados finales que no puedes descuidar."}
+   ]}
+  ]},
+
+ {code:"CB",t:"Capacity Building",nivel:"Avanzado",
+  desc:"Curso sobre las acciones de Capacity Building (desarrollo de capacidades), que financian la cooperación con organizaciones de terceros países no asociados al programa. Gestionadas por la EACEA, tienen reglas de elegibilidad regional, socios internacionales y un enfoque de desarrollo. Todo el material oficial está en inglés: aquí lo trabajamos en español.",
+  mods:[
+   {c:"CB-1",t:"Qué es Capacity Building",tag:"Semana 1 · Fundamentos",desc:"La lógica del desarrollo de capacidades y la cooperación con terceros países.",ls:[
+    {t:"La lógica del desarrollo de capacidades",s:"tenemos",src:["kb-0087"],n:"Por qué la UE financia reforzar organizaciones fuera de Europa."},
+    {t:"Terceros países no asociados: el corazón de CB",s:"crear",n:"Qué significa cooperar más allá del programa y con quién."},
+    {t:"CB frente a KA2 y KA3",s:"crear",n:"En qué se parece y en qué se diferencia de otras cooperaciones."},
+    {t:"Las prioridades de las convocatorias CB",s:"crear",n:"Qué buscan las calls y cómo alinearte."},
+    {t:"El itinerario del curso",s:"crear",n:"Mapa de las 8 semanas y entregable final."}
+   ]},
+   {c:"CB-2",t:"Los ámbitos de Capacity Building",tag:"Semana 2 · Ámbitos",desc:"Youth, VET y Higher Education: las tres líneas de desarrollo de capacidades.",ls:[
+    {t:"CB Youth: desarrollo de capacidades en juventud",s:"tenemos",src:["kb-0087"],n:"La acción CB del ámbito juvenil, regiones y objetivos."},
+    {t:"CB VET: desarrollo de capacidades en FP",s:"tenemos",src:["kb-0088","kb-0089"],n:"Cómo se solicita CB en formación profesional."},
+    {t:"CB Higher Education: educación superior",s:"crear",n:"El ámbito universitario del desarrollo de capacidades."},
+    {t:"Qué financia y qué no cada ámbito",s:"crear",n:"Actividades elegibles y límites por línea."},
+    {t:"Elegir tu ámbito CB",s:"crear",n:"Ejercicio de encaje entre tu organización y la acción."}
+   ]},
+   {c:"CB-3",t:"Regiones, elegibilidad y socios",tag:"Semana 3 · Reglas del juego",desc:"El mapa de regiones del mundo y las reglas de composición del consorcio.",ls:[
+    {t:"El mapa de regiones del mundo",s:"crear",n:"Cómo Erasmus+ agrupa los terceros países y por qué importa."},
+    {t:"Reglas de elegibilidad geográfica",s:"crear",n:"Qué combinaciones de países son válidas en tu proyecto."},
+    {t:"Requisitos de composición del consorcio",s:"parcial",src:["kb-0077"],n:"Cuántos socios, de qué regiones y con qué roles."},
+    {t:"Encontrar socios en terceros países",s:"crear",n:"Estrategias y precauciones para partenariados internacionales."},
+    {t:"El equilibrio de poder en el consorcio",s:"crear",n:"Cooperar de igual a igual y evitar el asistencialismo."}
+   ]},
+   {c:"CB-4",t:"De la idea al proyecto",tag:"Semana 4 · Diseño",desc:"Diseñar un proyecto de desarrollo con necesidades reales del país socio.",ls:[
+    {t:"Análisis de necesidades en contexto de desarrollo",s:"parcial",src:["kb-0027"],n:"Fundamentar necesidades reales del país socio, no supuestas."},
+    {t:"Teoría del cambio orientada a capacidades",s:"crear",n:"Del refuerzo institucional al impacto duradero."},
+    {t:"Objetivos de desarrollo de capacidades",s:"crear",src:["kb-0097"],n:"Formular objetivos de fortalecimiento medibles."},
+    {t:"Alinear con prioridades de desarrollo de la UE",s:"crear",n:"Conectar con la agenda de cooperación internacional."},
+    {t:"Diseñar actividades con enfoque de sostenibilidad",s:"crear",n:"Que la capacidad quede instalada cuando el proyecto acabe."}
+   ]},
+   {c:"CB-5",t:"El formulario EACEA",tag:"Semana 5 · El formulario",desc:"El Part B de Capacity Building, criterio a criterio.",ls:[
+    {t:"La estructura del Part B en CB",s:"borrador",src:["kb-0095"],n:"Recorrido por el formulario centralizado de Capacity Building."},
+    {t:"Relevance en clave de desarrollo",s:"borrador",src:["kb-0095"],n:"Contexto, necesidades y objetivos con dimensión internacional."},
+    {t:"Quality of design and implementation",s:"borrador",src:["kb-0095"],n:"Metodología, gestión y calidad adaptadas a contextos complejos."},
+    {t:"Partnership: el criterio decisivo en CB",s:"borrador",src:["kb-0095"],n:"Por qué el partenariado pesa especialmente en desarrollo de capacidades."},
+    {t:"Impact y sostenibilidad",s:"borrador",src:["kb-0095","kb-0026"],n:"Efectos duraderos y apropiación local."}
+   ]},
+   {c:"CB-6",t:"Cómo te evalúan",tag:"Semana 6 · Evaluación",desc:"Los criterios de adjudicación específicos de Capacity Building.",ls:[
+    {t:"Los award criteria de CB",s:"tenemos",src:["kb-0025"],n:"Criterios y umbrales específicos de estas convocatorias."},
+    {t:"Tips del evaluador CB-VET aplicados",s:"tenemos",src:["kb-0090"],n:"Consejos oficiales de la agencia trasladados a tu texto."},
+    {t:"La rúbrica del experto",s:"tenemos",src:["kb-0095"],n:"Qué lee y puntúa el evaluador en CB."},
+    {t:"Autoevaluación con la rúbrica",s:"crear",n:"Puntuar tu borrador antes de enviarlo."}
+   ]},
+   {c:"CB-7",t:"Redacción y work packages",tag:"Semana 7 · Redacción",desc:"Redactar la relevancia internacional y estructurar el plan de trabajo.",ls:[
+    {t:"Redactar la relevancia internacional",s:"crear",src:["kb-0095"],n:"Argumentar el valor de cooperar con ese país y esa región."},
+    {t:"Indicadores de capacidad instalada",s:"crear",src:["kb-0097"],n:"Medir el fortalecimiento de organizaciones y personas."},
+    {t:"Work packages en proyectos CB",s:"parcial",src:["kb-0079"],n:"Estructura del plan de trabajo del Part B."},
+    {t:"Gestión de recursos en consorcios internacionales",s:"crear",src:["kb-0017"],n:"Staff effort, subcontratación y desplazamientos."},
+    {t:"Material de Capacity Building en español",s:"crear",n:"Trabajar en español acciones cuyo material oficial está en inglés."}
+   ]},
+   {c:"CB-8",t:"Presupuesto, presentación y gestión",tag:"Semana 8 · Cierre",desc:"Presupuestar, presentar y asegurar la apropiación local del impacto.",ls:[
+    {t:"El presupuesto en acciones CB",s:"parcial",src:["kb-0018"],n:"Cómo se presupuesta el desarrollo de capacidades."},
+    {t:"Difusión y visibilidad internacional",s:"parcial",src:["kb-0026"],n:"Comunicar resultados dentro y fuera de la UE."},
+    {t:"Sostenibilidad y apropiación local",s:"crear",n:"Que la mejora perdure en el país socio."},
+    {t:"Presentar en el F&T Portal",s:"parcial",src:["kb-0024"],n:"La mecánica de envío de la acción centralizada."},
+    {t:"Gestión de un proyecto CB tras el «sí»",s:"parcial",src:["kb-0020"],n:"Obligaciones y seguimiento de un proyecto internacional."}
+   ]}
+  ]},
+
+ {code:"SPT",t:"Deporte (Sport)",nivel:"Intermedio",
+  desc:"Curso dedicado a las acciones de Deporte de Erasmus+: desde las asociaciones de cooperación y small-scale hasta los eventos deportivos europeos sin ánimo de lucro. Cubre las prioridades del sector (integridad, inclusión, actividad física saludable) y la redacción de solicitudes, un ámbito con muy poca formación disponible en español.",
+  mods:[
+   {c:"SPT-1",t:"El deporte en Erasmus+",tag:"Semana 1 · Fundamentos",desc:"Por qué la UE financia deporte y a quién se dirige.",ls:[
+    {t:"Por qué Erasmus+ financia deporte",s:"crear",src:["kb-0092"],n:"El valor social del deporte y qué persigue la UE al apoyarlo."},
+    {t:"El deporte de base como foco",s:"crear",n:"Grassroots sport: a quién se dirigen estas acciones."},
+    {t:"El lugar del deporte en el programa",s:"crear",src:["kb-0003"],n:"Cómo encaja el capítulo de deporte junto a KA1, KA2 y KA3."},
+    {t:"Quién puede presentar proyectos de deporte",s:"crear",n:"El perfil de organizaciones elegibles."},
+    {t:"El itinerario del curso",s:"crear",n:"Mapa de las 8 semanas y entregable final."}
+   ]},
+   {c:"SPT-2",t:"Las acciones de deporte",tag:"Semana 2 · Las acciones",desc:"Las tres grandes vías del capítulo de deporte.",ls:[
+    {t:"Panorámica de las acciones deportivas",s:"tenemos",src:["kb-0092","kb-0093"],n:"El mapa de acciones del ámbito del deporte."},
+    {t:"Cooperation Partnerships en deporte",s:"tenemos",src:["kb-0093"],n:"La cooperación de mayor alcance aplicada al deporte."},
+    {t:"Small-scale Partnerships en deporte",s:"tenemos",src:["kb-0094"],n:"El proyecto de entrada para organizaciones deportivas."},
+    {t:"Not-for-profit European Sport Events",s:"tenemos",src:["kb-0092"],n:"La acción específica para organizar eventos deportivos europeos."},
+    {t:"¿Qué acción encaja con tu idea?",s:"crear",n:"Ejercicio de elección entre cooperación y evento."}
+   ]},
+   {c:"SPT-3",t:"Las prioridades del deporte",tag:"Semana 3 · Prioridades",desc:"Las prioridades del sector que debes encarnar en tu proyecto.",ls:[
+    {t:"Integridad en el deporte",s:"crear",n:"Lucha contra el dopaje, el amaño de partidos y la corrupción."},
+    {t:"Inclusión e igualdad a través del deporte",s:"crear",src:["kb-0004"],n:"El deporte como herramienta de cohesión social."},
+    {t:"Actividad física saludable (HEPA)",s:"crear",n:"La promoción de estilos de vida activos."},
+    {t:"Educación en y a través del deporte",s:"crear",n:"Valores, dual careers y desarrollo personal."},
+    {t:"Alinear tu proyecto con las prioridades",s:"crear",n:"Cómo elegir y encarnar la prioridad adecuada."}
+   ]},
+   {c:"SPT-4",t:"De la idea al proyecto",tag:"Semana 4 · Diseño",desc:"Fundamentar un problema real del deporte de base y darle forma de proyecto.",ls:[
+    {t:"Análisis de necesidades en el ámbito deportivo",s:"parcial",src:["kb-0027"],n:"Fundamentar un problema real del deporte de base."},
+    {t:"Teoría del cambio aplicada al deporte",s:"crear",n:"Del problema social al impacto a través de la actividad deportiva."},
+    {t:"Objetivos claros y medibles",s:"crear",src:["kb-0097"],n:"Formular objetivos deportivos SMART."},
+    {t:"Diseñar el consorcio deportivo",s:"parcial",src:["kb-0077"],n:"Clubes, federaciones, ONG y entidades públicas: quién aporta qué."},
+    {t:"Buscar socios en el sector del deporte",s:"crear",n:"Dónde encontrar aliados fiables en Europa."}
+   ]},
+   {c:"SPT-5",t:"El formulario",tag:"Semana 5 · El formulario",desc:"Dónde se presenta cada acción y cómo es su formulario.",ls:[
+    {t:"NA vs EACEA: dónde se presenta cada acción",s:"crear",src:["kb-0006"],n:"Small-scale/Cooperation por Agencia Nacional; eventos por EACEA."},
+    {t:"La estructura del formulario de deporte",s:"parcial",src:["kb-0079","kb-0095"],n:"Recorrido por las secciones según la acción elegida."},
+    {t:"Relevancia del proyecto deportivo",s:"borrador",src:["kb-0095"],n:"Contexto, prioridades y objetivos del criterio de relevancia."},
+    {t:"Calidad del diseño y de la implementación",s:"borrador",src:["kb-0095"],n:"Metodología, gestión y calidad del proyecto."},
+    {t:"Partenariado e impacto",s:"borrador",src:["kb-0095","kb-0026"],n:"Consorcio, difusión y sostenibilidad."}
+   ]},
+   {c:"SPT-6",t:"Cómo te evalúan",tag:"Semana 6 · Evaluación",desc:"Los criterios y la rúbrica aplicados a un proyecto deportivo.",ls:[
+    {t:"Los criterios y umbrales",s:"tenemos",src:["kb-0025","kb-0093"],n:"Cómo se puntúan las acciones de deporte."},
+    {t:"La rúbrica del evaluador",s:"tenemos",src:["kb-0095"],n:"Qué busca el experto en un proyecto deportivo."},
+    {t:"Escribir para el evaluador",s:"crear",src:["kb-0090"],n:"Trasladar los criterios a tu redacción."},
+    {t:"Autoevaluación de tu borrador",s:"crear",n:"Puntuar tu texto antes de enviarlo."}
+   ]},
+   {c:"SPT-7",t:"Redacción y work packages",tag:"Semana 7 · Redacción",desc:"Redactar el impacto social del deporte y estructurar el trabajo.",ls:[
+    {t:"Redactar la relevancia y el impacto social",s:"crear",src:["kb-0095"],n:"Argumentar el cambio que produce el proyecto en la comunidad."},
+    {t:"Indicadores de impacto deportivo y social",s:"crear",src:["kb-0097"],n:"Medir participación, hábitos y cambios de comportamiento."},
+    {t:"Work packages de un proyecto de deporte",s:"parcial",src:["kb-0018","kb-0079"],n:"Estructurar el plan de trabajo por paquetes."},
+    {t:"Organizar un evento deportivo europeo",s:"crear",n:"Particularidades de planificar un Not-for-profit European Sport Event."},
+    {t:"Redactar un proyecto de deporte en español",s:"crear",n:"Trabajar en español un ámbito con poca fuente verificable en nuestro idioma."}
+   ]},
+   {c:"SPT-8",t:"Presupuesto, impacto y presentación",tag:"Semana 8 · Cierre",desc:"Presupuestar, dar visibilidad y presentar la solicitud.",ls:[
+    {t:"El presupuesto en proyectos de deporte",s:"parcial",src:["kb-0019","kb-0018"],n:"Lump sums, tramos y cómo presupuestar cada acción."},
+    {t:"Difusión y visibilidad del proyecto",s:"parcial",src:["kb-0026"],n:"Llegar a participantes, comunidad y público."},
+    {t:"Sostenibilidad del impacto deportivo",s:"crear",n:"Qué queda en el club o la comunidad cuando acaba."},
+    {t:"Presentar la solicitud",s:"parcial",src:["kb-0024","kb-0008"],n:"Checklist final y envío según la acción (NA o EACEA)."},
+    {t:"Después del «sí»: gestión e informes",s:"parcial",src:["kb-0020"],n:"Obligaciones básicas de ejecución del proyecto."}
+   ]}
+  ]}
+];
+
+function courseStats(course){
+  let n=0,ten=0,par=0,cre=0,bor=0;
+  course.mods.forEach(m=>m.ls.forEach(l=>{n++;l.s==='tenemos'?ten++:l.s==='parcial'?par++:l.s==='borrador'?bor++:cre++;}));
+  return {n,ten,par,cre,bor,mods:course.mods.length};
+}
+function toggleCourse(ci){const el=document.getElementById('course-'+ci);if(el)el.classList.toggle('open');}
+function renderCourses(){
+  const totLes=COURSES.reduce((s,c)=>s+courseStats(c).n,0);
+  document.getElementById('cursos-head').innerHTML=`
+    <div class="cur-counters">
+      <span class="pill"><b>${COURSES.length}</b> cursos oficiales</span>
+      <span class="pill"><b>${COURSES.length*8}</b> módulos (8 semanas · curso)</span>
+      <span class="pill"><b>${totLes}</b> lecciones</span>
+    </div>
+    <p class="cur-note">${COURSES_NOTA}</p>`;
+  document.getElementById('cursos-body').innerHTML=COURSES.map((c,ci)=>{
+    const st=courseStats(c);
+    const nNotes=c.mods.reduce((s,m)=>s+m.ls.reduce((a,l,i)=>a+noteCount(`${m.c}.${i+1}`),0),0);
+    const nBadge=nNotes?`<span class="course-notebadge">📝 ${nNotes}</span>`:'';
+    return `<div class="course${ci===0?' open':''}" id="course-${ci}">
+      <div class="course-head" data-action="Academy.toggleCourse" data-args="${Acciones.args(ci)}">
+        <span class="chev">▸</span>
+        <h2>${escHtml(c.t)}</h2>
+        ${c.nivel?`<span class="course-nivel">${escHtml(c.nivel)}</span>`:''}
+        <span class="course-mini">${st.mods} módulos · ${st.n} lecciones</span>
+        ${nBadge}
+      </div>
+      <div class="course-body">
+        <p class="course-desc">${escHtml(c.desc||'')}</p>
+        ${c.mods.map(modCard).join('')}
+      </div>
+    </div>`;
+  }).join('');
+  document.querySelectorAll('#cursos-body .lsrc').forEach(el=>el.onclick=(e)=>{
+    e.stopPropagation();
+    switchView('catalogo');
+    const id=el.dataset.id;
+    document.getElementById('q').value=id;filters.q=id.toLowerCase();render();
+    window.scrollTo({top:0,behavior:'smooth'});
+  });
+}
+renderCourses();
+
+/* ===================== CONTENIDO DE LECCIÓN + NOTAS DE REVISIÓN ===================== */
+const ACAPI='/v1/academy';
+function escAttr(s){return (s||'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));}
+function escHtml(s){return (s||'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));}
+function toast(m){const t=document.getElementById('toast');t.textContent=m;t.classList.add('show');setTimeout(()=>t.classList.remove('show'),1700);}
+function noteCount(id){const o=window.NOTES[id]||{};return Object.values(o).flat().filter(n=>n.status!=='done').length;}
+/* La API de academy exige sesión de admin: el token de acceso se saca del
+   refresh_token (cookie httpOnly) igual que la app principal, y se reintenta una vez si caduca. */
+let ACTOKEN=null;
+async function acToken(force){
+  if(ACTOKEN&&!force)return ACTOKEN;
+  try{const r=await fetch('/v1/auth/refresh',{method:'POST',credentials:'include'});const j=await r.json();ACTOKEN=(j.ok&&j.data&&j.data.access_token)||null;}catch(e){ACTOKEN=null;}
+  return ACTOKEN;
+}
+async function jx(url,opts,retried){
+  opts=Object.assign({},opts||{});const t=await acToken(retried);
+  opts.headers=Object.assign({},opts.headers||{},t?{Authorization:'Bearer '+t}:{});opts.credentials='include';
+  const r=await fetch(url,opts);
+  if(r.status===401&&!retried)return jx(url,opts,true);
+  const j=await r.json();
+  if(r.status===401||r.status===403)toast(r.status===401?'Inicia sesión como admin en la app':'Solo admin');
+  return j;
+}
+
+/* Refresca los badges 📝 de todas las pestañas re-renderizando las listas. */
+function refreshAll(){renderCourses();renderCurriculo();renderSAS();renderEACEA();renderDeepdives();}
+
+/* Carga las notas y refresca badges una vez disponibles. */
+jx(ACAPI+'/notes').then(d=>{Object.assign(window.NOTES,d.data||{});refreshAll();});
+
+let CURRENT_LESSON=null;
+async function openLesson(id,title){
+  CURRENT_LESSON=id;
+  document.getElementById('lmodal-title').textContent=title||id;
+  const body=document.getElementById('lmodal-body');
+  body.innerHTML='<div style="padding:30px;text-align:center;color:var(--soft)">Cargando…</div>';
+  document.getElementById('lmodal').classList.add('open');
+  document.body.style.overflow='hidden';
+  const r=await jx(ACAPI+'/lesson/'+encodeURIComponent(id));
+  if(r.ok){ renderLessonContent(body,r.data); }
+  else { renderLessonStub(body,id,title); }
+}
+function closeLesson(){document.getElementById('lmodal').classList.remove('open');document.body.style.overflow='';CURRENT_LESSON=null;refreshAll();}
+document.addEventListener('keydown',e=>{if(e.key==='Escape'&&CURRENT_LESSON)closeLesson();});
+
+function frameBlock(f){
+  if(!f)return '';
+  const row=(icon,label,val,cls)=> val?`<div class="frame-row ${cls}"><span class="frame-ic">${icon}</span><div><b>${label}</b><span>${escHtml(val)}</span></div></div>`:'';
+  return `<div class="frame">
+    <div class="frame-title">🎯 Antes de empezar — el porqué de esta lección</div>
+    ${row('😣','Punto de dolor',f.dolor,'dolor')}
+    ${row('🧠','Lo que necesitas comprender',f.comprender,'comp')}
+    ${row('✅','Objetivo de aprendizaje',f.objetivo,'obj')}
+    ${row('⚠️','Confusión habitual',f.confusion,'conf')}
+    ${row('⭐','Por qué es importante',f.importa,'imp')}
+  </div>`;
+}
+function renderLessonContent(body,L){
+  document.getElementById('lmodal-title').textContent=L.title;
+  const meta=Object.entries(L.meta||{}).map(([k,v])=>`<div><b>${escHtml(k)}</b>${escHtml(v)}</div>`).join('');
+  const head=`<div class="lhead">
+    <span class="code">${escHtml(L.code||'')} · ${escHtml(L.moduleTitle||'')}</span>
+    <h3>${escHtml(L.title)}</h3>
+    ${L.subtitle?`<p class="sub">${escHtml(L.subtitle)}</p>`:''}
+    <div class="metagrid">${meta}</div>
+    ${noteBlock(L.id,'_lesson','📌 Nota general de la lección')}
+  </div>
+  ${frameBlock(L.frame)}
+  ${L.frame?noteBlock(L.id,'_frame','📝 Nota sobre el enfoque pedagógico'):''}`;
+  const secs=(L.sections||[]).map(s=>`<div class="section kind-${s.kind}">
+    <div class="shead"><h4>${escHtml(s.title)}</h4>
+      <button class="snote-btn" data-action="Academy.toggleNotes" data-args="${Acciones.args(String(L.id), String(s.id))}">📝 Nota${noteCount2(L.id,s.id)}</button></div>
+    <div class="sbody" data-anchor="${s.id}">${s.html}</div>
+    <div class="notespanel" id="np-${L.id}-${s.id}"></div>
+  </div>`).join('');
+  const vid = L.video ? `<div class="section video-sec">
+    <div class="shead"><h4>🎬 Vídeo de la lección</h4>
+      <button class="snote-btn" data-action="Academy.toggleNotes" data-args="${Acciones.args(String(L.id), '_video')}">📝 Nota${noteCount2(L.id,'_video')}</button></div>
+    <div class="sbody"><video class="lesson-video" controls preload="metadata" src="${escAttr(L.video)}"></video></div>
+    <div class="notespanel" id="np-${L.id}-_video"></div>
+  </div>` : '';
+  window.__narration = L.narration || '';
+  const narr = L.narration ? `<div class="section narration-sec">
+    <div class="shead"><h4>🎙️ Guion de narración para audio (ElevenLabs)</h4>
+      <button class="snote-btn" data-action="Academy.copyNarration">📋 Copiar guion</button>
+      <button class="snote-btn" data-action="Academy.toggleNotes" data-args="${Acciones.args(String(L.id), '_narration')}">📝 Nota${noteCount2(L.id,'_narration')}</button></div>
+    <div class="sbody"><p class="narr-help">Texto pensado para un solo narrador, listo para pegar en ElevenLabs y generar el audio del vídeo de esta unidad. Selecciona una frase para dejar una nota sobre ella.</p><div class="narration-box" data-anchor="_narration">${escHtml(L.narration)}</div></div>
+    <div class="notespanel" id="np-${L.id}-_narration"></div>
+  </div>` : '';
+  body.innerHTML=head+vid+narr+secs;
+  applyHighlights(L.id);
+}
+function copyNarration(){
+  const t=window.__narration||''; if(!t)return;
+  // Texto plano con saltos de línea Windows (sobreviven en Notepad, textareas, etc.)
+  const plain=t.replace(/\r\n/g,'\n').replace(/\n/g,'\r\n');
+  // HTML con párrafos reales (sobreviven al pegar en editores que formatean: Word, ElevenLabs, Docs…)
+  const html='<p>'+t.split(/\n\s*\n/).map(p=>escHtml(p.trim()).replace(/\n/g,'<br>')).join('</p><p>')+'</p>';
+  if(navigator.clipboard && window.ClipboardItem){
+    const item=new ClipboardItem({
+      'text/plain':new Blob([plain],{type:'text/plain'}),
+      'text/html': new Blob([html],{type:'text/html'})
+    });
+    navigator.clipboard.write([item]).then(()=>toast('Guion copiado ✓ (con párrafos)')).catch(()=>fallbackCopy(plain));
+  } else { fallbackCopy(plain); }
+}
+function fallbackCopy(plain){ navigator.clipboard.writeText(plain).then(()=>toast('Guion copiado ✓')).catch(()=>toast('No se pudo copiar')); }
+function renderLessonStub(body,id,title){
+  body.innerHTML=`<div class="lhead">
+    <span class="code">${escHtml(id)}</span>
+    <h3>${escHtml(title||id)}</h3>
+    <p class="sub">Esta lección todavía <b>no tiene contenido redactado</b>. Aún así puedes dejar una nota para orientar cómo quieres que la cree (enfoque, tono, ejemplos, longitud…).</p>
+    ${noteBlock(id,'_lesson','📝 Nota / instrucciones para crear esta lección')}
+  </div>`;
+}
+/* devuelve el sufijo del contador para botones de sección */
+function noteCount2(lessonId,anchor){const a=(window.NOTES[lessonId]&&window.NOTES[lessonId][anchor])||[];const n=a.filter(x=>x.status!=='done').length;return n?`<span class="cnt">${n}</span>`:'';}
+
+function noteBlock(lessonId,anchor,label){
+  return `<div style="margin-top:14px;display:flex;justify-content:flex-end">
+    <button class="snote-btn" data-action="Academy.toggleNotes" data-args="${Acciones.args(String(lessonId), String(anchor))}">${label}${noteCount2(lessonId,anchor)}</button></div>
+    <div class="notespanel" id="np-${lessonId}-${anchor}" style="margin-top:10px;border-radius:10px;border:1px dashed var(--yellow2)"></div>`;
+}
+function toggleNotes(lessonId,anchor){
+  const p=document.getElementById(`np-${lessonId}-${anchor}`);
+  if(!p)return;
+  if(p.classList.contains('open')){p.classList.remove('open');return;}
+  p.classList.add('open');renderNotes(lessonId,anchor);
+}
+const PENDING={};  // anchor -> cita seleccionada pendiente de adjuntar a la próxima nota
+function renderNotes(lessonId,anchor){
+  const p=document.getElementById(`np-${lessonId}-${anchor}`);if(!p)return;
+  const arr=(window.NOTES[lessonId]&&window.NOTES[lessonId][anchor])||[];
+  const list=arr.map(n=>`<div class="note ${n.status==='done'?'done':''}">
+    <div class="nmeta"><b>${escHtml(n.author||'Oscar')}</b> · ${new Date(n.ts).toLocaleString('es-ES')}${n.status==='done'?' · ✔ resuelta':''}</div>
+    ${n.quote?`<div class="note-quote">«${escHtml(n.quote)}»</div>`:''}
+    <div class="ntext">${escHtml(n.text)}</div>
+    <div class="nact">
+      <button data-action="Academy.setStatus" data-args="${Acciones.args(String(lessonId), String(anchor), String(n.id), String(n.status==='done'?'open':'done'))}">${n.status==='done'?'Reabrir':'Marcar resuelta'}</button>
+      <button data-action="Academy.delNote" data-args="${Acciones.args(String(lessonId), String(anchor), String(n.id))}">Borrar</button></div></div>`).join('')
+    || '<div class="nohint" style="margin-bottom:8px">Sin notas todavía. Escribe una instrucción, o selecciona texto arriba para anclar la nota a una frase concreta.</div>';
+  const pend=PENDING[anchor];
+  p.innerHTML=list+`<div class="addnote">
+    ${pend?`<div class="pending-quote">Nota sobre la selección: «${escHtml(pend)}» <button title="Quitar selección" data-action="Academy.clearPending" data-args="${Acciones.args(String(lessonId), String(anchor))}">✕</button></div>`:''}
+    <textarea id="ta-${lessonId}-${anchor}" placeholder="Ej.: «acorta la analogía», «añade un ejemplo de KA220», «el tono es muy técnico aquí», «esto cámbialo por…»"></textarea>
+    <div class="row"><button class="savebtn" data-action="Academy.addNote" data-args="${Acciones.args(String(lessonId), String(anchor))}">Guardar nota</button>
+    <span class="nohint">Se guarda en el repo · Claude la lee desde ahí</span></div></div>`;
+}
+function clearPending(lessonId,anchor){ delete PENDING[anchor]; renderNotes(lessonId,anchor); }
+async function addNote(lessonId,anchor){
+  const ta=document.getElementById(`ta-${lessonId}-${anchor}`);const text=ta.value.trim();if(!text)return;
+  const quote=PENDING[anchor];
+  const r=await jx(ACAPI+'/notes',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({lessonId,anchor,text,quote})});
+  if(r.ok){ window.NOTES[lessonId]=window.NOTES[lessonId]||{}; window.NOTES[lessonId][anchor]=window.NOTES[lessonId][anchor]||[]; window.NOTES[lessonId][anchor].push(r.data);
+    delete PENDING[anchor]; ta.value='';renderNotes(lessonId,anchor);bumpBtn(lessonId,anchor);refreshHighlights(lessonId);toast(quote?'Nota a la selección guardada ✓':'Nota guardada ✓'); }
+}
+async function setStatus(lessonId,anchor,noteId,status){
+  const r=await jx(`${ACAPI}/notes/${lessonId}/${anchor}/${noteId}`,{method:'PATCH',headers:{'Content-Type':'application/json'},body:JSON.stringify({status})});
+  if(r.ok){const n=window.NOTES[lessonId][anchor].find(x=>x.id===noteId);if(n)n.status=status;renderNotes(lessonId,anchor);bumpBtn(lessonId,anchor);refreshHighlights(lessonId);}
+}
+async function delNote(lessonId,anchor,noteId){
+  const r=await jx(`${ACAPI}/notes/${lessonId}/${anchor}/${noteId}`,{method:'DELETE'});
+  if(r.ok){window.NOTES[lessonId][anchor]=(window.NOTES[lessonId][anchor]||[]).filter(x=>x.id!==noteId);renderNotes(lessonId,anchor);bumpBtn(lessonId,anchor);refreshHighlights(lessonId);toast('Nota borrada');}
+}
+/* actualiza el texto del botón de notas de ese anchor dentro del modal */
+function bumpBtn(lessonId,anchor){
+  document.querySelectorAll('.snote-btn').forEach(b=>{
+    const oc=b.getAttribute('onclick')||'';
+    if(oc===`toggleNotes('${lessonId}','${anchor}')`){
+      const base=anchor==='_lesson'?(b.textContent.includes('crear')?'📝 Nota / instrucciones para crear esta lección':'📌 Nota general de la lección'):'📝 Nota';
+      b.innerHTML=base+noteCount2(lessonId,anchor);
+    }
+  });
+}
+
+/* ===================== NOTAS SOBRE TEXTO RESALTADO ===================== */
+/* Resalta en el contenido las citas de las notas activas (con quote). */
+function applyHighlights(lessonId){
+  document.querySelectorAll('#lmodal-body [data-anchor]').forEach(host=>{
+    const anchor=host.getAttribute('data-anchor');
+    const notes=(window.NOTES[lessonId]&&window.NOTES[lessonId][anchor])||[];
+    notes.filter(n=>n.quote&&n.status!=='done').forEach(n=>highlightQuote(host,n.quote,anchor));
+  });
+}
+function clearHighlights(){
+  document.querySelectorAll('#lmodal-body mark.hl').forEach(m=>m.replaceWith(document.createTextNode(m.textContent)));
+  const b=document.getElementById('lmodal-body'); if(b)b.normalize();
+}
+function refreshHighlights(lessonId){ clearHighlights(); applyHighlights(lessonId); }
+/* envuelve la primera aparición de `quote` (dentro de un mismo nodo de texto) en un <mark>. */
+function highlightQuote(host,quote,anchor){
+  if(!quote)return;
+  const walker=document.createTreeWalker(host,NodeFilter.SHOW_TEXT,null);
+  let node;
+  while(node=walker.nextNode()){
+    if(node.parentElement&&node.parentElement.classList.contains('hl'))continue;
+    const idx=node.nodeValue.indexOf(quote);
+    if(idx>=0){
+      const range=document.createRange();
+      range.setStart(node,idx); range.setEnd(node,idx+quote.length);
+      const mark=document.createElement('mark');
+      mark.className='hl'; mark.title='Nota anclada — clic para verla';
+      mark.addEventListener('click',()=>toggleNotes(CURRENT_LESSON,anchor));
+      try{ range.surroundContents(mark); }catch(e){}
+      return;
+    }
+  }
+}
+/* Botón flotante al seleccionar texto dentro de una zona con data-anchor. */
+let selBtn=null;
+function hideSelBtn(){ if(selBtn)selBtn.style.display='none'; }
+function ensureSelBtn(){
+  if(selBtn)return selBtn;
+  selBtn=document.createElement('button');
+  selBtn.className='sel-note-btn'; selBtn.textContent='📝 Nota a la selección';
+  selBtn.style.display='none';
+  selBtn.addEventListener('mousedown',e=>e.preventDefault());  // no perder la selección
+  selBtn.addEventListener('click',()=>{ const d=selBtn._d; hideSelBtn(); if(d)startHighlightNote(d.lessonId,d.anchor,d.quote); });
+  document.body.appendChild(selBtn);
+  return selBtn;
+}
+function startHighlightNote(lessonId,anchor,quote){
+  PENDING[anchor]=quote;
+  const p=document.getElementById(`np-${lessonId}-${anchor}`);
+  if(p){ p.classList.add('open'); renderNotes(lessonId,anchor);
+    const ta=document.getElementById(`ta-${lessonId}-${anchor}`);
+    if(ta){ ta.scrollIntoView({block:'center'}); ta.focus(); } }
+}
+document.addEventListener('mouseup',(e)=>{
+  if(!CURRENT_LESSON)return;
+  if(selBtn&&selBtn.contains(e.target))return;
+  const sel=window.getSelection();
+  const txt=sel&&sel.toString().replace(/\s+/g,' ').trim();
+  if(!txt||txt.length<3){hideSelBtn();return;}
+  let node=sel.anchorNode; if(node&&node.nodeType===3)node=node.parentElement;
+  const host=node&&node.closest&&node.closest('[data-anchor]');
+  if(!host){hideSelBtn();return;}
+  const b=ensureSelBtn();
+  b._d={lessonId:CURRENT_LESSON,anchor:host.getAttribute('data-anchor'),quote:txt.slice(0,400)};
+  const rect=sel.getRangeAt(0).getBoundingClientRect();
+  b.style.display='block';
+  b.style.top=Math.max(8,rect.top-40)+'px';
+  b.style.left=Math.min(rect.left,window.innerWidth-200)+'px';
+});
+document.addEventListener('scroll',hideSelBtn,true);
+
+/* Botones de la página: data-action="Academy.funcion" (js/acciones.js) */
+Acciones.modulo('Academy', { addNote, clearPending, closeLesson, copyNarration, delNote, setStatus, toggleCourse, toggleNotes });
+Acciones.registrar({
+  'acad.abrirLeccion': (el, ev, id) => { openLesson(id, el.dataset.title); },
+  'acad.cerrarFondo': (el, ev) => { if (ev.target === el) closeLesson(); },
+});

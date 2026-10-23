@@ -465,7 +465,7 @@ const Calculator = (() => {
           <div class="text-center py-16">
             <span class="material-symbols-outlined text-5xl text-outline-variant mb-3">folder_off</span>
             <p class="text-on-surface-variant mb-4">No projects yet. Create one in Intake first.</p>
-            <button onclick="App.navigate('intake',true,true)" class="px-5 py-2.5 bg-primary text-white rounded-full font-semibold text-sm hover:bg-violet transition-colors">
+            <button data-action="App.navigate" data-args="${Acciones.args('intake', true, true)}" class="px-5 py-2.5 bg-primary text-white rounded-full font-semibold text-sm hover:bg-violet transition-colors">
               <span class="material-symbols-outlined text-[16px] align-middle mr-1">add_circle</span>
               New Project
             </button>
@@ -478,7 +478,7 @@ const Calculator = (() => {
         const partnerCount = p.partner_count || '?';
         return `
         <div class="flex items-center gap-4 p-4 bg-surface-container-lowest rounded-2xl border border-outline-variant/60 hover:border-primary/40 hover:shadow-md transition-all cursor-pointer group"
-             onclick="Calculator._loadProject('${p.id}')">
+             data-action="Calculator._loadProject" data-args="${Acciones.args(String(p.id))}">
           <div class="w-11 h-11 rounded-xl bg-lavender-soft flex items-center justify-content-center shrink-0">
             <span class="material-symbols-outlined text-primary text-xl m-auto">calculate</span>
           </div>
@@ -574,7 +574,7 @@ const Calculator = (() => {
     const root = $('calc-root');
     root.innerHTML = `
       <div class="flex items-center gap-3 mb-1">
-        <button onclick="Calculator._backToSelector()" class="text-on-surface-variant hover:text-primary transition-colors" title="Back to projects">
+        <button data-action="Calculator._backToSelector" class="text-on-surface-variant hover:text-primary transition-colors" title="Back to projects">
           <span class="material-symbols-outlined text-xl">arrow_back</span>
         </button>
         <div class="flex-1 min-w-0">
@@ -586,7 +586,7 @@ const Calculator = (() => {
       <!-- Progress bar -->
       <div class="flex items-center gap-1 my-5 px-2" id="calc-progress">
         ${STEP_LABELS.map((label, i) => `
-          <button class="flex flex-col items-center gap-1 group" onclick="Calculator._goTo(${i})" id="calc-prog-${i}">
+          <button class="flex flex-col items-center gap-1 group" data-action="Calculator._goTo" data-args="${Acciones.args(i)}" id="calc-prog-${i}">
             <div class="calc-prog-dot ${i === 0 ? 'active' : 'locked'}">${i+1}</div>
             <span class="calc-prog-label text-[10px] font-semibold text-on-surface-variant group-hover:text-primary transition-colors">${label}</span>
           </button>
@@ -637,8 +637,8 @@ const Calculator = (() => {
 
   function navButtons(prev, next, nextLabel) {
     return `<div class="flex justify-between mt-6">
-      ${prev !== null ? `<button onclick="Calculator._goTo(${prev})" class="px-4 py-2 text-sm font-semibold text-on-surface-variant hover:text-on-surface border border-outline-variant rounded-full transition-colors">← Back</button>` : '<span></span>'}
-      ${next !== null ? `<button onclick="Calculator._goTo(${next})" class="px-5 py-2.5 text-sm font-bold bg-primary text-white rounded-full hover:bg-violet transition-colors">${nextLabel || 'Next →'}</button>` : ''}
+      ${prev !== null ? `<button data-action="Calculator._goTo" data-args="${Acciones.args(prev)}" class="px-4 py-2 text-sm font-semibold text-on-surface-variant hover:text-on-surface border border-outline-variant rounded-full transition-colors">← Back</button>` : '<span></span>'}
+      ${next !== null ? `<button data-action="Calculator._goTo" data-args="${Acciones.args(next)}" class="px-5 py-2.5 text-sm font-bold bg-primary text-white rounded-full hover:bg-violet transition-colors">${nextLabel || 'Next →'}</button>` : ''}
     </div>`;
   }
 
@@ -693,8 +693,8 @@ const Calculator = (() => {
                     </div>
                   </td>
                   <td><span class="text-[11px] bg-surface-container-high px-2 py-0.5 rounded-full">${zLabel}</span></td>
-                  <td class="text-right"><input type="number" value="${r.aloj}" min="0" onchange="Calculator._setPerdiem('${p.id}','aloj',this.value)"></td>
-                  <td class="text-right"><input type="number" value="${r.mant}" min="0" onchange="Calculator._setPerdiem('${p.id}','mant',this.value)"></td>
+                  <td class="text-right"><input type="number" value="${r.aloj}" min="0" data-on-change="Calculator._setPerdiem" data-args="${Acciones.args(String(p.id), 'aloj', Acciones.VALOR)}"></td>
+                  <td class="text-right"><input type="number" value="${r.mant}" min="0" data-on-change="Calculator._setPerdiem" data-args="${Acciones.args(String(p.id), 'mant', Acciones.VALOR)}"></td>
                   <td class="text-right font-bold" style="color:${c}" id="calc-pd-total-${p.id}">${euros(total)}</td>
                 </tr>`;
               }).join('')}
@@ -729,16 +729,16 @@ const Calculator = (() => {
         </div>
         <table class="calc-table calc-rates">
           <tbody>
-            ${rates.map(w => { const idJs = String(w.id).replace(/\\/g, '\\\\').replace(/'/g, "\\'"); return `<tr>
-              <td class="w-5/12"><input type="text" value="${w.category}" class="w-full px-2 py-1 text-sm border border-outline-variant/30 rounded" onchange="Calculator._setWorkerRate('${idJs}','category',this.value)"></td>
-              <td class="text-right"><input type="number" value="${w.rate}" min="0" onchange="Calculator._setWorkerRate('${idJs}','rate',this.value)"><span class="text-[11px] text-on-surface-variant ml-1">\u20AC/day</span></td>
+            ${rates.map(w => { return `<tr>
+              <td class="w-5/12"><input type="text" value="${w.category}" class="w-full px-2 py-1 text-sm border border-outline-variant/30 rounded" data-on-change="Calculator._setWorkerRate" data-args="${Acciones.args(String(w.id), 'category', Acciones.VALOR)}"></td>
+              <td class="text-right"><input type="number" value="${w.rate}" min="0" data-on-change="Calculator._setWorkerRate" data-args="${Acciones.args(String(w.id), 'rate', Acciones.VALOR)}"><span class="text-[11px] text-on-surface-variant ml-1">\u20AC/day</span></td>
               <td class="text-right"><span class="text-sm font-bold text-primary/70">\u20AC${(w.rate * 22).toLocaleString('en')}</span><span class="text-[10px] text-on-surface-variant/50 ml-1">/PM</span></td>
-              <td class="w-8 text-center"><button onclick="Calculator._removeWorkerRate('${idJs}')" class="text-error hover:text-error-container text-lg leading-none" title="Quitar perfil" aria-label="Quitar perfil">&times;</button></td>
+              <td class="w-8 text-center"><button data-action="Calculator._removeWorkerRate" data-args="${Acciones.args(String(w.id))}" class="text-error hover:text-error-container text-lg leading-none" title="Quitar perfil" aria-label="Quitar perfil">&times;</button></td>
             </tr>`; }).join('')}
           </tbody>
         </table>
         <div class="px-3 py-2 bg-surface-container">
-          <button onclick="Calculator._addWorkerRate('${p.id}')" class="text-xs font-semibold text-primary hover:underline">+ Add profile</button>
+          <button data-action="Calculator._addWorkerRate" data-args="${Acciones.args(String(p.id))}" class="text-xs font-semibold text-primary hover:underline">+ Add profile</button>
         </div>
       </div>`;
     }).join('');
@@ -764,23 +764,23 @@ const Calculator = (() => {
     const custom = (r.custom_rate !== null && r.custom_rate !== undefined) ? r.custom_rate : '';
     const autoKm = autoKmBetween(aId, bId);
     const autoBadge = autoKm != null
-      ? `<button title="Recalcular distancia desde coordenadas (${autoKm} km)" onclick="Calculator._autoRoute('${aId}','${bId}')" class="ml-1 inline-flex items-center gap-0.5 text-[10px] font-bold px-1.5 py-0.5 rounded ${r.auto ? 'bg-secondary-fixed text-primary' : 'bg-outline-variant/30 text-on-surface-variant hover:bg-secondary-fixed hover:text-primary'}">⌖ ${autoKm}km</button>`
+      ? `<button title="Recalcular distancia desde coordenadas (${autoKm} km)" data-action="Calculator._autoRoute" data-args="${Acciones.args(String(aId), String(bId))}" class="ml-1 inline-flex items-center gap-0.5 text-[10px] font-bold px-1.5 py-0.5 rounded ${r.auto ? 'bg-secondary-fixed text-primary' : 'bg-outline-variant/30 text-on-surface-variant hover:bg-secondary-fixed hover:text-primary'}">⌖ ${autoKm}km</button>`
       : '';
     return `<tr>
       <td>${aLabel} <span class="text-on-surface-variant mx-1">↔</span> ${bLabel}${autoBadge}</td>
       <td class="text-center">
         <label class="flex items-center justify-center gap-1 cursor-pointer">
-          <input type="checkbox" ${r.green?'checked':''} class="w-3.5 h-3.5" onchange="Calculator._setRoute('${aId}','${bId}','green',this.checked)">
+          <input type="checkbox" ${r.green?'checked':''} class="w-3.5 h-3.5" data-on-change="Calculator._setRoute" data-args="${Acciones.args(String(aId), String(bId), 'green', Acciones.MARCADO)}">
           <span class="text-[10px] text-violet font-semibold">Eco</span>
         </label>
       </td>
       <td>
-        <select class="text-xs px-2 py-1 border border-outline-variant/30 rounded" onchange="Calculator._setRouteBand('${aId}','${bId}',parseInt(this.value))">
+        <select class="text-xs px-2 py-1 border border-outline-variant/30 rounded" data-on-change="Calculator._setRouteBand" data-args="${Acciones.args(String(aId), String(bId), Acciones.ENTERO)}">
           ${DISTANCE_BANDS.map((bd,idx) => `<option value="${idx}" ${idx===selIdx?'selected':''}>${bd.label}</option>`).join('')}
         </select>
       </td>
       <td class="text-right text-sm text-on-surface-variant" id="calc-route-off-${k}">€${official}</td>
-      <td class="text-right"><input type="number" value="${custom}" min="0" placeholder="—" class="w-24" onchange="Calculator._setRoute('${aId}','${bId}','custom_rate',this.value)" id="calc-route-custom-${k}"></td>
+      <td class="text-right"><input type="number" value="${custom}" min="0" placeholder="—" class="w-24" data-on-change="Calculator._setRoute" data-args="${Acciones.args(String(aId), String(bId), 'custom_rate', Acciones.VALOR)}" id="calc-route-custom-${k}"></td>
     </tr>`;
   }
 
@@ -848,15 +848,15 @@ const Calculator = (() => {
         <div id="calc-extra-dests">
           ${state.extraDests.map((d, i) => `
             <div class="flex items-center gap-2 mb-2" data-ed-idx="${i}">
-              <input type="text" value="${esc(d.name)}" placeholder="City (e.g. Brussels)" class="flex-1 px-3 py-2 rounded-lg border border-outline-variant text-sm" oninput="Calculator._setExtraDest(${i},'name',this.value)" onblur="Calculator._refreshRoutes()">
-              <input type="text" value="${esc(d.country || '')}" placeholder="Country (e.g. Belgium)" class="w-36 px-3 py-2 rounded-lg border border-outline-variant text-sm" oninput="Calculator._setExtraDest(${i},'country',this.value)" onblur="Calculator._refreshRoutes()">
-              <button onclick="Calculator._removeExtraDest(${i})" class="w-8 h-8 flex items-center justify-center rounded-lg text-on-surface-variant hover:bg-error/10 hover:text-error transition-colors">
+              <input type="text" value="${esc(d.name)}" placeholder="City (e.g. Brussels)" class="flex-1 px-3 py-2 rounded-lg border border-outline-variant text-sm" data-on-input="Calculator._setExtraDest" data-args="${Acciones.args(i, 'name', Acciones.VALOR)}" data-on-blur="Calculator._refreshRoutes">
+              <input type="text" value="${esc(d.country || '')}" placeholder="Country (e.g. Belgium)" class="w-36 px-3 py-2 rounded-lg border border-outline-variant text-sm" data-on-input="Calculator._setExtraDest" data-args="${Acciones.args(i, 'country', Acciones.VALOR)}" data-on-blur="Calculator._refreshRoutes">
+              <button data-action="Calculator._removeExtraDest" data-args="${Acciones.args(i)}" class="w-8 h-8 flex items-center justify-center rounded-lg text-on-surface-variant hover:bg-error/10 hover:text-error transition-colors">
                 <span class="material-symbols-outlined text-base">close</span>
               </button>
             </div>
           `).join('')}
         </div>
-        <button onclick="Calculator._addExtraDest()" class="inline-flex items-center gap-1.5 px-3 py-2 rounded-lg text-xs font-semibold text-primary hover:bg-primary/5 transition-colors mt-1">
+        <button data-action="Calculator._addExtraDest" class="inline-flex items-center gap-1.5 px-3 py-2 rounded-lg text-xs font-semibold text-primary hover:bg-primary/5 transition-colors mt-1">
           <span class="material-symbols-outlined text-sm">add</span> Añadir destino
         </button>
       </div>
@@ -910,7 +910,7 @@ const Calculator = (() => {
 
       <div class="flex items-center gap-3 mb-4">
         <label class="text-sm font-semibold text-on-surface-variant">Number of WPs</label>
-        <input type="number" id="calc-n-wps" value="${state.wps.length}" min="1" max="12" class="w-20 px-2 py-1.5 text-sm border border-outline-variant/30 rounded-lg text-center font-bold" onchange="Calculator._syncWPs(parseInt(this.value))">
+        <input type="number" id="calc-n-wps" value="${state.wps.length}" min="1" max="12" class="w-20 px-2 py-1.5 text-sm border border-outline-variant/30 rounded-lg text-center font-bold" data-on-change="Calculator._syncWPs" data-args="${Acciones.args(Acciones.ENTERO)}">
       </div>
 
       <div id="calc-wp-list" class="space-y-3">${buildWPListHTML()}</div>
@@ -936,14 +936,14 @@ const Calculator = (() => {
         titleSelectHTML = `
           <div>
             <label class="text-[11px] font-semibold text-on-surface-variant uppercase">Title</label>
-            <select class="text-xs w-full px-2 py-1.5 border border-outline-variant/30 rounded" onchange="Calculator._applyWPTitle(${wi},this.value)">${opts}</select>
+            <select class="text-xs w-full px-2 py-1.5 border border-outline-variant/30 rounded" data-on-change="Calculator._applyWPTitle" data-args="${Acciones.args(wi, Acciones.VALOR)}">${opts}</select>
           </div>`;
       } else if (isLast) {
         const opts = LAST_WP_TITLES.map(t => `<option value="${t}" ${t===wp.name?'selected':''}>${t}</option>`).join('');
         titleSelectHTML = `
           <div>
             <label class="text-[11px] font-semibold text-on-surface-variant uppercase">Title</label>
-            <select class="text-xs w-full px-2 py-1.5 border border-outline-variant/30 rounded" onchange="Calculator._applyWPTitle(${wi},this.value)">${opts}</select>
+            <select class="text-xs w-full px-2 py-1.5 border border-outline-variant/30 rounded" data-on-change="Calculator._applyWPTitle" data-args="${Acciones.args(wi, Acciones.VALOR)}">${opts}</select>
           </div>`;
       } else {
         const catOpts = '<option value="">— Category —</option>' + WP_TAXONOMY.map(g => `<option value="${g.cat}" ${g.cat===wp._cat?'selected':''}>${g.cat}</option>`).join('');
@@ -954,11 +954,11 @@ const Calculator = (() => {
           <div class="grid grid-cols-2 gap-2">
             <div>
               <label class="text-[11px] font-semibold text-on-surface-variant uppercase">Category</label>
-              <select class="text-xs w-full px-2 py-1.5 border border-outline-variant/30 rounded" onchange="Calculator._setWPCat(${wi},this.value)">${catOpts}</select>
+              <select class="text-xs w-full px-2 py-1.5 border border-outline-variant/30 rounded" data-on-change="Calculator._setWPCat" data-args="${Acciones.args(wi, Acciones.VALOR)}">${catOpts}</select>
             </div>
             <div>
               <label class="text-[11px] font-semibold text-on-surface-variant uppercase">Suggested title</label>
-              <select class="text-xs w-full px-2 py-1.5 border border-outline-variant/30 rounded" ${!titleOpts?'disabled':''} onchange="Calculator._applyWPTitle(${wi},this.value)">
+              <select class="text-xs w-full px-2 py-1.5 border border-outline-variant/30 rounded" ${!titleOpts?'disabled':''} data-on-change="Calculator._applyWPTitle" data-args="${Acciones.args(wi, Acciones.VALOR)}">
                 <option value="">${wp._cat ? '— Pick title —' : '← Pick category'}</option>
                 ${titleOpts}
               </select>
@@ -975,14 +975,14 @@ const Calculator = (() => {
           <span class="flex-1 min-w-0 font-headline font-bold text-sm" style="color:${c}">${wp.name || 'WP'+(wi+1)}</span>
           <div class="flex items-center gap-1 min-w-0 max-w-full">
             <span class="text-[11px] text-on-surface-variant">Leader:</span>
-            <select class="text-xs px-1.5 py-1 border border-outline-variant/20 rounded font-medium min-w-0 max-w-full" style="color:${c}" onchange="Calculator._setWP(${wi},'leader',this.value)">${leaderOpts}</select>
+            <select class="text-xs px-1.5 py-1 border border-outline-variant/20 rounded font-medium min-w-0 max-w-full" style="color:${c}" data-on-change="Calculator._setWP" data-args="${Acciones.args(wi, 'leader', Acciones.VALOR)}">${leaderOpts}</select>
           </div>
         </div>
         <div class="p-4 bg-surface-container-lowest space-y-3">
           ${titleSelectHTML}
           <div>
             <label class="text-[11px] font-semibold text-on-surface-variant uppercase">Summary — what is this WP about?</label>
-            <textarea rows="2" class="w-full mt-1 px-2.5 py-2 text-xs border border-outline-variant/30 rounded-lg resize-vertical leading-relaxed" placeholder="Briefly describe the purpose and main activities of this work package..." onchange="Calculator._setWP(${wi},'summary',this.value)" oninput="Calculator._setWP(${wi},'summary',this.value)">${summaryVal}</textarea>
+            <textarea rows="2" class="w-full mt-1 px-2.5 py-2 text-xs border border-outline-variant/30 rounded-lg resize-vertical leading-relaxed" placeholder="Briefly describe the purpose and main activities of this work package..." data-on-change="Calculator._setWP" data-on-input="Calculator._setWP" data-args="${Acciones.args(wi, 'summary', Acciones.VALOR)}">${summaryVal}</textarea>
           </div>
         </div>
       </div>`;
@@ -1073,17 +1073,16 @@ const Calculator = (() => {
     const lastWi = state.wps.length - 1;
     const isFirst = wi === 0;
     const isLast  = wi === lastWi && state.wps.length > 1;
-    const esc = t => t.replace(/'/g, "\\'");
     let items = '';
     if (isFirst) {
-      items = WP1_TITLES.map(t => `<button type="button" class="wp-title-item" onclick="Calculator._applyWPTitle(${wi},'${esc(t)}');this.closest('.wp-title-menu').remove()">${t}</button>`).join('');
+      items = WP1_TITLES.map(t => `<button type="button" class="wp-title-item" data-action="calc.tituloWP" data-args="${Acciones.args(wi, t)}">${t}</button>`).join('');
     } else if (isLast) {
-      items = LAST_WP_TITLES.map(t => `<button type="button" class="wp-title-item" onclick="Calculator._applyWPTitle(${wi},'${esc(t)}');this.closest('.wp-title-menu').remove()">${t}</button>`).join('');
+      items = LAST_WP_TITLES.map(t => `<button type="button" class="wp-title-item" data-action="calc.tituloWP" data-args="${Acciones.args(wi, t)}">${t}</button>`).join('');
     } else {
       for (const g of WP_TAXONOMY) {
         items += `<div class="wp-title-group">${g.cat}</div>`;
         for (const t of g.titles) {
-          items += `<button type="button" class="wp-title-item" onclick="Calculator._applyWPTitle(${wi},'${esc(t)}');this.closest('.wp-title-menu').remove()">${t}</button>`;
+          items += `<button type="button" class="wp-title-item" data-action="calc.tituloWP" data-args="${Acciones.args(wi, t)}">${t}</button>`;
         }
       }
     }
@@ -1102,13 +1101,13 @@ const Calculator = (() => {
     const sumRows = Math.max(3, Math.ceil((wp.summary || '').length / 90));
     return `
     <div class="calc-wp open" id="calc-wp-${wi}" style="--wp-color:${c};background:${bg};border-color:${c}30">
-      <div class="calc-wp-head" onclick="Calculator._toggleWP(${wi})" style="background:${c}18">
+      <div class="calc-wp-head" data-action="Calculator._toggleWP" data-args="${Acciones.args(wi)}" style="background:${c}18">
         <span class="w-9 h-9 rounded-full text-white text-[11px] font-extrabold flex items-center justify-center shrink-0" style="background:${c}">WP${wi+1}</span>
         <div class="flex-1 min-w-0">
-          <div class="flex items-center gap-1" onclick="event.stopPropagation()">
-            <input type="text" value="${(wp.name||'WP'+(wi+1)).replace(/"/g,'&quot;')}" class="font-headline text-sm font-bold text-on-surface bg-transparent border-none focus:outline-none flex-1 min-w-0 px-0" onchange="Calculator._setWPName(${wi},this.value)" onkeydown="if(event.key==='Enter')this.blur()">
+          <div class="flex items-center gap-1" data-action="parar">
+            <input type="text" value="${(wp.name||'WP'+(wi+1)).replace(/"/g,'&quot;')}" class="font-headline text-sm font-bold text-on-surface bg-transparent border-none focus:outline-none flex-1 min-w-0 px-0" data-on-change="Calculator._setWPName" data-args="${Acciones.args(wi, Acciones.VALOR)}" data-on-keydown="enter.salir">
             <div class="relative shrink-0">
-              <button type="button" class="w-6 h-6 rounded flex items-center justify-center hover:bg-white/40 transition-colors" onclick="event.stopPropagation();Calculator._showWPTitleMenu(${wi},this)" title="Suggested titles">
+              <button type="button" class="w-6 h-6 rounded flex items-center justify-center hover:bg-white/40 transition-colors" data-action="calc.menuTitulosWP" data-args="${Acciones.args(wi)}" title="Suggested titles">
                 <span class="material-symbols-outlined text-base" style="color:${c}">expand_more</span>
               </button>
             </div>
@@ -1117,15 +1116,15 @@ const Calculator = (() => {
         <span class="text-sm font-mono font-bold" style="color:${c}" id="calc-wp-total-${wi}">\u2014</span>
         <span class="material-symbols-outlined calc-wp-chevron">expand_more</span>
       </div>
-      <div class="px-4 py-3 border-b border-outline-variant/10" style="background:${c}10" onclick="event.stopPropagation()">
+      <div class="px-4 py-3 border-b border-outline-variant/10" style="background:${c}10" data-action="parar">
         <div class="flex flex-wrap items-center justify-between gap-2 mb-2">
           <label class="text-[11px] font-semibold uppercase tracking-wide" style="color:${c}">WP Summary</label>
           <div class="flex items-center gap-2 min-w-0 max-w-full">
             <span class="text-[11px] text-on-surface-variant font-semibold">Leader:</span>
-            <select class="text-sm px-2.5 py-1.5 border border-outline-variant/20 rounded-lg bg-white font-semibold min-w-[140px] max-w-full" style="color:${c}" onchange="Calculator._setWPLeader(${wi},this.value)">${leaderOpts}</select>
+            <select class="text-sm px-2.5 py-1.5 border border-outline-variant/20 rounded-lg bg-white font-semibold min-w-[140px] max-w-full" style="color:${c}" data-on-change="Calculator._setWPLeader" data-args="${Acciones.args(wi, Acciones.VALOR)}">${leaderOpts}</select>
           </div>
         </div>
-        <textarea rows="${sumRows}" class="w-full px-3 py-2.5 text-sm border rounded-lg leading-relaxed bg-white focus:ring-2 outline-none transition-all" style="border-color:${c}30;--tw-ring-color:${c}40;min-height:80px" placeholder="Briefly describe the purpose and main activities of this work package..." onchange="Calculator._setWP(${wi},'summary',this.value)" oninput="Calculator._setWP(${wi},'summary',this.value);this.style.height='auto';this.style.height=this.scrollHeight+'px'">${sumVal}</textarea>
+        <textarea rows="${sumRows}" class="w-full px-3 py-2.5 text-sm border rounded-lg leading-relaxed bg-white focus:ring-2 outline-none transition-all" style="border-color:${c}30;--tw-ring-color:${c}40;min-height:80px" placeholder="Briefly describe the purpose and main activities of this work package..." data-on-change="Calculator._setWP" data-args="${Acciones.args(wi, 'summary', Acciones.VALOR)}" data-on-input="calc.resumenWP">${sumVal}</textarea>
       </div>
       <div class="calc-wp-body">
         <div id="calc-wp-acts-${wi}">
@@ -1135,7 +1134,7 @@ const Calculator = (() => {
           <div class="text-[11px] font-bold text-on-surface-variant uppercase tracking-wider mb-2">Add activity</div>
           <div class="calc-act-picker">
             ${Object.entries(ACT_TYPES).filter(([k]) => (k !== 'mgmt' && k !== 'meeting') || wi === 0).map(([k, v]) => `
-              <button class="calc-act-pick" onclick="Calculator._addActivity(${wi},'${k}')">
+              <button class="calc-act-pick" data-action="Calculator._addActivity" data-args="${Acciones.args(wi, String(k))}">
                 <span class="material-symbols-outlined text-base mb-1" style="color:${v.color}">${v.icon}</span>
                 <span class="block text-xs font-semibold text-on-surface">${v.label}</span>
               </button>
@@ -1150,7 +1149,7 @@ const Calculator = (() => {
     const def = ACT_TYPES[act.type];
     const subtypes = def.subtypes || [];
     const subtypeSelect = subtypes.length > 0 ? `
-      <select class="text-xs px-2 py-1 rounded-lg border border-outline-variant/30 bg-white focus:outline-none focus:ring-1 focus:ring-primary/20 cursor-pointer" style="color:${def.color}" onchange="Calculator._setActSubtype(${wi},${act.id},this.value)">
+      <select class="text-xs px-2 py-1 rounded-lg border border-outline-variant/30 bg-white focus:outline-none focus:ring-1 focus:ring-primary/20 cursor-pointer" style="color:${def.color}" data-on-change="Calculator._setActSubtype" data-args="${Acciones.args(wi, act.id, Acciones.VALOR)}">
         <option value="" ${!act.subtype ? 'selected' : ''}>Select type...</option>
         ${subtypes.map(s => `<option value="${s}" ${act.subtype === s ? 'selected' : ''}>${s}</option>`).join('')}
       </select>` : '';
@@ -1161,14 +1160,14 @@ const Calculator = (() => {
           <span class="material-symbols-outlined text-[12px] align-middle mr-0.5">${def.icon}</span> ${def.label}
         </span>
         ${subtypeSelect}
-        <input type="text" value="${act.label}" placeholder="Name..." class="flex-1 bg-transparent border-b border-outline-variant/30 px-1 py-0.5 text-sm font-semibold font-headline focus:outline-none focus:border-primary" onchange="Calculator._setAct(${wi},${act.id},'label',this.value)">
-        <button onclick="Calculator._moveAct(${wi},${act.id},-1)" class="text-on-surface-variant/40 hover:text-primary text-base leading-none" title="Mover arriba"><span class="material-symbols-outlined text-[16px]">expand_less</span></button>
-        <button onclick="Calculator._moveAct(${wi},${act.id},1)" class="text-on-surface-variant/40 hover:text-primary text-base leading-none" title="Mover abajo"><span class="material-symbols-outlined text-[16px]">expand_more</span></button>
-        <button onclick="Calculator._removeAct(${wi},${act.id})" class="text-error/60 hover:text-error text-lg leading-none ml-1" title="Eliminar actividad" aria-label="Eliminar actividad">&times;</button>
+        <input type="text" value="${act.label}" placeholder="Name..." class="flex-1 bg-transparent border-b border-outline-variant/30 px-1 py-0.5 text-sm font-semibold font-headline focus:outline-none focus:border-primary" data-on-change="Calculator._setAct" data-args="${Acciones.args(wi, act.id, 'label', Acciones.VALOR)}">
+        <button data-action="Calculator._moveAct" data-args="${Acciones.args(wi, act.id, -1)}" class="text-on-surface-variant/40 hover:text-primary text-base leading-none" title="Mover arriba"><span class="material-symbols-outlined text-[16px]">expand_less</span></button>
+        <button data-action="Calculator._moveAct" data-args="${Acciones.args(wi, act.id, 1)}" class="text-on-surface-variant/40 hover:text-primary text-base leading-none" title="Mover abajo"><span class="material-symbols-outlined text-[16px]">expand_more</span></button>
+        <button data-action="Calculator._removeAct" data-args="${Acciones.args(wi, act.id)}" class="text-error/60 hover:text-error text-lg leading-none ml-1" title="Eliminar actividad" aria-label="Eliminar actividad">&times;</button>
       </div>
       <div class="mb-2">
         <label class="text-[10px] font-bold uppercase tracking-widest text-on-surface-variant/60 mb-1 block">Description</label>
-        <textarea rows="3" placeholder="${act.subtype ? def.descHint : 'Select a type above or write your own description of this ' + def.label.toLowerCase() + '...'}" class="w-full px-3 py-2.5 text-sm bg-white border border-outline-variant/30 rounded-xl resize-vertical focus:outline-none focus:ring-2 focus:ring-primary/15 focus:border-primary/30 leading-relaxed" onchange="Calculator._setActDesc(${wi},${act.id},this.value)">${act.desc || ''}</textarea>
+        <textarea rows="3" placeholder="${act.subtype ? def.descHint : 'Select a type above or write your own description of this ' + def.label.toLowerCase() + '...'}" class="w-full px-3 py-2.5 text-sm bg-white border border-outline-variant/30 rounded-xl resize-vertical focus:outline-none focus:ring-2 focus:ring-primary/15 focus:border-primary/30 leading-relaxed" data-on-change="Calculator._setActDesc" data-args="${Acciones.args(wi, act.id, Acciones.VALOR)}">${act.desc || ''}</textarea>
       </div>
       <div id="calc-act-fields-${act.id}">${buildActFields(act, wi)}</div>
       <div class="mt-2 pt-2 border-t border-outline-variant/10" id="calc-act-result-${act.id}"></div>
@@ -1195,9 +1194,9 @@ const Calculator = (() => {
         return buildPerPartnerFields(act, wi, 'ws_partners',
           { ws_pax:10, ws_n:6, ws_cost:50 },
           (pid, d) => `
-            <td class="text-center"><label class="text-[10px] text-on-surface-variant block">Pax/session</label><input type="number" value="${d.ws_pax}" min="0" class="w-16" ${!d.active?'disabled':''} onchange="Calculator._setPartnerDetail(${wi},${act.id},'ws_partners','${pid}','ws_pax',this.value)"></td>
-            <td class="text-center"><label class="text-[10px] text-on-surface-variant block">Sessions</label><input type="number" value="${d.ws_n}" min="0" class="w-16" ${!d.active?'disabled':''} onchange="Calculator._setPartnerDetail(${wi},${act.id},'ws_partners','${pid}','ws_n',this.value)"></td>
-            <td class="text-center"><label class="text-[10px] text-on-surface-variant block">€/pax/day</label><input type="number" value="${d.ws_cost}" min="0" class="w-16" ${!d.active?'disabled':''} onchange="Calculator._setPartnerDetail(${wi},${act.id},'ws_partners','${pid}','ws_cost',this.value)"></td>`,
+            <td class="text-center"><label class="text-[10px] text-on-surface-variant block">Pax/session</label><input type="number" value="${d.ws_pax}" min="0" class="w-16" ${!d.active?'disabled':''} data-on-change="Calculator._setPartnerDetail" data-args="${Acciones.args(wi, act.id, 'ws_partners', String(pid), 'ws_pax', Acciones.VALOR)}"></td>
+            <td class="text-center"><label class="text-[10px] text-on-surface-variant block">Sessions</label><input type="number" value="${d.ws_n}" min="0" class="w-16" ${!d.active?'disabled':''} data-on-change="Calculator._setPartnerDetail" data-args="${Acciones.args(wi, act.id, 'ws_partners', String(pid), 'ws_n', Acciones.VALOR)}"></td>
+            <td class="text-center"><label class="text-[10px] text-on-surface-variant block">€/pax/day</label><input type="number" value="${d.ws_cost}" min="0" class="w-16" ${!d.active?'disabled':''} data-on-change="Calculator._setPartnerDetail" data-args="${Acciones.args(wi, act.id, 'ws_partners', String(pid), 'ws_cost', Acciones.VALOR)}"></td>`,
           d => (d.ws_pax||0) * (d.ws_n||0) * (d.ws_cost||0),
           ['Pax/session','Sessions','€/pax/day']
         );
@@ -1206,8 +1205,8 @@ const Calculator = (() => {
         return buildPerPartnerFields(act, wi, 'camp_partners',
           { monthly:100, months: mo },
           (pid, d) => `
-            <td class="text-center"><label class="text-[10px] text-on-surface-variant block">€/month</label><input type="number" value="${d.monthly}" min="0" class="w-20" ${!d.active?'disabled':''} onchange="Calculator._setPartnerDetail(${wi},${act.id},'camp_partners','${pid}','monthly',this.value)"></td>
-            <td class="text-center"><label class="text-[10px] text-on-surface-variant block">Months</label><input type="number" value="${d.months}" min="0" max="${mo}" class="w-16" ${!d.active?'disabled':''} onchange="Calculator._setPartnerDetail(${wi},${act.id},'camp_partners','${pid}','months',this.value)"></td>`,
+            <td class="text-center"><label class="text-[10px] text-on-surface-variant block">€/month</label><input type="number" value="${d.monthly}" min="0" class="w-20" ${!d.active?'disabled':''} data-on-change="Calculator._setPartnerDetail" data-args="${Acciones.args(wi, act.id, 'camp_partners', String(pid), 'monthly', Acciones.VALOR)}"></td>
+            <td class="text-center"><label class="text-[10px] text-on-surface-variant block">Months</label><input type="number" value="${d.months}" min="0" max="${mo}" class="w-16" ${!d.active?'disabled':''} data-on-change="Calculator._setPartnerDetail" data-args="${Acciones.args(wi, act.id, 'camp_partners', String(pid), 'months', Acciones.VALOR)}"></td>`,
           d => (d.monthly||0) * (d.months||0),
           ['€/month','Months']
         );
@@ -1243,12 +1242,12 @@ const Calculator = (() => {
       const charged = np.active ? calcDepreciation(np) : 0;
       return `<tr style="opacity:${np.active?1:.4}">
         <td><label class="flex items-center gap-2 cursor-pointer">
-          <input type="checkbox" ${np.active?'checked':''} class="w-3.5 h-3.5" onchange="Calculator._setPartnerDetail(${wi},${act.id},'note_partners','${p.id}','active',this.checked)">
+          <input type="checkbox" ${np.active?'checked':''} class="w-3.5 h-3.5" data-on-change="Calculator._setPartnerDetail" data-args="${Acciones.args(wi, act.id, 'note_partners', String(p.id), 'active', Acciones.MARCADO)}">
           <span class="font-semibold text-sm" style="color:${WP_COLORS[i%WP_COLORS.length]}">${p.name||'P'+(i+1)}</span>
         </label></td>
-        <td><input type="text" value="${np.note||''}" placeholder="Beneficiary / scheme..." class="w-full text-xs" ${!np.active?'disabled':''} onchange="Calculator._setPartnerDetail(${wi},${act.id},'note_partners','${p.id}','note',this.value)"></td>
-        <td class="text-right"><input type="number" value="${np.amount||''}" min="0" class="w-24" ${!np.active?'disabled':''} onchange="Calculator._setPartnerDetail(${wi},${act.id},'note_partners','${p.id}','amount',this.value)"></td>
-        <td class="text-right"><input type="number" value="${np.project_pct??100}" min="0" max="100" class="w-16" ${!np.active?'disabled':''} onchange="Calculator._setPartnerDetail(${wi},${act.id},'note_partners','${p.id}','project_pct',this.value)"></td>
+        <td><input type="text" value="${np.note||''}" placeholder="Beneficiary / scheme..." class="w-full text-xs" ${!np.active?'disabled':''} data-on-change="Calculator._setPartnerDetail" data-args="${Acciones.args(wi, act.id, 'note_partners', String(p.id), 'note', Acciones.VALOR)}"></td>
+        <td class="text-right"><input type="number" value="${np.amount||''}" min="0" class="w-24" ${!np.active?'disabled':''} data-on-change="Calculator._setPartnerDetail" data-args="${Acciones.args(wi, act.id, 'note_partners', String(p.id), 'amount', Acciones.VALOR)}"></td>
+        <td class="text-right"><input type="number" value="${np.project_pct??100}" min="0" max="100" class="w-16" ${!np.active?'disabled':''} data-on-change="Calculator._setPartnerDetail" data-args="${Acciones.args(wi, act.id, 'note_partners', String(p.id), 'project_pct', Acciones.VALOR)}"></td>
         <td class="text-right font-mono font-semibold text-sm">${charged > 0 ? euros(charged) : '—'}</td>
       </tr>`;
     }).join('');
@@ -1295,7 +1294,7 @@ const Calculator = (() => {
 
       return `<tr style="opacity:${active?1:.4}">
         <td><label class="flex items-center gap-2 cursor-pointer">
-          <input type="checkbox" ${active?'checked':''} class="w-3.5 h-3.5" onchange="Calculator._setParticipant(${wi},${act.id},'${p.id}',this.checked)">
+          <input type="checkbox" ${active?'checked':''} class="w-3.5 h-3.5" data-on-change="Calculator._setParticipant" data-args="${Acciones.args(wi, act.id, String(p.id), Acciones.MARCADO)}">
           <div>
             <div class="font-medium text-sm">${p.name||'P'+p.order_index} ${isHost ? '<span class="px-1.5 py-0.5 rounded text-[9px] font-bold bg-primary/10 text-primary ml-1">HOST</span>' : ''}</div>
             <div class="text-[10px] text-on-surface-variant">${[p.city,p.country].filter(Boolean).join(', ')}</div>
@@ -1313,16 +1312,16 @@ const Calculator = (() => {
       <!-- Online toggle -->
       <div class="flex items-center gap-3 mb-3 px-3 py-2.5 rounded-xl ${isOnline ? 'bg-lavender-soft border-2 border-lavender' : 'bg-surface-container-low border border-outline-variant/40'}">
         <label class="flex items-center gap-2 cursor-pointer flex-1">
-          <input type="checkbox" ${isOnline ? 'checked' : ''} class="w-4 h-4 accent-[#7349f0]" onchange="Calculator._setActOnline(${wi},${act.id},this.checked)">
+          <input type="checkbox" ${isOnline ? 'checked' : ''} class="w-4 h-4 accent-[#7349f0]" data-on-change="Calculator._setActOnline" data-args="${Acciones.args(wi, act.id, Acciones.MARCADO)}">
           <span class="material-symbols-outlined text-lg ${isOnline ? 'text-violet' : 'text-on-surface-variant/40'}">videocam</span>
           <span class="text-sm font-bold ${isOnline ? 'text-violet' : 'text-on-surface-variant'}">ONLINE</span>
           ${isOnline ? '<span class="text-[10px] text-violet ml-1">No travel or accommodation costs</span>' : '<span class="text-[10px] text-on-surface-variant/50 ml-1">Mark as online to set budget to zero</span>'}
         </label>
       </div>
       <div class="calc-mob-grid grid grid-cols-3 gap-2 mb-3 ${isOnline ? 'opacity-30 pointer-events-none' : ''}">
-        <div><label class="text-[11px] text-on-surface-variant">Host</label><select class="w-full text-sm" onchange="Calculator._setActHost(${wi},${act.id},this.value)">${hostOpts}</select></div>
-        <div><label class="text-[11px] text-on-surface-variant">Travellers/partner</label><input type="number" value="${act.pax}" min="0" class="w-full" onchange="Calculator._setAct(${wi},${act.id},'pax',this.value)"></div>
-        <div><label class="text-[11px] text-on-surface-variant">Days</label><input type="number" value="${act.days}" min="0" class="w-full" onchange="Calculator._setAct(${wi},${act.id},'days',this.value)"></div>
+        <div><label class="text-[11px] text-on-surface-variant">Host</label><select class="w-full text-sm" data-on-change="Calculator._setActHost" data-args="${Acciones.args(wi, act.id, Acciones.VALOR)}">${hostOpts}</select></div>
+        <div><label class="text-[11px] text-on-surface-variant">Travellers/partner</label><input type="number" value="${act.pax}" min="0" class="w-full" data-on-change="Calculator._setAct" data-args="${Acciones.args(wi, act.id, 'pax', Acciones.VALOR)}"></div>
+        <div><label class="text-[11px] text-on-surface-variant">Days</label><input type="number" value="${act.days}" min="0" class="w-full" data-on-change="Calculator._setAct" data-args="${Acciones.args(wi, act.id, 'days', Acciones.VALOR)}"></div>
       </div>
       ${isOnline ? `<div class="mb-3 px-3 py-2 rounded-xl bg-lavender-soft text-[11px] text-violet">
         <span class="material-symbols-outlined text-xs align-middle mr-1">info</span>
@@ -1393,27 +1392,27 @@ const Calculator = (() => {
           `<option value="${w.id}" ${String(w.id)===String(s.profileId)?'selected':''}>${w.category} — €${w.rate}/day</option>`).join('');
         return `<div class="flex gap-2 items-start mb-2 ${!ps.active?'opacity-40 pointer-events-none':''}">
           <div class="flex-1 space-y-1">
-            <select class="text-xs w-full px-2 py-1.5 rounded-lg border border-outline-variant/20" onchange="Calculator._setMgmtStaff(${wi},${act.id},'${p.id}',${si},'profileId',this.value)">${profOpts}</select>
+            <select class="text-xs w-full px-2 py-1.5 rounded-lg border border-outline-variant/20" data-on-change="Calculator._setMgmtStaff" data-args="${Acciones.args(wi, act.id, String(p.id), si, 'profileId', Acciones.VALOR)}">${profOpts}</select>
             <div class="flex gap-2">
               <div class="w-20"><label class="text-[9px] text-on-surface-variant">Days</label>
-                <input type="number" value="${s.days}" min="0" class="w-full text-xs px-2 py-1 rounded border border-outline-variant/20" onchange="Calculator._setMgmtStaff(${wi},${act.id},'${p.id}',${si},'days',this.value)"></div>
+                <input type="number" value="${s.days}" min="0" class="w-full text-xs px-2 py-1 rounded border border-outline-variant/20" data-on-change="Calculator._setMgmtStaff" data-args="${Acciones.args(wi, act.id, String(p.id), si, 'days', Acciones.VALOR)}"></div>
               <div class="flex-1"><label class="text-[9px] text-on-surface-variant">Tasks</label>
-                <input type="text" value="${s.tasks||''}" placeholder="Brief description of management tasks..." class="w-full text-xs px-2 py-1 rounded border border-outline-variant/20" onchange="Calculator._setMgmtStaff(${wi},${act.id},'${p.id}',${si},'tasks',this.value)"></div>
+                <input type="text" value="${s.tasks||''}" placeholder="Brief description of management tasks..." class="w-full text-xs px-2 py-1 rounded border border-outline-variant/20" data-on-change="Calculator._setMgmtStaff" data-args="${Acciones.args(wi, act.id, String(p.id), si, 'tasks', Acciones.VALOR)}"></div>
             </div>
             <div class="text-[10px] font-mono" style="color:${color}">${s.days} days × €${rate} = ${euros(s.days*rate)}</div>
           </div>
-          <button onclick="Calculator._removeMgmtStaff(${wi},${act.id},'${p.id}',${si})" class="calc-staff-del text-on-surface-variant/30 hover:text-error mt-1 text-base leading-none" title="Quitar" aria-label="Quitar persona">×</button>
+          <button data-action="Calculator._removeMgmtStaff" data-args="${Acciones.args(wi, act.id, String(p.id), si)}" class="calc-staff-del text-on-surface-variant/30 hover:text-error mt-1 text-base leading-none" title="Quitar" aria-label="Quitar persona">×</button>
         </div>`;
       }).join('');
 
       return `<div class="rounded-xl border border-outline-variant/20 overflow-hidden mb-2">
         <label class="flex items-center gap-2 px-3 py-2 cursor-pointer" style="background:${bg}">
-          <input type="checkbox" ${ps.active?'checked':''} class="w-3.5 h-3.5 accent-primary" onchange="Calculator._setMgmtPartnerActive(${wi},${act.id},'${p.id}',this.checked)">
+          <input type="checkbox" ${ps.active?'checked':''} class="w-3.5 h-3.5 accent-primary" data-on-change="Calculator._setMgmtPartnerActive" data-args="${Acciones.args(wi, act.id, String(p.id), Acciones.MARCADO)}">
           <span class="text-xs font-bold flex-1" style="color:${color}">${p.name||'P'+(i+1)}</span>
           <span class="text-[10px] font-mono font-semibold" style="color:${color}">${ps.active?euros(pTotal):'—'}</span>
         </label>
         ${ps.active?`<div class="px-3 py-2">${staffRows}
-          <button onclick="Calculator._addMgmtStaff(${wi},${act.id},'${p.id}')" class="text-[10px] font-semibold text-primary hover:underline">+ Add worker</button>
+          <button data-action="Calculator._addMgmtStaff" data-args="${Acciones.args(wi, act.id, String(p.id))}" class="text-[10px] font-semibold text-primary hover:underline">+ Add worker</button>
         </div>`:''}
       </div>`;
     }).join('');
@@ -1454,27 +1453,27 @@ const Calculator = (() => {
           `<option value="${w.id}" ${String(w.id)===String(s.profileId)?'selected':''}>${w.category} \u2014 \u20AC${w.rate}/day</option>`).join('');
         return `<div class="flex gap-2 items-start mb-2 ${!ps.active?'opacity-40 pointer-events-none':''}">
           <div class="flex-1 space-y-1">
-            <select class="text-xs w-full px-2 py-1.5 rounded-lg border border-outline-variant/20" onchange="Calculator._setIOStaff(${wi},${act.id},'${p.id}',${si},'profileId',this.value)">${profOpts}</select>
+            <select class="text-xs w-full px-2 py-1.5 rounded-lg border border-outline-variant/20" data-on-change="Calculator._setIOStaff" data-args="${Acciones.args(wi, act.id, String(p.id), si, 'profileId', Acciones.VALOR)}">${profOpts}</select>
             <div class="flex gap-2">
               <div class="w-20"><label class="text-[9px] text-on-surface-variant">Days</label>
-                <input type="number" value="${s.days}" min="0" class="w-full text-xs px-2 py-1 rounded border border-outline-variant/20" onchange="Calculator._setIOStaff(${wi},${act.id},'${p.id}',${si},'days',this.value)"></div>
+                <input type="number" value="${s.days}" min="0" class="w-full text-xs px-2 py-1 rounded border border-outline-variant/20" data-on-change="Calculator._setIOStaff" data-args="${Acciones.args(wi, act.id, String(p.id), si, 'days', Acciones.VALOR)}"></div>
               <div class="flex-1"><label class="text-[9px] text-on-surface-variant">Tasks</label>
-                <input type="text" value="${s.tasks||''}" placeholder="Brief description of tasks..." class="w-full text-xs px-2 py-1 rounded border border-outline-variant/20" onchange="Calculator._setIOStaff(${wi},${act.id},'${p.id}',${si},'tasks',this.value)"></div>
+                <input type="text" value="${s.tasks||''}" placeholder="Brief description of tasks..." class="w-full text-xs px-2 py-1 rounded border border-outline-variant/20" data-on-change="Calculator._setIOStaff" data-args="${Acciones.args(wi, act.id, String(p.id), si, 'tasks', Acciones.VALOR)}"></div>
             </div>
             <div class="text-[10px] font-mono" style="color:${color}">${s.days} days \u00D7 \u20AC${rate} = ${euros(s.days*rate)}</div>
           </div>
-          <button onclick="Calculator._removeIOStaff(${wi},${act.id},'${p.id}',${si})" class="calc-staff-del text-on-surface-variant/30 hover:text-error mt-1 text-base leading-none" title="Quitar" aria-label="Quitar persona">\u00D7</button>
+          <button data-action="Calculator._removeIOStaff" data-args="${Acciones.args(wi, act.id, String(p.id), si)}" class="calc-staff-del text-on-surface-variant/30 hover:text-error mt-1 text-base leading-none" title="Quitar" aria-label="Quitar persona">\u00D7</button>
         </div>`;
       }).join('');
 
       return `<div class="rounded-xl border border-outline-variant/20 overflow-hidden mb-2">
         <label class="flex items-center gap-2 px-3 py-2 cursor-pointer" style="background:${bg}">
-          <input type="checkbox" ${ps.active?'checked':''} class="w-3.5 h-3.5 accent-primary" onchange="Calculator._setIOPartnerActive(${wi},${act.id},'${p.id}',this.checked)">
+          <input type="checkbox" ${ps.active?'checked':''} class="w-3.5 h-3.5 accent-primary" data-on-change="Calculator._setIOPartnerActive" data-args="${Acciones.args(wi, act.id, String(p.id), Acciones.MARCADO)}">
           <span class="text-xs font-bold flex-1" style="color:${color}">${p.name||'P'+(i+1)}</span>
           <span class="text-[10px] font-mono font-semibold" style="color:${color}">${ps.active?euros(pTotal):'\u2014'}</span>
         </label>
         ${ps.active?`<div class="px-3 py-2">${staffRows}
-          <button onclick="Calculator._addIOStaff(${wi},${act.id},'${p.id}')" class="text-[10px] font-semibold text-primary hover:underline">+ Add worker</button>
+          <button data-action="Calculator._addIOStaff" data-args="${Acciones.args(wi, act.id, String(p.id))}" class="text-[10px] font-semibold text-primary hover:underline">+ Add worker</button>
         </div>`:''}
       </div>`;
     }).join('');
@@ -1492,11 +1491,11 @@ const Calculator = (() => {
       const total = ev.active ? ev.local_pax * ev.local_rate + ev.intl_pax * ev.intl_rate : 0;
       return `<tr style="opacity:${ev.active?1:.4}">
         <td><label class="flex items-center gap-2 cursor-pointer">
-          <input type="checkbox" ${ev.active?'checked':''} class="w-3.5 h-3.5" onchange="Calculator._setME(${wi},${act.id},'${p.id}','active',this.checked)">
+          <input type="checkbox" ${ev.active?'checked':''} class="w-3.5 h-3.5" data-on-change="Calculator._setME" data-args="${Acciones.args(wi, act.id, String(p.id), 'active', Acciones.MARCADO)}">
           <span class="font-semibold text-sm" style="color:${WP_COLORS[i%WP_COLORS.length]}">${p.name||'P'+(i+1)}</span>
         </label></td>
-        <td class="text-center"><div class="flex items-center gap-1 justify-center"><input type="number" value="${ev.local_pax}" min="0" class="w-14" ${!ev.active?'disabled':''} onchange="Calculator._setME(${wi},${act.id},'${p.id}','local_pax',this.value)"><span class="text-[10px]">×</span><input type="number" value="${ev.local_rate}" min="0" class="w-16" ${!ev.active?'disabled':''} onchange="Calculator._setME(${wi},${act.id},'${p.id}','local_rate',this.value)"></div></td>
-        <td class="text-center"><div class="flex items-center gap-1 justify-center"><input type="number" value="${ev.intl_pax}" min="0" class="w-14" ${!ev.active?'disabled':''} onchange="Calculator._setME(${wi},${act.id},'${p.id}','intl_pax',this.value)"><span class="text-[10px]">×</span><input type="number" value="${ev.intl_rate}" min="0" class="w-16" ${!ev.active?'disabled':''} onchange="Calculator._setME(${wi},${act.id},'${p.id}','intl_rate',this.value)"></div></td>
+        <td class="text-center"><div class="flex items-center gap-1 justify-center"><input type="number" value="${ev.local_pax}" min="0" class="w-14" ${!ev.active?'disabled':''} data-on-change="Calculator._setME" data-args="${Acciones.args(wi, act.id, String(p.id), 'local_pax', Acciones.VALOR)}"><span class="text-[10px]">×</span><input type="number" value="${ev.local_rate}" min="0" class="w-16" ${!ev.active?'disabled':''} data-on-change="Calculator._setME" data-args="${Acciones.args(wi, act.id, String(p.id), 'local_rate', Acciones.VALOR)}"></div></td>
+        <td class="text-center"><div class="flex items-center gap-1 justify-center"><input type="number" value="${ev.intl_pax}" min="0" class="w-14" ${!ev.active?'disabled':''} data-on-change="Calculator._setME" data-args="${Acciones.args(wi, act.id, String(p.id), 'intl_pax', Acciones.VALOR)}"><span class="text-[10px]">×</span><input type="number" value="${ev.intl_rate}" min="0" class="w-16" ${!ev.active?'disabled':''} data-on-change="Calculator._setME" data-args="${Acciones.args(wi, act.id, String(p.id), 'intl_rate', Acciones.VALOR)}"></div></td>
         <td class="text-right font-mono font-semibold text-sm">${ev.active ? euros(total) : '—'}</td>
       </tr>`;
     }).join('');
@@ -1515,7 +1514,7 @@ const Calculator = (() => {
       const total = d.active ? calcTotal(d) : 0;
       return `<tr style="opacity:${d.active?1:.4}">
         <td><label class="flex items-center gap-2 cursor-pointer">
-          <input type="checkbox" ${d.active?'checked':''} class="w-3.5 h-3.5" onchange="Calculator._setPartnerDetail(${wi},${act.id},'${stateKey}','${p.id}','active',this.checked)">
+          <input type="checkbox" ${d.active?'checked':''} class="w-3.5 h-3.5" data-on-change="Calculator._setPartnerDetail" data-args="${Acciones.args(wi, act.id, String(stateKey), String(p.id), 'active', Acciones.MARCADO)}">
           <span class="font-semibold text-sm" style="color:${WP_COLORS[i%WP_COLORS.length]}">${p.name||'P'+(i+1)}</span>
         </label></td>
         ${buildCells(p.id, d)}
@@ -1544,13 +1543,13 @@ const Calculator = (() => {
       const charged = np.active ? calcDepreciation(np) : 0;
       return `<tr style="opacity:${np.active?1:.4}">
         <td><label class="flex items-center gap-2 cursor-pointer">
-          <input type="checkbox" ${np.active?'checked':''} class="w-3.5 h-3.5" onchange="Calculator._setPartnerDetail(${wi},${act.id},'note_partners','${p.id}','active',this.checked)">
+          <input type="checkbox" ${np.active?'checked':''} class="w-3.5 h-3.5" data-on-change="Calculator._setPartnerDetail" data-args="${Acciones.args(wi, act.id, 'note_partners', String(p.id), 'active', Acciones.MARCADO)}">
           <span class="font-semibold text-sm" style="color:${WP_COLORS[i%WP_COLORS.length]}">${p.name||'P'+(i+1)}</span>
         </label></td>
-        <td><input type="text" value="${np.note||''}" placeholder="Description..." class="w-full text-xs" ${!np.active?'disabled':''} onchange="Calculator._setPartnerDetail(${wi},${act.id},'note_partners','${p.id}','note',this.value)"></td>
-        <td class="text-right"><input type="number" value="${np.amount||''}" min="0" class="w-20" ${!np.active?'disabled':''} onchange="Calculator._setPartnerDetail(${wi},${act.id},'note_partners','${p.id}','amount',this.value)"></td>
-        <td class="text-right"><input type="number" value="${np.project_pct??100}" min="0" max="100" class="w-16" ${!np.active?'disabled':''} onchange="Calculator._setPartnerDetail(${wi},${act.id},'note_partners','${p.id}','project_pct',this.value)"></td>
-        <td class="text-right"><input type="number" value="${np.lifetime_pct??100}" min="0" max="100" class="w-16" ${!np.active?'disabled':''} onchange="Calculator._setPartnerDetail(${wi},${act.id},'note_partners','${p.id}','lifetime_pct',this.value)"></td>
+        <td><input type="text" value="${np.note||''}" placeholder="Description..." class="w-full text-xs" ${!np.active?'disabled':''} data-on-change="Calculator._setPartnerDetail" data-args="${Acciones.args(wi, act.id, 'note_partners', String(p.id), 'note', Acciones.VALOR)}"></td>
+        <td class="text-right"><input type="number" value="${np.amount||''}" min="0" class="w-20" ${!np.active?'disabled':''} data-on-change="Calculator._setPartnerDetail" data-args="${Acciones.args(wi, act.id, 'note_partners', String(p.id), 'amount', Acciones.VALOR)}"></td>
+        <td class="text-right"><input type="number" value="${np.project_pct??100}" min="0" max="100" class="w-16" ${!np.active?'disabled':''} data-on-change="Calculator._setPartnerDetail" data-args="${Acciones.args(wi, act.id, 'note_partners', String(p.id), 'project_pct', Acciones.VALOR)}"></td>
+        <td class="text-right"><input type="number" value="${np.lifetime_pct??100}" min="0" max="100" class="w-16" ${!np.active?'disabled':''} data-on-change="Calculator._setPartnerDetail" data-args="${Acciones.args(wi, act.id, 'note_partners', String(p.id), 'lifetime_pct', Acciones.VALOR)}"></td>
         <td class="text-right font-mono font-semibold text-sm">${charged > 0 ? euros(charged) : '—'}</td>
       </tr>`;
     }).join('');
@@ -1569,11 +1568,11 @@ const Calculator = (() => {
       const np = act.note_partners[p.id] || { active:true, note:'', amount:0 };
       return `<tr style="opacity:${np.active?1:.4}">
         <td><label class="flex items-center gap-2 cursor-pointer">
-          <input type="checkbox" ${np.active?'checked':''} class="w-3.5 h-3.5" onchange="Calculator._setPartnerDetail(${wi},${act.id},'note_partners','${p.id}','active',this.checked)">
+          <input type="checkbox" ${np.active?'checked':''} class="w-3.5 h-3.5" data-on-change="Calculator._setPartnerDetail" data-args="${Acciones.args(wi, act.id, 'note_partners', String(p.id), 'active', Acciones.MARCADO)}">
           <span class="font-semibold text-sm" style="color:${WP_COLORS[i%WP_COLORS.length]}">${p.name||'P'+(i+1)}</span>
         </label></td>
-        <td><input type="text" value="${np.note||''}" placeholder="Description..." class="w-full text-xs" ${!np.active?'disabled':''} onchange="Calculator._setPartnerDetail(${wi},${act.id},'note_partners','${p.id}','note',this.value)"></td>
-        <td class="text-right"><input type="number" value="${np.amount||''}" min="0" class="w-24" ${!np.active?'disabled':''} onchange="Calculator._setPartnerDetail(${wi},${act.id},'note_partners','${p.id}','amount',this.value)"></td>
+        <td><input type="text" value="${np.note||''}" placeholder="Description..." class="w-full text-xs" ${!np.active?'disabled':''} data-on-change="Calculator._setPartnerDetail" data-args="${Acciones.args(wi, act.id, 'note_partners', String(p.id), 'note', Acciones.VALOR)}"></td>
+        <td class="text-right"><input type="number" value="${np.amount||''}" min="0" class="w-24" ${!np.active?'disabled':''} data-on-change="Calculator._setPartnerDetail" data-args="${Acciones.args(wi, act.id, 'note_partners', String(p.id), 'amount', Acciones.VALOR)}"></td>
         <td class="text-right font-mono font-semibold text-sm">${np.active && np.amount ? euros(np.amount) : '—'}</td>
       </tr>`;
     }).join('');
@@ -1896,13 +1895,13 @@ const Calculator = (() => {
 
       <!-- Tabs -->
       <div class="calc-res-tabs flex gap-0 border-b-2 border-outline-variant/20 mb-5">
-        <button class="calc-res-tab active" onclick="Calculator._switchResTab('partner')">By Partner</button>
-        <button class="calc-res-tab" onclick="Calculator._switchResTab('wp')">By WP</button>
-        <button class="calc-res-tab" onclick="Calculator._switchResTab('summary')">Summary</button>
-        <button class="calc-res-tab" onclick="Calculator._switchResTab('form_b')" title="Tablas oficiales del Form Part B (EACEA)">
+        <button class="calc-res-tab active" data-action="Calculator._switchResTab" data-args="${Acciones.args('partner')}">By Partner</button>
+        <button class="calc-res-tab" data-action="Calculator._switchResTab" data-args="${Acciones.args('wp')}">By WP</button>
+        <button class="calc-res-tab" data-action="Calculator._switchResTab" data-args="${Acciones.args('summary')}">Summary</button>
+        <button class="calc-res-tab" data-action="Calculator._switchResTab" data-args="${Acciones.args('form_b')}" title="Tablas oficiales del Form Part B (EACEA)">
           <span class="material-symbols-outlined text-[14px] align-middle mr-0.5">verified</span>Form Part B
         </button>
-        <button class="calc-res-tab" onclick="Calculator._switchResTab('print')" title="Informe completo PDF para compartir con socios">
+        <button class="calc-res-tab" data-action="Calculator._switchResTab" data-args="${Acciones.args('print')}" title="Informe completo PDF para compartir con socios">
           <span class="material-symbols-outlined text-[14px] align-middle mr-0.5">print</span>Imprimir presupuesto
         </button>
       </div>
@@ -2112,7 +2111,7 @@ const Calculator = (() => {
       const has = items.length > 0;
       return `
         <tr class="border-b border-outline-variant/8 ${has?'cursor-pointer hover:bg-surface-container-low':''}"
-            ${has ? `onclick="document.querySelectorAll('.${uid}').forEach(r=>r.classList.toggle('hidden'))"` : ''}>
+            ${has ? `data-action="alternarFilas" data-args="${Acciones.args(String(uid))}"` : ''}>
           <td class="py-1" style="padding-left:2.5rem">
             ${has ? '<span class="material-symbols-outlined text-[10px] align-middle mr-0.5 text-on-surface-variant">expand_more</span>' : ''}
             ${label}
@@ -2269,7 +2268,7 @@ const Calculator = (() => {
 
         return `
           <div class="border-b border-outline-variant/15">
-            <div class="flex items-center gap-2 px-4 py-2 cursor-pointer select-none hover:bg-surface-container-low" onclick="document.getElementById('${wpUid}').classList.toggle('hidden');this.querySelector('.wp-arr').classList.toggle('rotate-180')">
+            <div class="flex items-center gap-2 px-4 py-2 cursor-pointer select-none hover:bg-surface-container-low" data-action="desplegar" data-args="${Acciones.args(String(wpUid), '.wp-arr')}">
               <span class="w-6 h-6 rounded-full text-white text-[9px] font-bold flex items-center justify-center flex-shrink-0" style="background:${wc}">WP${wi+1}</span>
               <span class="text-xs font-bold flex-1 truncate" style="color:${wc}">${wpLabel(wp, wi)}</span>
               <span class="text-xs font-mono font-bold" style="color:${wc}">${euros(wpTotal)}</span>
@@ -2301,7 +2300,7 @@ const Calculator = (() => {
       return `
       <div class="bg-surface-container-lowest rounded-xl border border-outline-variant/30 mb-4 overflow-hidden" style="border-top:3px solid ${c}">
         <!-- Partner Header -->
-        <div class="flex items-center gap-2 px-4 py-3 cursor-pointer select-none" onclick="document.getElementById('${partnerId}').classList.toggle('hidden');this.querySelector('.bp-arrow').classList.toggle('rotate-180')">
+        <div class="flex items-center gap-2 px-4 py-3 cursor-pointer select-none" data-action="desplegar" data-args="${Acciones.args(String(partnerId), '.bp-arrow')}">
           <span class="w-8 h-8 rounded-full text-white text-[10px] font-bold flex items-center justify-center flex-shrink-0" style="background:${c}">BE${String(i+1).padStart(2,'0')}</span>
           <div class="flex-1 min-w-0">
             <div class="font-headline font-bold truncate">${p.name||'Partner '+(i+1)}</div>
@@ -2321,7 +2320,7 @@ const Calculator = (() => {
 
           <!-- Partner Total (all WPs) -->
           <div class="border-t-2 border-outline-variant/30">
-            <div class="flex items-center gap-2 px-4 py-2 cursor-pointer select-none" style="background:${c}08" onclick="document.getElementById('${totalUid}').classList.toggle('hidden');this.querySelector('.wp-arr').classList.toggle('rotate-180')">
+            <div class="flex items-center gap-2 px-4 py-2 cursor-pointer select-none" style="background:${c}08" data-action="desplegar" data-args="${Acciones.args(String(totalUid), '.wp-arr')}">
               <span class="material-symbols-outlined text-sm" style="color:${c}">functions</span>
               <span class="text-xs font-bold flex-1" style="color:${c}">TOTAL ${p.name||'Partner '+(i+1)}</span>
               <span class="text-sm font-mono font-bold" style="color:${c}">${euros(grandTotal)}</span>
@@ -2377,12 +2376,12 @@ const Calculator = (() => {
       <div class="flex items-center gap-3 mb-4 flex-wrap">
         <div class="flex items-center gap-1">
           <span class="text-xs font-semibold text-on-surface-variant">View:</span>
-          <button id="calc-gantt-months" class="px-3 py-1 text-xs font-semibold rounded-full ${ganttView==='months'?'bg-primary text-white':'bg-surface-container-high text-on-surface-variant'}" onclick="Calculator._setGanttView('months')">Months</button>
-          <button id="calc-gantt-weeks" class="px-3 py-1 text-xs font-semibold rounded-full ${ganttView==='weeks'?'bg-primary text-white':'bg-surface-container-high text-on-surface-variant'}" onclick="Calculator._setGanttView('weeks')">Weeks</button>
+          <button id="calc-gantt-months" class="px-3 py-1 text-xs font-semibold rounded-full ${ganttView==='months'?'bg-primary text-white':'bg-surface-container-high text-on-surface-variant'}" data-action="Calculator._setGanttView" data-args="${Acciones.args('months')}">Months</button>
+          <button id="calc-gantt-weeks" class="px-3 py-1 text-xs font-semibold rounded-full ${ganttView==='weeks'?'bg-primary text-white':'bg-surface-container-high text-on-surface-variant'}" data-action="Calculator._setGanttView" data-args="${Acciones.args('weeks')}">Weeks</button>
         </div>
         <div class="ml-auto flex gap-2">
-          <button class="px-2 py-1 text-[11px] font-semibold border border-outline-variant/30 rounded hover:bg-surface-container-high" onclick="Calculator._ganttCollapseAll()">− Collapse</button>
-          <button class="px-2 py-1 text-[11px] font-semibold border border-outline-variant/30 rounded hover:bg-surface-container-high" onclick="Calculator._ganttExpandAll()">+ Expand</button>
+          <button class="px-2 py-1 text-[11px] font-semibold border border-outline-variant/30 rounded hover:bg-surface-container-high" data-action="Calculator._ganttCollapseAll">− Collapse</button>
+          <button class="px-2 py-1 text-[11px] font-semibold border border-outline-variant/30 rounded hover:bg-surface-container-high" data-action="Calculator._ganttExpandAll">+ Expand</button>
         </div>
       </div>
 
@@ -2437,7 +2436,7 @@ const Calculator = (() => {
       const c = WP_COLORS[wi%WP_COLORS.length];
       const collapsed = ganttCollapsed[wi];
 
-      html += `<div style="display:flex;align-items:stretch;background:${c}12;border-top:3px solid ${c};cursor:pointer;min-height:42px" onclick="Calculator._ganttToggle(${wi})">
+      html += `<div style="display:flex;align-items:stretch;background:${c}12;border-top:3px solid ${c};cursor:pointer;min-height:42px" data-action="Calculator._ganttToggle" data-args="${Acciones.args(wi)}">
         <div style="width:${LABEL_W}px;flex-shrink:0;padding:0 10px 0 14px;display:flex;align-items:center;gap:8px;overflow:hidden">
           <span style="font-size:10px;color:${c};font-weight:800">${collapsed?'▶':'▼'}</span>
           <span style="width:10px;height:10px;border-radius:50%;background:${c}"></span>
@@ -3064,13 +3063,13 @@ const Calculator = (() => {
             <div class="font-headline font-bold text-primary text-base">Imprimir presupuesto · Informe completo</div>
           </div>
           <div class="flex gap-2">
-            <button type="button" onclick="Calculator._refreshPrintView()" class="inline-flex items-center gap-1.5 px-3 py-2 rounded-lg text-xs font-semibold text-on-surface bg-surface-container-lowest border border-outline-variant/30 hover:bg-surface-container-low transition-all" title="Volver a generar el informe con los últimos datos">
+            <button type="button" data-action="Calculator._refreshPrintView" class="inline-flex items-center gap-1.5 px-3 py-2 rounded-lg text-xs font-semibold text-on-surface bg-surface-container-lowest border border-outline-variant/30 hover:bg-surface-container-low transition-all" title="Volver a generar el informe con los últimos datos">
               <span class="material-symbols-outlined text-[16px]">refresh</span>Actualizar
             </button>
-            <button type="button" onclick="Calculator._openPrintView()" class="inline-flex items-center gap-1.5 px-3 py-2 rounded-lg text-xs font-semibold text-on-surface bg-surface-container-lowest border border-outline-variant/30 hover:bg-surface-container-low transition-all" title="Abrir el informe en una pestaña nueva">
+            <button type="button" data-action="Calculator._openPrintView" class="inline-flex items-center gap-1.5 px-3 py-2 rounded-lg text-xs font-semibold text-on-surface bg-surface-container-lowest border border-outline-variant/30 hover:bg-surface-container-low transition-all" title="Abrir el informe en una pestaña nueva">
               <span class="material-symbols-outlined text-[16px]">open_in_new</span>Pestaña nueva
             </button>
-            <button type="button" onclick="Calculator._printIframe()" class="inline-flex items-center gap-1.5 px-4 py-2 rounded-full text-xs font-bold text-white bg-primary hover:bg-violet shadow-md transition-all">
+            <button type="button" data-action="Calculator._printIframe" class="inline-flex items-center gap-1.5 px-4 py-2 rounded-full text-xs font-bold text-white bg-primary hover:bg-violet shadow-md transition-all">
               <span class="material-symbols-outlined text-[16px]">print</span>Imprimir / Guardar PDF
             </button>
           </div>
@@ -3130,12 +3129,17 @@ const Calculator = (() => {
       Toast.show('Error cargando tablas EACEA: ' + (e.message || e), 'err');
       return;
     }
-    const html = buildPrintDocument(eacea, /*autoPrint=*/true);
+    const html = buildPrintDocument(eacea, /*autoPrint=*/false);
     const w = window.open('', '_blank');
     if (!w) { Toast.show('Permite ventanas emergentes para esta página', 'err'); return; }
     w.document.open();
     w.document.write(html);
     w.document.close();
+    // Imprimir al cargar: lo lanza esta ventana. Un <script> dentro del informe
+    // no correría (la ventana nueva hereda la CSP sin 'unsafe-inline').
+    const imprimir = () => setTimeout(() => w.print(), 400);
+    if (w.document.readyState === 'complete') imprimir();
+    else w.addEventListener('load', imprimir);
   }
 
   function buildPrintDocument(eacea, autoPrint) {
@@ -3477,15 +3481,13 @@ const Calculator = (() => {
     return printDocumentHtml(projName, coverHtml + partnerPages + wpPages + formBPage, autoPrint);
   }
 
+  // Sin <script>: la impresión automática la lanza openPrintView desde fuera (CSP).
   function printDocumentHtml(title, body, autoPrint) {
-    const autoPrintScript = autoPrint
-      ? `<script>window.addEventListener('load', () => { setTimeout(() => window.print(), 400); });<\/script>`
-      : '';
     return `<!DOCTYPE html><html lang="es"><head>
 <meta charset="UTF-8">
 <title>${title} — Informe de presupuesto</title>
 <style>${PRINT_CSS}</style>
-</head><body>${body}${autoPrintScript}
+</head><body>${body}
 </body></html>`;
   }
 
@@ -4042,8 +4044,8 @@ const Calculator = (() => {
   function embeddedNavButtons(prevStep, nextStep, nextLabel) {
     const navFn = _navCallback ? 'Intake._calcNav' : 'Calculator._goTo';
     return `<div class="flex justify-between mt-6">
-      ${prevStep !== null ? `<button onclick="${navFn}(${prevStep})" class="px-4 py-2 text-sm font-semibold text-on-surface-variant hover:text-on-surface border border-outline-variant rounded-full transition-colors">\u2190 Back</button>` : '<span></span>'}
-      ${nextStep !== null ? `<button onclick="${navFn}(${nextStep})" class="px-5 py-2.5 text-sm font-bold bg-primary text-white rounded-full hover:bg-violet transition-colors">${nextLabel || 'Next \u2192'}</button>` : ''}
+      ${prevStep !== null ? `<button data-action="${navFn}" data-args="${Acciones.args(prevStep)}" class="px-4 py-2 text-sm font-semibold text-on-surface-variant hover:text-on-surface border border-outline-variant rounded-full transition-colors">\u2190 Back</button>` : '<span></span>'}
+      ${nextStep !== null ? `<button data-action="${navFn}" data-args="${Acciones.args(nextStep)}" class="px-5 py-2.5 text-sm font-bold bg-primary text-white rounded-full hover:bg-violet transition-colors">${nextLabel || 'Next \u2192'}</button>` : ''}
     </div>`;
   }
 
@@ -4080,7 +4082,7 @@ const Calculator = (() => {
       <!-- WP count -->
       <div class="flex items-center gap-3 mb-4">
         <label class="text-sm font-semibold text-on-surface-variant">Number of WPs</label>
-        <input type="number" id="calc-n-wps" value="${state.wps.length}" min="1" max="12" class="w-20 px-2 py-1.5 text-sm border border-outline-variant/30 rounded-lg text-center font-bold" onchange="Calculator._syncWPsMerged(parseInt(this.value))">
+        <input type="number" id="calc-n-wps" value="${state.wps.length}" min="1" max="12" class="w-20 px-2 py-1.5 text-sm border border-outline-variant/30 rounded-lg text-center font-bold" data-on-change="Calculator._syncWPsMerged" data-args="${Acciones.args(Acciones.ENTERO)}">
       </div>
 
       <!-- Summary bar -->
@@ -4440,3 +4442,14 @@ const Calculator = (() => {
     _ganttExpandAll: ganttExpandAll,
   };
 })();
+
+/* Botones de las plantillas: data-action="Calculator.metodo" y acciones propias (js/acciones.js) */
+Acciones.modulo('Calculator', Calculator);
+Acciones.registrar({
+  'calc.tituloWP': (el, ev, wi, titulo) => { Calculator._applyWPTitle(wi, titulo); el.closest('.wp-title-menu').remove(); },
+  'calc.menuTitulosWP': (el, ev, wi) => { ev.stopPropagation(); Calculator._showWPTitleMenu(wi, el); },
+  'calc.resumenWP': (el, ev, ...args) => {
+    Calculator._setWP(...args);
+    el.style.height = 'auto'; el.style.height = el.scrollHeight + 'px';
+  },
+});

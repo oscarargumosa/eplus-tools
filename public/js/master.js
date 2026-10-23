@@ -172,7 +172,7 @@
       <div class="flex items-center gap-1 mb-6 border-b border-outline-variant/30 pb-3 overflow-x-auto">
         ${TABS.map(t => {
           const active = _state.activeTab === t.id;
-          const onclick = t.disabled ? '' : `onclick="Master.showTab('${t.id}')"`;
+          const onclick = t.disabled ? '' : `data-action="Master.showTab" data-args="${Acciones.args(String(t.id))}"`;
           const cls = active
             ? 'bg-primary text-white shadow-md'
             : (t.disabled ? 'text-on-surface-variant/40 cursor-not-allowed' : 'text-on-surface-variant hover:bg-surface-container-low');
@@ -268,7 +268,7 @@
             </div>
             ${diag.summary ? `<p class="text-xs text-on-surface-variant mt-2 italic">${esc(diag.summary)}</p>` : ''}
             <div class="flex items-center justify-end mt-2">
-              <button onclick="Master._showCreateItemForm('${esc(diag.id)}')" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-[11px] font-bold text-primary hover:bg-primary/10 transition-colors"><span class="material-symbols-outlined text-sm">add_circle</span>Añadir sugerencia manual</button>
+              <button data-action="Master._showCreateItemForm" data-args="${Acciones.args(String(diag.id ?? ''))}" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-[11px] font-bold text-primary hover:bg-primary/10 transition-colors"><span class="material-symbols-outlined text-sm">add_circle</span>Añadir sugerencia manual</button>
             </div>
             <div id="master-create-item-form-host"></div>
           </div>
@@ -312,16 +312,16 @@
   function _renderImproveHeaderActions(doc, noChapters, hasDiag, allHandled, admin) {
     if (noChapters) {
       return `
-        <button onclick="Master.compileV1('${esc(doc.id)}')" class="inline-flex items-center gap-2 px-4 py-2 rounded-xl text-xs font-bold text-white bg-primary hover:bg-primary/90 shadow-md transition-all"><span class="material-symbols-outlined text-sm">play_arrow</span>Compilar Maestro</button>
+        <button data-action="Master.compileV1" data-args="${Acciones.args(String(doc.id ?? ''))}" class="inline-flex items-center gap-2 px-4 py-2 rounded-xl text-xs font-bold text-white bg-primary hover:bg-primary/90 shadow-md transition-all"><span class="material-symbols-outlined text-sm">play_arrow</span>Compilar Maestro</button>
       `;
     }
     return `
-      <button onclick="Master.runDiagnosis('${esc(doc.id)}', 'initial')" class="inline-flex items-center gap-2 px-4 py-2 rounded-xl text-xs font-bold ${hasDiag ? 'bg-surface-container-low hover:bg-surface-container text-on-surface border border-outline-variant/30' : 'bg-primary hover:bg-primary/90 text-white shadow-md'} transition-all">
+      <button data-action="Master.runDiagnosis" data-args="${Acciones.args(String(doc.id ?? ''), 'initial')}" class="inline-flex items-center gap-2 px-4 py-2 rounded-xl text-xs font-bold ${hasDiag ? 'bg-surface-container-low hover:bg-surface-container text-on-surface border border-outline-variant/30' : 'bg-primary hover:bg-primary/90 text-white shadow-md'} transition-all">
         <span class="material-symbols-outlined text-sm">${hasDiag ? 'refresh' : 'fact_check'}</span>
         ${hasDiag ? 'Re-lanzar diagnóstico' : 'Lanzar diagnóstico'}
       </button>
-      ${allHandled ? `<button onclick="Master.runDiagnosis('${esc(doc.id)}', 'advanced')" class="inline-flex items-center gap-2 px-5 py-2 rounded-full text-xs font-bold text-[#e9ff60] bg-[#4312d8] hover:bg-[#7349f0] shadow-md transition-colors"><span class="material-symbols-outlined text-sm">psychology</span>Diagnóstico avanzado</button>` : ''}
-      ${allHandled ? `<button onclick="Master.goToCompress()" class="inline-flex items-center gap-2 px-4 py-2 rounded-xl text-xs font-bold text-white bg-primary hover:bg-primary/90 shadow-md transition-all"><span class="material-symbols-outlined text-sm">arrow_forward</span>Pasar a Comprimir</button>` : ''}
+      ${allHandled ? `<button data-action="Master.runDiagnosis" data-args="${Acciones.args(String(doc.id ?? ''), 'advanced')}" class="inline-flex items-center gap-2 px-5 py-2 rounded-full text-xs font-bold text-[#e9ff60] bg-[#4312d8] hover:bg-[#7349f0] shadow-md transition-colors"><span class="material-symbols-outlined text-sm">psychology</span>Diagnóstico avanzado</button>` : ''}
+      ${allHandled ? `<button data-action="Master.goToCompress" class="inline-flex items-center gap-2 px-4 py-2 rounded-xl text-xs font-bold text-white bg-primary hover:bg-primary/90 shadow-md transition-all"><span class="material-symbols-outlined text-sm">arrow_forward</span>Pasar a Comprimir</button>` : ''}
     `;
   }
 
@@ -380,10 +380,10 @@
             <div id="master-chapter-view-${esc(id)}">
               <div class="prose prose-sm max-w-none whitespace-pre-wrap text-sm leading-relaxed" id="master-chapter-body-${esc(id)}">${mdLite(ch.body || '(vacío)')}</div>
               <div class="mt-3 flex justify-between items-center gap-2 flex-wrap">
-                <button onclick="Master._toggleAskAi('${esc(id)}')" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-[11px] font-bold text-primary hover:bg-primary/10 transition-colors">
+                <button data-action="Master._toggleAskAi" data-args="${Acciones.args(String(id ?? ''))}" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-[11px] font-bold text-primary hover:bg-primary/10 transition-colors">
                   <span class="material-symbols-outlined text-sm">auto_fix_high</span>Pedir mejora a la IA…
                 </button>
-                <button onclick="Master._toggleEdit('${esc(id)}')" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-[11px] font-bold text-on-surface bg-surface-container-low hover:bg-surface-container border border-outline-variant/30 transition-colors">
+                <button data-action="Master._toggleEdit" data-args="${Acciones.args(String(id ?? ''))}" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-[11px] font-bold text-on-surface bg-surface-container-low hover:bg-surface-container border border-outline-variant/30 transition-colors">
                   <span class="material-symbols-outlined text-sm">edit</span>Editar manualmente
                 </button>
               </div>
@@ -391,17 +391,17 @@
                 <p class="text-[11px] text-on-surface-variant mb-2 italic">Dile a la IA qué quieres que mejore en este capítulo. Te devolverá una reescritura concreta que podrás aplicar o descartar.</p>
                 <textarea id="master-ask-ai-input-${esc(id)}" rows="2" placeholder="Ej: hazlo más conciso, añade un párrafo sobre sostenibilidad, mejora la voz, etc." class="w-full px-2 py-2 text-xs border border-outline-variant/30 rounded resize-none"></textarea>
                 <div class="flex items-center justify-end gap-2 mt-2">
-                  <button onclick="Master._cancelAskAi('${esc(id)}')" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg text-[11px] font-bold text-on-surface bg-surface-container-low hover:bg-surface-container border border-outline-variant/30 transition-colors">Cancelar</button>
-                  <button onclick="Master._submitAskAi('${esc(id)}')" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg text-[11px] font-bold text-white bg-primary hover:bg-primary/90 shadow-sm transition-all"><span class="material-symbols-outlined text-sm">auto_fix_high</span>Proponer mejora</button>
+                  <button data-action="Master._cancelAskAi" data-args="${Acciones.args(String(id ?? ''))}" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg text-[11px] font-bold text-on-surface bg-surface-container-low hover:bg-surface-container border border-outline-variant/30 transition-colors">Cancelar</button>
+                  <button data-action="Master._submitAskAi" data-args="${Acciones.args(String(id ?? ''))}" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg text-[11px] font-bold text-white bg-primary hover:bg-primary/90 shadow-sm transition-all"><span class="material-symbols-outlined text-sm">auto_fix_high</span>Proponer mejora</button>
                 </div>
                 <div id="master-ask-ai-result-${esc(id)}" class="mt-3"></div>
               </div>
             </div>
             <div id="master-chapter-edit-${esc(id)}" class="hidden">
-              <textarea id="master-chapter-textarea-${esc(id)}" oninput="Master._markChapterDirty('${esc(id)}')" class="w-full min-h-[260px] px-3 py-2 text-sm border border-outline-variant/30 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary/15 font-mono">${esc(ch.body || '')}</textarea>
+              <textarea id="master-chapter-textarea-${esc(id)}" data-on-input="Master._markChapterDirty" data-args="${Acciones.args(String(id ?? ''))}" class="w-full min-h-[260px] px-3 py-2 text-sm border border-outline-variant/30 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary/15 font-mono">${esc(ch.body || '')}</textarea>
               <div class="mt-2 flex items-center justify-end gap-2">
-                <button onclick="Master._cancelEdit('${esc(id)}')" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg text-[11px] font-bold text-on-surface bg-surface-container-low hover:bg-surface-container border border-outline-variant/30 transition-colors">Cancelar</button>
-                <button onclick="Master._saveEdit('${esc(id)}')" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-[11px] font-bold text-white bg-primary hover:bg-primary/90 shadow-sm transition-all"><span class="material-symbols-outlined text-sm">save</span>Guardar cambios</button>
+                <button data-action="Master._cancelEdit" data-args="${Acciones.args(String(id ?? ''))}" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg text-[11px] font-bold text-on-surface bg-surface-container-low hover:bg-surface-container border border-outline-variant/30 transition-colors">Cancelar</button>
+                <button data-action="Master._saveEdit" data-args="${Acciones.args(String(id ?? ''))}" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-[11px] font-bold text-white bg-primary hover:bg-primary/90 shadow-sm transition-all"><span class="material-symbols-outlined text-sm">save</span>Guardar cambios</button>
               </div>
             </div>
           </div>
@@ -436,8 +436,8 @@
         ${isOpen && isEconomic ? `
           <div class="flex flex-wrap items-center gap-2 pt-2 border-t border-current/10">
             <span class="text-[11px] italic text-on-surface-variant flex-1"><span class="material-symbols-outlined text-xs align-middle">info</span> Se arregla volviendo a <strong>Diseñar</strong> o <strong>Escribir</strong> (presupuesto, partners, contexto).</span>
-            <button onclick="Master._patchItemState('${esc(it.id)}', 'resolved')" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-full text-[10px] font-bold text-primary bg-white hover:bg-lavender-soft border border-primary transition-colors"><span class="material-symbols-outlined text-xs">check</span>Marcar como resuelto</button>
-            <button onclick="Master._patchItemState('${esc(it.id)}', 'dismissed')" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg text-[10px] font-bold text-on-surface-variant bg-surface-container-low hover:bg-surface-container border border-outline-variant/30 transition-colors">Descartar</button>
+            <button data-action="Master._patchItemState" data-args="${Acciones.args(String(it.id ?? ''), 'resolved')}" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-full text-[10px] font-bold text-primary bg-white hover:bg-lavender-soft border border-primary transition-colors"><span class="material-symbols-outlined text-xs">check</span>Marcar como resuelto</button>
+            <button data-action="Master._patchItemState" data-args="${Acciones.args(String(it.id ?? ''), 'dismissed')}" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg text-[10px] font-bold text-on-surface-variant bg-surface-container-low hover:bg-surface-container border border-outline-variant/30 transition-colors">Descartar</button>
           </div>
         ` : ''}
 
@@ -451,7 +451,7 @@
 
         ${!isOpen ? `
           <div class="flex justify-end pt-2 border-t border-current/10">
-            <button onclick="Master._patchItemState('${esc(it.id)}', 'open')" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg text-[10px] font-bold text-on-surface bg-surface-container-low hover:bg-surface-container border border-outline-variant/30 transition-colors">Reabrir</button>
+            <button data-action="Master._patchItemState" data-args="${Acciones.args(String(it.id ?? ''), 'open')}" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg text-[10px] font-bold text-on-surface bg-surface-container-low hover:bg-surface-container border border-outline-variant/30 transition-colors">Reabrir</button>
           </div>
         ` : ''}
       </div>
@@ -465,9 +465,9 @@
     if (!proposal) {
       return `
         <div class="flex flex-wrap items-center gap-2">
-          <button onclick="Master._loadProposalForItem('${esc(it.id)}', '${esc(chapterId)}')" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg text-[10px] font-bold text-white bg-primary hover:bg-primary/90 shadow-sm transition-all"><span class="material-symbols-outlined text-xs">auto_fix_high</span>Ver propuesta de la IA</button>
-          <button onclick="Master._patchItemState('${esc(it.id)}', 'resolved')" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg text-[10px] font-bold text-on-surface bg-surface-container-low hover:bg-surface-container border border-outline-variant/30 transition-colors">Lo arreglo a mano</button>
-          <button onclick="Master._patchItemState('${esc(it.id)}', 'dismissed')" class="ml-auto inline-flex items-center gap-1 px-3 py-1.5 rounded-lg text-[10px] font-bold text-on-surface-variant bg-surface-container-low hover:bg-surface-container border border-outline-variant/30 transition-colors">Descartar</button>
+          <button data-action="Master._loadProposalForItem" data-args="${Acciones.args(String(it.id ?? ''), String(chapterId ?? ''))}" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg text-[10px] font-bold text-white bg-primary hover:bg-primary/90 shadow-sm transition-all"><span class="material-symbols-outlined text-xs">auto_fix_high</span>Ver propuesta de la IA</button>
+          <button data-action="Master._patchItemState" data-args="${Acciones.args(String(it.id ?? ''), 'resolved')}" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg text-[10px] font-bold text-on-surface bg-surface-container-low hover:bg-surface-container border border-outline-variant/30 transition-colors">Lo arreglo a mano</button>
+          <button data-action="Master._patchItemState" data-args="${Acciones.args(String(it.id ?? ''), 'dismissed')}" class="ml-auto inline-flex items-center gap-1 px-3 py-1.5 rounded-lg text-[10px] font-bold text-on-surface-variant bg-surface-container-low hover:bg-surface-container border border-outline-variant/30 transition-colors">Descartar</button>
         </div>
       `;
     }
@@ -484,7 +484,7 @@
         <div class="flex items-center gap-2 px-3 py-2 rounded-lg bg-red-50 border border-red-200">
           <span class="material-symbols-outlined text-sm text-red-600">error</span>
           <span class="text-xs text-red-700 flex-1">No se pudo generar propuesta: ${esc(proposal.error)}</span>
-          <button onclick="Master._loadProposalForItem('${esc(it.id)}', '${esc(chapterId)}', { regenerate: true })" class="inline-flex items-center gap-1 px-2 py-1 rounded text-[10px] font-bold text-white bg-primary hover:bg-primary/90">Reintentar</button>
+          <button data-action="Master._loadProposalForItem" data-args="${Acciones.args(String(it.id ?? ''), String(chapterId ?? ''), { regenerate: true })}" class="inline-flex items-center gap-1 px-2 py-1 rounded text-[10px] font-bold text-white bg-primary hover:bg-primary/90">Reintentar</button>
         </div>
       `;
     }
@@ -497,9 +497,9 @@
           <div class="prose prose-sm max-w-none whitespace-pre-wrap text-xs leading-relaxed">${mdLite(newBody)}</div>
         </div>
         <div class="flex flex-wrap items-center gap-2">
-          <button onclick="Master._acceptProposal('${esc(it.id)}', '${esc(chapterId)}')" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg text-[10px] font-bold text-white bg-primary hover:bg-primary/90 shadow-sm transition-all"><span class="material-symbols-outlined text-xs">check</span>Aplicar al Master</button>
-          <button onclick="Master._loadProposalForItem('${esc(it.id)}', '${esc(chapterId)}', { regenerate: true })" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg text-[10px] font-bold text-on-surface bg-surface-container-low hover:bg-surface-container border border-outline-variant/30 transition-colors"><span class="material-symbols-outlined text-xs">refresh</span>Otra variante</button>
-          <button onclick="Master._patchItemState('${esc(it.id)}', 'dismissed')" class="ml-auto inline-flex items-center gap-1 px-3 py-1.5 rounded-lg text-[10px] font-bold text-on-surface-variant bg-surface-container-low hover:bg-surface-container border border-outline-variant/30 transition-colors">Descartar</button>
+          <button data-action="Master._acceptProposal" data-args="${Acciones.args(String(it.id ?? ''), String(chapterId ?? ''))}" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg text-[10px] font-bold text-white bg-primary hover:bg-primary/90 shadow-sm transition-all"><span class="material-symbols-outlined text-xs">check</span>Aplicar al Master</button>
+          <button data-action="Master._loadProposalForItem" data-args="${Acciones.args(String(it.id ?? ''), String(chapterId ?? ''), { regenerate: true })}" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg text-[10px] font-bold text-on-surface bg-surface-container-low hover:bg-surface-container border border-outline-variant/30 transition-colors"><span class="material-symbols-outlined text-xs">refresh</span>Otra variante</button>
+          <button data-action="Master._patchItemState" data-args="${Acciones.args(String(it.id ?? ''), 'dismissed')}" class="ml-auto inline-flex items-center gap-1 px-3 py-1.5 rounded-lg text-[10px] font-bold text-on-surface-variant bg-surface-container-low hover:bg-surface-container border border-outline-variant/30 transition-colors">Descartar</button>
         </div>
       </div>
     `;
@@ -639,9 +639,9 @@
             <div class="prose prose-sm max-w-none whitespace-pre-wrap text-xs leading-relaxed">${mdLite(data.new_body)}</div>
           </div>
           <div class="flex flex-wrap items-center gap-2">
-            <button onclick="Master._acceptAskAi('${esc(chapterId)}', this)" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg text-[10px] font-bold text-white bg-primary hover:bg-primary/90 shadow-sm transition-all"><span class="material-symbols-outlined text-xs">check</span>Aplicar al Master</button>
-            <button onclick="Master._submitAskAi('${esc(chapterId)}')" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg text-[10px] font-bold text-on-surface bg-surface-container-low hover:bg-surface-container border border-outline-variant/30 transition-colors"><span class="material-symbols-outlined text-xs">refresh</span>Otra variante</button>
-            <button onclick="Master._cancelAskAi('${esc(chapterId)}')" class="ml-auto inline-flex items-center gap-1 px-3 py-1.5 rounded-lg text-[10px] font-bold text-on-surface-variant bg-surface-container-low hover:bg-surface-container border border-outline-variant/30 transition-colors">Descartar</button>
+            <button data-action="Master._acceptAskAi" data-args="${Acciones.args(String(chapterId ?? ''), Acciones.ESTE)}" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg text-[10px] font-bold text-white bg-primary hover:bg-primary/90 shadow-sm transition-all"><span class="material-symbols-outlined text-xs">check</span>Aplicar al Master</button>
+            <button data-action="Master._submitAskAi" data-args="${Acciones.args(String(chapterId ?? ''))}" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg text-[10px] font-bold text-on-surface bg-surface-container-low hover:bg-surface-container border border-outline-variant/30 transition-colors"><span class="material-symbols-outlined text-xs">refresh</span>Otra variante</button>
+            <button data-action="Master._cancelAskAi" data-args="${Acciones.args(String(chapterId ?? ''))}" class="ml-auto inline-flex items-center gap-1 px-3 py-1.5 rounded-lg text-[10px] font-bold text-on-surface-variant bg-surface-container-low hover:bg-surface-container border border-outline-variant/30 transition-colors">Descartar</button>
           </div>
         </div>
       `;
@@ -786,8 +786,8 @@
           <textarea id="ci-suggestion" placeholder="Sugerencia / qué hacer (opcional)" rows="2" class="col-span-2 px-2 py-1.5 text-xs border border-outline-variant/30 rounded resize-none"></textarea>
         </div>
         <div class="flex gap-2 justify-end">
-          <button onclick="Master._cancelCreateItem()" class="inline-flex items-center gap-1.5 px-4 py-2 rounded-xl text-xs font-bold text-on-surface bg-surface-container-low hover:bg-surface-container border border-outline-variant/30 transition-colors">Cancelar</button>
-          <button onclick="Master._submitCustomItem('${esc(diagnosisId)}')" class="inline-flex items-center gap-1.5 px-4 py-2 rounded-xl text-xs font-bold text-white bg-primary hover:bg-primary/90 shadow-md transition-all">Añadir</button>
+          <button data-action="Master._cancelCreateItem" class="inline-flex items-center gap-1.5 px-4 py-2 rounded-xl text-xs font-bold text-on-surface bg-surface-container-low hover:bg-surface-container border border-outline-variant/30 transition-colors">Cancelar</button>
+          <button data-action="Master._submitCustomItem" data-args="${Acciones.args(String(diagnosisId ?? ''))}" class="inline-flex items-center gap-1.5 px-4 py-2 rounded-xl text-xs font-bold text-white bg-primary hover:bg-primary/90 shadow-md transition-all">Añadir</button>
         </div>
       </div>
     `;
@@ -891,8 +891,8 @@
             <p class="text-xs text-on-surface-variant mt-1">Vista previa del Form Part B (EACEA) campo a campo. Edita lo que quieras y descarga el .docx cuando estés listo.</p>
           </div>
           <div class="flex items-center gap-2 flex-wrap justify-end">
-            <button onclick="Master._seedFromMaster('${esc(doc.id)}')" class="inline-flex items-center gap-2 px-4 py-2 rounded-xl text-xs font-bold text-white bg-primary hover:bg-primary/90 shadow-md transition-all" title="Copia el contenido del Master a cada campo sin llamar al LLM (gratis, instantáneo)"><span class="material-symbols-outlined text-sm">content_copy</span>Rellenar desde Master (sin IA)</button>
-            <button onclick="Master._recompressAll('${esc(doc.id)}')" class="inline-flex items-center gap-2 px-4 py-2 rounded-xl text-xs font-bold text-on-surface bg-surface-container-low hover:bg-surface-container border border-outline-variant/30 transition-colors" title="Re-genera cada campo con IA (cuesta dinero, 2-5 min)"><span class="material-symbols-outlined text-sm">refresh</span>Re-comprimir con IA</button>
+            <button data-action="Master._seedFromMaster" data-args="${Acciones.args(String(doc.id ?? ''))}" class="inline-flex items-center gap-2 px-4 py-2 rounded-xl text-xs font-bold text-white bg-primary hover:bg-primary/90 shadow-md transition-all" title="Copia el contenido del Master a cada campo sin llamar al LLM (gratis, instantáneo)"><span class="material-symbols-outlined text-sm">content_copy</span>Rellenar desde Master (sin IA)</button>
+            <button data-action="Master._recompressAll" data-args="${Acciones.args(String(doc.id ?? ''))}" class="inline-flex items-center gap-2 px-4 py-2 rounded-xl text-xs font-bold text-on-surface bg-surface-container-low hover:bg-surface-container border border-outline-variant/30 transition-colors" title="Re-genera cada campo con IA (cuesta dinero, 2-5 min)"><span class="material-symbols-outlined text-sm">refresh</span>Re-comprimir con IA</button>
             <div class="flex flex-col gap-0.5">
               <label for="master-export-lang" class="text-[9px] font-bold uppercase tracking-widest text-on-surface-variant">Idioma descarga</label>
               <select id="master-export-lang" class="px-2 py-1.5 rounded-lg bg-white border border-outline-variant text-on-surface text-xs focus:border-primary outline-none">
@@ -925,7 +925,7 @@
                 <option value="tr">Türkçe</option>
               </select>
             </div>
-            <button onclick="Master._downloadFormDocx('${esc(projectId || '')}')" class="inline-flex items-center gap-2 px-5 py-2 rounded-full text-xs font-bold text-[#e9ff60] bg-[#4312d8] hover:bg-[#7349f0] shadow-md transition-colors"><span class="material-symbols-outlined text-sm">picture_as_pdf</span>Descargar Form Part B (.docx)</button>
+            <button data-action="Master._downloadFormDocx" data-args="${Acciones.args(String(projectId || ''))}" class="inline-flex items-center gap-2 px-5 py-2 rounded-full text-xs font-bold text-[#e9ff60] bg-[#4312d8] hover:bg-[#7349f0] shadow-md transition-colors"><span class="material-symbols-outlined text-sm">picture_as_pdf</span>Descargar Form Part B (.docx)</button>
           </div>
         </div>
 
@@ -1004,7 +1004,7 @@
       badge = `<span class="material-symbols-outlined text-xs ${isActive ? 'text-[#e9ff60]' : 'text-primary'}">check_circle</span>`;
     }
     return `
-      <button onclick="Master._selectFormField('${esc(it.id)}')" class="w-full text-left flex items-start gap-2 px-2 py-1.5 rounded-lg ${cls} mb-0.5 transition-colors">
+      <button data-action="Master._selectFormField" data-args="${Acciones.args(String(it.id ?? ''))}" class="w-full text-left flex items-start gap-2 px-2 py-1.5 rounded-lg ${cls} mb-0.5 transition-colors">
         <span class="material-symbols-outlined text-sm mt-0.5 flex-shrink-0 ${isActive ? '' : 'text-on-surface-variant'}">${icon}</span>
         <div class="flex-1 min-w-0">
           <div class="text-[11px] font-mono opacity-80">${esc(it.number)}</div>
@@ -1024,7 +1024,8 @@
     document.querySelectorAll('aside button').forEach(btn => {
       const wasActive = btn.classList.contains('bg-primary');
       const text = btn.textContent || '';
-      const isThis = btn.getAttribute('onclick') === `Master._selectFormField('${itemId}')`;
+      const isThis = btn.getAttribute('data-action') === 'Master._selectFormField'
+        && JSON.parse(btn.getAttribute('data-args') || '[]')[0] === String(itemId);
       if (isThis && !wasActive) {
         btn.classList.remove('text-on-surface', 'hover:bg-white/60');
         btn.classList.add('bg-primary', 'text-white', 'shadow-sm');
@@ -1140,8 +1141,8 @@
           </div>
         </div>
         <div class="flex items-center gap-2 flex-wrap justify-end">
-          ${docId && it.chapter_key ? `<button onclick="Master._recompressField('${esc(docId)}','${esc(it.id)}')" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-[11px] font-bold text-on-surface bg-surface-container-low hover:bg-surface-container border border-outline-variant/30 transition-colors"><span class="material-symbols-outlined text-sm">refresh</span>Re-comprimir desde el Master</button>` : ''}
-          <button onclick="Master._toggleFormAskAi('${esc(it.id)}')" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-[11px] font-bold text-primary hover:bg-primary/10 transition-colors"><span class="material-symbols-outlined text-sm">auto_fix_high</span>Pedir mejora a la IA</button>
+          ${docId && it.chapter_key ? `<button data-action="Master._recompressField" data-args="${Acciones.args(String(docId ?? ''), String(it.id ?? ''))}" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-[11px] font-bold text-on-surface bg-surface-container-low hover:bg-surface-container border border-outline-variant/30 transition-colors"><span class="material-symbols-outlined text-sm">refresh</span>Re-comprimir desde el Master</button>` : ''}
+          <button data-action="Master._toggleFormAskAi" data-args="${Acciones.args(String(it.id ?? ''))}" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-[11px] font-bold text-primary hover:bg-primary/10 transition-colors"><span class="material-symbols-outlined text-sm">auto_fix_high</span>Pedir mejora a la IA</button>
         </div>
       </div>
 
@@ -1152,13 +1153,13 @@
       ` : ''}
 
       <div class="mb-4">
-        <textarea id="form-field-text-${esc(it.id)}" rows="16" oninput="Master._onFormFieldEdit('${esc(it.id)}', this.value)" class="w-full px-3 py-2 text-sm border border-outline-variant/30 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary/15 font-serif leading-relaxed">${esc(isEdited ? _state.formFieldEdits[it.id] : (it.value || ''))}</textarea>
+        <textarea id="form-field-text-${esc(it.id)}" rows="16" data-on-input="Master._onFormFieldEdit" data-args="${Acciones.args(String(it.id ?? ''), Acciones.VALOR)}" class="w-full px-3 py-2 text-sm border border-outline-variant/30 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary/15 font-serif leading-relaxed">${esc(isEdited ? _state.formFieldEdits[it.id] : (it.value || ''))}</textarea>
         ${isEdited ? `
           <div class="flex items-center justify-between mt-2">
             <span class="text-[11px] italic text-violet"><span class="material-symbols-outlined text-xs align-middle">edit</span> Hay cambios sin guardar</span>
             <div class="flex gap-2">
-              <button onclick="Master._cancelFormFieldEdit('${esc(it.id)}')" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg text-[11px] font-bold text-on-surface bg-surface-container-low hover:bg-surface-container border border-outline-variant/30 transition-colors">Descartar cambios</button>
-              <button onclick="Master._saveFormFieldEdit('${esc(it.id)}')" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-[11px] font-bold text-white bg-primary hover:bg-primary/90 shadow-sm transition-all"><span class="material-symbols-outlined text-sm">save</span>Guardar edición</button>
+              <button data-action="Master._cancelFormFieldEdit" data-args="${Acciones.args(String(it.id ?? ''))}" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg text-[11px] font-bold text-on-surface bg-surface-container-low hover:bg-surface-container border border-outline-variant/30 transition-colors">Descartar cambios</button>
+              <button data-action="Master._saveFormFieldEdit" data-args="${Acciones.args(String(it.id ?? ''))}" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-[11px] font-bold text-white bg-primary hover:bg-primary/90 shadow-sm transition-all"><span class="material-symbols-outlined text-sm">save</span>Guardar edición</button>
             </div>
           </div>
         ` : ''}
@@ -1168,8 +1169,8 @@
         <p class="text-[11px] text-on-surface-variant mb-2 italic">Dile a la IA qué quieres mejorar en este campo. La propuesta respetará el límite oficial de caracteres.</p>
         <textarea id="form-ask-ai-input-${esc(it.id)}" rows="2" placeholder="Ej: refuerza el alineamiento con la prioridad X de la convocatoria, etc." class="w-full px-2 py-2 text-xs border border-outline-variant/30 rounded resize-none"></textarea>
         <div class="flex items-center justify-end gap-2 mt-2">
-          <button onclick="Master._cancelFormAskAi('${esc(it.id)}')" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg text-[11px] font-bold text-on-surface bg-surface-container-low hover:bg-surface-container border border-outline-variant/30 transition-colors">Cancelar</button>
-          <button onclick="Master._submitFormAskAi('${esc(it.id)}')" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg text-[11px] font-bold text-white bg-primary hover:bg-primary/90 shadow-sm transition-all"><span class="material-symbols-outlined text-sm">auto_fix_high</span>Proponer mejora</button>
+          <button data-action="Master._cancelFormAskAi" data-args="${Acciones.args(String(it.id ?? ''))}" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg text-[11px] font-bold text-on-surface bg-surface-container-low hover:bg-surface-container border border-outline-variant/30 transition-colors">Cancelar</button>
+          <button data-action="Master._submitFormAskAi" data-args="${Acciones.args(String(it.id ?? ''))}" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg text-[11px] font-bold text-white bg-primary hover:bg-primary/90 shadow-sm transition-all"><span class="material-symbols-outlined text-sm">auto_fix_high</span>Proponer mejora</button>
         </div>
         <div id="form-ask-ai-result-${esc(it.id)}" class="mt-3"></div>
       </div>
@@ -1518,9 +1519,9 @@
             <div class="prose prose-sm max-w-none whitespace-pre-wrap text-xs leading-relaxed">${mdLite(data.new_body)}</div>
           </div>
           <div class="flex flex-wrap items-center gap-2">
-            <button onclick="Master._acceptFormProposal('${esc(fieldId)}')" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg text-[10px] font-bold text-white bg-primary hover:bg-primary/90 shadow-sm transition-all"><span class="material-symbols-outlined text-xs">check</span>Aplicar al formulario</button>
-            <button onclick="Master._submitFormAskAi('${esc(fieldId)}')" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg text-[10px] font-bold text-on-surface bg-surface-container-low hover:bg-surface-container border border-outline-variant/30 transition-colors"><span class="material-symbols-outlined text-xs">refresh</span>Otra variante</button>
-            <button onclick="Master._cancelFormAskAi('${esc(fieldId)}')" class="ml-auto inline-flex items-center gap-1 px-3 py-1.5 rounded-lg text-[10px] font-bold text-on-surface-variant bg-surface-container-low hover:bg-surface-container border border-outline-variant/30 transition-colors">Descartar</button>
+            <button data-action="Master._acceptFormProposal" data-args="${Acciones.args(String(fieldId ?? ''))}" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg text-[10px] font-bold text-white bg-primary hover:bg-primary/90 shadow-sm transition-all"><span class="material-symbols-outlined text-xs">check</span>Aplicar al formulario</button>
+            <button data-action="Master._submitFormAskAi" data-args="${Acciones.args(String(fieldId ?? ''))}" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg text-[10px] font-bold text-on-surface bg-surface-container-low hover:bg-surface-container border border-outline-variant/30 transition-colors"><span class="material-symbols-outlined text-xs">refresh</span>Otra variante</button>
+            <button data-action="Master._cancelFormAskAi" data-args="${Acciones.args(String(fieldId ?? ''))}" class="ml-auto inline-flex items-center gap-1 px-3 py-1.5 rounded-lg text-[10px] font-bold text-on-surface-variant bg-surface-container-low hover:bg-surface-container border border-outline-variant/30 transition-colors">Descartar</button>
           </div>
         </div>
       `;
@@ -2175,4 +2176,6 @@
   Master._seedFromMaster = _seedFromMaster;
 
   window.Master = Master;
+  // Botones de las plantillas: data-action="Master.metodo" (js/acciones.js)
+  Acciones.modulo('Master', Master);
 })();

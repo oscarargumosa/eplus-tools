@@ -375,7 +375,7 @@ const Entities = (() => {
     const logo = o.logo_url
       ? `<img src="${esc(o.logo_url)}" alt="" loading="lazy" referrerpolicy="no-referrer"
            class="w-14 h-14 rounded-xl object-contain bg-white border border-outline-variant/20 shrink-0"
-           onerror="this.replaceWith(Object.assign(document.createElement('div'),{className:'w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center shrink-0',innerHTML:'<span class=\\'material-symbols-outlined text-primary text-[28px]\\'>apartment</span>'}))">`
+           data-on-error="ent.sinLogo" data-args="${Acciones.args('w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center shrink-0', 'text-[28px]')}">`
       : `<div class="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center shrink-0">
            <span class="material-symbols-outlined text-primary text-[28px]">apartment</span>
          </div>`;
@@ -482,7 +482,7 @@ const Entities = (() => {
         </div>
         <h3 class="font-bold text-primary mb-1">Ningún resultado coincide</h3>
         <p class="text-sm text-on-surface-variant mb-4">Prueba a quitar filtros o cambiar la búsqueda.</p>
-        <button type="button" onclick="Entities.clearFilters()"
+        <button type="button" data-action="Entities.clearFilters"
           class="text-xs font-semibold text-primary bg-secondary-fixed px-4 py-2 rounded-full hover:bg-secondary-fixed-dim transition-colors">
           Limpiar filtros
         </button>
@@ -556,7 +556,7 @@ const Entities = (() => {
     const logo = o.logo_url
       ? `<img src="${esc(o.logo_url)}" alt="" referrerpolicy="no-referrer"
            class="w-20 h-20 rounded-2xl object-contain bg-white border border-outline-variant/30 shrink-0"
-           onerror="this.replaceWith(Object.assign(document.createElement('div'),{className:'w-20 h-20 rounded-2xl bg-primary/10 flex items-center justify-center shrink-0',innerHTML:'<span class=\\'material-symbols-outlined text-primary text-[36px]\\'>apartment</span>'}))">`
+           data-on-error="ent.sinLogo" data-args="${Acciones.args('w-20 h-20 rounded-2xl bg-primary/10 flex items-center justify-center shrink-0', 'text-[36px]')}">`
       : `<div class="w-20 h-20 rounded-2xl bg-primary/10 flex items-center justify-center shrink-0">
            <span class="material-symbols-outlined text-primary text-[36px]">apartment</span>
          </div>`;
@@ -1093,7 +1093,7 @@ const Entities = (() => {
         <button type="button" data-oid="${esc(s.oid)}"
           class="entity-card-mini bg-white rounded-xl border border-outline-variant/25 p-3 text-left hover:border-primary/30 hover:shadow-md transition-all">
           <div class="flex items-start gap-2">
-            ${s.logo_url ? `<img src="${esc(s.logo_url)}" referrerpolicy="no-referrer" class="w-8 h-8 rounded object-contain bg-white border border-outline-variant/20 shrink-0" onerror="this.style.display='none'">` : ''}
+            ${s.logo_url ? `<img src="${esc(s.logo_url)}" referrerpolicy="no-referrer" class="w-8 h-8 rounded object-contain bg-white border border-outline-variant/20 shrink-0" data-on-error="img.ocultar">` : ''}
             <div class="flex-1 min-w-0">
               <div class="font-semibold text-primary text-xs leading-tight line-clamp-2">${esc(s.display_name || '')}</div>
               <div class="text-[10px] text-on-surface-variant mt-1">${countryFlag(s.country_code)} ${esc(s.country_code || '')}${s.city ? ' · ' + esc(s.city) : ''}</div>
@@ -1317,3 +1317,15 @@ const Entities = (() => {
     openSmartModal,
   };
 })();
+
+/* Plantillas: data-action="Entities.metodo" y acciones propias (js/acciones.js) */
+Acciones.modulo('Entities', Entities);
+Acciones.registrar({
+  // Logo que no carga → recuadro con el icono de edificio
+  'ent.sinLogo': (el, ev, clases, tamIcono) => {
+    const caja = document.createElement('div');
+    caja.className = clases;
+    caja.innerHTML = `<span class='material-symbols-outlined text-primary ${tamIcono}'>apartment</span>`;
+    el.replaceWith(caja);
+  },
+});

@@ -107,9 +107,9 @@ body{font-family:'Poppins',sans-serif;-webkit-font-smoothing:antialiased;backgro
 
 <!-- Tabs -->
 <div class="vtabs">
-  <div class="vtab active" onclick="show(0)"><span class="dot" style="background:#f8f8f8;border:1px solid rgba(255,255,255,0.2)"></span>C1 — Blanco cálido</div>
-  <div class="vtab" onclick="show(1)"><span class="dot" style="background:#f2f2f2"></span>C2 — Crema</div>
-  <div class="vtab" onclick="show(2)"><span class="dot" style="background:#efe8fe"></span>C3 — Lavanda suave</div>
+  <div class="vtab active" data-action="Lab.show" data-args='[0]'><span class="dot" style="background:#f8f8f8;border:1px solid rgba(255,255,255,0.2)"></span>C1 — Blanco cálido</div>
+  <div class="vtab" data-action="Lab.show" data-args='[1]'><span class="dot" style="background:#f2f2f2"></span>C2 — Crema</div>
+  <div class="vtab" data-action="Lab.show" data-args='[2]'><span class="dot" style="background:#efe8fe"></span>C3 — Lavanda suave</div>
 </div>
 
 <!-- ══════════════════════════════════════════════════════════ -->
@@ -354,11 +354,7 @@ body{font-family:'Poppins',sans-serif;-webkit-font-smoothing:antialiased;backgro
   </div>
 </div>
 
-<script>
-function show(n){
-  document.querySelectorAll('.vsection').forEach((el,i)=>{el.classList.toggle('active',i===n)});
-  document.querySelectorAll('.vtab').forEach((el,i)=>{el.classList.toggle('active',i===n)});
-}
-</script>
+<script src="/js/acciones.js"></script>
+<script src="/js/lab.js"></script>
 </body>
 </html>

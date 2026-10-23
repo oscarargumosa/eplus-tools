@@ -196,7 +196,7 @@ const Diagnose = (() => {
         <div class="bg-error/10 border border-error/30 rounded-xl p-6 max-w-2xl mx-auto">
           <span class="material-symbols-outlined text-error">error</span>
           <p class="text-sm mt-1">${esc(state.error)}</p>
-          <button class="mt-3 px-3 py-1.5 bg-primary text-white rounded text-xs" onclick="Diagnose.runNew()">Reintentar</button>
+          <button class="mt-3 px-3 py-1.5 bg-primary text-white rounded text-xs" data-action="Diagnose.runNew">Reintentar</button>
         </div>`;
       return;
     }
@@ -226,7 +226,7 @@ const Diagnose = (() => {
           La IA analiza tu Form Part B contra las leyes EACEA, patrones del programa,
           coherencia cruzada y (si la tienes) la carta del evaluador.
         </p>
-        <button onclick="Diagnose.runNew()" class="px-6 py-3 bg-secondary-fixed text-primary rounded-full text-sm font-bold hover:bg-secondary-fixed-dim shadow-md">
+        <button data-action="Diagnose.runNew" class="px-6 py-3 bg-secondary-fixed text-primary rounded-full text-sm font-bold hover:bg-secondary-fixed-dim shadow-md">
           <span class="material-symbols-outlined text-sm align-middle mr-1">play_arrow</span>
           Lanzar diagnóstico
         </button>
@@ -261,15 +261,15 @@ const Diagnose = (() => {
           </div>
           <div class="flex gap-2">
             ${acceptedCount >= 1 ? `
-              <button onclick="Diagnose.runNew()" class="inline-flex items-center gap-1.5 px-3 py-1.5 bg-primary text-white rounded-full text-xs font-bold hover:bg-primary/90 shadow-sm">
+              <button data-action="Diagnose.runNew" class="inline-flex items-center gap-1.5 px-3 py-1.5 bg-primary text-white rounded-full text-xs font-bold hover:bg-primary/90 shadow-sm">
                 <span class="material-symbols-outlined text-sm">refresh</span>
                 Recalcular diagnóstico
               </button>` : `
-              <button onclick="Diagnose.runNew()" class="inline-flex items-center gap-1.5 px-3 py-1.5 bg-surface border border-primary/40 text-primary rounded-full text-xs hover:bg-primary/5">
+              <button data-action="Diagnose.runNew" class="inline-flex items-center gap-1.5 px-3 py-1.5 bg-surface border border-primary/40 text-primary rounded-full text-xs hover:bg-primary/5">
                 <span class="material-symbols-outlined text-sm">refresh</span>
                 Re-ejecutar
               </button>`}
-            <button onclick="Diagnose.openHistory()" class="inline-flex items-center gap-1.5 px-3 py-1.5 bg-surface border border-primary/40 text-primary rounded-full text-xs hover:bg-primary/5">
+            <button data-action="Diagnose.openHistory" class="inline-flex items-center gap-1.5 px-3 py-1.5 bg-surface border border-primary/40 text-primary rounded-full text-xs hover:bg-primary/5">
               <span class="material-symbols-outlined text-sm">history</span>
               Historial
             </button>
@@ -365,7 +365,7 @@ const Diagnose = (() => {
   function navLink(fieldId, label, active, opts = {}) {
     const { has = true, findings = 0 } = opts;
     return `
-      <button onclick="Diagnose.setActiveField('${esc(fieldId)}')"
+      <button data-action="Diagnose.setActiveField" data-args="${Acciones.args(String(fieldId ?? ''))}"
         class="w-full text-left px-2 py-1.5 rounded-md text-xs flex items-center justify-between gap-2 mb-0.5 transition-colors
                ${active ? 'bg-primary text-white font-medium' : 'hover:bg-surface-variant text-on-surface'}
                ${!has ? 'opacity-50' : ''}">
@@ -407,8 +407,8 @@ const Diagnose = (() => {
         <div class="flex items-center gap-3">
           <div class="text-xs text-on-surface-variant">${currentText.length} chars · ${findingsHere.length} hallazgos abiertos</div>
           ${hasUnsaved ? `
-            <button onclick="Diagnose.discardEdits()" class="px-2 py-1 text-xs text-on-surface-variant hover:text-error">Descartar</button>
-            <button onclick="Diagnose.saveField()" ${state.savingField ? 'disabled' : ''}
+            <button data-action="Diagnose.discardEdits" class="px-2 py-1 text-xs text-on-surface-variant hover:text-error">Descartar</button>
+            <button data-action="Diagnose.saveField" ${state.savingField ? 'disabled' : ''}
                     class="inline-flex items-center gap-1 px-3 py-1.5 bg-primary text-white rounded-full text-xs font-bold hover:bg-violet disabled:opacity-50">
               ${state.savingField ? '<span class="material-symbols-outlined text-xs animate-spin">progress_activity</span>' : '<span class="material-symbols-outlined text-xs">save</span>'}
               ${state.savingField ? 'Guardando…' : 'Guardar cambios'}
@@ -430,7 +430,7 @@ const Diagnose = (() => {
         id="diagnose-editor-textarea"
         class="w-full font-sans text-sm leading-relaxed text-on-surface bg-surface p-4 rounded-lg border ${hasUnsaved ? 'border-[#d4ec3c] ring-1 ring-[#e9ff60]/60' : 'border-outline-variant/30'} focus:outline-none focus:ring-2 focus:ring-primary/30 resize-vertical"
         style="min-height:400px;"
-        oninput="Diagnose.onEditorInput(this.value)"
+        data-on-input="Diagnose.onEditorInput" data-args="${Acciones.args(Acciones.VALOR)}"
         spellcheck="false"
       >${esc(currentText)}</textarea>
     `;
@@ -475,11 +475,11 @@ const Diagnose = (() => {
           ` : ''}
         </div>
         <div class="flex gap-2 mt-4">
-          <button onclick="Diagnose.acceptAction('${esc(action.id)}', '${esc(action.finding_id)}')" class="flex-1 px-3 py-2 bg-secondary-fixed text-primary rounded-full text-sm font-bold hover:bg-secondary-fixed-dim transition-colors">
+          <button data-action="Diagnose.acceptAction" data-args="${Acciones.args(String(action.id ?? ''), String(action.finding_id ?? ''))}" class="flex-1 px-3 py-2 bg-secondary-fixed text-primary rounded-full text-sm font-bold hover:bg-secondary-fixed-dim transition-colors">
             <span class="material-symbols-outlined text-sm align-middle mr-1">check</span>
             Aceptar y aplicar
           </button>
-          <button onclick="Diagnose.rejectAction('${esc(action.id)}', '${esc(action.finding_id)}')" class="px-3 py-2 bg-surface border border-outline-variant/60 rounded-full text-sm text-on-surface-variant hover:bg-surface-variant">
+          <button data-action="Diagnose.rejectAction" data-args="${Acciones.args(String(action.id ?? ''), String(action.finding_id ?? ''))}" class="px-3 py-2 bg-surface border border-outline-variant/60 rounded-full text-sm text-on-surface-variant hover:bg-surface-variant">
             Rechazar
           </button>
         </div>
@@ -537,11 +537,12 @@ const Diagnose = (() => {
   }
 
   function chip(label, active, _onclickFn) {
-    // We can't pass closures to onclick — use named handlers
-    const handler = label === 'Todos' ? `Diagnose.setFilter('','')` :
-                    label === 'Críticos' ? `Diagnose.setFilter('severity','critical')` :
-                    label === 'Carta EACEA' ? `Diagnose.setFilter('source','D')` : '';
-    return `<button onclick="${handler}" class="px-2 py-0.5 rounded-full ${active ? 'bg-primary text-white' : 'bg-surface-variant text-on-surface-variant hover:bg-surface-variant/70'}">${esc(label)}</button>`;
+    // Filtro por etiqueta → data-action="Diagnose.setFilter" (js/acciones.js)
+    const filtro = label === 'Todos' ? ['', ''] :
+                   label === 'Críticos' ? ['severity', 'critical'] :
+                   label === 'Carta EACEA' ? ['source', 'D'] : null;
+    const accion = filtro ? `data-action="Diagnose.setFilter" data-args="${Acciones.args(...filtro)}"` : '';
+    return `<button ${accion} class="px-2 py-0.5 rounded-full ${active ? 'bg-primary text-white' : 'bg-surface-variant text-on-surface-variant hover:bg-surface-variant/70'}">${esc(label)}</button>`;
   }
 
   function findingCard(f) {
@@ -579,7 +580,7 @@ const Diagnose = (() => {
 
     return `
       <div class="border ${sev.cls} ${isActive ? 'ring-2 ring-primary' : ''} rounded-lg p-3 text-xs cursor-pointer"
-           onclick="Diagnose.selectFinding('${esc(f.id)}', '${esc(f.applies_to_section || '')}')">
+           data-action="Diagnose.selectFinding" data-args="${Acciones.args(String(f.id ?? ''), String(f.applies_to_section || ''))}">
         <div class="flex items-start gap-2 mb-2">
           <span class="px-1.5 py-0.5 rounded text-[9px] font-bold ${sev.badge} whitespace-nowrap">${sev.lbl}</span>
           ${fromLetter ? `<span class="inline-flex items-center gap-0.5 px-1.5 py-0.5 rounded-full bg-primary text-white text-[9px] font-bold"><span class="material-symbols-outlined text-[10px]">stars</span>Carta</span>` : ''}
@@ -595,7 +596,7 @@ const Diagnose = (() => {
         ` : action && action.state === 'accepted' ? `
           <div class="text-[10px] text-green-700 font-bold mb-1">✓ Aplicada</div>
         ` : `
-          <button onclick="event.stopPropagation(); Diagnose.propose('${esc(f.id)}')"
+          <button data-action="diag.proponer" data-args="${Acciones.args(String(f.id ?? ''))}"
             ${isProposing ? 'disabled' : ''}
             class="w-full mt-1 px-2 py-1 bg-primary text-white rounded text-[11px] font-bold hover:bg-primary/90 disabled:opacity-50">
             ${isProposing ? '<span class="material-symbols-outlined text-xs animate-spin align-middle">progress_activity</span> Generando…' : '<span class="material-symbols-outlined text-xs align-middle">auto_fix_high</span> Pídeme propuesta'}
@@ -619,7 +620,7 @@ const Diagnose = (() => {
             <h3 class="text-lg font-bold">Historial de versiones</h3>
             <p class="text-xs text-on-surface-variant">Cada vez que se aplica una propuesta se crea un snapshot. Puedes restaurar uno anterior.</p>
           </div>
-          <button onclick="Diagnose.closeHistory()" class="p-1 hover:bg-surface-variant rounded"><span class="material-symbols-outlined">close</span></button>
+          <button data-action="Diagnose.closeHistory" class="p-1 hover:bg-surface-variant rounded"><span class="material-symbols-outlined">close</span></button>
         </div>
         <div class="overflow-y-auto p-4">
           ${(state.versions || []).length === 0 ? '<p class="text-sm text-on-surface-variant text-center py-6">Sin versiones todavía. Acepta propuestas para crear el historial.</p>' : `
@@ -638,7 +639,7 @@ const Diagnose = (() => {
                     <td class="py-2 text-xs">${esc(v.triggered_by)}</td>
                     <td class="py-2 text-xs text-on-surface-variant truncate max-w-[200px]">${esc(v.notes || '')}</td>
                     <td class="py-2 text-xs">${new Date(v.created_at).toLocaleString('es-ES', { dateStyle: 'short', timeStyle: 'short' })}</td>
-                    <td class="py-2"><button onclick="Diagnose.rollback('${esc(v.id)}')" class="px-2 py-1 text-[11px] bg-surface border border-outline-variant/40 rounded hover:bg-surface-variant">Restaurar</button></td>
+                    <td class="py-2"><button data-action="Diagnose.rollback" data-args="${Acciones.args(String(v.id ?? ''))}" class="px-2 py-1 text-[11px] bg-surface border border-outline-variant/40 rounded hover:bg-surface-variant">Restaurar</button></td>
                   </tr>
                 `).join('')}
               </tbody>
@@ -760,3 +761,9 @@ const Diagnose = (() => {
     discardEdits,
   };
 })();
+
+/* Botones de las plantillas: data-action="Diagnose.metodo" y acciones propias (js/acciones.js) */
+Acciones.modulo('Diagnose', Diagnose);
+Acciones.registrar({
+  'diag.proponer': (el, ev, id) => { ev.stopPropagation(); Diagnose.propose(id); },
+});

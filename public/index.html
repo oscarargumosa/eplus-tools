@@ -20,7 +20,7 @@
 <script src="https://cdn.jsdelivr.net/npm/apexcharts@3.49.1/dist/apexcharts.min.js" defer></script>
 
 <!-- D3 (KPI/bars helpers, mantienen compat con stats antiguos) -->
-<script src="https://cdn.jsdelivr.net/npm/d3@7" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js" defer></script>
 <!-- MapLibre GL JS v5+ — Atlas 2D + 3D con vector tiles. La proyección `globe` requiere v5.0+ -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/maplibre-gl@5.6.1/dist/maplibre-gl.css">
 <script src="https://cdn.jsdelivr.net/npm/maplibre-gl@5.6.1/dist/maplibre-gl.js" defer></script>
@@ -28,36 +28,9 @@
 <!-- Leaflet (sólo para el pin editor de Mi Organización) -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.css">
 <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.js" defer></script>
-<script>
-tailwind.config = {
-  darkMode: "class",
-  theme: {
-    extend: {
-      colors: {
-        /* Paleta EU Funding Studio (manual de marca, oct-2026): azul #4312d8,
-           lima #e9ff60, tinta #1b0759, violeta #7349f0, lavanda #b392f6, crema #f2f2f2 */
-        "primary":"#4312d8","primary-container":"#4312d8",
-        "ink":"#1b0759","violet":"#7349f0","lavender":"#b392f6","lavender-soft":"#efe8fe","cream":"#f2f2f2",
-        "secondary-fixed":"#e9ff60","secondary-fixed-dim":"#d4ec3c",
-        "accent-warm":"#b392f6",
-        "surface":"#f8f8f8","surface-dim":"#d9d9d9","surface-bright":"#ffffff",
-        "surface-container":"#f2f2f2","surface-container-low":"#f8f8f8",
-        "surface-container-high":"#e8e8e8","surface-container-lowest":"#ffffff",
-        "on-surface":"#1b0759","on-surface-variant":"#55577a",
-        "outline":"#8a8aa3","outline-variant":"#d6d3dc",
-        "error":"#ba1a1a","error-container":"#ffdad6",
-        "on-error-container":"#93000a",
-        "surface-tint":"#b392f6",
-        "on-primary-container":"#efe8fe",
-      },
-      fontFamily: {
-        "headline":["Poppins","sans-serif"],
-        "body":["Poppins","sans-serif"],
-      }
-    }
-  }
-}
-</script>
+<script src="/js/tailwind-config.js"></script>
+<!-- Eventos sin handlers en línea (CSP): data-action / data-on-* -->
+<script src="/js/acciones.js"></script>
 
 <!-- Google Sign-In (loaded only when GOOGLE_CLIENT_ID is set) -->
 <script src="https://accounts.google.com/gsi/client" async defer></script>
@@ -680,7 +653,7 @@ tailwind.config = {
         <div class="grid grid-cols-1 md:grid-cols-3 gap-5 mb-10">
 
           <!-- Phase 1: Design -->
-          <div class="group relative bg-white rounded-2xl border-2 border-outline-variant/40 hover:border-[#4312d8]/30 p-6 transition-all hover:shadow-xl cursor-pointer" onclick="location.hash='my-projects'; setTimeout(() => window.openCreateModal && window.openCreateModal(), 100)">
+          <div class="group relative bg-white rounded-2xl border-2 border-outline-variant/40 hover:border-[#4312d8]/30 p-6 transition-all hover:shadow-xl cursor-pointer" data-action="inicio.crearProyecto">
             <div class="flex items-center gap-3 mb-4">
               <div class="w-12 h-12 rounded-xl bg-lavender-soft flex items-center justify-center group-hover:bg-[#4312d8] transition-colors">
                 <span class="material-symbols-outlined text-primary text-2xl group-hover:text-[#e9ff60] transition-colors">architecture</span>
@@ -705,7 +678,7 @@ tailwind.config = {
           </div>
 
           <!-- Phase 2: Write -->
-          <div class="group relative bg-white rounded-2xl border-2 border-outline-variant/40 hover:border-[#4312d8]/30 p-6 transition-all hover:shadow-xl cursor-pointer" onclick="location.hash='developer'">
+          <div class="group relative bg-white rounded-2xl border-2 border-outline-variant/40 hover:border-[#4312d8]/30 p-6 transition-all hover:shadow-xl cursor-pointer" data-action="ir" data-args='["developer"]'>
             <div class="flex items-center gap-3 mb-4">
               <div class="w-12 h-12 rounded-xl bg-lavender-soft flex items-center justify-center group-hover:bg-[#4312d8] transition-colors">
                 <span class="material-symbols-outlined text-violet text-2xl group-hover:text-[#e9ff60] transition-colors">edit_document</span>
@@ -730,7 +703,7 @@ tailwind.config = {
           </div>
 
           <!-- Phase 3: Evaluate -->
-          <div class="group relative bg-white rounded-2xl border-2 border-outline-variant/40 hover:border-[#4312d8]/30 p-6 transition-all hover:shadow-xl cursor-pointer" onclick="location.hash='evaluator'">
+          <div class="group relative bg-white rounded-2xl border-2 border-outline-variant/40 hover:border-[#4312d8]/30 p-6 transition-all hover:shadow-xl cursor-pointer" data-action="ir" data-args='["evaluator"]'>
             <div class="flex items-center gap-3 mb-4">
               <div class="w-12 h-12 rounded-xl bg-lavender-soft flex items-center justify-center group-hover:bg-[#4312d8] transition-colors">
                 <span class="material-symbols-outlined text-ink text-2xl group-hover:text-[#e9ff60] transition-colors">verified</span>
@@ -974,14 +947,14 @@ tailwind.config = {
       </section>
 
       <!-- Create Project modal (call selector — opens from "Nuevo desde call" in Mis Proyectos) -->
-      <div id="create-modal" class="hidden fixed inset-0 z-50 bg-ink/50 backdrop-blur-sm items-center justify-center p-4" onclick="if(event.target===this)window.closeCreateModal()">
+      <div id="create-modal" class="hidden fixed inset-0 z-50 bg-ink/50 backdrop-blur-sm items-center justify-center p-4" data-action="crear.cerrarFondo">
         <div class="bg-white rounded-2xl shadow-2xl w-full max-w-4xl max-h-[90vh] overflow-y-auto">
           <div class="flex items-center justify-between p-6 border-b border-outline-variant/20">
             <div>
               <h2 class="font-headline text-xl font-extrabold text-primary">Nuevo proyecto desde una convocatoria</h2>
               <p class="text-xs text-on-surface-variant mt-1">Elige la call sobre la que vas a construir tu propuesta.</p>
             </div>
-            <button type="button" onclick="window.closeCreateModal()"
+            <button type="button" data-action="crear.cerrar"
               class="w-8 h-8 flex items-center justify-center rounded-lg text-on-surface-variant hover:bg-surface-container-low transition-colors">
               <span class="material-symbols-outlined">close</span>
             </button>
@@ -3450,99 +3423,7 @@ tailwind.config = {
   </div>
 </div>
 
-<script>
-// Modal helper — reemplaza prompt() y confirm() nativos
-window.Modal = {
-  _resolve: null,
-  show(msg, { input = false, defaultVal = '' } = {}) {
-    return new Promise(resolve => {
-      this._resolve = resolve;
-      document.getElementById('mini-modal-msg').textContent = msg;
-      const inp = document.getElementById('mini-modal-input');
-      const txt = document.getElementById('mini-modal-input-text');
-      inp.classList.add('hidden');
-      txt.classList.add('hidden');
-      if (input === true || input === 'number') {
-        inp.classList.remove('hidden');
-        inp.value = defaultVal || '';
-        setTimeout(() => inp.focus(), 100);
-      } else if (input === 'text') {
-        txt.classList.remove('hidden');
-        txt.value = defaultVal || '';
-        if (typeof input === 'object' && input?.placeholder) txt.placeholder = input.placeholder;
-        setTimeout(() => { txt.focus(); txt.select(); }, 100);
-      }
-      this._mode = input;
-      document.getElementById('mini-modal').classList.remove('hidden');
-    });
-  },
-  prompt(msg, defaultVal = '', opts = {}) {
-    return new Promise(resolve => {
-      this._resolve = resolve;
-      document.getElementById('mini-modal-msg').textContent = msg;
-      const inp = document.getElementById('mini-modal-input');
-      const txt = document.getElementById('mini-modal-input-text');
-      inp.classList.add('hidden');
-      txt.classList.remove('hidden');
-      txt.value = defaultVal || '';
-      txt.placeholder = opts.placeholder || '';
-      this._mode = 'text';
-      document.getElementById('mini-modal').classList.remove('hidden');
-      setTimeout(() => { txt.focus(); txt.select(); }, 100);
-    });
-  },
-  confirm(msg) {
-    return new Promise(resolve => {
-      this._resolve = resolve;
-      document.getElementById('mini-modal-msg').textContent = msg;
-      document.getElementById('mini-modal-input').classList.add('hidden');
-      document.getElementById('mini-modal-input-text').classList.add('hidden');
-      this._mode = 'confirm';
-      document.getElementById('mini-modal').classList.remove('hidden');
-    });
-  },
-  _close(val) {
-    document.getElementById('mini-modal').classList.add('hidden');
-    if (this._resolve) { this._resolve(val); this._resolve = null; }
-  }
-};
-document.getElementById('mini-modal-confirm').addEventListener('click', () => {
-  const mode = Modal._mode;
-  if (mode === 'text') {
-    Modal._close(document.getElementById('mini-modal-input-text').value || null);
-  } else if (mode === true || mode === 'number') {
-    Modal._close(document.getElementById('mini-modal-input').value);
-  } else {
-    Modal._close(true);
-  }
-});
-document.getElementById('mini-modal-cancel').addEventListener('click', () => Modal._close(null));
-document.getElementById('mini-modal').addEventListener('click', e => { if (e.target === e.currentTarget) Modal._close(null); });
-document.getElementById('mini-modal-input-text').addEventListener('keydown', e => { if (e.key === 'Enter') document.getElementById('mini-modal-confirm').click(); });
-
-/* Create-project modal: open/close + ESC to dismiss */
-window.openCreateModal = function() {
-  // Fase beta: crear proyecto pide el área «proyectos».
-  if (typeof BetaAccess !== 'undefined' && !BetaAccess.guard('proyectos')) return;
-  const m = document.getElementById('create-modal');
-  if (!m) return;
-  m.classList.remove('hidden');
-  m.classList.add('flex');
-  if (typeof CreateProject !== 'undefined') CreateProject.init();
-};
-window.closeCreateModal = function() {
-  const m = document.getElementById('create-modal');
-  if (!m) return;
-  m.classList.add('hidden');
-  m.classList.remove('flex');
-};
-document.addEventListener('keydown', e => {
-  if (e.key === 'Escape') {
-    const m = document.getElementById('create-modal');
-    if (m && !m.classList.contains('hidden')) window.closeCreateModal();
-  }
-});
-</script>
+<script src="/js/modal.js"></script>
 
 </body>
 </html>
