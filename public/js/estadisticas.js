@@ -1150,7 +1150,7 @@ const Estadisticas = (() => {
         panel.innerHTML = `${cab}
           <ul class="est-pasos"><li><span class="material-symbols-outlined">ads_click</span>Pasa el ratón por una línea de la tabla para ver en el mapa dónde se concede. Pulsa la fila para dejarla fijada.</li>
           <li><span class="material-symbols-outlined">public</span>Pulsa un país en el mapa para quedarte con sus líneas.</li></ul>
-          <div class="est-panel__bloque"><h4>Las 5 con más dinero</h4>${listaMini(d.porLinea.slice(0, 5), x => fmtN(x.proyectos), x => fmtEur(x.importe))}</div>`;
+          <div class="est-panel__bloque"><h4>Las 5 con más presupuesto</h4>${listaMini(d.porLinea.slice(0, 5), x => fmtN(x.proyectos), x => fmtEur(x.importe))}</div>`;
       } else {
         panel.innerHTML = `${cab}
           <div class="est-panel__linea">
