@@ -9,8 +9,13 @@ const REFRESH_SECRET = () => process.env.JWT_REFRESH_SECRET || process.env.JWT_S
 // typ distingue access de refresh (antes compartían secreto y un refresh
 // servía como Bearer). tv = users.token_version: al subirlo (logout-all,
 // cambio/reseteo de contraseña) caen todas las sesiones del usuario.
+// sid/jti: sesión en servidor (modules/auth/sessions.js, migración 147).
+// El access dura 30 min (antes 8 h): la SPA refresca sola al recibir 401
+// y cada 12 min (public/js/api.js).
+const ACCESS_TTL = '30m';
+const JWT_ALGS = ['HS256'];
 
-function signToken(user) {
+function signToken(user, sid = null) {
   return jwt.sign(
     {
       sub:          user.id,
@@ -19,23 +24,24 @@ function signToken(user) {
       role:         user.role || 'user',
       subscription: user.subscription || 'free',
       typ:          'access',
-      tv:           user.token_version || 0
+      tv:           user.token_version || 0,
+      ...(sid ? { sid } : {})
     },
     SECRET(),
-    { expiresIn: '8h' }
+    { expiresIn: ACCESS_TTL, algorithm: 'HS256' }
   );
 }
 
-function signRefreshToken(user) {
+function signRefreshToken(user, { sid, jti } = {}) {
   return jwt.sign(
-    { sub: user.id, typ: 'refresh', tv: user.token_version || 0 },
+    { sub: user.id, typ: 'refresh', tv: user.token_version || 0, sid, jti },
     REFRESH_SECRET(),
-    { expiresIn: '30d' }
+    { expiresIn: '30d', algorithm: 'HS256' }
   );
 }
 
 function verifyRefreshToken(token) {
-  const payload = jwt.verify(token, REFRESH_SECRET());
+  const payload = jwt.verify(token, REFRESH_SECRET(), { algorithms: JWT_ALGS });
   if (payload.typ === 'refresh') return payload;
   // Transición: refresh antiguos sin typ (solo sub). Un access antiguo lleva role.
   if (payload.typ === undefined && payload.role === undefined && payload.sub) return payload;
@@ -142,7 +148,7 @@ function areaGate(area, { except = null } = {}) {
 async function authenticate(token) {
   let payload;
   try {
-    payload = jwt.verify(token, SECRET());
+    payload = jwt.verify(token, SECRET(), { algorithms: JWT_ALGS });
   } catch (err) {
     throw { code: err.name === 'TokenExpiredError' ? 'TOKEN_EXPIRED' : 'UNAUTHORIZED' };
   }
@@ -150,8 +156,12 @@ async function authenticate(token) {
   const state = await loadUserState(payload.sub);
   if (!state) throw { code: 'UNAUTHORIZED' };
   if ((payload.tv || 0) !== (state.token_version || 0)) throw { code: 'TOKEN_REVOKED' };
+  // Sesión cerrada (logout, reutilización de refresh…). Los access sin sid
+  // son de antes del despliegue y caducan solos.
+  if (payload.sid && !(await require('../modules/auth/sessions').isActive(payload.sid))) throw { code: 'TOKEN_REVOKED' };
   return {
     id:           payload.sub,
+    sid:          payload.sid || null,
     email:        payload.email,
     name:         payload.name,
     role:         state.role,

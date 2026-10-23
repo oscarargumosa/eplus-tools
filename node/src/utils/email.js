@@ -249,7 +249,29 @@ async function sendOrgClaimReviewEmail({ to, name, orgName, decision, note }) {
     text: `${title}: ${orgName}.${!ok && note ? `\nMotivo: ${note}` : ''}\n\n${url}` });
 }
 
+/* ── Cuenta eliminada (RGPD, desde «Mi cuenta › Tus datos») ──
+   Se manda después de borrar: el nombre y el email vienen del llamador. */
+async function sendAccountDeletedEmail({ to, name }) {
+  const first = String(name || '').trim().split(/\s+/)[0] || '';
+  const html = shellTemplate({
+    title: 'Tu cuenta se ha eliminado',
+    intro: `Hola${first ? ' ' + escHtml(first) : ''},<br><br>
+      Tal como pediste, hemos eliminado tu cuenta de <b>EU Funding Studio</b> y los datos asociados:
+      tus proyectos, presupuestos, visiones, documentos y fotos. Las entidades que habías reclamado
+      quedan sin dueño y sus documentos de reclamación se han borrado.<br><br>
+      Si quieres volver, puedes crear una cuenta nueva cuando quieras.`,
+    footer: 'Si no has sido tú quien ha pedido eliminar la cuenta, escríbenos cuanto antes a <a href="mailto:info@eufundingstudio.com">info@eufundingstudio.com</a>.'
+  });
+  const text = `Hola${first ? ' ' + first : ''},
+
+Tal como pediste, hemos eliminado tu cuenta de EU Funding Studio y los datos asociados: tus proyectos, presupuestos, visiones, documentos y fotos. Las entidades que habías reclamado quedan sin dueño y sus documentos de reclamación se han borrado.
+
+Si no has sido tú, escríbenos cuanto antes a info@eufundingstudio.com.`;
+  return sendEmail({ to, subject: 'Tu cuenta de EU Funding Studio se ha eliminado', html, text });
+}
+
 module.exports = {
+  sendAccountDeletedEmail,
   sendOrgClaimReviewEmail,
   sendAccessRequestNotice,
   sendAreaGrantedEmail,

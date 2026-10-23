@@ -3,9 +3,11 @@ const User = require('./model');
 const { signToken, signRefreshToken, verifyRefreshToken, getUserAreas } = require('../../middleware/auth');
 const accessModel = require('../access/model');
 const subscribersModel = require('../subscribers/model');
-const { sendVerificationEmail, sendPasswordResetEmail, onNewUser } = require('../../utils/email');
+const { sendVerificationEmail, sendPasswordResetEmail, onNewUser, sendAccountDeletedEmail } = require('../../utils/email');
+const AccountData = require('./account-data');
 const { audit } = require('../../utils/audit');
 const { setSessionHint, clearSessionHint } = require('../../middleware/guestGate');
+const Sessions = require('./sessions');
 
 const SALT_ROUNDS = 12;
 
@@ -53,6 +55,14 @@ function setRefreshCookie(res, token) {
   res.clearCookie('refresh_token', { path: '/' });
   res.cookie('refresh_token', token, cookieOpts());
   setSessionHint(res);
+}
+
+/* Abre una sesión en servidor (user_sessions), pone la cookie de refresco
+   y devuelve el access token ligado a ella. */
+async function startSession(req, res, tokenUser) {
+  const s = await Sessions.create(tokenUser.id, req);
+  setRefreshCookie(res, signRefreshToken(tokenUser, s));
+  return signToken(tokenUser, s.sid);
 }
 
 function clearRefreshCookie(res) {
@@ -160,10 +170,7 @@ const AuthController = {
 
       const safeUser = { id: user.id, email: user.email, name: user.name, role: user.role, subscription: user.subscription };
       const tokenUser = { ...safeUser, token_version: user.token_version || 0 };
-      const accessToken  = signToken(tokenUser);
-      const refreshToken = signRefreshToken(tokenUser);
-
-      setRefreshCookie(res, refreshToken);
+      const accessToken = await startSession(req, res, tokenUser);
       _promoteWarm(safeUser);
       audit(req, 'auth.login', { actor: safeUser, targetType: 'user', targetId: safeUser.id, meta: { method: 'password' } });
       await withAreas(safeUser);
@@ -208,11 +215,8 @@ const AuthController = {
         picture: payload.picture || null
       });
 
-      const accessToken  = signToken(user);
-      const refreshToken = signRefreshToken(user);
+      const accessToken = await startSession(req, res, user);
       delete user.token_version;
-
-      setRefreshCookie(res, refreshToken);
       _promoteWarm(user);
       audit(req, 'auth.login', { actor: user, targetType: 'user', targetId: user.id, meta: { method: 'google' } });
       // Alta nueva: correo de bienvenida + aviso al dueño; la SPA enseña el mensaje con `created`.
@@ -322,6 +326,7 @@ const AuthController = {
       }
       // Cierra todas las sesiones abiertas (p. ej. las de quien robó la cuenta).
       await User.bumpTokenVersion(result.userId);
+      await Sessions.revokeAll(result.userId, 'password');
       audit(req, 'auth.password.reset', { actor: { id: result.userId }, targetType: 'user', targetId: result.userId });
 
       res.json({ ok: true, data: { message: 'Password updated. You can now sign in.' } });
@@ -369,9 +374,24 @@ const AuthController = {
         });
       }
 
-      const accessToken = signToken({ ...user, token_version: tv });
-      setSessionHint(res);
-      res.json({ ok: true, data: { access_token: accessToken } });
+      // Rotación: el refresh usado deja de valer y se emite otro. Uno ya
+      // rotado que vuelve a llegar = robado: cae toda la sesión.
+      const r = payload.sid
+        ? await Sessions.rotate(payload)
+        : await Sessions.adoptLegacy(user.id, token, req);   // refresh antiguo sin jti: una vez
+      if (r.status === 'reuse') {
+        audit(req, 'auth.refresh.reuse', { actor: { id: user.id }, targetType: 'session', targetId: payload.sid || null });
+      }
+      if (r.status !== 'ok' && r.status !== 'grace') {
+        clearRefreshCookie(res);
+        return res.status(401).json({
+          ok: false, error: { code: 'TOKEN_REVOKED', message: 'Session revoked' }
+        });
+      }
+
+      const tokenUser = { ...user, token_version: tv };
+      setRefreshCookie(res, signRefreshToken(tokenUser, r));
+      res.json({ ok: true, data: { access_token: signToken(tokenUser, r.sid) } });
     } catch (err) {
       console.error('[AUTH] Refresh error:', err.message);
       res.status(500).json({ ok: false, error: { code: 'INTERNAL_ERROR', message: 'Token refresh failed' } });
@@ -446,13 +466,13 @@ const AuthController = {
       const passwordHash = await bcrypt.hash(new_password, SALT_ROUNDS);
       await User.updatePassword(req.user.id, passwordHash);
 
-      // Cierra las demás sesiones; esta sigue con tokens nuevos.
+      // Cierra todas las sesiones; esta sigue con una sesión nueva.
       const tv   = await User.bumpTokenVersion(req.user.id);
+      await Sessions.revokeAll(req.user.id, 'password');
       const user = await User.findById(req.user.id);
-      const tokenUser = { ...user, token_version: tv };
-      setRefreshCookie(res, signRefreshToken(tokenUser));
+      const accessToken = await startSession(req, res, { ...user, token_version: tv });
       audit(req, 'auth.password.change', { targetType: 'user', targetId: req.user.id });
-      res.json({ ok: true, data: { message: 'Contraseña actualizada', access_token: signToken(tokenUser) } });
+      res.json({ ok: true, data: { message: 'Contraseña actualizada', access_token: accessToken } });
     } catch (err) {
       console.error('[AUTH] Change password error:', err.message);
       res.status(500).json({ ok: false, error: { code: 'INTERNAL_ERROR', message: 'No se pudo cambiar la contraseña' } });
@@ -478,6 +498,7 @@ const AuthController = {
       const user = await User.findById(payload.sub);
       if (!user) return out();
       if ((payload.tv || 0) !== await User.getTokenVersion(user.id)) return out();
+      if (!await Sessions.peek(payload, token)) return out();
 
       setSessionHint(res);
       const firstName = (user.name || '').trim().split(/\s+/)[0] || null;
@@ -523,8 +544,76 @@ const AuthController = {
     }
   },
 
+  /* ── GET /v1/auth/me/export — «Descargar mis datos» (RGPD) ─── */
+  async exportMe(req, res) {
+    try {
+      const data = await AccountData.exportData(req.user.id);
+      audit(req, 'account.export', { targetType: 'user', targetId: req.user.id });
+      const day = new Date().toISOString().slice(0, 10);
+      res.set('Cache-Control', 'no-store');
+      res.set('Content-Disposition', `attachment; filename="mis-datos-eu-funding-studio-${day}.json"`);
+      res.type('application/json').send(JSON.stringify({ ok: true, data }, null, 2));
+    } catch (err) {
+      console.error('[AUTH] Export error:', err.message);
+      res.status(500).json({ ok: false, error: { code: 'INTERNAL_ERROR', message: 'No se pudo preparar la copia de tus datos' } });
+    }
+  },
+
+  /* ── POST /v1/auth/me/delete — «Eliminar mi cuenta» (RGPD) ──── */
+  /* Pide la contraseña (o, en cuentas solo de Google, que escriba su email)
+     y la confirmación expresa. Un admin no puede eliminarse. */
+  async deleteMe(req, res) {
+    try {
+      const { password, email, confirm } = req.body || {};
+      const fail = (status, code, message) => res.status(status).json({ ok: false, error: { code, message } });
+      if (confirm !== true) return fail(400, 'CONFIRM_REQUIRED', 'Marca la casilla para confirmar que quieres eliminar la cuenta.');
+
+      const user = await User.findById(req.user.id);
+      if (!user) return fail(404, 'NOT_FOUND', 'Cuenta no encontrada');
+      if (user.role === 'admin') {
+        return fail(403, 'ADMIN_CANNOT_DELETE', 'Una cuenta de administración no se puede eliminar desde aquí. Pide antes a otra persona administradora que te quite el rol.');
+      }
+      const hash = await User.getPasswordHash(user.id);
+      if (hash && hash.length) {
+        if (!password || !(await bcrypt.compare(String(password), hash))) {
+          return fail(403, 'BAD_PASSWORD', 'La contraseña no es correcta.');
+        }
+      } else if (String(email || '').trim().toLowerCase() !== String(user.email).toLowerCase()) {
+        return fail(400, 'EMAIL_MISMATCH', 'Escribe exactamente el email de tu cuenta.');
+      }
+
+      const result = await AccountData.deleteAccount(user.id);
+      // Las sesiones se van con la cuenta (FK); se vacían las cachés de este proceso.
+      await Sessions.revokeAll(user.id, 'deleted');
+      require('../../middleware/auth').invalidateUserState(user.id);
+      clearRefreshCookie(res);
+      // Aviso por correo (sin clave de Resend, en desarrollo, solo se anota en el log).
+      sendAccountDeletedEmail({ to: result.user.email, name: result.user.name })
+        .then(r => { if (r && r.ok === false) console.warn('[AUTH] correo de baja no enviado:', r.error); })
+        .catch(e => console.warn('[AUTH] correo de baja no enviado:', e.message));
+      res.json({ ok: true, data: { message: 'Tu cuenta se ha eliminado.' } });
+    } catch (err) {
+      if (err && err.status && err.status < 500) {
+        return res.status(err.status).json({ ok: false, error: { code: err.code || 'ERROR', message: err.message } });
+      }
+      console.error('[AUTH] Delete account error:', err.message);
+      res.status(500).json({ ok: false, error: { code: 'INTERNAL_ERROR', message: 'No se pudo eliminar la cuenta. No se ha borrado nada; inténtalo de nuevo.' } });
+    }
+  },
+
   /* ── POST /v1/auth/logout ──────────────────────────────────── */
-  logout(_req, res) {
+  /* Revoca en servidor la sesión de esta cookie: el refresh deja de valer
+     aunque alguien lo hubiera copiado, y el access ligado cae en ≤30 s. */
+  async logout(req, res) {
+    const token = req.cookies?.refresh_token;
+    if (token) {
+      try {
+        await Sessions.revokeByToken(verifyRefreshToken(token), token);
+      } catch (err) {
+        // Cookie caducada o falsa: no hay sesión que revocar.
+        if (!/JsonWebTokenError|TokenExpiredError|NotBeforeError/.test(err && err.name)) console.error('[AUTH] Logout error:', err.message);
+      }
+    }
     clearRefreshCookie(res);
     res.json({ ok: true, data: { message: 'Logged out' } });
   },
@@ -534,7 +623,9 @@ const AuthController = {
   async logoutAll(req, res) {
     try {
       await User.bumpTokenVersion(req.user.id);
+      await Sessions.revokeAll(req.user.id, 'logout_all');
       clearRefreshCookie(res);
+      audit(req, 'auth.logout_all', { targetType: 'user', targetId: req.user.id });
       res.json({ ok: true, data: { message: 'Todas las sesiones cerradas' } });
     } catch (err) {
       console.error('[AUTH] Logout-all error:', err.message);

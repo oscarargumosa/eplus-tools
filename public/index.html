@@ -597,6 +597,12 @@ tailwind.config = {
           <span class="material-symbols-outlined text-[20px]">tune</span>
           Preferencias
         </a>
+        <a href="#account-data"
+          class="nav-link flex items-center gap-3 px-3 py-2.5 rounded-lg text-white/70 hover:bg-white/10 transition-colors text-sm font-medium"
+          data-route="account-data">
+          <span class="material-symbols-outlined text-[20px]">folder_shared</span>
+          Tus datos
+        </a>
       </div>
     </nav>
 
@@ -944,6 +950,48 @@ tailwind.config = {
                     </span>
                   </label>
                   <p class="text-xs text-on-surface-variant/70 mt-5">Más opciones (idioma, notificaciones) llegarán pronto.</p>
+                </div>
+              </div>
+
+              <!-- SECTION: Tus datos (RGPD: copia y baja) — lógica en js/account.js -->
+              <div data-acct-section="data" class="acct-section hidden">
+                <div class="bg-white rounded-xl border border-outline-variant/30 p-6 max-w-lg mb-5">
+                  <h2 class="text-base font-bold text-on-surface mb-1">Descargar mis datos</h2>
+                  <p class="text-sm text-on-surface-variant mb-4">Te damos un archivo con todo lo que guardamos de ti: tu cuenta, tus proyectos, presupuestos, visiones, entidades, academia y la lista de tus documentos. Lo puedes abrir con cualquier editor de texto.</p>
+                  <div class="flex items-center gap-3">
+                    <button type="button" id="account-export-btn" class="inline-flex items-center gap-1.5 px-5 py-2.5 rounded-full bg-secondary-fixed text-primary text-sm font-bold hover:bg-secondary-fixed-dim active:scale-[0.98] transition-colors">
+                      <span class="material-symbols-outlined text-base">download</span> Descargar mis datos
+                    </button>
+                    <span id="account-export-msg" class="text-sm"></span>
+                  </div>
+                </div>
+
+                <div class="bg-white rounded-xl border border-error/30 p-6 max-w-lg">
+                  <h2 class="text-base font-bold text-error mb-1">Eliminar mi cuenta</h2>
+                  <p class="text-sm text-on-surface-variant mb-3">Se borran para siempre tu cuenta, tus proyectos y todo lo que cuelga de ellos, presupuestos, visiones, documentos, tu foto y tu progreso en la academia. Las entidades que hayas reclamado se quedan sin dueño. <b>No se puede deshacer.</b> Si quieres guardar algo, descarga antes tus datos.</p>
+                  <p id="account-delete-admin" class="hidden text-sm text-error font-semibold mb-3">Tu cuenta es de administración y no se puede eliminar desde aquí. Pide antes a otra persona administradora que te quite el rol.</p>
+                  <div id="account-delete-form">
+                    <div id="account-delete-pw-wrap">
+                      <label for="account-delete-pw" class="block text-sm font-semibold text-on-surface mb-1.5">Tu contraseña</label>
+                      <input id="account-delete-pw" type="password" autocomplete="current-password"
+                        class="w-full border border-outline-variant rounded-lg px-3 py-2.5 text-sm bg-white focus:outline-none focus:ring-2 focus:ring-error mb-4" />
+                    </div>
+                    <div id="account-delete-email-wrap" class="hidden">
+                      <label for="account-delete-email" class="block text-sm font-semibold text-on-surface mb-1.5">Escribe tu email para confirmar</label>
+                      <input id="account-delete-email" type="email" autocomplete="off"
+                        class="w-full border border-outline-variant rounded-lg px-3 py-2.5 text-sm bg-white focus:outline-none focus:ring-2 focus:ring-error mb-4" />
+                    </div>
+                    <label class="flex items-start gap-3 mb-5 cursor-pointer">
+                      <input id="account-delete-confirm" type="checkbox" class="mt-1 w-4 h-4 accent-error" />
+                      <span class="text-sm text-on-surface">Entiendo que se borrará todo y que no se puede recuperar.</span>
+                    </label>
+                    <div class="flex items-center gap-3 flex-wrap">
+                      <button type="button" id="account-delete-btn" disabled class="px-5 py-2.5 rounded-full bg-error text-white text-sm font-bold hover:opacity-90 active:scale-[0.98] transition disabled:opacity-40 disabled:cursor-not-allowed">
+                        Eliminar mi cuenta
+                      </button>
+                      <span id="account-delete-msg" class="text-sm"></span>
+                    </div>
+                  </div>
                 </div>
               </div>
 

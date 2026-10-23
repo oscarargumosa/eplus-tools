@@ -76,7 +76,15 @@ const API = (() => {
     return json.data;
   }
 
-  async function tryRefresh() {
+  // Una sola renovación a la vez: el servidor rota la cookie de refresco en
+  // cada uso, así que varias peticiones con 401 comparten la misma.
+  let refreshing = null;
+  function tryRefresh() {
+    if (!refreshing) refreshing = doRefresh().finally(() => { refreshing = null; });
+    return refreshing;
+  }
+
+  async function doRefresh() {
     try {
       const res = await fetch(`${BASE}/auth/refresh`, { method: 'POST', credentials: 'include' });
       const json = await res.json();
@@ -94,15 +102,29 @@ const API = (() => {
   const put   = (path, body, opts) => request('PUT',    path, body, opts);
   const del   = (path, opts)       => request('DELETE', path, null, opts);
 
-  /* ── Proactive refresh: renew token every 45 min ──────────── */
+  /* ── Renovación proactiva: el access dura 30 min; se renueva cada 12 ── */
   let refreshTimer = null;
+
+  // Caducidad (ms) del access token en memoria; 0 si no se puede leer.
+  function tokenExpiry() {
+    try {
+      const p = accessToken.split('.')[1].replace(/-/g, '+').replace(/_/g, '/');
+      return JSON.parse(atob(p)).exp * 1000;
+    } catch { return 0; }
+  }
+
+  // Al volver a la pestaña (o tras suspender el equipo) con el token a punto
+  // de caducar, se renueva ya: las subidas y descargas no reintentan solas.
+  document.addEventListener('visibilitychange', () => {
+    if (document.visibilityState === 'visible' && accessToken && tokenExpiry() - Date.now() < 5 * 60 * 1000) tryRefresh();
+  });
 
   function startAutoRefresh() {
     stopAutoRefresh();
     refreshTimer = setInterval(async () => {
       if (!accessToken) return stopAutoRefresh();
       await tryRefresh();
-    }, 45 * 60 * 1000); // 45 minutes
+    }, 12 * 60 * 1000); // 12 minutos
   }
 
   function stopAutoRefresh() {
