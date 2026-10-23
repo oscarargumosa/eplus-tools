@@ -247,7 +247,7 @@ exports.getById = (req, res, next) => {
     const all = loadData();
     const id  = String(req.params.id || '');
     const row = all.find(r => r.call_id === id || r.source_id === id);
-    if (!row) return res.status(404).json({ ok: false, error: 'not_found' });
+    if (!row) return res.status(404).json({ ok: false, error: { code: 'NOT_FOUND', message: 'Convocatoria no encontrada' } });
     // Devolvemos la MISMA forma de tarjeta que la lista (faq y demás campos
     // aplanados), para que el drawer pueda re-pedir el detalle completo y
     // renderizarlo idéntico cuando la lista se cargó en modo teaser (sin sesión).
@@ -271,7 +271,7 @@ function isAdmin(req) {
 exports.searchSemantic = async (req, res, next) => {
   try {
     const q = (req.query.q || '').trim();
-    if (!q) return res.status(400).json({ ok: false, error: { code: 'BAD_REQUEST', message: 'q required' } });
+    if (!q) return res.status(400).json({ ok: false, error: { code: 'BAD_REQUEST', message: 'Escribe qué quieres buscar' } });
     const topK = Math.min(parseInt(req.query.top, 10) || 10, 30);
     const result = await rag.searchSemantic(q, topK);
     res.json({ ok: true, data: result });
@@ -282,8 +282,8 @@ exports.chat = async (req, res, next) => {
   try {
     const sourceId = req.params.sourceId;
     const messages = Array.isArray(req.body?.messages) ? req.body.messages : [];
-    if (!messages.length) return res.status(400).json({ ok: false, error: { code: 'BAD_REQUEST', message: 'messages required' } });
-    const result = await rag.chatWithCall(sourceId, messages);
+    if (!messages.length) return res.status(400).json({ ok: false, error: { code: 'BAD_REQUEST', message: 'Escribe tu pregunta' } });
+    const result = await rag.chatWithCall(sourceId, messages, { lang: req.lang });
     res.json({ ok: true, data: result });
   } catch (e) {
     if (e.status === 404) return res.status(404).json({ ok: false, error: { code: e.code || 'NOT_FOUND', message: e.message } });
@@ -297,14 +297,14 @@ exports.ragStatus = (req, res, next) => {
 
 exports.curationList = (req, res, next) => {
   try {
-    if (!isAdmin(req)) return res.status(403).json({ ok: false, error: { code: 'FORBIDDEN', message: 'admin only' } });
+    if (!isAdmin(req)) return res.status(403).json({ ok: false, error: { code: 'FORBIDDEN', message: 'Solo para administradores' } });
     res.json({ ok: true, data: curation.getAll() });
   } catch (e) { next(e); }
 };
 
 exports.curationPatch = (req, res, next) => {
   try {
-    if (!isAdmin(req)) return res.status(403).json({ ok: false, error: { code: 'FORBIDDEN', message: 'admin only' } });
+    if (!isAdmin(req)) return res.status(403).json({ ok: false, error: { code: 'FORBIDDEN', message: 'Solo para administradores' } });
     const sid = req.params.sourceId;
     const body = req.body || {};
     const allowed = {};

@@ -199,12 +199,16 @@ function looksSpanish(raw) {
   return /^[A-ZÑ][a-zñ]+\b/.test(s) && words.length >= 2;
 }
 
-const WRAP_CLIENT = /(?:\b_t|\bI18N\.t)\(\s*$/;
+const WRAP_CLIENT = /(?:\b_t|\bI18N\.t|(?<![.\w$])t)\(\s*$/;   // t() es el nombre interno en public/js/i18n.js
 const WRAP_SERVER = /(?:\breq\.t\(|\btl\(\s*[\w.$]+\s*,)\s*$/;
 
 let manifest = { js: [], servidor: [] };
 try { manifest = Object.assign(manifest, JSON.parse(fs.readFileSync(MANIFEST, 'utf8'))); }
 catch (e) { errors.push({ file: MANIFEST, line: 0, msg: 'migrados.json no se puede leer: ' + e.message }); }
+// I18N_MIGRANDO=fich1,fich2: tratar esos ficheros como migrados mientras se trabaja en ellos.
+const extra = (process.env.I18N_MIGRANDO || '').split(',').map(f => f.trim()).filter(Boolean);
+(manifest.js = manifest.js || []).push(...extra.filter(f => f.startsWith('public/')));
+(manifest.servidor = manifest.servidor || []).push(...extra.filter(f => !f.startsWith('public/')));
 const migratedClient = new Set((manifest.js || []).map(f => path.join(ROOT, f)));
 const migratedServer = new Set((manifest.servidor || []).map(f => path.join(ROOT, f)));
 for (const f of [...migratedClient, ...migratedServer]) {

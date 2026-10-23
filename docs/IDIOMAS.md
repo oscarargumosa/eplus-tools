@@ -35,10 +35,10 @@ node scripts/i18n-check.js --faltan --donde   # … con el fichero y la línea d
 
 | Pieza | Idioma |
 |---|---|
-| Web pública (portada, misión, privacidad, recursos) | Por dirección: `/mision` en español, `/en/mision` en inglés. Visitar `/en/…` deja la preferencia en inglés. |
-| App (`index.html`, `/entrar`…) | Cookie `studio_lang`; si no hay, el idioma del navegador (catalán, gallego y euskera → español). |
+| Web pública (portada, misión, privacidad, recursos) | Por dirección: `/mision` en español, `/en/mision` en inglés. Visitar `/en/…` deja la preferencia en inglés. Un navegador en inglés que llega por primera vez salta a `/en/` (catalán, gallego y euskera cuentan como español). |
+| App (`index.html`, `/entrar`…) | Cookie `studio_lang`; si no hay, **inglés** aunque el navegador esté en español (decisión de Óscar, 23-oct-2026: dentro de la herramienta se trabaja en inglés por defecto). |
 | Cuenta | `users.ui_lang` (migración 150). Al entrar manda la cuenta; si eligió idioma antes de entrar, se guarda en la cuenta. |
-| Correos | `users.ui_lang` del destinatario (`langForEmail` en `utils/email.js`). |
+| Correos | `users.ui_lang` del destinatario (`langForEmail` en `utils/email.js`); sin elegir, inglés. |
 | Mensajes de la API | `req.lang`: `error.message` y `data.message` se traducen solos si están en el diccionario. |
 
 El selector **ES · EN** está en la barra superior, en la portada y en Mi cuenta ›

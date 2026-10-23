@@ -9,12 +9,27 @@
     "public/js/password-fields.js",
     "public/js/beta-access.js",
     "public/js/landing.js",
-    "public/js/save-status.js"
+    "public/js/save-status.js",
+    "public/js/movilidades.js",
+    "public/js/movilidades-utils.js",
+    "public/js/convocatorias.js",
+    "public/js/vision.js"
   ],
   "servidor": [
     "node/src/modules/auth/controller.js",
     "node/src/modules/auth/routes.js",
     "node/src/middleware/validate.js",
-    "node/src/utils/email.js"
+    "node/src/utils/email.js",
+    "node/src/modules/translate/controller.js",
+    "node/src/modules/translate/routes.js",
+    "node/src/modules/movilidades/controller.js",
+    "node/src/modules/movilidades/routes.js",
+    "node/src/modules/convocatorias/controller.js",
+    "node/src/modules/convocatorias/routes.js",
+    "node/src/modules/convocatorias/rag.js",
+    "node/src/modules/convocatorias/curation.js",
+    "node/src/modules/vision/controller.js",
+    "node/src/modules/vision/model.js",
+    "node/src/modules/vision/routes.js"
   ]
 }

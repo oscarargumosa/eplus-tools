@@ -47,7 +47,7 @@ function migrateLegacyNotes(entry, userId, userName) {
     entry.notes_log = [{
       text: entry.notes,
       author_id: entry.reviewed_by || null,
-      author_name: '(migrado de nota legacy)',
+      author_name: '(migrado de nota legacy)',   // i18n-no (dato guardado)
       created_at: entry.updated_at || new Date().toISOString(),
     }];
     delete entry.notes;
@@ -57,7 +57,7 @@ function migrateLegacyNotes(entry, userId, userName) {
 }
 
 function patch(sourceId, partial, user) {
-  if (!sourceId) throw Object.assign(new Error('sourceId required'), { status: 400 });
+  if (!sourceId) throw Object.assign(new Error('Falta el código de la convocatoria'), { status: 400 });
   const userId = user?.id || null;
   const userName = user?.name || user?.email || 'admin';
   const map = { ...load() };

@@ -25,7 +25,11 @@ const path = require('path');
 const crypto = require('crypto');
 
 const LANGS = ['es', 'en'];
-const DEFAULT_LANG = 'es';
+const DEFAULT_LANG = 'es';          // idioma de origen: el del código (sin traducir)
+// Dentro de la app, quien aún no ha elegido trabaja en inglés (decisión de
+// Óscar, 23-oct-2026), aunque su navegador esté en español. La web pública
+// no usa esto: «/» en español, /en/ en inglés (middleware/i18nPages.js).
+const APP_DEFAULT_LANG = 'en';
 const COOKIE = 'studio_lang';
 const DICT_FILE = path.join(__dirname, '..', '..', '..', 'public', 'i18n', 'en.json');
 
@@ -112,7 +116,7 @@ function cookieLang(req) {
 }
 
 function langFromReq(req) {
-  return cookieLang(req) || langFromAcceptLanguage(req.headers['accept-language']) || DEFAULT_LANG;
+  return cookieLang(req) || APP_DEFAULT_LANG;
 }
 
 function cookieOpts() {
@@ -240,7 +244,7 @@ function translateHtml(html, lang, opts = {}) {
 }
 
 module.exports = {
-  LANGS, DEFAULT_LANG, COOKIE, DICT_FILE,
+  LANGS, DEFAULT_LANG, APP_DEFAULT_LANG, COOKIE, DICT_FILE,
   getDict, getDictVersion, norm, isLang, tl, lookup,
   langFromReq, langFromAcceptLanguage, cookieLang, setLangCookie, requestLang,
   walkScopes, htmlKey, translateHtml,

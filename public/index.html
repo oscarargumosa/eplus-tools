@@ -1807,7 +1807,7 @@ tailwind.config = {
       </section>
 
       <!-- ══ PANEL CONVOCATORIAS (funding_unified.json — SEDIA + SALTO + BDNS) ══ -->
-      <section id="panel-convocatorias" class="panel">
+      <section id="panel-convocatorias" class="panel" data-i18n>
         <div class="max-w-7xl mx-auto py-8 px-4">
 
           <!-- Header -->
@@ -1882,7 +1882,7 @@ tailwind.config = {
       </section>
 
       <!-- ══ PANEL MOVILIDADES (SALTO European Training Calendar) ══ -->
-      <section id="panel-eu-vision" class="panel">
+      <section id="panel-eu-vision" class="panel" data-i18n>
         <div id="vision-root"></div>
       </section>
 
@@ -1902,7 +1902,7 @@ tailwind.config = {
         <div id="est-root" class="max-w-7xl mx-auto py-8 px-4"></div>
       </section>
 
-      <section id="panel-movilidades" class="panel">
+      <section id="panel-movilidades" class="panel" data-i18n>
         <div class="max-w-7xl mx-auto py-8 px-4">
 
           <!-- Header -->
@@ -1910,16 +1910,16 @@ tailwind.config = {
             <div>
               <h1 class="font-headline text-2xl font-bold text-primary flex items-center gap-2">
                 <span class="material-symbols-outlined text-primary">flight_takeoff</span>
-                Mobilities
+                Movilidades
               </h1>
               <p class="text-sm text-on-surface-variant mt-1">
-                Browse training courses, seminars and study visits available across Europe.
+                Cursos de formación, seminarios y visitas de estudio abiertos en toda Europa.
               </p>
               <p id="movilidades-meta" class="text-[11px] text-on-surface-variant/70 mt-1"></p>
             </div>
             <div class="inline-flex items-baseline gap-2 px-6 py-3 rounded-3xl bg-secondary-fixed">
               <span class="text-5xl font-light text-primary tabular-nums leading-none tracking-tight" id="movilidades-count">—</span>
-              <span class="text-xs font-bold uppercase tracking-widest text-primary">opportunities</span>
+              <span class="text-xs font-bold uppercase tracking-widest text-primary">oportunidades</span>
             </div>
           </div>
 
@@ -1927,24 +1927,24 @@ tailwind.config = {
           <div class="bg-cream rounded-3xl p-4 mb-6 flex gap-3 items-center flex-wrap">
             <div class="flex-1 min-w-[240px] relative">
               <span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-on-surface-variant text-[20px]">search</span>
-              <input id="movilidades-q" type="text" placeholder="Search by title, country, organiser, topic..."
+              <input id="movilidades-q" type="text" placeholder="Busca por título, país, organizador o tema..."
                 class="w-full pl-10 pr-4 py-2.5 rounded-full bg-white border border-outline-variant text-on-surface text-sm placeholder:text-on-surface-variant/50 focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary">
             </div>
             <select id="movilidades-sort"
               class="pl-4 pr-9 py-2.5 rounded-full bg-white border border-outline-variant text-on-surface text-sm focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary">
-              <option value="deadline">Sort: Deadline (closest first)</option>
-              <option value="recent">Sort: Recently added</option>
-              <option value="title">Sort: Title (A-Z)</option>
+              <option value="deadline">Ordenar: plazo (el más próximo primero)</option>
+              <option value="recent">Ordenar: añadidas recientemente</option>
+              <option value="title">Ordenar: título (A-Z)</option>
             </select>
             <label class="flex items-center gap-2 text-sm text-on-surface-variant cursor-pointer select-none">
               <input id="movilidades-past" type="checkbox" class="accent-primary">
-              Show past deadlines
+              Mostrar plazos cerrados
             </label>
           </div>
 
           <!-- Cards grid -->
           <div id="movilidades-list" class="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
-            <div class="col-span-full text-center text-on-surface-variant py-12 text-sm">Loading mobilities...</div>
+            <div class="col-span-full text-center text-on-surface-variant py-12 text-sm">Cargando movilidades...</div>
           </div>
 
         </div>
@@ -3393,12 +3393,12 @@ tailwind.config = {
 </style>
 
 <!-- ═══ MOBILITY DRAWER (right slide-in, mirrors entity-ficha pattern) ═══ -->
-<div id="movilidades-drawer-overlay" class="hidden fixed inset-0 z-40">
+<div id="movilidades-drawer-overlay" class="hidden fixed inset-0 z-40" data-i18n>
   <div id="movilidades-drawer-backdrop" class="absolute inset-0 bg-primary/30 backdrop-blur-sm"></div>
   <aside id="movilidades-drawer-panel"
     class="absolute right-0 top-16 bottom-0 w-full max-w-3xl bg-white shadow-2xl overflow-y-auto
            transform transition-transform duration-300">
-    <button id="movilidades-drawer-close" type="button"
+    <button id="movilidades-drawer-close" type="button" aria-label="Cerrar"
       class="absolute top-4 right-4 z-10 w-9 h-9 rounded-full bg-surface-container hover:bg-surface-container-high flex items-center justify-center text-on-surface-variant hover:text-on-surface transition-colors">
       <span class="material-symbols-outlined text-[20px]">close</span>
     </button>
