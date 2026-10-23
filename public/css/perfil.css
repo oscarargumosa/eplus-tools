@@ -4,9 +4,9 @@
    la parte lima es lo hecho. --perfil-pct lo pone perfil.js (0-100). */
 .efs-topbar__account.efs-perfil-ring { position: relative; padding: 3px;
   background: conic-gradient(#e9ff60 calc(var(--perfil-pct, 0) * 1%), rgba(255,255,255,.22) 0); }
-.efs-topbar__account.efs-perfil-ring .efs-avatar { width: 34px; height: 34px; border-color: #4312d8; }
+.efs-topbar__account.efs-perfil-ring .efs-avatar { width: 34px; height: 34px; border-color: #7349f0; }
 .efs-topbar__account.efs-perfil-ring::after { content: ''; position: absolute; top: -1px; right: -1px;
-  width: 10px; height: 10px; border-radius: 999px; background: #e11d48; border: 2px solid #4312d8; }
+  width: 10px; height: 10px; border-radius: 999px; background: #e11d48; border: 2px solid #7349f0; }
 
 /* Línea «Completar mi perfil · 60 %» en el menú del círculo. */
 .efs-account-menu .efs-account-menu__perfil { color: #4312d8; font-weight: 700; background: #f8ffd9; }
