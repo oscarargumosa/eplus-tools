@@ -186,14 +186,14 @@ const Estadisticas = (() => {
   const METRICAS = {
     coord: { t: 'Proyectos que coordina', corto: 'Coordina', v: (p, a, b) => suma(p.cY, a, b), fmt: fmtN, rol: 'coord' },
     part: { t: 'Proyectos en los que participa', corto: 'Participa', v: (p, a, b) => suma(p.pY, a, b), fmt: fmtN, rol: 'part' },
-    importeCoord: { t: 'Dinero de los proyectos que coordina', corto: 'Dinero', v: (p, a, b) => suma(p.iY, a, b), fmt: v => fmtEur(v), fmtCorto: v => fmtEur(v, true), rol: 'coord' },
+    importeCoord: { t: 'Presupuesto de los proyectos que coordina', corto: 'Presupuesto', v: (p, a, b) => suma(p.iY, a, b), fmt: v => fmtEur(v), fmtCorto: v => fmtEur(v, true), rol: 'coord' },
     hab: { t: 'Proyectos en los que participa por millón de habitantes', corto: 'Por habitante', v: (p, a, b) => (p.pob ? suma(p.pY, a, b) / (p.pob / 1e6) : null), fmt: fmtHab, rol: 'part', nota: 'Participación en relación con la población del país' },
     ratio: { t: 'De cada 100 proyectos en los que está, cuántos coordina', corto: 'Coordina / participa', v: (p, a, b) => { const pa = suma(p.pY, a, b); return pa >= 10 ? suma(p.cY, a, b) / pa : null; }, fmt: v => pct(v), rol: 'coord', nota: 'Solo países con 10 o más participaciones' },
   };
   const metrica = () => METRICAS[S.metrica] || METRICAS.coord;
   const ENT_METRICAS = {
     n: { t: 'Entidades con proyectos', corto: 'Entidades', fmt: fmtN },
-    dinero: { t: 'Dinero de los proyectos de sus entidades', corto: 'Dinero', fmt: v => fmtEur(v), fmtCorto: v => fmtEur(v, true) },
+    dinero: { t: 'Presupuesto de los proyectos de sus entidades', corto: 'Presupuesto', fmt: v => fmtEur(v), fmtCorto: v => fmtEur(v, true) },
     hab: { t: 'Entidades por millón de habitantes', corto: 'Por habitante', fmt: fmtHab },
   };
 
@@ -704,7 +704,7 @@ const Estadisticas = (() => {
         <h1 class="font-headline text-2xl font-bold text-primary flex items-center gap-2">
           <span class="material-symbols-outlined">monitoring</span> Estadísticas Erasmus+
         </h1>
-        <p class="text-sm text-on-surface-variant mt-1">Lo que se ha concedido de verdad, país a país y línea a línea: cuántos proyectos, cuánto dinero y quién lo consigue.</p>
+        <p class="text-sm text-on-surface-variant mt-1">Lo que se ha concedido de verdad, país a país y línea a línea: cuántos proyectos, cuánto presupuesto y quién lo consigue.</p>
         <p class="text-[11px] text-on-surface-variant/80 mt-1">${fmtN(META.lineas.reduce((a, l) => a + l.n, 0))} proyectos concedidos de ${META.años[0]} a ${META.años[1]} · ${esc(META.fuente)} · datos del ${fecha(META.generado.slice(0, 10))}</p>
       </header>
 
@@ -980,7 +980,7 @@ const Estadisticas = (() => {
         <dl class="est-datos">
           ${dato('Coordina', fmtN(p.coord))}
           ${dato('Participa', fmtN(p.part))}
-          ${dato('Dinero que coordina', fmtEur(p.importeCoord))}
+          ${dato('Presupuesto que coordina', fmtEur(p.importeCoord))}
           ${dato('Por millón de habitantes', fmtHab(hab), 'participación')}
           ${dato('Coordina de cada 100', p.part ? fmtN(p.coord / p.part * 100) : '—')}
           ${dato('Frente a la media', d.mediaCoord ? (p.coord / d.mediaCoord).toLocaleString('es-ES', { maximumFractionDigits: 1 }) + ' veces' : '—', 'proyectos coordinados')}
@@ -1039,7 +1039,7 @@ const Estadisticas = (() => {
     let orden = { k: 'metrica', dir: -1 };
     // La columna de la medida del mapa va primero y en negrita; su gemela no se repite.
     const gemela = { coord: 'coord', part: 'part', importeCoord: 'importeCoord', hab: 'hab', ratio: 'ratioCoord' }[S.metrica];
-    const colsR = [['nombre', 'País', true], ['metrica', M.corto], ['coord', 'Coordina'], ['part', 'Participa'], ['importeCoord', 'Dinero coordinado'], ['hab', 'Por millón hab.'], ['ratioCoord', 'Coord./partic.']].filter(([k]) => k !== gemela);
+    const colsR = [['nombre', 'País', true], ['metrica', M.corto], ['coord', 'Coordina'], ['part', 'Participa'], ['importeCoord', 'Presupuesto coordinado'], ['hab', 'Por millón hab.'], ['ratioCoord', 'Coord./partic.']].filter(([k]) => k !== gemela);
     const vk = (p, k) => (k === 'metrica' ? val(p) : k === 'hab' ? METRICAS.hab.v(p, ra, rb) : p[k]);
     const celda = (p, k) => ({
       metrica: () => `<b>${esc(M.fmt(val(p)))}</b>`, coord: () => fmtN(p.coord), part: () => fmtN(p.part),
@@ -1103,7 +1103,7 @@ const Estadisticas = (() => {
     const focoFuerte = S.f.pais ? [] : d.porLinea.filter(l => l.proyectos >= 20 && l.focoCoord > 0).sort((a, b) => b.focoCoord / b.proyectos - a.focoCoord / a.proyectos);
     const ideas = [
       `Se concedieron <b>${fmtN(k.proyectos)}</b> proyectos por <b>${fmtEur(k.importe)}</b>. La mitad recibió menos de <b>${fmtEur(k.mediana)}</b>.`,
-      top && `La línea con más dinero es <a href="${linkLinea(top.id)}" data-linea="${top.id}">${esc(top.nombre)}</a>: ${fmtEur(top.importe)}, el ${pct(top.importe / k.importe)} del total.`,
+      top && `La línea con más presupuesto es <a href="${linkLinea(top.id)}" data-linea="${top.id}">${esc(top.nombre)}</a>: ${fmtEur(top.importe)}, el ${pct(top.importe / k.importe)} del total.`,
       crecen[0] && crecen[0].crecimiento > 0.1 && `La que más crece: <a href="${linkLinea(crecen[0].id)}" data-linea="${crecen[0].id}">${esc(crecen[0].nombre)}</a>, de ${fmtN(crecen[0].spark.find(v => v > 0))} a ${fmtN(crecen[0].spark[crecen[0].spark.length - 1])} proyectos al año.`,
       topes[0] && `Donde más se concede al máximo: <a href="${linkLinea(topes[0].id)}" data-linea="${topes[0].id}">${esc(topes[0].nombre)}</a> (${pct(topes[0].alTope)} de los proyectos, al tope).`,
       !S.f.pais && `${esc(nFoco)} coordina <b>${fmtN(focoCoord)}</b> de estos proyectos (${pct(focoCoord / k.proyectos, 1)}) y participa en <b>${fmtN(focoPart)}</b>.`,
@@ -1117,7 +1117,7 @@ const Estadisticas = (() => {
       </div>
       <dl class="est-datos est-datos--grande">
         ${dato('Proyectos concedidos', fmtN(k.proyectos), `${fmtN(k.lineas)} líneas`)}
-        ${dato('Dinero concedido', fmtEur(k.importe))}
+        ${dato('Presupuesto concedido', fmtEur(k.importe))}
         ${dato('Importe mediano', fmtEur(k.mediana), 'la mitad, por debajo')}
         ${dato('Rango habitual', rango(k.p25, k.p75), 'el 50 % central')}
         ${dato('Entidades coordinadoras', fmtN(k.coordinadoras), `de ${fmtN(k.paisesCoord)} países`)}
@@ -1130,14 +1130,14 @@ const Estadisticas = (() => {
     el.innerHTML = `
       <div class="est-grid est-grid--2">
         ${tarjeta('Proyectos concedidos por año', '<div id="est-g-año-n"></div>')}
-        ${tarjeta('Dinero concedido por año', '<div id="est-g-año-g"></div>')}
+        ${tarjeta('Presupuesto concedido por año', '<div id="est-g-año-g"></div>')}
       </div>
       <div class="est-grid est-grid--2">
-        ${tarjeta('Dinero por tipo de acción', '<div id="est-g-grupos"></div>', { sub: 'Pulsa una barra para filtrar por ese tipo: el mapa cambia con él' })}
+        ${tarjeta('Presupuesto por tipo de acción', '<div id="est-g-grupos"></div>', { sub: 'Pulsa una barra para filtrar por ese tipo: el mapa cambia con él' })}
         ${tarjeta('Las que más crecen', listaMini(crecen.slice(0, 6), l => `${l.crecimiento > 0 ? '+' : ''}${pct(l.crecimiento)}`, l => `${fmtN(l.spark.find(v => v > 0))} → ${fmtN(l.spark[l.spark.length - 1])} proyectos/año`), { sub: 'Proyectos del primer al último año del periodo (líneas con 25 o más al principio)' })}
       </div>
       <div class="est-grid">
-        ${tarjeta('Las 10 líneas con más dinero', '<div id="est-g-top"></div>', { sub: 'Pulsa una línea para ver su ficha y su mapa' })}
+        ${tarjeta('Las 10 líneas con más presupuesto', '<div id="est-g-top"></div>', { sub: 'Pulsa una línea para ver su ficha y su mapa' })}
       </div>
       <div class="est-grid est-grid--2">
         ${tarjeta('Donde se concede al máximo', topes.length ? listaMini(topes.slice(0, 6), l => pct(l.alTope), l => `mediana ${fmtEur(l.mediana)} · tope ${fmtEur(l.max2026)}`) : '<p class="est-nota">Ninguna línea de estos filtros tiene un máximo fijo.</p>', { sub: 'Porcentaje de proyectos con al menos el 97 % del máximo' })}
@@ -1147,11 +1147,11 @@ const Estadisticas = (() => {
 
     const años = d.porAño.map(a => String(a.año));
     barrasV('#est-g-año-n', años, d.porAño.map(a => a.proyectos), { nombre: 'Proyectos' });
-    barrasV('#est-g-año-g', años, d.porAño.map(a => a.importe), { nombre: 'Dinero', fmt: v => fmtEur(v) });
+    barrasV('#est-g-año-g', años, d.porAño.map(a => a.importe), { nombre: 'Presupuesto', fmt: v => fmtEur(v) });
     const grupos = [...d.porGrupo].sort((a, b) => b.importe - a.importe);
-    barrasH('#est-g-grupos', grupos, { valor: g => g.importe, etiqueta: g => g.nombre, fmt: v => fmtEur(v), tooltip: 'Dinero', onClick: g => { S.f.grupo = g.id; cambiarFiltros(); } });
+    barrasH('#est-g-grupos', grupos, { valor: g => g.importe, etiqueta: g => g.nombre, fmt: v => fmtEur(v), tooltip: 'Presupuesto', onClick: g => { S.f.grupo = g.id; cambiarFiltros(); } });
     const top10 = d.porLinea.slice(0, 10);
-    barrasH('#est-g-top', top10, { valor: l => l.importe, etiqueta: l => l.nombre, fmt: v => fmtEur(v), tooltip: 'Dinero', onClick: l => irA('linea', l.id) });
+    barrasH('#est-g-top', top10, { valor: l => l.importe, etiqueta: l => l.nombre, fmt: v => fmtEur(v), tooltip: 'Presupuesto', onClick: l => irA('linea', l.id) });
   }
 
   function listaMini(filas, valor, detalle) {
@@ -1219,7 +1219,7 @@ const Estadisticas = (() => {
           <div class="est-panel__spark">${sparkSvg(l.spark, 300, 46, null, mediaLineas)}<small>Proyectos por año, ${periodoTxt()}</small>${leyendaSpark('esta línea', 'media de las líneas')}</div>
           <dl class="est-datos">
             ${dato('Proyectos', fmtN(l.proyectos), `${fmtN(l.porAño)} al año`)}
-            ${dato('Dinero', fmtEur(l.importe))}
+            ${dato('Presupuesto', fmtEur(l.importe))}
             ${dato('Importe mediano', fmtEur(l.mediana))}
             ${dato('Rango habitual', rango(l.p25, l.p75))}
             ${l.alTope != null ? dato('Al tope', pct(l.alTope)) : ''}
@@ -1256,7 +1256,7 @@ const Estadisticas = (() => {
       { k: 'nombre', t: 'Línea', txt: true },
       { k: 'proyectos', t: 'Proyectos' },
       { k: 'porAño', t: 'Al año' },
-      { k: 'importe', t: 'Dinero' },
+      { k: 'importe', t: 'Presupuesto' },
       { k: 'mediana', t: 'Mediana' },
       { k: 'p25', t: 'Rango habitual', title: 'Del percentil 25 al 75: la mitad central de los proyectos' },
       { k: 'alTope', t: 'Al tope' },
@@ -1445,7 +1445,7 @@ const Estadisticas = (() => {
   function tablaCoord(filas) {
     if (!filas.length) return '<p class="est-nota">Sin datos.</p>';
     return `<div class="est-tabla-wrap"><table class="est-tabla est-tabla--compacta">
-      <thead><tr><th>Entidad</th><th>País</th><th class="n">Proyectos</th><th class="n">Dinero</th></tr></thead>
+      <thead><tr><th>Entidad</th><th>País</th><th class="n">Proyectos</th><th class="n">Presupuesto</th></tr></thead>
       <tbody>${filas.map(o => `<tr><td>${nombreEnt(o)}</td><td>${esc(o.nombrePais)}</td><td class="n">${fmtN(o.proyectos)}</td><td class="n">${fmtEur(o.importe)}</td></tr>`).join('')}</tbody></table></div>`;
   }
 
@@ -1538,7 +1538,7 @@ const Estadisticas = (() => {
     const filas = C.tipo === 'linea'
       ? [
         ['Proyectos concedidos', x => fmtN(x.kpis.proyectos)],
-        ['Dinero concedido', x => fmtEur(x.kpis.importe)],
+        ['Presupuesto concedido', x => fmtEur(x.kpis.importe)],
         ['Importe mediano', x => fmtEur(x.kpis.mediana)],
         ['Rango habitual', x => rango(x.kpis.p25, x.kpis.p75)],
         ['Máximo 2026', x => fmtEur(x.max2026)],
@@ -1550,7 +1550,7 @@ const Estadisticas = (() => {
       ]
       : [
         ['Proyectos coordinados', x => fmtN(x.kpis.proyectos)],
-        ['Dinero coordinado', x => fmtEur(x.kpis.importe)],
+        ['Presupuesto coordinado', x => fmtEur(x.kpis.importe)],
         ['Importe mediano', x => fmtEur(x.kpis.mediana)],
         ['Entidades coordinadoras', x => fmtN(x.kpis.coordinadoras)],
         ['Líneas con proyectos', x => fmtN(x.kpis.lineas)],
@@ -1565,7 +1565,7 @@ const Estadisticas = (() => {
       ${C.tipo === 'pais' ? '<p class="est-nota mt-2">En países se cuentan los proyectos que coordinan sus entidades, con los filtros de arriba.</p>' : ''}
       <div class="est-grid est-grid--2 mt-4">
         ${tarjeta('Proyectos concedidos por año', '<div id="est-c-n"></div>')}
-        ${tarjeta(C.tipo === 'linea' ? 'Importe mediano por año' : 'Dinero coordinado por año', '<div id="est-c-m"></div>')}
+        ${tarjeta(C.tipo === 'linea' ? 'Importe mediano por año' : 'Presupuesto coordinado por año', '<div id="est-c-m"></div>')}
       </div>
       ${C.tipo === 'linea' ? tarjeta('Cuánto se concede: la mitad central de los proyectos', '<div id="est-c-r"></div>', { sub: 'Barra = del percentil 25 al 75 · marca = mediana' })
         : `<div class="est-grid est-grid--${Math.min(d.length, 4)}">${d.map((x, i) => tarjeta(`<span class="est-dot" style="background:${SERIES[i]}"></span>${esc(x.nombre)}: sus líneas principales`, `<ol class="est-mini est-mini--plano">${x.topLineas.map(l => `<li><a href="${linkLinea(l.id)}" data-linea="${l.id}"><span class="est-mini__nombre">${esc(l.nombre)}<small>${fmtEur(l.importe)}</small></span><span class="est-mini__valor">${fmtN(l.proyectos)}</span></a></li>`).join('')}</ol>`)).join('')}</div>`}`;
@@ -1675,7 +1675,7 @@ const Estadisticas = (() => {
     ong: 'ONG y asociaciones', deporte: 'Deporte', cultura: 'Cultura', investigacion: 'Investigación',
     publico: 'Organismos públicos', empresa: 'Empresas', otro: 'Otros', sin: 'Sin clasificar',
   };
-  const ORDEN_ENT = [['proyectos', 'Proyectos'], ['coordina', 'Coordina'], ['dinero', 'Dinero']];
+  const ORDEN_ENT = [['proyectos', 'Proyectos'], ['coordina', 'Coordina'], ['dinero', 'Presupuesto']];
   const qsEnt = (extra = {}) => qsSinPais({ tipo: S.ent.tipo, sinUni: S.ent.sinUni ? '1' : '', min: S.ent.min > 1 ? S.ent.min : '', ...extra });
 
   async function entidades(el, panel, vivo) {
@@ -1715,10 +1715,10 @@ const Estadisticas = (() => {
         <dl class="est-datos">
           ${dato('Entidades', fmtN(p.n), S.ent.min > 1 ? `con ${S.ent.min} proyectos o más` : 'con algún proyecto')}
           ${dato('Universidades', fmtN(p.uni), p.n ? pct(p.uni / p.n) + ' del total' : '')}
-          ${dato('Dinero de sus proyectos', fmtEur(p.dinero), 'subvención total, no lo que recibe cada una')}
+          ${dato('Presupuesto de sus proyectos', fmtEur(p.dinero), 'subvención total, no lo que recibe cada una')}
           ${dato('Por millón de habitantes', fmtHab(porHab(p, p.n)))}
         </dl>` : ''}
-        <div class="est-panel__bloque"><h4>${periodoTxt()} · las 10 que más ${S.ent.orden === 'coordina' ? 'coordinan' : S.ent.orden === 'dinero' ? 'dinero mueven' : 'proyectos tienen'}</h4><div id="est-ent-top">${'<div class="est-esqueleto est-esqueleto--fino"><span></span><span></span><span></span></div>'}</div></div>`;
+        <div class="est-panel__bloque"><h4>${periodoTxt()} · las 10 que más ${S.ent.orden === 'coordina' ? 'coordinan' : S.ent.orden === 'dinero' ? 'presupuesto mueven' : 'proyectos tienen'}</h4><div id="est-ent-top">${'<div class="est-esqueleto est-esqueleto--fino"><span></span><span></span><span></span></div>'}</div></div>`;
       enlazarQuitar(panel);
       getMemo('/entidades?' + qsEnt({ epais: S.f.pais, orden: S.ent.orden, limit: 10 })).then(r => {
         if (!vivo()) return;
@@ -1755,10 +1755,10 @@ const Estadisticas = (() => {
       ${S.f.desde === META.años[0] && S.f.hasta === META.años[1] ? '' : `<p class="est-periodo-aviso"><span class="material-symbols-outlined">date_range</span><span>Cifras de <b>${periodoTxt()}</b>. La ficha de cada entidad cuenta toda su historia (${META.años[0]}–${META.años[1]}), así que allí salen más proyectos.</span><button type="button" class="est-btn est-btn--ghost" id="est-e-todo">Ver ${META.años[0]}–${META.años[1]}</button></p>`}
       <div class="est-tabla-wrap"><table class="est-tabla" id="est-tabla-ent"></table></div>
       <div class="est-mas"><button type="button" id="est-emas" class="est-btn est-btn--ghost" hidden><span class="material-symbols-outlined">expand_more</span>Ver 50 más</button><span id="est-ecuenta" class="est-nota"></span></div>
-      <p class="est-nota mt-2">«Proyectos» cuenta los proyectos en los que está, en cualquier papel; «Coordina», los que encabeza. Como en el resto de Estadísticas, las acreditaciones (que no reparten dinero) no cuentan. «Dinero» es la subvención total de esos proyectos, no lo que recibe cada entidad. Las entidades están unificadas: los PIC y OID de una misma organización cuentan juntos.</p>`;
+      <p class="est-nota mt-2">«Proyectos» cuenta los proyectos en los que está, en cualquier papel; «Coordina», los que encabeza. Como en el resto de Estadísticas, las acreditaciones (que no tienen presupuesto) no cuentan. «Presupuesto» es la subvención total de esos proyectos, no lo que recibe cada entidad. Las entidades están unificadas: los PIC y OID de una misma organización cuentan juntos.</p>`;
 
     let offset = 0, filas = [];
-    const cols = [['pos', '#'], ['nombre', 'Entidad'], ['pais', 'País'], ['proyectos', 'Proyectos'], ['coordina', 'Coordina'], ['dinero', 'Dinero de sus proyectos'], ['dineroCoord', 'Dinero que coordina']];
+    const cols = [['pos', '#'], ['nombre', 'Entidad'], ['pais', 'País'], ['proyectos', 'Proyectos'], ['coordina', 'Coordina'], ['dinero', 'Presupuesto de sus proyectos'], ['dineroCoord', 'Presupuesto que coordina']];
     const pintarTabla = () => {
       $('#est-tabla-ent').innerHTML = `
         <thead><tr>${cols.map(([k, t]) => {
