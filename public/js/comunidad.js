@@ -780,7 +780,7 @@
       let p;
       try { p = await API.get('/community/posts/' + encodeURIComponent(id)); }
       catch (e) { say(errText(e)); alert(errText(e)); return; }
-      dlg.innerHTML = `<div class="cm-thread__bar"><span class="cm-muted">${esc(p.topic_label || (scope.group ? 'Grupo' : 'Conversación'))}</span>
+      dlg.innerHTML = `<div class="cm-thread__bar"><span class="cm-muted">${scope.group ? 'Conversación del grupo' : 'Conversación'}</span>
           <button type="button" class="cm-btn cm-btn--quiet cm-btn--sm" data-close aria-label="Cerrar">${ms('close')}</button></div>
         <div class="cm-thread__body">${postHtml(p)}</div>`;
       const body = dlg.querySelector('.cm-thread__body');
