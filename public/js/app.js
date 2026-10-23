@@ -631,7 +631,7 @@ const App = (() => {
   /* ── Public API ────────────────────────────────────────────── */
   return { init, onAuth, onLogout, showAuthTab, showAuthInfo, openAuth, showWelcome, navigate, toggleSidebar, setActiveProject, getActiveProject, getCurrentUser, updateCurrentUser, refreshAvatar, isAdmin, requireLogin };
 })();
-Acciones.modulo('App', App);   // data-action="App.metodo" (js/acciones.js)
+window.Acciones?.modulo('App', App);   // data-action="App.metodo" (js/acciones.js; no está en todas las páginas)
 
 
 /* ═══════════════════════════════════════════════════════════════
