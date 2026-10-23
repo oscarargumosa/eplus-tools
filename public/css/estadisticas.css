@@ -467,3 +467,12 @@
 .est-spark-ley__a { border-top: 2px solid var(--est-azul); }
 .est-spark-ley__m { border-top: 1.5px dashed #8a8aa3; margin-left: 6px; }
 .est-tt--flot .est-spark-ley { margin-top: 0; margin-bottom: 2px; }
+
+/* Ranking de entidades */
+.est-link--ent { font-weight: 600; text-align: left; line-height: 1.3; }
+.est-mini__nombre .est-link--ent { display: block; font-size: 12.5px; }
+.est-td-nombre .est-link--ent { display: block; }
+.est-check { display: inline-flex; align-items: center; gap: 6px; font-size: 12px; font-weight: 600; color: var(--est-texto2); cursor: pointer; }
+.est-check input { accent-color: var(--est-azul); width: 16px; height: 16px; }
+.est-mas { display: flex; align-items: center; gap: 12px; margin-top: 10px; }
+#est-tabla-ent .est-td-nombre { min-width: 300px; }

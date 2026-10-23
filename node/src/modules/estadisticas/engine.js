@@ -385,7 +385,7 @@ function pais(code, q) {
       socios: [...socios.entries()].sort((a, b) => b[1] - a[1]).slice(0, 30)
         .map(([o, v]) => ({ code: s.paises[o], nombre: nombrePais(s.paises[o]), n: v, pct: n ? v / n : 0 })),
       entidades: [...orgs.entries()].sort((a, b) => b[1].n - a[1].n || b[1].importe - a[1].importe).slice(0, 10)
-        .map(([o, v]) => ({ nombre: s.orgs[o][0], proyectos: v.n, importe: v.importe })),
+        .map(([o, v]) => ({ nombre: s.orgs[o][0], proyectos: v.n, importe: v.importe, ficha: fichaOrg(o) })),
     };
   });
 }
@@ -491,7 +491,7 @@ function linea(id, q) {
       paisesCoord: topPaises(coordP),
       paisesPart: topPaises(partP),
       coordinadoras: [...orgs.entries()].sort((a, b) => b[1].n - a[1].n || b[1].importe - a[1].importe).slice(0, 15)
-        .map(([o, v]) => ({ nombre: s.orgs[o][0], pais: s.paises[s.orgs[o][1]], nombrePais: nombrePais(s.paises[s.orgs[o][1]]), proyectos: v.n, importe: v.importe })),
+        .map(([o, v]) => ({ nombre: s.orgs[o][0], pais: s.paises[s.orgs[o][1]], nombrePais: nombrePais(s.paises[s.orgs[o][1]]), proyectos: v.n, importe: v.importe, ficha: fichaOrg(o) })),
       ejemplos,
       tasa: s.tasaPorLinea.get(f.id) || null,
     };
@@ -518,4 +518,161 @@ function comparar(q) {
 
 function tasas() { return load().tasas; }
 
-module.exports = { load, meta, consulta, paises, pais, linea, comparar, tasas };
+/* ── Entidades: ranking y mapa (entidades.json.gz) ──────────────
+   Las entidades vienen unificadas (ghl.entity_unified) y, para cada
+   proyecto de la foto, la lista de las que participan (la coordinadora
+   primero). Se cargan la primera vez que alguien las pide. */
+let E = null;
+function cargarEntidades() {
+  if (E !== null) return E || null;
+  const s = load();
+  try {
+    const t0 = Date.now();
+    const raw = JSON.parse(zlib.gunzipSync(fs.readFileSync(path.join(DIR, 'entidades.json.gz'))));
+    if (raw.huella !== s.snap.huella) {
+      console.error(`[estadisticas] entidades.json.gz no casa con proyectos.json.gz (${raw.huella} ≠ ${s.snap.huella}): regenera las dos con build-snapshot.js`);
+      E = false; return null;
+    }
+    const n = raw.ents.length;
+    E = {
+      n, tipos: raw.tipos,
+      nombre: raw.ents.map(e => e[0]),
+      pais: Uint16Array.from(raw.ents, e => e[1]),
+      tipo: Uint8Array.from(raw.ents, e => e[2]),
+      ficha: raw.ents.map(e => e[3]),
+      off: Uint32Array.from(raw.pe.off), e: Uint32Array.from(raw.pe.e),
+      bajo: null,
+    };
+    E.uni = E.tipos.indexOf('uni');
+    console.log(`[estadisticas] ${n} entidades, ${E.e.length} participaciones en ${Date.now() - t0} ms`);
+  } catch (e) {
+    console.error('[estadisticas] sin entidades:', e.message);
+    E = false;
+  }
+  return E || null;
+}
+
+// Id de la ficha (OID o PIC) de una coordinadora de la foto de proyectos.
+function fichaOrg(o) {
+  const s = load(), x = s.orgs[o]?.[3];
+  const e = cargarEntidades();
+  return e && x >= 0 ? e.ficha[x] : null;
+}
+
+const ORDENES = { proyectos: 'np', coordina: 'nc', dinero: 'din', dineroCoord: 'dinC' };
+
+// Agregado base (periodo, líneas, tipo de entidad, mínimo de proyectos):
+// sirve para el mapa y para todas las páginas del ranking.
+function baseEntidades(q) {
+  const s = load(), e = cargarEntidades();
+  if (!e) return null;
+  const F = parseFiltros({ ...q, pais: '' });
+  const tiposSel = new Set(lista(q.tipo).map(t => e.tipos.indexOf(t)).filter(i => i >= 0));
+  const sinUni = q.sinUni === '1';
+  const min = Math.max(1, parseInt(q.min, 10) || 1);
+  const clave = 'eb' + F.clave + JSON.stringify([[...tiposSel], sinUni, min]);
+  return cached(clave, () => {
+    const { P, Y } = s;
+    const okT = i => (!tiposSel.size || tiposSel.has(e.tipo[i])) && !(sinUni && e.tipo[i] === e.uni);
+    const np = new Uint32Array(e.n), nc = new Uint32Array(e.n), din = new Float64Array(e.n), dinC = new Float64Array(e.n);
+    forEach(F, i => {
+      const g = Math.max(0, P.g[i]);
+      for (let j = e.off[i]; j < e.off[i + 1]; j++) {
+        const x = e.e[j];
+        np[x]++; din[x] += g;
+        if (j === e.off[i] && P.co[i] >= 0) { nc[x]++; dinC[x] += g; }
+      }
+    }, { ignorarPais: true });
+
+    // Año a año (todo el rango de la foto): entidades activas por país.
+    const [a0, a1] = s.años, nA = a1 - a0 + 1, nP = s.paises.length;
+    const act = new Uint8Array(e.n * nA);
+    const nY = Array.from({ length: nP }, () => new Array(nA).fill(0));
+    const totalY = new Array(nA).fill(0);
+    forEach(F, i => {
+      const k = Y[i] - a0;
+      for (let j = e.off[i]; j < e.off[i + 1]; j++) {
+        const x = e.e[j];
+        if (!okT(x) || act[x * nA + k]) continue;
+        act[x * nA + k] = 1; nY[e.pais[x]][k]++; totalY[k]++;
+      }
+    }, { ignorarPais: true, ignorarAños: true });
+
+    const ids = [], dentro = new Uint8Array(e.n);
+    const nPais = new Float64Array(nP), dinPais = new Float64Array(nP), uniPais = new Float64Array(nP);
+    const porTipo = new Array(e.tipos.length).fill(0);
+    for (let x = 0; x < e.n; x++) {
+      if (np[x] < min || !okT(x)) continue;
+      ids.push(x); dentro[x] = 1;
+      nPais[e.pais[x]]++;
+      if (e.tipo[x] === e.uni) uniPais[e.pais[x]]++;
+      porTipo[e.tipo[x]]++;
+    }
+    // Dinero por país: cada proyecto una vez, aunque tenga varias entidades del país.
+    const visto = new Int32Array(nP).fill(-1);
+    forEach(F, i => {
+      const g = Math.max(0, P.g[i]);
+      for (let j = e.off[i]; j < e.off[i + 1]; j++) {
+        const x = e.e[j], c = e.pais[x];
+        if (!dentro[x] || visto[c] === i) continue;
+        visto[c] = i; dinPais[c] += g;
+      }
+    }, { ignorarPais: true });
+    const paises = [];
+    for (let k = 0; k < nP; k++) {
+      if (s.paises[k] === '??' || (!nPais[k] && !nY[k].some(Boolean))) continue;
+      paises.push({ code: s.paises[k], nombre: nombrePais(s.paises[k]), pob: s.pob[s.paises[k]] || null, n: nPais[k], dinero: dinPais[k], uni: uniPais[k], nY: nY[k] });
+    }
+    paises.sort((a, b) => b.n - a.n);
+    return {
+      F, min, np, nc, din, dinC, ids, ordenados: new Map(),
+      mapa: {
+        años: [a0, a1], totalY, total: ids.length, paises,
+        tipos: e.tipos.map((t, i) => ({ id: t, n: porTipo[i] })).filter(t => t.n),
+        sinPais: ids.filter(x => s.paises[e.pais[x]] === '??').length,
+      },
+    };
+  });
+}
+
+function entidades(q) {
+  const s = load(), e = cargarEntidades();
+  const b = baseEntidades(q);
+  if (!e || !b) return null;
+  const orden = ORDENES[q.orden] ? q.orden : 'proyectos';
+  const epais = q.epais && s.paisIdx.has(String(q.epais).toUpperCase()) ? s.paisIdx.get(String(q.epais).toUpperCase()) : null;
+  const k = orden + ':' + epais;
+  let lista_ = b.ordenados.get(k);
+  if (!lista_) {
+    const v = b[ORDENES[orden]], v2 = b.din;
+    lista_ = (epais === null ? b.ids.slice() : b.ids.filter(x => e.pais[x] === epais))
+      .sort((x, y) => v[y] - v[x] || v2[y] - v2[x]);
+    b.ordenados.set(k, lista_);
+    if (b.ordenados.size > 40) b.ordenados.delete(b.ordenados.keys().next().value);
+  }
+  // Puesto en el ranking completo, también cuando se busca un nombre.
+  let filas = lista_.map((x, i) => [x, i + 1]);
+  const t = String(q.buscar || '').trim().toLowerCase();
+  if (t) {
+    if (!e.bajo) e.bajo = e.nombre.map(n => n.toLowerCase());
+    filas = filas.filter(([x]) => e.bajo[x].includes(t));
+  }
+  const limit = Math.min(Math.max(parseInt(q.limit, 10) || 50, 1), 100);
+  const offset = Math.max(parseInt(q.offset, 10) || 0, 0);
+  return {
+    total: filas.length,
+    totalPais: lista_.length,
+    orden, min: b.min,
+    filas: filas.slice(offset, offset + limit).map(([x, pos]) => ({
+      pos, nombre: e.nombre[x] || 'Sin nombre', code: s.paises[e.pais[x]], nombrePais: nombrePais(s.paises[e.pais[x]]),
+      tipo: e.tipos[e.tipo[x]], proyectos: b.np[x], coordina: b.nc[x], dinero: b.din[x], dineroCoord: b.dinC[x], ficha: e.ficha[x],
+    })),
+  };
+}
+
+function mapaEntidades(q) {
+  const b = baseEntidades(q);
+  return b ? b.mapa : null;
+}
+
+module.exports = { load, meta, consulta, paises, pais, linea, comparar, tasas, entidades, mapaEntidades, fichaOrg };
