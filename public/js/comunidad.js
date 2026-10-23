@@ -616,26 +616,9 @@
       <div class="cm-menu__list" role="menu" hidden>${items.join('')}</div></div>`;
   }
 
-  /* Lista + acciones. `scope`: { topic } o { group }. */
-  function mountFeed(el, scope) {
-    let before = null;
-    async function load(more) {
-      const q = new URLSearchParams();
-      if (scope.group) q.set('group', scope.group);
-      if (scope.topic) q.set('topic', scope.topic);
-      if (more && before) q.set('before', before);
-      const d = await API.get('/community/posts?' + q);
-      const html = d.posts.map(p => postHtml(p)).join('');
-      if (!more) el.innerHTML = html || `<div class="cm-empty">${ms('forum')}<p>Todavía no hay aportaciones aquí. ¿Empiezas tú?</p></div>`;
-      else el.insertAdjacentHTML('beforeend', html);
-      before = d.posts.length ? d.posts[d.posts.length - 1].id : before;
-      let btn = el.parentNode.querySelector('[data-more]');
-      if (d.more && !btn) {
-        el.insertAdjacentHTML('afterend', '<div class="cm-more"><button class="cm-btn cm-btn--ghost" type="button" data-more>Ver más</button></div>');
-        btn = el.parentNode.querySelector('[data-more]');
-        btn.addEventListener('click', () => load(true).catch(e => say(errText(e))));
-      } else if (!d.more && btn) btn.parentNode.remove();
-    }
+  /* Acciones sobre aportaciones ya pintadas en `el` (corazón, menú, retirar,
+     denunciar, responder). Se usa en la ventana del hilo. */
+  function wireActions(el, hooks = {}) {
     function closeMenus(except) {
       $$('.cm-menu__list', el).forEach(m => { if (m !== except) { m.hidden = true; m.previousElementSibling.setAttribute('aria-expanded', 'false'); } });
     }
@@ -674,6 +657,7 @@
           const art = el.querySelector(`[data-post="${t.dataset.remove}"]`);
           if (art) art.remove();
           say('Aportación retirada');
+          if (hooks.onRemove) hooks.onRemove(Number(t.dataset.remove));
         } catch (err) { say(errText(err)); }
         return;
       }
@@ -709,6 +693,7 @@
           box.hidden = false;
           box.insertAdjacentHTML('beforeend', postHtml(last, { reply: true }));
           f.body.value = '';
+          if (hooks.onChange) hooks.onChange(thread);
           say('Respuesta publicada');
         } catch (err) { say(errText(err)); alert(errText(err)); }
         finally { btn.disabled = false; }
@@ -720,7 +705,115 @@
         } catch (err) { btn.disabled = false; say(errText(err)); }
       }
     });
-    return { load, prepend: (p) => { const empty = el.querySelector('.cm-empty'); if (empty) empty.remove(); el.insertAdjacentHTML('afterbegin', postHtml(p)); } };
+  }
+
+  /* Tarjeta compacta de la lista, como en Skool: al pulsarla se abre el hilo. */
+  function cardHtml(p) {
+    const a = p.author;
+    const replies = p.replies || [];
+    const last = replies[replies.length - 1];
+    const seen = new Set(), people = [];
+    for (let i = replies.length - 1; i >= 0 && people.length < 5; i--) {
+      const r = replies[i].author;
+      if (!seen.has(r.id)) { seen.add(r.id); people.push(r); }
+    }
+    const excerpt = (p.body || '').replace(/\s+/g, ' ').trim();
+    const n = replies.length;
+    return `<article class="cm-cpost" data-post="${p.id}">
+      <div class="cm-post__head">${av(a, 'sm')}<div class="cm-post__meta"><b>${esc(a.name)}</b>
+        <small>${esc(ago(p.created_at))}${p.topic_label ? ' · ' + esc(p.topic_label) : ''}</small></div></div>
+      <h3><a href="/comunidad/conversaciones/${p.id}" data-open="${p.id}">${esc(p.title || excerpt.slice(0, 90) || 'Aportación')}</a></h3>
+      ${p.title && excerpt ? `<p class="cm-cpost__excerpt">${esc(excerpt)}</p>` : ''}
+      ${p.link_url ? `<p class="cm-cpost__link">${ms('link')}<span>${esc(linkHost(p.link_url))}</span></p>` : ''}
+      <div class="cm-cpost__foot">
+        <span class="cm-cpost__stat" title="Corazones">${ms('favorite')}${p.hearts}</span>
+        <span class="cm-cpost__stat" title="Comentarios">${ms('chat_bubble')}${n}</span>
+        ${people.length ? `<span class="cm-stack" aria-hidden="true">${people.map(r => av(r, 'xs')).join('')}</span>` : ''}
+        <span class="cm-cpost__last">${last ? 'Último comentario ' + esc(ago(last.created_at)) : 'Sin comentarios todavía'}</span>
+      </div>
+    </article>`;
+  }
+
+  /* Ventana con la aportación completa y su hilo. */
+  function threadDialog() {
+    let dlg = document.getElementById('cm-thread');
+    if (!dlg) {
+      dlg = document.createElement('dialog');
+      dlg.id = 'cm-thread';
+      dlg.className = 'cm cm-thread';
+      dlg.setAttribute('aria-label', 'Conversación');
+      document.body.appendChild(dlg);
+      // Pulsar fuera de la ventana la cierra.
+      dlg.addEventListener('click', (e) => { if (e.target === dlg) dlg.close(); });
+    }
+    return dlg;
+  }
+
+  /* Lista de tarjetas. `scope`: { topic } o { group }. */
+  function mountFeed(el, scope) {
+    let before = null;
+    const listUrl = location.pathname.replace(/\/conversaciones\/[^/]+$/, '/conversaciones') + location.search;
+    async function load(more) {
+      const q = new URLSearchParams();
+      if (scope.group) q.set('group', scope.group);
+      if (scope.topic) q.set('topic', scope.topic);
+      if (more && before) q.set('before', before);
+      const d = await API.get('/community/posts?' + q);
+      const html = d.posts.map(cardHtml).join('');
+      if (!more) el.innerHTML = html || `<div class="cm-empty">${ms('forum')}<p>Todavía no hay aportaciones aquí. ¿Empiezas tú?</p></div>`;
+      else el.insertAdjacentHTML('beforeend', html);
+      before = d.posts.length ? d.posts[d.posts.length - 1].id : before;
+      let btn = el.parentNode.querySelector('[data-more]');
+      if (d.more && !btn) {
+        el.insertAdjacentHTML('afterend', '<div class="cm-more"><button class="cm-btn cm-btn--ghost" type="button" data-more>Ver más</button></div>');
+        btn = el.parentNode.querySelector('[data-more]');
+        btn.addEventListener('click', () => load(true).catch(e => say(errText(e))));
+      } else if (!d.more && btn) btn.parentNode.remove();
+    }
+    const refreshCard = (p) => {
+      const card = el.querySelector(`[data-post="${p.id}"]`);
+      if (card) card.outerHTML = cardHtml(p);
+    };
+
+    async function open(id) {
+      const dlg = threadDialog();
+      let p;
+      try { p = await API.get('/community/posts/' + encodeURIComponent(id)); }
+      catch (e) { say(errText(e)); alert(errText(e)); return; }
+      dlg.innerHTML = `<div class="cm-thread__bar"><span class="cm-muted">${esc(p.topic_label || (scope.group ? 'Grupo' : 'Conversación'))}</span>
+          <button type="button" class="cm-btn cm-btn--quiet cm-btn--sm" data-close aria-label="Cerrar">${ms('close')}</button></div>
+        <div class="cm-thread__body">${postHtml(p)}</div>`;
+      const body = dlg.querySelector('.cm-thread__body');
+      // Acciones del hilo; al cambiar algo se actualiza la tarjeta de la lista.
+      const ac = new AbortController();
+      wireActions(body, {
+        onChange: (thread) => refreshCard(thread),
+        onRemove: (rid) => { if (rid === p.id) { el.querySelector(`[data-post="${p.id}"]`)?.remove(); dlg.close(); } },
+      });
+      dlg.querySelector('[data-close]').addEventListener('click', () => dlg.close(), { signal: ac.signal });
+      // Corazones: se recoge el hilo al cerrar para dejar la tarjeta al día.
+      dlg.addEventListener('close', async () => {
+        ac.abort();
+        // Solo si seguimos en el hilo (si se cerró al navegar a un perfil, esa URL se queda).
+        if (!scope.group && location.pathname === `/comunidad/conversaciones/${p.id}`) history.replaceState({}, '', listUrl);
+        try { refreshCard(await API.get('/community/posts/' + encodeURIComponent(p.id))); } catch { /* retirada */ }
+      }, { once: true });
+      if (!scope.group) history.replaceState({}, '', `/comunidad/conversaciones/${p.id}`);
+      if (!dlg.open) dlg.showModal();
+      dlg.scrollTop = 0;
+      if (location.hash === '#responder') dlg.querySelector('textarea')?.focus();
+    }
+    cleanup.push(() => { const d = document.getElementById('cm-thread'); if (d && d.open) d.close(); });
+
+    el.addEventListener('click', (e) => {
+      if (e.metaKey || e.ctrlKey || e.shiftKey || e.button !== 0) return;
+      const card = e.target.closest('.cm-cpost');
+      if (!card || !el.contains(card)) return;
+      e.preventDefault();
+      e.stopPropagation();
+      open(card.dataset.post);
+    });
+    return { load, open, prepend: (p) => { const empty = el.querySelector('.cm-empty'); if (empty) empty.remove(); el.insertAdjacentHTML('afterbegin', cardHtml(p)); } };
   }
 
   function composerHtml({ group = false, topic = '' } = {}) {
@@ -774,16 +867,12 @@
 
   async function viewConversations(postId) {
     document.title = 'Conversaciones — Comunidad — EU Funding Studio';
-    const view = shell('conversaciones');
+    // Enlace directo a una aportación: la lista de fondo y el hilo abierto encima.
     if (postId) {
-      view.innerHTML = `<div class="cm-narrow"><a class="cm-back" href="/comunidad/conversaciones" data-nav>${ms('arrow_back')}Todas las conversaciones</a><div class="cm-posts" id="cm-feed"></div></div>`;
       const p = await API.get('/community/posts/' + encodeURIComponent(postId));
-      if (p.group_id) { history.replaceState({}, '', `/comunidad/grupos/${p.group_id}`); return viewGroup(p.group_id); }
-      const feed = mountFeed($('#cm-feed'), {});
-      $('#cm-feed').innerHTML = postHtml(p);
-      void feed;
-      return;
+      if (p.group_id) { history.replaceState({}, '', `/comunidad/grupos/${p.group_id}`); return viewGroup(p.group_id, p.id); }
     }
+    const view = shell('conversaciones');
     const topic = new URLSearchParams(location.search).get('tema') || '';
     const topics = me.catalog.topics;
     view.innerHTML = `<div class="cm-narrow">
@@ -796,6 +885,7 @@
     const feed = mountFeed($('#cm-feed'), { topic: topics.some(t => t.key === topic) ? topic : '' });
     wireComposer({ feed });
     await feed.load(false);
+    if (postId) await feed.open(postId);
   }
 
   async function viewGroups() {
@@ -819,7 +909,7 @@
     });
   }
 
-  async function viewGroup(id) {
+  async function viewGroup(id, openPost = null) {
     const view = shell('grupos');
     const g = await API.get('/community/groups/' + encodeURIComponent(id));
     document.title = `${g.name} — Comunidad — EU Funding Studio`;
@@ -847,6 +937,7 @@
       const feed = mountFeed($('#cm-feed'), { group: g.id });
       if (g.is_member) wireComposer({ group: g.id, feed });
       await feed.load(false);
+      if (openPost) await feed.open(openPost);
     }
   }
 
