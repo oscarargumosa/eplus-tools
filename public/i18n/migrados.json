@@ -1,0 +1,36 @@
+{
+  "_leeme": "Ficheros ya pasados al sistema de idiomas (node/src/utils/i18n.js). En ellos, scripts/i18n-check.js no deja pasar textos en español sin traducción. Al migrar otro fichero, añádelo aquí. Los HTML se comprueban solos: todo lo que esté dentro de una zona data-i18n.",
+  "js": [
+    "public/js/i18n.js",
+    "public/js/topbar.js",
+    "public/js/auth.js",
+    "public/js/app.js",
+    "public/js/account.js",
+    "public/js/password-fields.js",
+    "public/js/beta-access.js",
+    "public/js/landing.js",
+    "public/js/save-status.js",
+    "public/js/engagement.js",
+    "public/js/movilidades.js",
+    "public/js/movilidades-utils.js",
+    "public/js/convocatorias.js",
+    "public/js/vision.js"
+  ],
+  "servidor": [
+    "node/src/modules/auth/controller.js",
+    "node/src/modules/auth/routes.js",
+    "node/src/middleware/validate.js",
+    "node/src/utils/email.js",
+    "node/src/modules/translate/controller.js",
+    "node/src/modules/translate/routes.js",
+    "node/src/modules/movilidades/controller.js",
+    "node/src/modules/movilidades/routes.js",
+    "node/src/modules/convocatorias/controller.js",
+    "node/src/modules/convocatorias/routes.js",
+    "node/src/modules/convocatorias/rag.js",
+    "node/src/modules/convocatorias/curation.js",
+    "node/src/modules/vision/controller.js",
+    "node/src/modules/vision/model.js",
+    "node/src/modules/vision/routes.js"
+  ]
+}

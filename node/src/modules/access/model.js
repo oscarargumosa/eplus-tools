@@ -93,7 +93,7 @@ async function listUsers({ q = '', filter = 'all', page = 1, limit = 25 } = {}) 
 
   const [[{ total }]] = await db.query(`SELECT COUNT(*) AS total FROM users u WHERE ${whereSql}`, params);
   const [rows] = await db.query(
-    `SELECT u.id, u.name, u.email, u.role, u.email_verified, u.created_at,
+    `SELECT u.id, u.name, u.email, u.role, u.email_verified, u.created_at, u.interno,
             (SELECT MAX(a.ts) FROM audit_log a
               WHERE a.actor_user_id = u.id AND a.action = 'auth.login') AS last_login,
             (SELECT COUNT(*) FROM projects p WHERE p.user_id = u.id) AS projects,
@@ -117,6 +117,7 @@ async function listUsers({ q = '', filter = 'all', page = 1, limit = 25 } = {}) 
   const items = rows.map(r => ({
     id: r.id, name: r.name, email: r.email, role: r.role,
     email_verified: !!r.email_verified,
+    interno: !!r.interno || r.role !== 'user',
     created_at: r.created_at,
     last_login: r.last_login,
     projects: Number(r.projects) || 0,
@@ -166,6 +167,15 @@ async function revoke(userId, area) {
   return { user, revoked: del.affectedRows > 0 };
 }
 
+/* Marca la cuenta como «de casa» (equipo o pruebas): Engagement la aparta del
+   tráfico de fuera. Los roles distintos de 'user' ya cuentan como de casa. */
+async function setInterno(userId, on) {
+  const user = await getUser(userId);
+  if (!user) throw new HttpError(404, 'NOT_FOUND', 'Usuario no encontrado');
+  const [upd] = await db.query('UPDATE users SET interno = ? WHERE id = ?', [on ? 1 : 0, userId]);
+  return { user, changed: upd.changedRows > 0 };
+}
+
 async function getPendingRequest(id) {
   const [[r]] = await db.query(
     "SELECT id, user_id, area, status FROM access_requests WHERE id = ? LIMIT 1", [id]);
@@ -184,5 +194,5 @@ async function reject(id, adminId) {
 
 module.exports = {
   HttpError, myRequests, createRequest, unseenAreas, markSeen,
-  listUsers, pendingCount, grant, revoke, getPendingRequest, reject,
+  listUsers, pendingCount, grant, revoke, setInterno, getPendingRequest, reject,
 };

@@ -90,7 +90,10 @@ function guestGate(req, res, next) {
 
   if (p === '/' || p === '/index.html') {
     noStore(res);
-    return res.sendFile(logged ? APP_FILE : LANDING_FILE);
+    // La app sale en el idioma de la persona; la portada de «/» siempre en
+    // español (la inglesa vive en /en/, middleware/i18nPages.js).
+    const { sendPage } = require('./i18nPages');
+    return logged ? sendPage(req, res, APP_FILE) : sendPage(req, res, LANDING_FILE, { lang: 'es' });
   }
   if (logged || AUTH_PAGES.has(p) || OPEN_PAGES.has(p)) return next();
 

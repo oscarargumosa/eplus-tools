@@ -16,9 +16,10 @@ exports.track = async (req, res, next) => {
 };
 
 // Admin-only engagement rollup for the Admin dashboard.
+// ?origen=fuera (por defecto) | casa | robot | todo
 exports.engagement = async (req, res, next) => {
   try {
-    const data = await model.engagement();
+    const data = await model.engagement({ origen: String(req.query.origen || 'fuera') });
     res.json({ ok: true, data });
   } catch (err) {
     next(err);

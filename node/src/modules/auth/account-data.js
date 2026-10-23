@@ -218,7 +218,7 @@ async function deleteAccount(userId) {
   let user;
   try {
     await conn.beginTransaction();
-    [[user]] = await conn.query('SELECT id, email, name, role, avatar_url FROM users WHERE id = ? FOR UPDATE', [userId]);
+    [[user]] = await conn.query('SELECT id, email, name, role, avatar_url, ui_lang FROM users WHERE id = ? FOR UPDATE', [userId]);
     if (!user) throw Object.assign(new Error('Cuenta no encontrada'), { status: 404, code: 'NOT_FOUND' });
     if (user.role === 'admin') {
       throw Object.assign(new Error('Una cuenta de administración no se puede eliminar desde aquí. Pide antes a otra persona administradora que te quite el rol.'),

@@ -43,20 +43,20 @@ const Account = (() => {
     const has = !!src.user_avatar_url;
     document.getElementById('account-avatar-remove')?.classList.toggle('hidden', !has);
     const lbl = document.getElementById('account-avatar-btn-label');
-    if (lbl) lbl.textContent = has ? 'Cambiar foto' : 'Subir foto';
+    if (lbl) lbl.textContent = has ? _t('Cambiar foto') : _t('Subir foto');
     const hint = document.getElementById('account-avatar-hint');
     if (hint) {
       hint.textContent = has
-        ? 'Es la imagen de tu círculo en el menú de arriba.'
+        ? _t('Es la imagen de tu círculo en el menú de arriba.')
         : src.avatar_source === 'organization'
-          ? 'Sin foto, en el menú se ve el logo de tu entidad. Sube una foto para usarla en su lugar.'
-          : 'Sin foto ni logo de entidad, en el menú se ven tus iniciales.';
+          ? _t('Sin foto, en el menú se ve el logo de tu entidad. Sube una foto para usarla en su lugar.')
+          : _t('Sin foto ni logo de entidad, en el menú se ven tus iniciales.');
     }
   }
 
   async function uploadAvatar(file) {
     if (!file) return;
-    if (file.size > 2 * 1024 * 1024) { Toast.show('La foto pesa más de 2 MB', 'error'); return; }
+    if (file.size > 2 * 1024 * 1024) { Toast.show(_t('La foto pesa más de 2 MB'), 'error'); return; }
     const form = new FormData();
     form.append('avatar', file);
     try {
@@ -67,21 +67,21 @@ const Account = (() => {
           headers: { 'Authorization': 'Bearer ' + API.getToken() },
           body: form
         });
-        const j = await res.json().catch(() => ({ ok: false, error: { message: 'Respuesta inesperada del servidor (' + res.status + ')' } }));
-        if (!j.ok) throw j.error || new Error('Error');
+        const j = await res.json().catch(() => ({ ok: false, error: { message: _t('Respuesta inesperada del servidor ({estado})', { estado: res.status }) } }));
+        if (!j.ok) throw j.error || new Error(_t('No se pudo subir la foto'));
         return j;
       }, { key: 'POST /auth/me/avatar' });
       setAvatar(json.data);
       if (typeof App !== 'undefined' && App.refreshAvatar) App.refreshAvatar();
-      Toast.show('Foto actualizada', 'ok');
-    } catch (e) { Toast.show(e.message || 'No se pudo subir la foto', 'error'); }
+      Toast.show(_t('Foto actualizada'), 'ok');
+    } catch (e) { Toast.show(e.message || _t('No se pudo subir la foto'), 'error'); }
   }
 
   async function removeAvatar() {
     try {
       setAvatar(await API.del('/auth/me/avatar'));
       if (typeof App !== 'undefined' && App.refreshAvatar) App.refreshAvatar();
-    } catch (e) { Toast.show(e.message || 'Error', 'error'); }
+    } catch (e) { Toast.show(e.message || _t('No se pudo quitar la foto'), 'error'); }
   }
 
   /* ── Poblar datos del usuario ─────────────────────────────── */
@@ -93,7 +93,7 @@ const Account = (() => {
     document.getElementById('account-name-input').value  = me.name || '';
     document.getElementById('account-email-input').value = me.email || '';
 
-    const plan = (me.subscription === 'premium') ? 'Plan Premium' : 'Plan Free';
+    const plan = (me.subscription === 'premium') ? _t('Plan Premium') : _t('Plan Free');
     document.getElementById('account-plan-badge').textContent = plan;
 
     const verified = document.getElementById('account-verified-badge');
@@ -104,7 +104,7 @@ const Account = (() => {
     const hint = document.getElementById('account-pw-hint');
     if (me.has_password === false) {
       currentWrap.classList.add('hidden');
-      hint.textContent = 'Tu cuenta entró con Google. Aquí puedes crear una contraseña para entrar también con email.';
+      hint.textContent = _t('Tu cuenta entró con Google. Aquí puedes crear una contraseña para entrar también con email.');
     } else {
       currentWrap.classList.remove('hidden');
     }
@@ -121,7 +121,7 @@ const Account = (() => {
   async function saveProfile() {
     const out = document.getElementById('account-profile-msg');
     const name = document.getElementById('account-name-input').value.trim();
-    if (name.length < 2) return msg(out, 'El nombre debe tener al menos 2 caracteres', false);
+    if (name.length < 2) return msg(out, _t('El nombre debe tener al menos 2 caracteres'), false);
 
     const btn = document.getElementById('account-save-profile');
     btn.disabled = true;
@@ -131,9 +131,9 @@ const Account = (() => {
       render();
       if (typeof App !== 'undefined') App.updateCurrentUser({ name: me.name });
       SaveStatus.markClean('account-profile');
-      msg(out, 'Guardado', true);
+      msg(out, _t('Guardado'), true);
     } catch (e) {
-      msg(out, e.message || 'No se pudo guardar', false);
+      msg(out, e.message || _t('No se pudo guardar'), false);
     } finally {
       btn.disabled = false;
     }
@@ -146,8 +146,8 @@ const Account = (() => {
     const next    = document.getElementById('account-new-pw').value;
     const confirm = document.getElementById('account-confirm-pw').value;
 
-    if (next.length < 8) return msg(out, 'La nueva contraseña debe tener al menos 8 caracteres', false);
-    if (next !== confirm) return msg(out, 'Las contraseñas no coinciden', false);
+    if (next.length < 8) return msg(out, _t('La nueva contraseña debe tener al menos 8 caracteres'), false);
+    if (next !== confirm) return msg(out, _t('Las contraseñas no coinciden'), false);
 
     const btn = document.getElementById('account-save-pw');
     btn.disabled = true;
@@ -161,10 +161,10 @@ const Account = (() => {
       // Si era cuenta Google sin contraseña, ahora ya tiene → pedir la actual la próxima vez.
       if (me) me.has_password = true;
       render();
-      if (typeof Toast !== 'undefined') Toast.show('Contraseña actualizada', 'ok');
-      msg(out, 'Contraseña actualizada', true);
+      if (typeof Toast !== 'undefined') Toast.show(_t('Contraseña actualizada'), 'ok');
+      msg(out, _t('Contraseña actualizada'), true);
     } catch (e) {
-      msg(out, e.message || 'No se pudo cambiar', false);
+      msg(out, e.message || _t('No se pudo cambiar'), false);
     } finally {
       btn.disabled = false;
     }
@@ -176,14 +176,14 @@ const Account = (() => {
     const btn = document.getElementById('account-export-btn');
     btn.disabled = true;
     out.className = 'text-sm text-on-surface-variant';
-    out.textContent = 'Preparando el archivo…';
+    out.textContent = _t('Preparando el archivo…');
     try {
       const get = () => fetch('/v1/auth/me/export', { headers: { 'Authorization': 'Bearer ' + API.getToken() }, credentials: 'include' });
       let res = await get();
       if (res.status === 401 && await API.tryRefresh()) res = await get();
       if (!res.ok) {
         const j = await res.json().catch(() => null);
-        throw (j && j.error) || new Error('No se pudo preparar el archivo');
+        throw (j && j.error) || new Error(_t('No se pudo preparar el archivo'));
       }
       const blob = await res.blob();
       const name = (/filename="([^"]+)"/.exec(res.headers.get('Content-Disposition') || '') || [])[1] || 'mis-datos.json';
@@ -192,9 +192,9 @@ const Account = (() => {
       a.href = url; a.download = name;
       document.body.appendChild(a); a.click(); a.remove();
       setTimeout(() => URL.revokeObjectURL(url), 10000);
-      msg(out, 'Descargado', true);
+      msg(out, _t('Descargado'), true);
     } catch (e) {
-      msg(out, e.message || 'No se pudo preparar el archivo', false);
+      msg(out, e.message || _t('No se pudo preparar el archivo'), false);
     } finally {
       btn.disabled = false;
     }
@@ -230,10 +230,10 @@ const Account = (() => {
     const body = { confirm: document.getElementById('account-delete-confirm').checked };
     if (google) body.email = document.getElementById('account-delete-email').value.trim();
     else body.password = document.getElementById('account-delete-pw').value;
-    if (!window.confirm('Última comprobación: ¿eliminar tu cuenta y todos tus datos para siempre?')) return;
+    if (!window.confirm(_t('Última comprobación: ¿eliminar tu cuenta y todos tus datos para siempre?'))) return;
     btn.disabled = true;
     out.className = 'text-sm text-on-surface-variant';
-    out.textContent = 'Eliminando…';
+    out.textContent = _t('Eliminando…');
     try {
       await API.post('/auth/me/delete', body, { save: false });
       API.stopAutoRefresh();
@@ -241,11 +241,11 @@ const Account = (() => {
       if (window.SaveStatus) SaveStatus.reset();
       const card = document.getElementById('account-delete-form');
       if (card) {
-        card.innerHTML = '<p class="text-sm font-semibold text-on-surface" role="status">Tu cuenta se ha eliminado. Te hemos enviado un correo de confirmación. Gracias por haber usado EU Funding Studio.</p>';
+        card.innerHTML = '<p class="text-sm font-semibold text-on-surface" role="status">' + _t('Tu cuenta se ha eliminado. Te hemos enviado un correo de confirmación. Gracias por haber usado EU Funding Studio.') + '</p>';
       }
       setTimeout(() => { if (typeof App !== 'undefined') App.onLogout(); else location.replace('/'); }, 4000);
     } catch (e) {
-      msg(out, e.message || 'No se pudo eliminar la cuenta', false);
+      msg(out, e.message || _t('No se pudo eliminar la cuenta'), false);
       updateDeleteBtn();
     }
   }

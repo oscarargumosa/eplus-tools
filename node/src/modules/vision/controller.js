@@ -84,7 +84,7 @@ exports.removeReference = async (req, res, next) => {
 /* POST /:id/promote — semilla de Intake */
 exports.promote = async (req, res, next) => {
   try {
-    const r = await model.promote(req.params.id, req.user.id);
+    const r = await model.promote(req.params.id, req.user.id, req.lang);
     if (r.error === 'NOT_FOUND') return fail(res, 'NOT_FOUND', 'Visión no encontrada.', 404);
     res.json({ ok: true, data: r });
   } catch (e) { next(e); }
@@ -94,7 +94,8 @@ exports.promote = async (req, res, next) => {
 exports.generate = async (req, res, next) => {
   try {
     const callContext = (req.body && req.body.call_context) || {};
-    const r = await model.generateDraft(req.params.id, req.user.id, callContext);
+    // La IA redacta en el idioma de la interfaz (req.lang: 'es' | 'en').
+    const r = await model.generateDraft(req.params.id, req.user.id, callContext, req.lang);
     if (r.error === 'NOT_FOUND') return fail(res, 'NOT_FOUND', 'Visión no encontrada.', 404);
     res.json({ ok: true, data: r.draft });
   } catch (e) {

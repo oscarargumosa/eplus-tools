@@ -202,31 +202,98 @@ async function loadCountryTaxonomy() {
     }
     _countryTaxToIso = map;
   } catch (err) {
+    // Sin cachear: antes un fallo dejaba el mapa vacío hasta reiniciar.
+    // Mientras, el mismo mapa sale de la copia local.
     console.warn('[ors] country taxonomy fetch failed:', err.message);
-    _countryTaxToIso = {};
+    const [rows] = await pool.query(
+      `SELECT DISTINCT country_tax_id, country_code FROM entities
+        WHERE country_tax_id IS NOT NULL AND country_code IS NOT NULL`);
+    const map = {};
+    for (const r of rows) map[String(r.country_tax_id)] = r.country_code;
+    return map;
   }
   return _countryTaxToIso;
 }
 
+// Verificado contra el portal (29-abr-2026); antes estaban al revés.
+// Mismos valores que status_bucket de la tabla entities.
 const VALIDITY_LABEL = {
-  '42284353': 'certified',
-  '42284356': 'waiting',
+  '42284356': 'certified',
+  '42284353': 'in_review',
+  '42284359': 'declared',
+  '42284365': 'declared',
+  '42284362': 'invalid',
 };
 
-async function orsLookup(q) {
+/* Primero la copia local de ORS (tabla entities, ~288k, rastreo de abr-2026):
+   responde aunque la Comisión esté caída. ORS en vivo solo si aquí no sale
+   nada o si el usuario lo pide (remote) — p. ej. entidades dadas de alta
+   después del rastreo. Si ORS falla, se devuelve lo local + ors_unavailable
+   en vez de un error. */
+async function orsLookup(q, { remote = false } = {}) {
   const filter = (q || '').trim();
-  if (filter.length < 2) return [];
+  if (filter.length < 2) return { results: [], source: 'local' };
+  if (!remote) {
+    const local = await localOrsLookup(filter);
+    if (local.length) return { results: local, source: 'local' };
+  }
+  try {
+    return { results: await remoteOrsLookup(filter), source: 'ors' };
+  } catch (e) {
+    console.warn('[ors] live lookup failed:', e.message);
+    return { results: [], source: 'ors', ors_unavailable: true };
+  }
+}
+
+async function localOrsLookup(filter) {
+  const up = filter.toUpperCase();
+  let sql, params;
+  if (/^E\d{8}$/.test(up) || /^\d{9}$/.test(filter)) {
+    sql = `SELECT * FROM entities WHERE ${up.startsWith('E') ? 'oid' : 'pic'} = ? LIMIT 25`;
+    params = [up];
+  } else {
+    const prefix = filter.replace(/[\\%_]/g, '\\$&') + '%';
+    // FULLTEXT ignora palabras de <3 letras; el LIKE por el principio del nombre cubre "pe", "UE"...
+    const words = filter.split(/\s+/).map(w => w.replace(/[+\-<>()~*"@]/g, '')).filter(w => w.length >= 3);
+    const parts = [`SELECT oid FROM entities WHERE legal_name LIKE ?`];
+    params = [prefix];
+    if (words.length) {
+      parts.push(`SELECT oid FROM entities WHERE MATCH(legal_name, business_name, city) AGAINST (? IN BOOLEAN MODE)`);
+      params.push(words.map(w => `+${w}*`).join(' '));
+    }
+    sql = `SELECT e.* FROM (${parts.join(' UNION ')}) t JOIN entities e ON e.oid = t.oid
+           ORDER BY (e.legal_name LIKE ?) DESC,
+                    FIELD(e.status_bucket, 'certified', 'in_review', 'declared', 'invalid'), e.legal_name
+           LIMIT 25`;
+    params.push(prefix);
+  }
+  const [rows] = await pool.query(sql, params);
+  return rows.map(r => ({
+    oid:             r.oid,
+    pic:             r.pic || null,
+    legal_name:      trim(r.legal_name) || '',
+    business_name:   trim(r.business_name) || null,
+    country_iso:     r.country_code || null,
+    country_tax_id:  r.country_tax_id || null,
+    city:            trim(r.city) || null,
+    website:         trim(r.website) || null,
+    website_show:    trim(r.website_show) || null,
+    vat:             trim(r.vat) || null,
+    registration_no: trim(r.registration_no) || null,
+    validity_label:  r.status_bucket || null,
+    go_to_link:      trim(r.go_to_link) || null,
+  }));
+}
+
+async function remoteOrsLookup(filter) {
   const [tax] = await Promise.all([loadCountryTaxonomy()]);
   const res = await fetch(`${ORS_BASE}/ext-api/organisation-registration/simpleSearch`, {
     method: 'POST',
     headers: ORS_HEADERS,
     body: JSON.stringify({ filter }),
+    signal: AbortSignal.timeout(10000),
   });
-  if (!res.ok) {
-    const err = new Error(`ORS returned HTTP ${res.status}`);
-    err.status = 502;
-    throw err;
-  }
+  if (!res.ok) throw new Error(`ORS returned HTTP ${res.status}`);
   const raw = await res.json();
   const rows = Array.isArray(raw) ? raw : [];
   return rows.slice(0, 25).map(r => normaliseOrsRow(r, tax));

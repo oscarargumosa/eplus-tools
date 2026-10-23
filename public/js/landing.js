@@ -93,7 +93,7 @@
         video.removeAttribute('poster');
         espera.innerHTML = '<img class="video__icono" src="/img/marca/icono-lima.svg" alt="" width="56" height="56">' +
           '<button type="button" class="btn btn--lima" id="video-play">' +
-          '<svg class="ico ico--lleno" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 4.5v15l12-7.5z"/></svg>Ver el vídeo de bienvenida</button>';
+          '<svg class="ico ico--lleno" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 4.5v15l12-7.5z"/></svg>' + _t('Ver el vídeo de bienvenida') + '</button>';
         espera.querySelector('#video-play').addEventListener('click', function () {
           espera.hidden = true;
           video.focus();

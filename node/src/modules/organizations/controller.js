@@ -310,8 +310,8 @@ exports.deleteChild = async (req, res) => {
 exports.orsLookup = async (req, res) => {
   try {
     const q = (req.body?.q || req.query?.q || '').toString();
-    const results = await m.orsLookup(q);
-    ok(res, results);
+    const remote = req.body?.remote === true || req.query?.remote === '1';
+    ok(res, await m.orsLookup(q, { remote }));
   } catch (e) {
     err(res, e.message || 'ORS lookup failed', e.status || 500);
   }

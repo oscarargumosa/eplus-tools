@@ -53,7 +53,7 @@ const App = (() => {
     window.google.accounts.id.renderButton(
       document.querySelector('.g_id_signin'),
       { type: 'standard', shape: 'pill', theme: 'outline',
-        text: 'continue_with', size: 'large', locale: 'es',
+        text: 'continue_with', size: 'large', locale: I18N.lang,
         width: Math.max(200, Math.min(360, window.innerWidth - 96)) }   // cabe en la tarjeta a 390 px
     );
   }
@@ -179,7 +179,7 @@ const App = (() => {
     API.get('/intake/projects').then(projects => {
       const list = Array.isArray(projects) ? projects : (projects.data || []);
       if (!list.length) {
-        recentEl.innerHTML = '<p class="text-sm text-on-surface-variant text-center py-6">No projects yet. Start by designing your first project above.</p>';
+        recentEl.innerHTML = '<p class="text-sm text-on-surface-variant text-center py-6">' + _t('Aún no tienes proyectos. Empieza diseñando el primero aquí arriba.') + '</p>';
         return;
       }
       const esc = (v) => String(v == null ? '' : v).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
@@ -189,7 +189,7 @@ const App = (() => {
             <span class="material-symbols-outlined text-[#e9ff60] text-base">description</span>
           </div>
           <div class="flex-1 min-w-0">
-            <div class="text-sm font-bold text-on-surface truncate">${esc(p.name || 'Untitled')}</div>
+            <div class="text-sm font-bold text-on-surface truncate">${esc(p.name || _t('Sin título'))}</div>
             <div class="text-[10px] text-on-surface-variant">${esc(p.type || '')} &middot; ${esc(p.status || 'draft')}</div>
           </div>
           <span class="material-symbols-outlined text-on-surface-variant/30 text-sm">chevron_right</span>
@@ -211,8 +211,10 @@ const App = (() => {
       const hash = volver ? volver.slice(1) : location.hash;
       history.replaceState(null, '', '/' + (hash || ''));
     }
+    // Idioma de su cuenta (o guardar el que eligió antes de entrar).
+    if (window.I18N && I18N.syncAccount(user)) return;
     showApp();
-    Toast.show(`Welcome, ${user.name}!`, 'ok');
+    Toast.show(_t('¡Hola, {nombre}!', { nombre: user.name }), 'ok');
     // If user came in via ?sandbox=start, fire the sandbox flow now.
     if (typeof Sandbox !== 'undefined') Sandbox.resume();
   }
@@ -247,7 +249,7 @@ const App = (() => {
     // como "login" si el visitante venía del modo invitado).
     const logoutBtn = document.getElementById('btn-logout');
     if (logoutBtn) {
-      logoutBtn.title = 'Sign out';
+      logoutBtn.title = _t('Cerrar sesión');
       const ic = logoutBtn.querySelector('.material-symbols-outlined');
       if (ic) ic.textContent = 'logout';
     }
@@ -355,9 +357,9 @@ const App = (() => {
     box.setAttribute('role', 'status');
     box.className = 'fixed top-20 left-1/2 -translate-x-1/2 z-[70] max-w-lg w-[calc(100%-32px)] bg-white border border-secondary-fixed/60 shadow-xl rounded-2xl p-5 flex gap-3 items-start';
     box.innerHTML = `<span class="material-symbols-outlined text-primary text-3xl">celebration</span>
-      <div class="flex-1"><p class="font-bold text-primary">Tu cuenta está confirmada</p>
-      <p class="text-sm text-on-surface-variant mt-1">Te hemos enviado un correo de bienvenida. ¡Nos vemos dentro!</p></div>
-      <button type="button" aria-label="Cerrar" class="text-on-surface-variant hover:text-primary"><span class="material-symbols-outlined">close</span></button>`;
+      <div class="flex-1"><p class="font-bold text-primary">${_t('Tu cuenta está confirmada')}</p>
+      <p class="text-sm text-on-surface-variant mt-1">${_t('Te hemos enviado un correo de bienvenida. ¡Nos vemos dentro!')}</p></div>
+      <button type="button" aria-label="${_t('Cerrar')}" class="text-on-surface-variant hover:text-primary"><span class="material-symbols-outlined">close</span></button>`;
     box.querySelector('button').addEventListener('click', () => box.remove());
     document.body.appendChild(box);
     setTimeout(() => box.remove(), 15000);
@@ -457,7 +459,7 @@ const App = (() => {
     if (currentRoute === 'intake' && route !== 'intake') {
       if (typeof Intake !== 'undefined' && Intake.hasUnsavedChanges && Intake.hasUnsavedChanges()
           && !(window.SaveStatus && SaveStatus.hasUnsaved())) {
-        const leave = window.confirm('Tienes cambios sin guardar en Intake. ¿Salir de todos modos?');
+        const leave = window.confirm(_t('Tienes cambios sin guardar en Diseñar. ¿Salir de todos modos?'));
         if (!leave) {
           // Revertir hash si lo cambió el usuario
           if (pushHash) location.hash = 'intake';
@@ -509,44 +511,44 @@ const App = (() => {
 
     // Update topbar title
     const titles = {
-      dashboard:            'Dashboard',
-      'account-profile':     'Perfil',
-      'account-org':         'Mi entidad',
-      'account-security':    'Seguridad',
-      'account-billing':     'Facturación',
-      'account-preferences': 'Preferencias',
-      'account-data':        'Tus datos',
-      'my-projects':    'Mis Proyectos',
-      'my-evaluations': 'Mis Evaluaciones',
-      create:           'Diseñar',
-      intake:           'Diseñar',
-      developer:        'Escribir',
-      master:           'Diagnóstico',
-      diagnose:         'Diagnóstico',
-      'import-proposal':'Importar proyecto',
-      calculator:       'Calculator',
-      planner:          'Planner',
-      evaluator:        'Evaluar',
-      budget:           'Presupuesto',
-      partners:         'Partners',
-      'my-documents':   'My Documents',
-      research:         'Research',
-      movilidades:      'Movilidades',
-      convocatorias:    'Convocatorias',
-      estadisticas:     'Estadísticas',
-      'eu-vision':      'EU Vision',
-      'my-org':         'Mi entidad',
-      organizations:    'Directorio',
-      shortlists:       'Mi Pool',
-      'atlas-stats':    'Atlas',
-      analysis:         'Análisis — Experiencia',
-      admin:            'Admin — Data E+',
-      'admin-users':    'Usuarios y accesos',
-      'admin-org-claims': 'Entidades reclamadas',
-      'admin-presentaciones': 'Presentaciones',
-      engagement:       'Engagement'
+      dashboard:            _t('Inicio'),
+      'account-profile':     _t('Perfil'),
+      'account-org':         _t('Mi entidad'),
+      'account-security':    _t('Seguridad'),
+      'account-billing':     _t('Facturación'),
+      'account-preferences': _t('Preferencias'),
+      'account-data':        _t('Tus datos'),
+      'my-projects':    _t('Mis Proyectos'),
+      'my-evaluations': _t('Mis Evaluaciones'),
+      create:           _t('Diseñar'),
+      intake:           _t('Diseñar'),
+      developer:        _t('Escribir'),
+      master:           _t('Diagnóstico'),
+      diagnose:         _t('Diagnóstico'),
+      'import-proposal':_t('Importar proyecto'),
+      calculator:       _t('Calculadora'),
+      planner:          _t('Planificador'),
+      evaluator:        _t('Evaluar'),
+      budget:           _t('Presupuesto'),
+      partners:         _t('Socios'),
+      'my-documents':   _t('Mis documentos'),
+      research:         _t('Research'),
+      movilidades:      _t('Movilidades'),
+      convocatorias:    _t('Convocatorias'),
+      estadisticas:     _t('Estadísticas'),
+      'eu-vision':      _t('EU Vision'),
+      'my-org':         _t('Mi entidad'),
+      organizations:    _t('Directorio'),
+      shortlists:       _t('Mi Pool'),
+      'atlas-stats':    _t('Atlas'),
+      analysis:         _t('Análisis — Experiencia'),
+      admin:            _t('Admin — Data E+'),
+      'admin-users':    _t('Usuarios y accesos'),
+      'admin-org-claims': _t('Entidades reclamadas'),
+      'admin-presentaciones': _t('Presentaciones'),
+      engagement:       _t('Engagement')
     };
-    document.getElementById('topbar-title').textContent = titles[route] || 'E+ Tools';
+    document.getElementById('topbar-title').textContent = titles[route] || 'EU Funding Studio';
 
     // Área cerrada: solo la pantalla beta, sin iniciar el módulo (no pide datos).
     if (lockedArea) return;
@@ -603,7 +605,7 @@ const App = (() => {
     if (!section) return;
     if (activeProject) {
       section.classList.remove('hidden');
-      if (nameEl) nameEl.textContent = activeProject.name || activeProject.acronym || 'Proyecto';
+      if (nameEl) nameEl.textContent = activeProject.name || activeProject.acronym || _t('Proyecto');
     } else {
       section.classList.add('hidden');
       if (nameEl) nameEl.textContent = '';
@@ -694,7 +696,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   /* ── Google fallback ──────────────────────────────────────── */
   document.getElementById('google-fallback-btn')?.addEventListener('click', () => {
-    Toast.show('El acceso con Google no está disponible en este momento. Usa tu email y contraseña.', 'err');
+    Toast.show(_t('El acceso con Google no está disponible en este momento. Usa tu email y contraseña.'), 'err');
   });
 
   /* ── Sidebar nav links ────────────────────────────────────── */

@@ -1,11 +1,15 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" data-i18n>
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Política de privacidad — EU Funding Studio</title>
+<script src="/js/i18n.js"></script>
 <meta name="description" content="Cómo trata EU Funding Studio tus datos personales: quién es el responsable, para qué los usamos, con quién se comparten y cómo ejercer tus derechos.">
 <link rel="canonical" href="/privacidad">
+<link rel="alternate" hreflang="es" href="https://eufundingstudio.com/privacidad">
+<link rel="alternate" hreflang="en" href="https://eufundingstudio.com/en/privacidad">
+<link rel="alternate" hreflang="x-default" href="https://eufundingstudio.com/privacidad">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
@@ -27,6 +31,7 @@
   .legal a { color: #4312d8; }
   .legal li::marker { color: #b392f6; }
   .legal .resumen { background: #f2f2f2; padding: 20px 26px; border-radius: 20px; }
+  html[lang="es"] .solo-traduccion { display: none; }
   /* Resaltado lima (marcador) tras la palabra clave, como en las piezas del manual */
   .legal .resumen p > b:first-child { background: #e9ff60; color: #4312d8; padding: 1px 6px; font-style: italic; font-weight: 600; }
   @media (max-width: 600px) { .legal table, .legal thead, .legal tbody, .legal tr, .legal th, .legal td { display: block; } .legal thead { display: none; } .legal td { border: 0; padding: 4px 0; } .legal tr { border-bottom: 1px solid #d6d3dc; padding: 10px 0; } }
@@ -41,7 +46,7 @@
     <a class="efs-topbar__brand" href="/" aria-label="EU Funding Studio — Inicio">
       <img class="efs-topbar__logo" src="/img/marca/logo-horizontal-blanco.svg" alt="" width="206" height="22">
     </a>
-    <nav class="efs-topbar__nav" id="efs-topbar-nav" aria-label="Primary">
+    <nav class="efs-topbar__nav" id="efs-topbar-nav" aria-label="Menú principal">
       <ul class="efs-topbar__menu">
         <li><a href="/recursos/">Recursos</a></li>
         <li><a href="/academia">Academia</a></li>
@@ -55,6 +60,10 @@
       </ul>
     </nav>
     <div class="efs-topbar__cta">
+      <div class="efs-lang" role="group" aria-label="Idioma">
+        <a href="?lang=es" data-lang="es" hreflang="es" lang="es" translate="no" title="Español">ES</a>
+        <a href="?lang=en" data-lang="en" hreflang="en" lang="en" translate="no" title="English">EN</a>
+      </div>
       <a id="topbar-cta-back" class="efs-topbar__login" href="/entrar">Iniciar sesión</a>
       <a id="topbar-cta-account" class="efs-topbar__account" href="/#account-profile" style="display:none;" title="Mi cuenta">
         <span class="efs-avatar" data-efs-avatar aria-hidden="true"></span>
@@ -70,25 +79,27 @@
 </header>
 
 <main class="legal">
-  <h1>Política de <em>privacidad</em></h1>
-  <p class="meta">EU Funding Studio · Última actualización: 15 de octubre de 2026</p>
+  <h1 data-i18n-html>Política de <em>privacidad</em></h1>
+  <p class="meta">EU Funding Studio · Última actualización: 23 de octubre de 2026</p>
+  <!-- Solo en la versión traducida (html[lang] distinto de es) -->
+  <p class="meta solo-traduccion">Traducción de cortesía: si hay alguna diferencia, prevalece la versión en español.</p>
 
   <div class="resumen">
-    <p><b>En resumen:</b> usamos tus datos para darte acceso a la plataforma, guardar tu trabajo y escribirte sobre tu cuenta.
+    <p data-i18n-html><b>En resumen:</b> usamos tus datos para darte acceso a la plataforma, guardar tu trabajo y escribirte sobre tu cuenta.
     No vendemos tus datos. Puedes pedir una copia, corregirlos o borrar tu cuenta cuando quieras escribiendo a
     <a href="mailto:info@eufundingstudio.com">info@eufundingstudio.com</a>.</p>
   </div>
 
   <h2>1. Quién es el responsable</h2>
-  <p><b>Aventure LLC</b>, sociedad de responsabilidad limitada de Estados Unidos, que opera la plataforma EU Funding Studio.</p>
-  <p>Contacto para cualquier cuestión de privacidad: <a href="mailto:info@eufundingstudio.com">info@eufundingstudio.com</a>.</p>
+  <p data-i18n-html><b>Aventure LLC</b>, sociedad de responsabilidad limitada de Estados Unidos, que opera la plataforma EU Funding Studio.</p>
+  <p data-i18n-html>Contacto para cualquier cuestión de privacidad: <a href="mailto:info@eufundingstudio.com">info@eufundingstudio.com</a>.</p>
 
   <h2>2. Qué datos tratamos</h2>
   <ul>
-    <li><b>Datos de cuenta:</b> nombre, correo electrónico y contraseña (guardada cifrada; nunca la vemos). Si entras con Google, recibimos tu nombre y correo de Google. Guardamos también la fecha en que aceptas esta política.</li>
-    <li><b>Contenido que creas:</b> proyectos, socios, presupuestos, textos, documentos que subes, visiones y notas de la Academia.</li>
-    <li><b>Datos de tu entidad</b> si la registras o la reclamas: nombre, datos de contacto y documentación que aportes.</li>
-    <li><b>Datos de uso y seguridad:</b> dirección IP, fechas de acceso, acciones relevantes (inicio de sesión, borrados, exportaciones) y progreso en los cursos.</li>
+    <li data-i18n-html><b>Datos de cuenta:</b> nombre, correo electrónico y contraseña (guardada cifrada; nunca la vemos). Si entras con Google, recibimos tu nombre y correo de Google. Guardamos también la fecha en que aceptas esta política.</li>
+    <li data-i18n-html><b>Contenido que creas:</b> proyectos, socios, presupuestos, textos, documentos que subes, visiones y notas de la Academia.</li>
+    <li data-i18n-html><b>Datos de tu entidad</b> si la registras o la reclamas: nombre, datos de contacto y documentación que aportes.</li>
+    <li data-i18n-html><b>Datos de uso y seguridad:</b> dirección IP, fechas de acceso, acciones relevantes (inicio de sesión, borrados, exportaciones) y progreso en los cursos.</li>
   </ul>
   <p>El directorio de entidades se construye con información pública de organizaciones (programas europeos y sus webs). Los datos de contacto de las entidades solo se muestran a usuarios registrados.</p>
 
@@ -128,16 +139,16 @@
   </ul>
 
   <h2>6. Tus derechos</h2>
-  <p>Puedes pedir acceso a tus datos, corregirlos, borrarlos, limitar u oponerte a su uso y recibirlos en un formato portable.
+  <p data-i18n-html>Puedes pedir acceso a tus datos, corregirlos, borrarlos, limitar u oponerte a su uso y recibirlos en un formato portable.
   Escribe a <a href="mailto:info@eufundingstudio.com">info@eufundingstudio.com</a> desde el correo de tu cuenta; te responderemos en un plazo máximo de un mes.</p>
-  <p>Dos de ellos los puedes ejercer tú mismo, sin escribirnos, desde <b>Mi cuenta › Tus datos</b>: <b>«Descargar mis datos»</b> te da al momento
+  <p data-i18n-html>Dos de ellos los puedes ejercer tú mismo, sin escribirnos, desde <b>Mi cuenta › Tus datos</b>: <b>«Descargar mis datos»</b> te da al momento
   un archivo con todo lo que guardamos de ti, y <b>«Eliminar mi cuenta»</b> borra en el acto tu cuenta y tus datos (las entidades que hayas
   reclamado se quedan sin dueño y los registros de seguridad se conservan sin nada que te identifique).</p>
-  <p>Si crees que no hemos tratado bien tus datos, puedes reclamar ante la autoridad de protección de datos de tu país; en España, la
+  <p data-i18n-html>Si crees que no hemos tratado bien tus datos, puedes reclamar ante la autoridad de protección de datos de tu país; en España, la
   <a href="https://www.aepd.es" rel="noopener">Agencia Española de Protección de Datos</a>.</p>
 
   <h2>7. Cookies</h2>
-  <p>Usamos solo las cookies técnicas imprescindibles para mantener tu sesión iniciada y proteger el acceso. No usamos cookies de publicidad.</p>
+  <p>Usamos solo cookies técnicas: las imprescindibles para mantener tu sesión iniciada y proteger el acceso, y una que recuerda el idioma que eliges. No usamos cookies de publicidad.</p>
 
   <h2>8. Cambios</h2>
   <p>Si cambiamos esta política de forma importante, te avisaremos por correo o dentro de la plataforma.</p>

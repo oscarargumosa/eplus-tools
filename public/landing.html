@@ -1,11 +1,14 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" data-i18n>
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>EU Funding Studio — Diseña tu proyecto europeo antes de escribirlo</title>
 <meta name="description" content="Convocatorias, visión, actividades, socios, presupuesto y redacción en un mismo sitio, con el método FUN-DESIGN. Crea tu cuenta gratis.">
 <link rel="canonical" href="/">
+<link rel="alternate" hreflang="es" href="https://eufundingstudio.com/">
+<link rel="alternate" hreflang="en" href="https://eufundingstudio.com/en/">
+<link rel="alternate" hreflang="x-default" href="https://eufundingstudio.com/">
 <meta property="og:title" content="EU Funding Studio — Diseña tu proyecto europeo antes de escribirlo">
 <meta property="og:description" content="Nueve pasos y las herramientas para darlos: de la convocatoria a la propuesta. Crea tu cuenta gratis.">
 <meta property="og:type" content="website">
@@ -18,6 +21,7 @@
 <link rel="preload" href="/img/landing/convocatorias-1600.webp" as="image" type="image/webp"
       imagesrcset="/img/landing/convocatorias-800.webp 800w, /img/landing/convocatorias-1600.webp 1600w" imagesizes="(min-width: 980px) 640px, 100vw">
 <link rel="stylesheet" href="/css/landing.css">
+<script src="/js/i18n.js"></script>
 <!-- Antes de pintar (síncrono, en fichero aparte por la CSP) -->
 <script src="/js/landing-antes.js"></script>
 </head>
@@ -32,6 +36,10 @@
       <img src="/img/marca/logo-horizontal-blanco.svg" alt="EU Funding Studio" width="206" height="22">
     </a>
     <nav class="cab__acc" aria-label="Acceso">
+      <div class="efs-lang" role="group" aria-label="Idioma">
+        <a href="?lang=es" data-lang="es" hreflang="es" lang="es" translate="no" title="Español">ES</a>
+        <a href="?lang=en" data-lang="en" hreflang="en" lang="en" translate="no" title="English">EN</a>
+      </div>
       <a class="enlace-entrar" data-cta="entrar" data-donde="cabecera" href="/entrar">Entrar</a>
       <a class="btn btn--lima btn--sm" data-cta="registro" data-donde="cabecera" href="/crear-cuenta">Crear cuenta gratis</a>
     </nav>
@@ -126,73 +134,73 @@
 
       <ol class="letras">
         <li class="letra revela">
-          <span class="letra__l" aria-hidden="true">F</span>
-          <h3 class="letra__paso"><span class="sr">F · </span>Find the Opportunity</h3>
-          <p class="letra__esp">EUFinder</p>
+          <span class="letra__l" aria-hidden="true" translate="no">F</span>
+          <h3 class="letra__paso" translate="no"><span class="sr">F · </span>Find the Opportunity</h3>
+          <p class="letra__esp" translate="no">EUFinder</p>
           <p class="letra__her">En Studio: <b>Convocatorias</b></p>
           <p class="letra__txt">Convocatorias europeas, estatales y regionales abiertas o a punto de abrir. Filtros, búsqueda por significado con IA, chat con cada convocatoria y proyecto creado desde ella.</p>
           <span class="estado estado--si">Disponible</span>
         </li>
         <li class="letra revela">
-          <span class="letra__l" aria-hidden="true">U</span>
-          <h3 class="letra__paso"><span class="sr">U · </span>Unlock &amp; Share the Project Vision</h3>
-          <p class="letra__esp">EUUnlocker</p>
+          <span class="letra__l" aria-hidden="true" translate="no">U</span>
+          <h3 class="letra__paso" translate="no"><span class="sr">U · </span>Unlock &amp; Share the Project Vision</h3>
+          <p class="letra__esp" translate="no">EUUnlocker</p>
           <p class="letra__her">En Studio: <b>EU Vision</b></p>
           <p class="letra__txt">Un asistente de cinco pasos convierte tu idea en una visión: reto, público, socios que buscas y encaje europeo, con proyectos parecidos ya financiados. Falta el tablón donde otras entidades muestran interés.</p>
           <span class="estado estado--parte">En parte</span>
         </li>
         <li class="letra revela">
-          <span class="letra__l" aria-hidden="true">N</span>
-          <h3 class="letra__paso"><span class="sr">N · </span>Nail Down the Activities</h3>
-          <p class="letra__esp">EUDesigner</p>
+          <span class="letra__l" aria-hidden="true" translate="no">N</span>
+          <h3 class="letra__paso" translate="no"><span class="sr">N · </span>Nail Down the Activities</h3>
+          <p class="letra__esp" translate="no">EUDesigner</p>
           <p class="letra__her">En Studio: <b>Diseñar</b></p>
           <p class="letra__txt">Paquetes de trabajo y actividades con los costes unitarios de Erasmus+, tarifas por país y presupuesto que se calcula mientras diseñas. Con una entrevista guiada para arrancar.</p>
           <span class="estado estado--si">Disponible</span>
         </li>
         <li class="letra revela">
-          <span class="letra__l" aria-hidden="true">D</span>
-          <h3 class="letra__paso"><span class="sr">D · </span>Deliver the Concept Note</h3>
-          <p class="letra__esp">EUConnector</p>
+          <span class="letra__l" aria-hidden="true" translate="no">D</span>
+          <h3 class="letra__paso" translate="no"><span class="sr">D · </span>Deliver the Concept Note</h3>
+          <p class="letra__esp" translate="no">EUConnector</p>
           <p class="letra__her">Previsto: <b>nota conceptual e invitaciones</b></p>
           <p class="letra__txt">Una nota conceptual que se genera a partir de tu diseño, para presentar el proyecto a posibles socios, y las invitaciones con su seguimiento. Aún no está en Studio.</p>
           <span class="estado estado--pronto">Próximamente</span>
         </li>
         <li class="letra revela">
-          <span class="letra__l" aria-hidden="true">E</span>
-          <h3 class="letra__paso"><span class="sr">E · </span>Engage the Consortium</h3>
-          <p class="letra__esp">EULinker</p>
+          <span class="letra__l" aria-hidden="true" translate="no">E</span>
+          <h3 class="letra__paso" translate="no"><span class="sr">E · </span>Engage the Consortium</h3>
+          <p class="letra__esp" translate="no">EULinker</p>
           <p class="letra__her">En Studio: <b>Entidades</b></p>
           <p class="letra__txt">Directorio de más de 300.000 organizaciones, Atlas, y tu selección de socios con IA en lenguaje natural, que pasa al proyecto como consorcio. Los roles y el liderazgo de cada paquete los repartes tú.</p>
           <span class="estado estado--parte">En parte</span>
         </li>
         <li class="letra revela">
-          <span class="letra__l" aria-hidden="true">S</span>
-          <h3 class="letra__paso"><span class="sr">S · </span>Show the European Added Value</h3>
-          <p class="letra__esp">EUResearcher</p>
+          <span class="letra__l" aria-hidden="true" translate="no">S</span>
+          <h3 class="letra__paso" translate="no"><span class="sr">S · </span>Show the European Added Value</h3>
+          <p class="letra__esp" translate="no">EUResearcher</p>
           <p class="letra__her">En Studio: <b>Research y Mis documentos</b></p>
           <p class="letra__txt">Búsqueda de publicaciones científicas en OpenAlex y una biblioteca con tus documentos, que la IA consulta al escribir para que el valor añadido se apoye en evidencia.</p>
           <span class="estado estado--si">Disponible</span>
         </li>
         <li class="letra revela">
-          <span class="letra__l" aria-hidden="true">I</span>
-          <h3 class="letra__paso"><span class="sr">I · </span>Integrate the Delivery Plan</h3>
-          <p class="letra__esp">EUAuditor</p>
+          <span class="letra__l" aria-hidden="true" translate="no">I</span>
+          <h3 class="letra__paso" translate="no"><span class="sr">I · </span>Integrate the Delivery Plan</h3>
+          <p class="letra__esp" translate="no">EUAuditor</p>
           <p class="letra__her">En Studio: <b>Escribir › Cronograma y entregables</b></p>
           <p class="letra__txt">Tareas, Gantt, entregables e hitos propuestos con IA, un indicador por entregable, riesgos y comprobación con los criterios de la EACEA. Presupuesto exportable a la plantilla oficial.</p>
           <span class="estado estado--si">Disponible</span>
         </li>
         <li class="letra revela">
-          <span class="letra__l" aria-hidden="true">G</span>
-          <h3 class="letra__paso"><span class="sr">G · </span>Generate the Proposal</h3>
-          <p class="letra__esp">EUWriter</p>
+          <span class="letra__l" aria-hidden="true" translate="no">G</span>
+          <h3 class="letra__paso" translate="no"><span class="sr">G · </span>Generate the Proposal</h3>
+          <p class="letra__esp" translate="no">EUWriter</p>
           <p class="letra__her">En Studio: <b>Escribir</b></p>
           <p class="letra__txt">Redacción por secciones con todo lo diseñado detrás: generar, mejorar y revisar con nota estimada. Descarga del formulario en Word. También puedes importar una propuesta que ya tengas.</p>
           <span class="estado estado--si">Disponible</span>
         </li>
         <li class="letra revela">
-          <span class="letra__l" aria-hidden="true">N</span>
-          <h3 class="letra__paso"><span class="sr">N · </span>Nurture Future Opportunities</h3>
-          <p class="letra__esp">EUEvaluator</p>
+          <span class="letra__l" aria-hidden="true" translate="no">N</span>
+          <h3 class="letra__paso" translate="no"><span class="sr">N · </span>Nurture Future Opportunities</h3>
+          <p class="letra__esp" translate="no">EUEvaluator</p>
           <p class="letra__her">En Studio: <b>Diagnóstico</b></p>
           <p class="letra__txt">Revisa la propuesta en cuatro pasadas —también con la carta del evaluador— y te plantea cambios concretos que aceptas o descartas, con versiones para volver atrás.</p>
           <span class="estado estado--si">Disponible</span>

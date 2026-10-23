@@ -19,6 +19,8 @@ RUN npm ci --omit=dev --no-audit --no-fund && npm cache clean --force \
  && rm -rf node_modules/onnxruntime-node/bin/napi-v3/darwin node_modules/onnxruntime-node/bin/napi-v3/win32
 
 COPY . .
+# Idiomas: si falta alguna traducción al inglés, la imagen no se construye y no se despliega.
+RUN node scripts/i18n-check.js
 
 # La app corre como `node` (uid 1000). Solo puede escribir en:
 #   tmp/                     capítulos del máster (master/controller.js)

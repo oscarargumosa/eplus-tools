@@ -108,8 +108,10 @@ function scoreVec(c, qVec, qNorm) {
 }
 
 /* ── Palabras clave (respaldo sin índice) ───────────────────────── */
+// i18n-no-inicio (palabras vacías para la búsqueda, no se ven)
 const STOP = new Set(('the and for with from that this are was were have has los las del una por para con que como sobre entre ' +
   'unos unas este esta estos estas son sus mas donde cuando cual what which how who into your our their its').split(' '));
+// i18n-no-fin
 
 function keywords(q) {
   return [...new Set(String(q || '').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '')
@@ -196,7 +198,7 @@ function legacyChunkTexts(sid) {
 async function chatWithCall(sourceId, messages, options = {}) {
   const topChunks = options.topChunks || 8;
   const lastUser = [...messages].reverse().find(m => m.role === 'user');
-  if (!lastUser) throw Object.assign(new Error('No user message'), { status: 400 });
+  if (!lastUser) throw Object.assign(new Error('Escribe tu pregunta'), { status: 400 });
 
   // Optional: also include the structured summary if available
   const structuredPath = path.join(STRUCTURED_DIR, sourceId + '.json');
@@ -204,7 +206,9 @@ async function chatWithCall(sourceId, messages, options = {}) {
   if (SAFE_SID.test(sourceId) && fs.existsSync(structuredPath)) {
     try {
       const j = JSON.parse(fs.readFileSync(structuredPath, 'utf8'));
+      // i18n-no-inicio (prompt para la IA)
       structuredSummary = `\n\nRESUMEN ESTRUCTURADO DE LA CONVOCATORIA:\n${j.scope_summary_es || ''}\nPresupuesto total: ${j.budget_total_eur || 'no especificado'} EUR\nDeadline: ${j.deadline || 'no especificado'}\nMin socios: ${j.min_partners || 'no especificado'}`;
+      // i18n-no-fin
     } catch {}
   }
 
@@ -223,7 +227,8 @@ async function chatWithCall(sourceId, messages, options = {}) {
     scored = (legacyChunkTexts(sourceId) || []).map(c => ({ c, score: keywordScore(c.text, kws) }))
       .sort((a, b) => b.score - a.score || a.c.idx - b.c.idx).slice(0, topChunks);
     if (!scored.length && !structuredSummary) {
-      const e = new Error(`No vectors for ${sourceId}. Run scripts/embed-calls-local.js`);
+      console.warn(`[rag] No vectors for ${sourceId}. Run scripts/embed-calls-local.js`);
+      const e = new Error('Esta convocatoria aún no está preparada para el chat');
       e.status = 404; e.code = 'NO_VECTORS';
       throw e;
     }
@@ -235,7 +240,9 @@ async function chatWithCall(sourceId, messages, options = {}) {
   const meta = feed.get(sourceId) || {};
   const title = meta.title || sourceId;
 
-  const system = `Eres un experto en la convocatoria EU "${title}" (${sourceId}). Responde en español de forma directa y útil para alguien que quiere preparar una propuesta.
+  // i18n-no-inicio (prompt para la IA; solo cambia el idioma de la respuesta)
+  const answerLang = options.lang === 'en' ? 'inglés' : 'español';
+  const system = `Eres un experto en la convocatoria EU "${title}" (${sourceId}). Responde en ${answerLang} de forma directa y útil para alguien que quiere preparar una propuesta.
 
 Reglas estrictas:
 - Basa tu respuesta SÓLO en los fragmentos del documento oficial proporcionados.
@@ -246,6 +253,7 @@ Reglas estrictas:
 FRAGMENTOS DEL DOCUMENTO OFICIAL:
 
 ${ctx || '(sin fragmentos)'}`;
+  // i18n-no-fin
 
   // Historial acotado: todo viaja en un único prompt al puente
   const formattedMessages = messages

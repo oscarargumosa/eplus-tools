@@ -9,6 +9,18 @@
    ═══════════════════════════════════════════════════════════════ */
 
 let _client = null;
+const { tl, isLang } = require('./i18n');
+
+/* Idioma de los correos a una persona: el que eligió en la interfaz
+   (users.ui_lang). Sin elegir, inglés, como la app (utils/i18n.js). */
+async function langForEmail(to, lang) {
+  if (isLang(lang)) return lang;
+  try {
+    const db = require('./db');
+    const [[u]] = await db.query('SELECT ui_lang FROM users WHERE email = ? LIMIT 1', [String(to || '').toLowerCase().trim()]);
+    return u && isLang(u.ui_lang) ? u.ui_lang : 'en';
+  } catch { return 'en'; }
+}
 
 function getClient() {
   if (_client) return _client;
@@ -70,12 +82,12 @@ async function sendEmail({ to, subject, html, text }) {
 /* Plantilla común (manual de marca EU Funding Studio, oct-2026): cabecera azul #4312d8 con el
    logo en PNG (los SVG no se ven en Gmail/Outlook), titular azul en Poppins, botón en píldora
    lima con texto azul y pie crema. Tablas + estilos en línea para que aguante en Outlook. */
-const FONT = "Poppins,'Segoe UI',Helvetica,Arial,sans-serif";
+const FONT = "Poppins,'Segoe UI',Helvetica,Arial,sans-serif";   // i18n-no
 
-function shellTemplate({ title, intro, buttonLabel, buttonUrl, footer }) {
+function shellTemplate({ title, intro, buttonLabel, buttonUrl, footer, lang = 'es' }) {
   const logo = `${appUrl()}/img/marca/logo-horizontal-blanco-correo.png`;
   return `<!doctype html>
-<html lang="es">
+<html lang="${lang}">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -101,7 +113,7 @@ function shellTemplate({ title, intro, buttonLabel, buttonUrl, footer }) {
             </td></tr>
           </table>
           <div style="font-family:${FONT};font-size:13px;color:#55577a;line-height:1.5;">
-            O copia este enlace en tu navegador:<br>
+            ${tl(lang, 'O copia este enlace en tu navegador:')}<br>
             <span style="color:#4312d8;word-break:break-all;">${buttonUrl}</span>
           </div>` : ''}
           ${footer ? `<div style="margin-top:28px;padding-top:20px;border-top:1px solid #d6d3dc;font-family:${FONT};font-size:13px;color:#55577a;line-height:1.5;">${footer}</div>` : ''}
@@ -116,68 +128,78 @@ function shellTemplate({ title, intro, buttonLabel, buttonUrl, footer }) {
 </html>`;
 }
 
-async function sendVerificationEmail({ to, name, token }) {
+async function sendVerificationEmail({ to, name, token, lang }) {
+  const L = await langForEmail(to, lang);
   const url = `${appUrl()}/verify-email?token=${encodeURIComponent(token)}`;
   const first = String(name || '').trim().split(/\s+/)[0] || '';
+  const hola = first ? tl(L, 'Hola, {nombre}', { nombre: first }) : tl(L, 'Hola');
   const html = shellTemplate({
-    title: 'Confirma tu email',
-    intro: `Hola${first ? ' ' + escHtml(first) : ''},<br><br>Gracias por crear tu cuenta en EU Funding Studio. Confirma tu dirección de correo para activarla.`,
-    buttonLabel: 'Confirmar mi email',
+    lang: L,
+    title: tl(L, 'Confirma tu email'),
+    intro: `${escHtml(hola)},<br><br>${tl(L, 'Gracias por crear tu cuenta en EU Funding Studio. Confirma tu dirección de correo para activarla.')}`,
+    buttonLabel: tl(L, 'Confirmar mi email'),
     buttonUrl: url,
-    footer: 'El enlace caduca en 24 horas. Si no has creado ninguna cuenta, puedes ignorar este correo.'
+    footer: tl(L, 'El enlace caduca en 24 horas. Si no has creado ninguna cuenta, puedes ignorar este correo.')
   });
-  const text = `Hola${first ? ' ' + first : ''},
+  const text = `${hola},
 
-Gracias por crear tu cuenta en EU Funding Studio. Confirma tu correo entrando en:
+${tl(L, 'Gracias por crear tu cuenta en EU Funding Studio. Confirma tu correo entrando en:')}
 
 ${url}
 
-El enlace caduca en 24 horas. Si no has creado ninguna cuenta, puedes ignorar este correo.`;
-  return sendEmail({ to, subject: 'Confirma tu email — EU Funding Studio', html, text });
+${tl(L, 'El enlace caduca en 24 horas. Si no has creado ninguna cuenta, puedes ignorar este correo.')}`;
+  return sendEmail({ to, subject: tl(L, 'Confirma tu email — EU Funding Studio'), html, text });
 }
 
-async function sendPasswordResetEmail({ to, name, token }) {
+async function sendPasswordResetEmail({ to, name, token, lang }) {
+  const L = await langForEmail(to, lang);
   const url = `${appUrl()}/reset-password?token=${encodeURIComponent(token)}`;
   const first = String(name || '').trim().split(/\s+/)[0] || '';
+  const hola = first ? tl(L, 'Hola, {nombre}', { nombre: first }) : tl(L, 'Hola');
   const html = shellTemplate({
-    title: 'Cambia tu contraseña',
-    intro: `Hola${first ? ' ' + escHtml(first) : ''},<br><br>Hemos recibido una petición para cambiar la contraseña de tu cuenta. Pulsa el botón para elegir una nueva.`,
-    buttonLabel: 'Elegir nueva contraseña',
+    lang: L,
+    title: tl(L, 'Cambia tu contraseña'),
+    intro: `${escHtml(hola)},<br><br>${tl(L, 'Hemos recibido una petición para cambiar la contraseña de tu cuenta. Pulsa el botón para elegir una nueva.')}`,
+    buttonLabel: tl(L, 'Elegir nueva contraseña'),
     buttonUrl: url,
-    footer: 'El enlace caduca en 1 hora. Si no lo has pedido tú, ignora este correo: tu contraseña no cambia.'
+    footer: tl(L, 'El enlace caduca en 1 hora. Si no lo has pedido tú, ignora este correo: tu contraseña no cambia.')
   });
-  const text = `Hola${first ? ' ' + first : ''},
+  const text = `${hola},
 
-Hemos recibido una petición para cambiar la contraseña de tu cuenta. Entra en este enlace para elegir una nueva:
+${tl(L, 'Hemos recibido una petición para cambiar la contraseña de tu cuenta. Entra en este enlace para elegir una nueva:')}
 
 ${url}
 
-El enlace caduca en 1 hora. Si no lo has pedido tú, ignora este correo.`;
-  return sendEmail({ to, subject: 'Cambia tu contraseña — EU Funding Studio', html, text });
+${tl(L, 'El enlace caduca en 1 hora. Si no lo has pedido tú, ignora este correo.')}`;
+  return sendEmail({ to, subject: tl(L, 'Cambia tu contraseña — EU Funding Studio'), html, text });
 }
 
 /* ── Alta nueva (regla del ecosistema: correo a la persona + aviso a Óscar) ── */
-async function sendWelcomeEmail({ to, name }) {
+async function sendWelcomeEmail({ to, name, lang }) {
+  const L = await langForEmail(to, lang);
   const first = String(name || '').trim().split(/\s+/)[0] || '';
   const url = appUrl();
+  const title = first ? tl(L, 'Te damos la bienvenida, {nombre}', { nombre: first }) : tl(L, 'Te damos la bienvenida');
   const html = shellTemplate({
-    title: `Te damos la bienvenida${first ? ', ' + escHtml(first) : ''}`,
-    intro: `Tu cuenta de <b>EU Funding Studio</b> ya está creada.<br><br>
-      Desde hoy puedes buscar convocatorias, encontrar socios en el directorio de entidades europeas
-      y diseñar tus proyectos paso a paso, con ayuda en cada sección.<br><br>
-      Nos vemos dentro.`,
-    buttonLabel: 'Entrar en EU Funding Studio',
+    lang: L,
+    title: escHtml(title),
+    intro: tl(L, 'Tu cuenta de <b>EU Funding Studio</b> ya está creada.') + '<br><br>' +
+      tl(L, 'Desde hoy puedes buscar convocatorias, encontrar socios en el directorio de entidades europeas y diseñar tus proyectos paso a paso, con ayuda en cada sección.') + '<br><br>' +
+      tl(L, 'Nos vemos dentro.'),
+    buttonLabel: tl(L, 'Entrar en EU Funding Studio'),
     buttonUrl: url,
-    footer: 'Recibes este correo porque acabas de crear una cuenta en EU Funding Studio. Si no has sido tú, escríbenos a <a href="mailto:info@eufundingstudio.com">info@eufundingstudio.com</a> y la cerramos.'
+    footer: tl(L, 'Recibes este correo porque acabas de crear una cuenta en EU Funding Studio. Si no has sido tú, escríbenos a {correo} y la cerramos.',
+      { correo: '<a href="mailto:info@eufundingstudio.com">info@eufundingstudio.com</a>' })
   });
-  const text = `Te damos la bienvenida${first ? ', ' + first : ''}.
+  const text = `${title}.
 
-Tu cuenta de EU Funding Studio ya está creada. Entra aquí: ${url}
+${tl(L, 'Tu cuenta de EU Funding Studio ya está creada. Entra aquí: {url}', { url })}
 
-Nos vemos dentro.`;
-  return sendEmail({ to, subject: 'Tu cuenta de EU Funding Studio está lista', html, text });
+${tl(L, 'Nos vemos dentro.')}`;
+  return sendEmail({ to, subject: tl(L, 'Tu cuenta de EU Funding Studio está lista'), html, text });
 }
 
+// i18n-no-inicio — avisos internos para el equipo: siempre en español.
 async function sendNewUserNotice({ user, via }) {
   const to = process.env.NEW_USER_NOTIFY_EMAIL || 'oscarargumosa@gmail.com';
   const html = shellTemplate({
@@ -189,15 +211,18 @@ async function sendNewUserNotice({ user, via }) {
     text: `Nueva alta: ${user.name} <${user.email}> (vía ${via})` });
 }
 
+// i18n-no-fin
+
 /* Correo de bienvenida + aviso. Nunca lanza: si falla, la cuenta ya está creada. */
 async function onNewUser(user, via) {
-  try { await sendWelcomeEmail({ to: user.email, name: user.name }); }
+  try { await sendWelcomeEmail({ to: user.email, name: user.name, lang: user.ui_lang }); }
   catch (e) { console.warn('[alta] bienvenida no enviada:', e.message); }
   try { await sendNewUserNotice({ user, via }); }
   catch (e) { console.warn('[alta] aviso no enviado:', e.message); }
 }
 
 /* ── Fase beta (utils/areas.js): solicitud de acceso y acceso concedido ── */
+// i18n-no-inicio — aviso interno para el equipo: en español.
 async function sendAccessRequestNotice({ user, areaLabel, message }) {
   const to = process.env.NEW_USER_NOTIFY_EMAIL || 'oscarargumosa@gmail.com';
   const msg = String(message || '').trim();
@@ -213,61 +238,74 @@ async function sendAccessRequestNotice({ user, areaLabel, message }) {
     text: `Solicitud de acceso beta a ${areaLabel}: ${user.name} <${user.email}>${msg ? `\n\n${msg}` : ''}\n\nRevisar: ${appUrl()}/#admin-users` });
 }
 
-async function sendAreaGrantedEmail({ to, name, areaLabel, path }) {
+// i18n-no-fin
+
+async function sendAreaGrantedEmail({ to, name, areaLabel, path, lang }) {
+  const L = await langForEmail(to, lang);
   const first = String(name || '').trim().split(/\s+/)[0] || '';
   const url = appUrl() + (path || '/');
+  const area = tl(L, areaLabel);
+  const hola = first ? tl(L, 'Hola, {nombre}', { nombre: first }) : tl(L, 'Hola');
   const html = shellTemplate({
-    title: `Ya tienes acceso a ${escHtml(areaLabel)}`,
-    intro: `Hola${first ? ' ' + escHtml(first) : ''}:<br><br>
-      Te hemos abierto <b>${escHtml(areaLabel)}</b> en <b>EU Funding Studio</b>. Ya puedes usarla con tu cuenta de siempre.<br><br>
-      Gracias por probar Studio en esta fase beta: lo que nos cuentes nos ayuda a mejorarlo.`,
-    buttonLabel: `Entrar en ${escHtml(areaLabel)}`,
+    lang: L,
+    title: escHtml(tl(L, 'Ya tienes acceso a {area}', { area })),
+    intro: `${escHtml(hola)}:<br><br>
+      ${tl(L, 'Te hemos abierto <b>{area}</b> en <b>EU Funding Studio</b>. Ya puedes usarla con tu cuenta de siempre.', { area: escHtml(area) })}<br><br>
+      ${tl(L, 'Gracias por probar Studio en esta fase beta: lo que nos cuentes nos ayuda a mejorarlo.')}`,
+    buttonLabel: escHtml(tl(L, 'Entrar en {area}', { area })),
     buttonUrl: url,
-    footer: 'Recibes este correo porque pediste acceso o porque el equipo de EU Funding Studio te lo ha dado. ¿Dudas? Escríbenos a <a href="mailto:info@eufundingstudio.com">info@eufundingstudio.com</a>.'
+    footer: tl(L, 'Recibes este correo porque pediste acceso o porque el equipo de EU Funding Studio te lo ha dado. ¿Dudas? Escríbenos a {correo}.',
+      { correo: '<a href="mailto:info@eufundingstudio.com">info@eufundingstudio.com</a>' })
   });
-  return sendEmail({ to, subject: `Ya tienes acceso a ${areaLabel} en EU Funding Studio`, html,
-    text: `Hola${first ? ' ' + first : ''}:\n\nYa tienes acceso a ${areaLabel} en EU Funding Studio. Entra aquí: ${url}` });
+  return sendEmail({ to, subject: tl(L, 'Ya tienes acceso a {area} en EU Funding Studio', { area }), html,
+    text: `${hola}:\n\n${tl(L, 'Ya tienes acceso a {area} en EU Funding Studio. Entra aquí: {url}', { area, url })}` });
 }
 
 /* ── Entidades reclamadas: resultado de la revisión de la documentación ── */
-async function sendOrgClaimReviewEmail({ to, name, orgName, decision, note }) {
+async function sendOrgClaimReviewEmail({ to, name, orgName, decision, note, lang }) {
+  const L = await langForEmail(to, lang);
   const first = String(name || '').trim().split(/\s+/)[0] || '';
   const url = `${appUrl()}/#account-org`;
   const ok = decision === 'verified';
-  const title = ok ? 'Tu entidad ya está verificada' : 'No hemos podido verificar tu entidad';
-  const intro = `Hola${first ? ' ' + escHtml(first) : ''}:<br><br>` + (ok
-    ? `Hemos revisado la documentación de <b>${escHtml(orgName)}</b>. Su ficha ya lleva el sello <b>«Verificada»</b> en el directorio de EU Funding Studio.`
-    : `Hemos revisado la documentación de <b>${escHtml(orgName)}</b> y no hemos podido verificarla.` +
-      (note ? `<br><br>Motivo: <i>${escHtml(note)}</i>` : '') +
-      '<br><br>Puedes subir otro documento desde «Mi entidad» y lo revisaremos de nuevo.');
+  const hola = first ? tl(L, 'Hola, {nombre}', { nombre: first }) : tl(L, 'Hola');
+  const title = ok ? tl(L, 'Tu entidad ya está verificada') : tl(L, 'No hemos podido verificar tu entidad');
+  const org = `<b>${escHtml(orgName)}</b>`;
+  const intro = `${escHtml(hola)}:<br><br>` + (ok
+    ? tl(L, 'Hemos revisado la documentación de {entidad}. Su ficha ya lleva el sello <b>«Verificada»</b> en el directorio de EU Funding Studio.', { entidad: org })
+    : tl(L, 'Hemos revisado la documentación de {entidad} y no hemos podido verificarla.', { entidad: org }) +
+      (note ? `<br><br>${tl(L, 'Motivo:')} <i>${escHtml(note)}</i>` : '') +
+      '<br><br>' + tl(L, 'Puedes subir otro documento desde «Mi entidad» y lo revisaremos de nuevo.'));
   const html = shellTemplate({
-    title, intro, buttonLabel: 'Ir a Mi entidad', buttonUrl: url,
-    footer: 'Recibes este correo porque reclamaste esta entidad en EU Funding Studio. ¿Dudas? Escríbenos a <a href="mailto:info@eufundingstudio.com">info@eufundingstudio.com</a>.'
+    lang: L,
+    title, intro, buttonLabel: tl(L, 'Ir a Mi entidad'), buttonUrl: url,
+    footer: tl(L, 'Recibes este correo porque reclamaste esta entidad en EU Funding Studio. ¿Dudas? Escríbenos a {correo}.',
+      { correo: '<a href="mailto:info@eufundingstudio.com">info@eufundingstudio.com</a>' })
   });
-  const subject = ok ? `«${orgName}» ya está verificada en EU Funding Studio` : `Revisión de la documentación de «${orgName}»`;
+  const subject = ok
+    ? tl(L, '«{entidad}» ya está verificada en EU Funding Studio', { entidad: orgName })
+    : tl(L, 'Revisión de la documentación de «{entidad}»', { entidad: orgName });
   return sendEmail({ to, subject, html,
-    text: `${title}: ${orgName}.${!ok && note ? `\nMotivo: ${note}` : ''}\n\n${url}` });
+    text: `${title}: ${orgName}.${!ok && note ? `\n${tl(L, 'Motivo:')} ${note}` : ''}\n\n${url}` });
 }
 
 /* ── Cuenta eliminada (RGPD, desde «Mi cuenta › Tus datos») ──
    Se manda después de borrar: el nombre y el email vienen del llamador. */
-async function sendAccountDeletedEmail({ to, name }) {
+async function sendAccountDeletedEmail({ to, name, lang }) {
+  // La cuenta ya no existe: el idioma llega del llamador (sin él, inglés).
+  const L = await langForEmail(to, lang);
   const first = String(name || '').trim().split(/\s+/)[0] || '';
+  const hola = first ? tl(L, 'Hola, {nombre}', { nombre: first }) : tl(L, 'Hola');
+  const cuerpo = tl(L, 'Tal como pediste, hemos eliminado tu cuenta de EU Funding Studio y los datos asociados: tus proyectos, presupuestos, visiones, documentos y fotos. Las entidades que habías reclamado quedan sin dueño y sus documentos de reclamación se han borrado.');
+  const volver = tl(L, 'Si quieres volver, puedes crear una cuenta nueva cuando quieras.');
+  const noFuiste = tl(L, 'Si no has sido tú quien ha pedido eliminar la cuenta, escríbenos cuanto antes a {email}.', { email: 'info@eufundingstudio.com' });
   const html = shellTemplate({
-    title: 'Tu cuenta se ha eliminado',
-    intro: `Hola${first ? ' ' + escHtml(first) : ''},<br><br>
-      Tal como pediste, hemos eliminado tu cuenta de <b>EU Funding Studio</b> y los datos asociados:
-      tus proyectos, presupuestos, visiones, documentos y fotos. Las entidades que habías reclamado
-      quedan sin dueño y sus documentos de reclamación se han borrado.<br><br>
-      Si quieres volver, puedes crear una cuenta nueva cuando quieras.`,
-    footer: 'Si no has sido tú quien ha pedido eliminar la cuenta, escríbenos cuanto antes a <a href="mailto:info@eufundingstudio.com">info@eufundingstudio.com</a>.'
+    lang: L,
+    title: tl(L, 'Tu cuenta se ha eliminado'),
+    intro: `${escHtml(hola)},<br><br>${escHtml(cuerpo)}<br><br>${escHtml(volver)}`,
+    footer: escHtml(noFuiste)
   });
-  const text = `Hola${first ? ' ' + first : ''},
-
-Tal como pediste, hemos eliminado tu cuenta de EU Funding Studio y los datos asociados: tus proyectos, presupuestos, visiones, documentos y fotos. Las entidades que habías reclamado quedan sin dueño y sus documentos de reclamación se han borrado.
-
-Si no has sido tú, escríbenos cuanto antes a info@eufundingstudio.com.`;
-  return sendEmail({ to, subject: 'Tu cuenta de EU Funding Studio se ha eliminado', html, text });
+  const text = `${hola},\n\n${cuerpo}\n\n${noFuiste}`;
+  return sendEmail({ to, subject: tl(L, 'Tu cuenta de EU Funding Studio se ha eliminado'), html, text });
 }
 
 module.exports = {

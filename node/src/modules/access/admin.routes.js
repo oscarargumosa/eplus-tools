@@ -75,6 +75,15 @@ router.put('/users/:userId/areas/:area', h(async req => {
   return { user_id: userId, area, enabled: false, changed: r.revoked };
 }));
 
+// Interruptor «De casa»: { interno: true|false }. Solo afecta a Engagement.
+router.put('/users/:userId/interno', h(async req => {
+  const userId = userIdParam(req);
+  const on = !!(req.body && req.body.interno);
+  const r = await m.setInterno(userId, on);
+  if (r.changed) audit(req, 'user.interno', { targetType: 'user', targetId: userId, meta: { interno: on } });
+  return { user_id: userId, interno: on, changed: r.changed };
+}));
+
 router.post('/requests/:id/approve', h(async req => {
   const id = requestIdParam(req);
   const pending = await m.getPendingRequest(id);
