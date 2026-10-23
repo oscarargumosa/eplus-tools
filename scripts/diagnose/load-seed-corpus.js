@@ -3,8 +3,11 @@
 //
 // Usage: node scripts/diagnose/load-seed-corpus.js
 //
-// Expected layout (see data/seed_evaluator_letters/README.md):
-//   data/seed_evaluator_letters/{program_code}/{filename}
+// Las cartas son de propuestas reales de terceros: NO van en el repo (es público).
+// Carpeta: EVALUATOR_SEED_DIR, por defecto node/private/seed/evaluator_letters
+// (en el contenedor, el volumen /data/eplus-tools/private/seed/evaluator_letters).
+// Estructura (ver el README.md de esa carpeta):
+//   <EVALUATOR_SEED_DIR>/{program_code}/{filename}
 
 require('dotenv').config();
 const path = require('path');
@@ -12,7 +15,7 @@ const { v4: uuidv4 } = require('uuid');
 const pool = require('../../node/src/utils/db');
 const { parseLetterFromFile } = require('../../node/src/modules/diagnose/parser');
 
-// ─── Metadata table (mirrors data/seed_evaluator_letters/README.md) ─────────
+// ─── Metadata table (mirrors <EVALUATOR_SEED_DIR>/README.md) ─────────
 const SEED = [
   {
     program_code: 'cove_horizon_2025',
@@ -71,7 +74,8 @@ const SEED = [
   },
 ];
 
-const SEED_DIR = path.join(__dirname, '..', '..', 'data', 'seed_evaluator_letters');
+const SEED_DIR = path.resolve(process.env.EVALUATOR_SEED_DIR
+  || path.join(__dirname, '..', '..', 'node', 'private', 'seed', 'evaluator_letters'));
 
 async function findExistingLetter(conn, programUuid, proposalNumber, filename) {
   if (proposalNumber) {

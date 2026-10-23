@@ -1,8 +1,13 @@
 /**
  * Carga (o actualiza) un curso de la Academia desde su JSON.
  *
- *   node scripts/academia/import-course.js data/academia/ecosistema-erasmus.json \
+ *   node scripts/academia/import-course.js ecosistema-erasmus.json \
  *        [--status=draft|published|hidden] [--access=open|enrolled]
+ *
+ * El JSON lleva las respuestas correctas de los tests: NO va en el repo (es
+ * público). Se busca tal cual y, si no está, en ACADEMIA_DATA_DIR (por
+ * defecto node/private/seed/academia; en el contenedor, el volumen
+ * /data/eplus-tools/private/seed/academia).
  *
  * Es idempotente: curso, módulos y lecciones se casan por slug/número y
  * conservan su id, así que el progreso de los alumnos no se pierde. Si cambian
@@ -30,7 +35,10 @@ function stable(v) {
 const hash = v => crypto.createHash('sha256').update(JSON.stringify(stable(v))).digest('hex');
 
 (async () => {
-  const course = JSON.parse(fs.readFileSync(path.resolve(file), 'utf8'));
+  const dataDir = path.resolve(process.env.ACADEMIA_DATA_DIR
+    || path.join(__dirname, '..', '..', 'node', 'private', 'seed', 'academia'));
+  const src = fs.existsSync(path.resolve(file)) ? path.resolve(file) : path.join(dataDir, file);
+  const course = JSON.parse(fs.readFileSync(src, 'utf8'));
   const conn = await mysql.createConnection({
     host: process.env.DB_HOST, port: parseInt(process.env.DB_PORT || '3306', 10),
     user: process.env.DB_USER, password: process.env.DB_PASS, database: process.env.DB_NAME,

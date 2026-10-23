@@ -11,7 +11,12 @@ la identidad visual, la de Studio (`DESIGN.md`).
 - **API:** `/v1/academia/*` → `node/src/modules/academia/` (`model.js` tiene todas las reglas).
 - **Certificado público:** `/academia/certificado/<serial>` (verificación + imprimir a PDF).
 - **BD:** `migrations/127_academia_cursos.sql` (tablas `academia_*`).
-- El revisor interno de contenidos (`academy.html`, `/v1/academy`) es otra cosa y sigue igual.
+- El revisor interno de contenidos (`/v1/academy`, solo admin) es otra cosa. Su página
+  `public/academy.html` se quitó el 23-oct-2026 (no se usaba y se podía abrir sin cuenta);
+  si hace falta: `git show 03c9cfbb805:public/academy.html`.
+- **Medios** (portada, pósters, dossieres PDF): en `/data/eplus-tools/media/`, los sirve
+  nginx en `/media/`. Son privados: la API los devuelve con enlace firmado
+  (`node/src/utils/media-links.js`, con el bloque de nginx en su cabecera).
 
 ## Reglas (las mismas que Emociona)
 
@@ -32,9 +37,13 @@ trigger que lo impida (con binlog activo, crear triggers exige SUPER en producci
 
 ## Cargar o actualizar un curso
 
+El JSON del curso lleva las respuestas correctas de los tests, así que **no va en el
+repo** (es público): vive en `ACADEMIA_DATA_DIR`, por defecto `node/private/seed/academia`
+(en el servidor, `/data/eplus-tools/private/seed/academia`, que el contenedor ve ahí).
+
 ```bash
-python3 scripts/academia/build_eco_from_moodle.py      # Moodle curso 3 → data/academia/ecosistema-erasmus.json
-node scripts/academia/import-course.js data/academia/ecosistema-erasmus.json --status=published --access=open
+python3 scripts/academia/build_eco_from_moodle.py      # Moodle curso 3 → $ACADEMIA_DATA_DIR/ecosistema-erasmus.json
+node scripts/academia/import-course.js ecosistema-erasmus.json --status=published --access=open
 ```
 
 `import-course.js` es idempotente y conserva los ids (el progreso no se pierde). Si
