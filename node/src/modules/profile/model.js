@@ -241,4 +241,55 @@ async function wizardSeen(userId) {
   await db.query('UPDATE users SET profile_wizard_at = COALESCE(profile_wizard_at, NOW()) WHERE id = ?', [userId]);
 }
 
-module.exports = { HttpError, STEPS, me, save, wizardSeen, normPhone };
+/* Buscador de lugares para el paso «Dónde estás» (Photon, de OpenStreetMap: gratis,
+   sin clave, pensado para buscar mientras se escribe). Solo pueblos, ciudades y barrios.
+   Respuestas guardadas 24 h en memoria para no repetir preguntas. */
+const PHOTON_URL = 'https://photon.komoot.io/api/';
+const placesCache = new Map();   // clave → { at, rows }
+const PLACES_TTL = 24 * 60 * 60 * 1000;
+
+async function places(q, lat, lng) {
+  const query = text(q, 80);
+  if (query.length < 2) return [];
+  const bias = Number.isFinite(lat) && Number.isFinite(lng) && Math.abs(lat) <= 90 && Math.abs(lng) <= 180
+    ? { lat: lat.toFixed(1), lng: lng.toFixed(1) } : null;
+  const key = query.toLowerCase() + (bias ? `@${bias.lat},${bias.lng}` : '');
+  const hit = placesCache.get(key);
+  if (hit && Date.now() - hit.at < PLACES_TTL) return hit.rows;
+
+  const params = new URLSearchParams({ q: query, limit: '8', osm_tag: 'place' });
+  ['city', 'locality', 'district'].forEach(l => params.append('layer', l));
+  if (bias) { params.set('lat', bias.lat); params.set('lon', bias.lng); }
+  let json;
+  try {
+    const res = await fetch(PHOTON_URL + '?' + params, {
+      headers: { 'User-Agent': 'EUFundingStudio/1.0 (https://eufundingstudio.com; info@eufundingstudio.com)' },
+      signal: AbortSignal.timeout(6000),
+    });
+    if (!res.ok) throw new Error('HTTP ' + res.status);
+    json = await res.json();
+  } catch (e) {
+    console.warn('[profile] places:', e.message);
+    fail(502, 'PLACES_UNAVAILABLE', 'El buscador de lugares no responde. Marca tu punto en el mapa.');
+  }
+  const seen = new Set();
+  const rows = [];
+  for (const f of (json.features || [])) {
+    const pr = f.properties || {};
+    const [plng, plat] = (f.geometry && f.geometry.coordinates) || [];
+    if (!pr.name || !Number.isFinite(plat) || !Number.isFinite(plng)) continue;
+    const detail = [pr.city && pr.city !== pr.name ? pr.city : null, pr.county && pr.county !== pr.city ? pr.county : null, pr.state]
+      .filter(Boolean).filter((v, i, a) => a.indexOf(v) === i).slice(0, 2).join(', ');
+    const country = pr.countrycode ? String(pr.countrycode).toUpperCase() : null;
+    const k = `${pr.name}|${detail}|${country}`;
+    if (seen.has(k)) continue;
+    seen.add(k);
+    rows.push({ name: pr.name, detail, country, lat: Number(plat.toFixed(5)), lng: Number(plng.toFixed(5)), kind: pr.type === 'city' ? 'city' : 'local' });
+    if (rows.length >= 6) break;
+  }
+  if (placesCache.size > 2000) placesCache.clear();
+  placesCache.set(key, { at: Date.now(), rows });
+  return rows;
+}
+
+module.exports = { HttpError, STEPS, me, save, wizardSeen, normPhone, places };

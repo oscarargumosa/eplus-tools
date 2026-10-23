@@ -439,59 +439,103 @@ const Perfil = (() => {
       },
 
       location(el) {
-        const org = data.orgs.find(o => o.id === data.organization_id) || data.orgs[0];
         let point = data.location ? { lat: data.location.lat, lng: data.location.lng } : null;
-        let fromOrg = data.location && data.location.source === 'organization';
+        const countryName = code => (data.catalog.countries.find(c => c.key === code) || {}).label || code || '';
         el.innerHTML = `
-          <p class="text-sm text-on-surface-variant mb-3">${_t('Pulsa en el mapa la ciudad o zona donde trabajas. Guardamos un punto aproximado (a 1 km), nunca tu dirección, y nadie lo ve hasta que decidas mostrarlo en la Comunidad.')}</p>
-          ${org && org.location ? `<button type="button" data-p-orgloc class="inline-flex items-center gap-1.5 mb-3 px-3 py-1.5 rounded-full text-xs font-semibold text-primary border border-primary/30 hover:bg-primary/5"><span class="material-symbols-outlined text-[16px]">apartment</span>${_t('Usar la ciudad de mi entidad')}</button>` : ''}
-          <div data-p-map class="w-full h-72 rounded-xl overflow-hidden bg-surface-container-low border border-outline-variant/30"></div>
-          <div class="grid sm:grid-cols-2 gap-3 mt-3">
-            <label class="block"><span class="block text-xs font-semibold text-on-surface mb-1">${_t('Ciudad o zona (opcional)')}</span>
-              <input data-p-label maxlength="120" value="${esc(data.location ? data.location.label : '')}" class="w-full border border-outline-variant rounded-lg px-3 py-2 text-sm bg-white focus:outline-none focus:ring-2 focus:ring-primary" /></label>
-            <label class="block"><span class="block text-xs font-semibold text-on-surface mb-1">${_t('País')}</span>
-              <select data-p-country class="w-full border border-outline-variant rounded-lg px-2 py-2 text-sm bg-white focus:outline-none focus:ring-2 focus:ring-primary">
-                <option value="">—</option>${data.catalog.countries.map(c => `<option value="${c.key}" ${c.key === (data.country || guessCountry()) ? 'selected' : ''}>${esc(c.label)}</option>`).join('')}
-              </select></label>
-          </div>`;
+          <p class="text-sm text-on-surface-variant mb-3">${_t('Busca tu ciudad o pueblo, o pulsa directamente en el mapa. Guardamos un punto aproximado (a 1 km), nunca tu dirección, y nadie lo ve hasta que decidas mostrarlo en la Comunidad.')}</p>
+          <div class="relative mb-3">
+            <span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-on-surface-variant text-[20px]">search</span>
+            <input data-p-label type="text" autocomplete="off" maxlength="120" value="${esc(data.location ? data.location.label : '')}"
+              placeholder="${_t('Busca tu ciudad o pueblo')}" aria-label="${_t('Busca tu ciudad o pueblo')}"
+              class="w-full pl-10 pr-3 py-2.5 text-sm border border-outline-variant rounded-lg bg-white focus:outline-none focus:ring-2 focus:ring-primary" />
+            <div data-p-places role="listbox" class="hidden absolute left-0 right-0 top-full mt-1 z-10 bg-white rounded-lg shadow-xl border border-outline-variant/30 max-h-64 overflow-y-auto divide-y divide-outline-variant/20"></div>
+          </div>
+          <div data-p-map class="w-full h-64 sm:h-72 rounded-xl overflow-hidden bg-surface-container-low border border-outline-variant/30"></div>
+          <label class="block mt-3"><span class="block text-xs font-semibold text-on-surface mb-1">${_t('País')}</span>
+            <select data-p-country class="w-full sm:w-1/2 border border-outline-variant rounded-lg px-2 py-2 text-sm bg-white focus:outline-none focus:ring-2 focus:ring-primary">
+              <option value="">—</option>${data.catalog.countries.map(c => `<option value="${c.key}" ${c.key === (data.country || guessCountry()) ? 'selected' : ''}>${esc(c.label)}</option>`).join('')}
+            </select></label>`;
         const holder = el.querySelector('[data-p-map]');
+        const input = el.querySelector('[data-p-label]');
+        const list = el.querySelector('[data-p-places]');
+        const countrySel = el.querySelector('[data-p-country]');
         let marker = null;
-        const place = (ll, fly) => {
+        const place = (ll, zoom) => {
           point = { lat: ll.lat, lng: ll.lng };
           if (!map) return;
           if (!marker) {
             marker = new maplibregl.Marker({ color: '#e11d48', draggable: true }).setLngLat([ll.lng, ll.lat]).addTo(map);
-            marker.on('dragend', () => { const p = marker.getLngLat(); point = { lat: p.lat, lng: p.lng }; fromOrg = false; });
+            marker.on('dragend', () => { const p = marker.getLngLat(); point = { lat: p.lat, lng: p.lng }; });
           } else marker.setLngLat([ll.lng, ll.lat]);
-          if (fly) map.flyTo({ center: [ll.lng, ll.lat], zoom: Math.max(map.getZoom(), 9) });
+          if (zoom) map.flyTo({ center: [ll.lng, ll.lat], zoom });
         };
         const boot = () => {
           if (!holder.isConnected) return;
           if (typeof maplibregl === 'undefined') return setTimeout(boot, 200);
-          const start = point || (org && org.location) || null;
           map = new maplibregl.Map({
             container: holder, style: STYLE_URL, attributionControl: { compact: true },
-            center: start ? [start.lng, start.lat] : [10, 50], zoom: start ? 8 : 3.2,
+            center: point ? [point.lng, point.lat] : [10, 50], zoom: point ? 11 : 3.2,
           });
           map.addControl(new maplibregl.NavigationControl({ showCompass: false }), 'top-right');
-          map.on('click', e => { fromOrg = false; place(e.lngLat, false); });
-          if (point) place(point, false);
+          map.on('click', e => { closeList(); place(e.lngLat); });
+          if (point) place(point);
         };
         boot();
-        el.querySelector('[data-p-orgloc]')?.addEventListener('click', () => {
-          fromOrg = true;
-          place(org.location, true);
-          const lbl = el.querySelector('[data-p-label]');
-          if (!lbl.value && org.city) lbl.value = org.city;
-          if (org.country) el.querySelector('[data-p-country]').value = org.country;
+
+        // Buscador de lugares: escribes, eliges entre los que se llaman igual y el mapa va allí.
+        let seq = 0, timer = null, results = [], active = -1;
+        const closeList = () => { list.classList.add('hidden'); active = -1; };
+        const choose = r => {
+          closeList();
+          input.value = r.name;
+          if (r.country && countrySel.querySelector(`option[value="${r.country}"]`)) countrySel.value = r.country;
+          place({ lat: r.lat, lng: r.lng }, r.kind === 'city' ? 11 : 13);
+        };
+        const paintList = () => {
+          list.innerHTML = results.map((r, i) => `
+            <button type="button" role="option" data-i="${i}" class="w-full text-left px-4 py-2.5 hover:bg-lavender-soft ${i === active ? 'bg-lavender-soft' : ''}">
+              <span class="block text-sm font-semibold text-on-surface" translate="no">${esc(r.name)}</span>
+              <span class="block text-xs text-on-surface-variant" translate="no">${esc([r.detail, countryName(r.country)].filter(Boolean).join(' · '))}</span>
+            </button>`).join('');
+          list.querySelectorAll('[data-i]').forEach(b => b.addEventListener('click', () => choose(results[+b.dataset.i])));
+        };
+        input.addEventListener('input', () => {
+          clearTimeout(timer);
+          const q = input.value.trim();
+          if (q.length < 2) { closeList(); return; }
+          timer = setTimeout(async () => {
+            const my = ++seq;
+            list.classList.remove('hidden');
+            list.innerHTML = `<div class="px-4 py-3 text-sm text-on-surface-variant">${_t('Buscando…')}</div>`;
+            try {
+              const c = map ? map.getCenter() : null;
+              const qs = 'q=' + encodeURIComponent(q) + (c && map.getZoom() > 4 ? `&lat=${c.lat.toFixed(3)}&lng=${c.lng.toFixed(3)}` : '');
+              const r = await API.get('/profile/places?' + qs);
+              if (my !== seq) return;
+              results = r || []; active = -1;
+              if (!results.length) list.innerHTML = `<div class="px-4 py-3 text-sm text-on-surface-variant">${_t('No encontramos ese lugar. Prueba con otro nombre o pulsa en el mapa.')}</div>`;
+              else paintList();
+            } catch (e) {
+              if (my === seq) list.innerHTML = `<div class="px-4 py-3 text-sm text-error">${esc(e.message || _t('El buscador de lugares no responde. Marca tu punto en el mapa.'))}</div>`;
+            }
+          }, 350);
         });
+        input.addEventListener('keydown', e => {
+          if (list.classList.contains('hidden') || !results.length) return;
+          if (e.key === 'ArrowDown' || e.key === 'ArrowUp') {
+            e.preventDefault();
+            active = (active + (e.key === 'ArrowDown' ? 1 : -1) + results.length) % results.length;
+            paintList();
+          } else if (e.key === 'Enter') { e.preventDefault(); choose(results[Math.max(active, 0)]); }
+          else if (e.key === 'Escape') { e.stopPropagation(); closeList(); }
+        });
+        el.addEventListener('click', e => { if (!e.target.closest('[data-p-places]') && e.target !== input) closeList(); });
+
         return async () => {
-          if (!point) { Toast.show(_t('Pulsa en el mapa para marcar tu punto o pulsa «Omitir».'), 'error'); return false; }
-          const label = el.querySelector('[data-p-label]').value.trim();
-          const country = el.querySelector('[data-p-country]').value || null;
+          if (!point) { Toast.show(_t('Busca tu ciudad o pulsa en el mapa para marcar tu punto, o pulsa «Omitir».'), 'error'); return false; }
           data = await API.patch('/profile/me', {
-            country,
-            location: fromOrg ? { source: 'organization', label } : { lat: point.lat, lng: point.lng, label },
+            country: countrySel.value || null,
+            location: { lat: point.lat, lng: point.lng, label: input.value.trim() },
           });
         };
       },

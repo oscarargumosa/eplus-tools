@@ -1067,11 +1067,7 @@
   "¡Hecho! La entidad ya es tuya. Completa su ficha en Mi entidad cuando quieras.": "Done! The organisation is now yours. Complete its profile in My organisation whenever you like.",
   "Esa entidad ya tiene responsable. Pide una revisión en Mi entidad.": "That organisation already has a contact person. Ask for a review in My organisation.",
   "Elige tu entidad, marca «No pertenezco a ninguna entidad» o pulsa «Omitir».": "Choose your organisation, tick “I do not belong to any organisation” or press “Skip”.",
-  "Pulsa en el mapa la ciudad o zona donde trabajas. Guardamos un punto aproximado (a 1 km), nunca tu dirección, y nadie lo ve hasta que decidas mostrarlo en la Comunidad.": "Click on the map on the city or area where you work. We save an approximate point (within 1 km), never your address, and nobody sees it until you choose to show it in the Community.",
-  "Usar la ciudad de mi entidad": "Use my organisation’s city",
-  "Ciudad o zona (opcional)": "City or area (optional)",
   "País": "Country",
-  "Pulsa en el mapa para marcar tu punto o pulsa «Omitir».": "Click on the map to mark your point or press “Skip”.",
   "Tu cargo": "Your job title",
   "Por ejemplo: Coordinadora de proyectos europeos": "For example: European projects coordinator",
   "¿Qué haces en los proyectos?": "What do you do in projects?",
@@ -1162,5 +1158,11 @@
   "Jordania": "Jordan",
   "Líbano": "Lebanon",
   "Israel": "Israel",
-  "Palestina": "Palestine"
+  "Palestina": "Palestine",
+  "Busca tu ciudad o pueblo, o pulsa directamente en el mapa. Guardamos un punto aproximado (a 1 km), nunca tu dirección, y nadie lo ve hasta que decidas mostrarlo en la Comunidad.": "Search for your town or city, or click straight on the map. We save an approximate point (within 1 km), never your address, and nobody sees it until you choose to show it in the Community.",
+  "Busca tu ciudad o pueblo": "Search for your town or city",
+  "No encontramos ese lugar. Prueba con otro nombre o pulsa en el mapa.": "We could not find that place. Try another name or click on the map.",
+  "El buscador de lugares no responde. Marca tu punto en el mapa.": "The place search is not responding. Mark your point on the map.",
+  "Busca tu ciudad o pulsa en el mapa para marcar tu punto, o pulsa «Omitir».": "Search for your town or click on the map to mark your point, or press “Skip”.",
+  "Has buscado muchos lugares seguidos. Espera un momento.": "You have searched for many places in a row. Please wait a moment."
 }
