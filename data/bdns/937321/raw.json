@@ -1,0 +1,72 @@
+{
+  "id": 1138882,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "VILA-SECA",
+    "nivel3": "PATRONATO MUNICIPAL DE MUSICA DE VILA-SECA"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "937321",
+  "fechaRecepcion": "2026-10-22",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 20000,
+  "mrr": false,
+  "descripcion": "CONVOCATORIA PÚBLICA DE BECAS PARA LOS ALUMNOS DE LA ESCUELA MUNICIPAL Y EL CONSERVATORIO PROFESIONAL DE MUSICA DE VILA-SECA. CURSO 2026-2027.",
+  "descripcionLeng": "CONVOCATÒRIA PÚBLICA DE BEQUES PER ALS ALUMNES DE L'ESCOLA MUNICIPAL I EL CONSERVATORI PROFESSIONAL DE MÚSICA DE VILA-SECA. CURS 2026-2027",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "EDUCACIÓN",
+      "codigo": "Q"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES514 - Tarragona"
+    }
+  ],
+  "descripcionFinalidad": "Educación",
+  "descripcionBasesReguladoras": "CONVOCATORIA PÚBLICA DE BECAS PARA LOS ALUMNOS DE LA ESCUELA MUNICIPAL Y EL CONSERVATORIO PROFESIONAL DE MUSICA DE VILA-SECA. CURSO 2026-2027.",
+  "urlBasesReguladoras": "https://www.diputaciodetarragona.cat/ebop/index.php?op=dwn&tipus=i&data=20201006&anyp=2020&num=06906&v=i",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "A l'endemà de la publicació de la convocatòria al BOPT",
+  "textFin": "15 dies hàbils a partir de l'endemà de la publicació de la convocatòria al BOPT",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1542783,
+      "descripcion": "Documento de la convocatoria en lengua cooficial",
+      "nombreFic": "2026 Convocatoria Beques Català.pdf",
+      "long": 523794,
+      "datMod": "2026-10-22",
+      "datPublicacion": "2026-10-22"
+    },
+    {
+      "id": 1542782,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "2026 Convocatoria Becas Español.pdf",
+      "long": 266175,
+      "datMod": "2026-10-22",
+      "datPublicacion": "2026-10-22"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

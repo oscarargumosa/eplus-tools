@@ -1,0 +1,101 @@
+{
+  "identifier": "EUBA-EFSA-2027-FIP-01",
+  "ccm2Id": "52641786",
+  "callIdentifier": "EUBA-EFSA-2027-FIP-01",
+  "callTitle": "Support to the re-evaluation of approved food additives under Regulation (EU) No 257/2010",
+  "title": "Support to the re-evaluation of approved food additives under Regulation (EU) No 257/2010",
+  "programme": "EUBA",
+  "programmeCode": "45532249",
+  "programmePeriod": "2021 - 2027",
+  "status": "forthcoming",
+  "statusCode": "31094501",
+  "opening": "2026-10-22",
+  "deadline": "2027-01-28",
+  "deadlineModel": "single-stage",
+  "actionType": "EUBA Type of Action",
+  "actionCode": null,
+  "mgaCode": null,
+  "budget": {
+    "total_eur": 300000,
+    "by_year": {
+      "2027": 300000
+    },
+    "expected_grants": null,
+    "min_contribution_eur": null,
+    "max_contribution_eur": null
+  },
+  "keywords": [
+    "EUBA-EFSA-2027-FIP-01",
+    "EUBA-EFSA-2027-FIP-01"
+  ],
+  "crossCuttingPriorities": [],
+  "supportInfoText": "For help related to this call, please contact EFSAProcurement@efsa.europa.eu",
+  "submissionUrl": null,
+  "topicUrl": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/topic-details/EUBA-EFSA-2027-FIP-01",
+  "documents": [
+    {
+      "section": "2. Eligible countries",
+      "label": "https://efsa.my.site.com/competentorganisations/s/competentorganisation/CompetentOrganisation__c/00B1v000009LqfIEAS",
+      "url": "https://efsa.my.site.com/competentorganisations/s/competentorganisation/CompetentOrganisation__c/00B1v000009LqfIEAS",
+      "ext": "",
+      "is_downloadable": false
+    },
+    {
+      "section": "Call document and annexes:",
+      "label": "Call for proposals EUBA-EFSA-2026-FIP-01",
+      "url": "https://www.efsa.europa.eu/sites/default/files/documents/fin/call_for_proposals_euba-efsa-2026-fip-01.pdf",
+      "ext": ".pdf",
+      "is_downloadable": true
+    },
+    {
+      "section": "Call document and annexes:",
+      "label": "Draft Framework Partnership Agreement_EUBA-EFSA-2026-FIP-01",
+      "url": "https://www.efsa.europa.eu/sites/default/files/documents/fin/draft_framework_partnership_agreement_euba-efsa-2026-fip-01.pdf",
+      "ext": ".pdf",
+      "is_downloadable": true
+    },
+    {
+      "section": "Call document and annexes:",
+      "label": "Draft specific agreement_EUBA-EFSA-2026-FIP-01",
+      "url": "https://www.efsa.europa.eu/sites/default/files/documents/fin/draft_specific_agreement_euba-efsa-2026-fip-01.pdf",
+      "ext": ".pdf",
+      "is_downloadable": true
+    },
+    {
+      "section": "Additional documents:",
+      "label": "EU Financial Regulation 2024/2509",
+      "url": "https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=OJ:L_202402509",
+      "ext": "",
+      "is_downloadable": true
+    },
+    {
+      "section": "Additional documents:",
+      "label": "Rules for Legal Entity Validation, LEAR Appointment and Financial Capacity Assessment",
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/common/guidance/rules-lev-lear-fca_en.pdf",
+      "ext": ".pdf",
+      "is_downloadable": true
+    },
+    {
+      "section": "Additional documents:",
+      "label": "Funding & Tenders Portal Online Manual",
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/common/guidance/om_en.pdf",
+      "ext": ".pdf",
+      "is_downloadable": true
+    },
+    {
+      "section": "Additional documents:",
+      "label": "Funding & Tenders Portal Terms and Conditions",
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/common/ftp/tc_en.pdf",
+      "ext": ".pdf",
+      "is_downloadable": true
+    },
+    {
+      "section": "Additional documents:",
+      "label": "Funding & Tenders Portal Privacy Statement",
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/common/ftp/privacy-statement_en.pdf",
+      "ext": ".pdf",
+      "is_downloadable": true
+    }
+  ],
+  "fetchedAt": "2026-10-23T04:01:58.776Z"
+}

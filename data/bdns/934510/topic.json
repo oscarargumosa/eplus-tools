@@ -1,0 +1,65 @@
+{
+  "source": "bdns",
+  "source_id": "934510",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / PRAT DE LLOBREGAT, EL / AYUNTAMIENTO DE PRAT DE LLOBREGAT, EL",
+  "nuts_codes": [
+    "ES511"
+  ],
+  "nuts_primary": "ES511",
+  "title": "Convocatoria pública para la concesión de subvenciones del ámbito de personas con diversidad funcional para la adaptación de vehículos taxi para personas con movilidad reducida del Prat de Llobregat, año 2026",
+  "title_lang": "es",
+  "summary": "Servicios Sociales y Promoción Social",
+  "status": "open",
+  "publication_date": "2026-10-09",
+  "open_date": "2026-10-16",
+  "deadline": "2026-11-06",
+  "deadline_model": "single-stage",
+  "deadlines_extra": null,
+  "budget_total_eur": 30000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "88.1",
+      "descripcion": "Actividades de servicios sociales sin alojamiento para personas mayores o con discapacidad"
+    }
+  ],
+  "apply_url": "https://tramits.elprat.cat/tramits/ambit/42-subvencions",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/934510",
+  "documents": [
+    {
+      "label": "Documento de la convocatoria en lengua cooficial",
+      "url": null
+    },
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://bop.diba.cat/anunci/3576428/aprovacio-de-les-bases-per-a-la-concessio-de-subvencions-de-l-ambit-de-persones-amb-diversitat-funcional-per-a-l-adaptacio-de-vehicles-taxi-per-a-persones-amb-mobilitat-reduida-durant-el-periode-2024-2027-versio-en-cata",
+  "text_inicio": null,
+  "text_fin": null,
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-10-23T04:05:22.914Z"
+}

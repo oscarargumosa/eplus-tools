@@ -1,0 +1,96 @@
+{
+  "id": 1138894,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "GETAFE",
+    "nivel3": "AYUNTAMIENTO DE GETAFE"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "937333",
+  "fechaRecepcion": "2026-10-22",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 27000,
+  "mrr": false,
+  "descripcion": "AYUDAS A DEPORTISTAS INDIVIDUALES PARA EL EJERCICIO 2026",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Actividades deportivas",
+      "codigo": "93.1"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES300 - Madrid"
+    }
+  ],
+  "descripcionFinalidad": "Otras actuaciones de carácter económico",
+  "descripcionBasesReguladoras": "ORDENANZA GENERAL DE CONCESIÓN DE SUBVENCIONES",
+  "urlBasesReguladoras": "https://www.bocm.es/bocm/",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": "2026-10-30",
+  "fechaFinSolicitud": "2026-11-27",
+  "textInicio": "20 DIAS HABILES A PARTIR DE LA FECHA DE PUBLICACIÓN DEL EXTRACTO",
+  "textFin": "FIN DE 20 DÍAS HÁBILES A PARTIR DEL DÍA SIGUIENTE A LA PUBLICCIÓN DEL EXTRACTO",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1542816,
+      "descripcion": "Texto en castellano de la convocatoria",
+      "nombreFic": "Extracto_convocatoria_ayuda_a_deportistas_2026.pdf",
+      "long": 200662,
+      "datMod": "2026-10-22",
+      "datPublicacion": "2026-10-22"
+    },
+    {
+      "id": 1542817,
+      "descripcion": "Anexo I. Solicitud",
+      "nombreFic": "Anexo_I.pdf",
+      "long": 92801,
+      "datMod": "2026-10-22",
+      "datPublicacion": "2026-10-22"
+    },
+    {
+      "id": 1542820,
+      "descripcion": "Anexo II. Certificado",
+      "nombreFic": "Anexo_II.pdf",
+      "long": 50992,
+      "datMod": "2026-10-22",
+      "datPublicacion": "2026-10-22"
+    },
+    {
+      "id": 1542819,
+      "descripcion": "Anexo III. Ficha Terceros",
+      "nombreFic": "Anexo_III_FICHA_TERCEROS.pdf",
+      "long": 1756720,
+      "datMod": "2026-10-22",
+      "datPublicacion": "2026-10-22"
+    },
+    {
+      "id": 1542818,
+      "descripcion": "Anexo IV. Declaración Responsable",
+      "nombreFic": "Anexo_IV.pdf",
+      "long": 64142,
+      "datMod": "2026-10-22",
+      "datPublicacion": "2026-10-22"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

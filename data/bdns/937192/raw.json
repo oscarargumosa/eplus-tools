@@ -1,0 +1,80 @@
+{
+  "id": 1138753,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "AYALA/AIARA",
+    "nivel3": "AYUNTAMIENTO DE AYALA/AIARA"
+  },
+  "sedeElectronica": "https://udalenegoitza.araba.eus/aiara/web/inicioWebc.do?opcion=noreg&entidad=AYALA",
+  "codigoBDNS": "937192",
+  "fechaRecepcion": "2026-10-22",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 3000,
+  "mrr": false,
+  "descripcion": "Subvenciones por inserción de euskera en rotulación de comercio, hostelería y empresas de servicio de Ayala, año 2026.",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "HOSTELERÍA",
+      "codigo": "I"
+    },
+    {
+      "descripcion": "OTROS SERVICIOS",
+      "codigo": "T"
+    },
+    {
+      "descripcion": "TRANSPORTE Y ALMACENAMIENTO",
+      "codigo": "H"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES211 - Araba/Álava"
+    }
+  ],
+  "descripcionFinalidad": "Comercio, Turismo y Pymes",
+  "descripcionBasesReguladoras": "Bases reguladoras para la concesión de subvenciones por inserción de euskera en rotulación de comercio, hostelería y empresas de servicio de Ayala, año 2026.",
+  "urlBasesReguladoras": "https://aiarakoudala.eus/images/ORDENANZAS/Bases_reguladoras_para_la_concesin_de_subvenciones_por_insercin_de_euskera_en_rotulacin_de_hosteleria_comercio_y_empresas_de_servicio_de_Ayala_ao_2026.pdf",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "1 mes a partir de la publicación de las bases en el BOTHA",
+  "textFin": "1 mes a partir de la publicación de las bases en el BOTHA",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1542470,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "02. DECRETO_ALCALDIA 2026 - 642.-_Aprobacion_de_convocatoria_y_bases_de_subvenciones_por_insercion_de_euskera_en_rotulacón de comercios.pdf",
+      "long": 488818,
+      "datMod": "2026-10-22",
+      "datPublicacion": "2026-10-22"
+    },
+    {
+      "id": 1542471,
+      "descripcion": "solicitud",
+      "nombreFic": "3.05 SOLICITUD DE SUBVENCIÓN POR INSERCIÓN DE EUSKERA EN ROTULACIÓN.pdf",
+      "long": 504380,
+      "datMod": "2026-10-22",
+      "datPublicacion": "2026-10-22"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

@@ -1,0 +1,72 @@
+{
+  "id": 1138887,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "MONTMELÓ",
+    "nivel3": "AYUNTAMIENTO DE MONTMELÓ"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "937326",
+  "fechaRecepcion": "2026-10-22",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 2500,
+  "mrr": false,
+  "descripcion": "Convocatoria para la concesión de subvencions para el apoyo a deportistas en categoria individual y parejas residentes en el municipio de Montmeló para el año 2026",
+  "descripcionLeng": "Convocatòria per a la concessió de subvencions per al suport a esportistes en categoria individual i parelles residents al municipi de Montmeló per a l'any 2026",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Actividades deportivas",
+      "codigo": "93.1"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES511 - Barcelona"
+    }
+  ],
+  "descripcionFinalidad": "Otras Prestaciones económicas",
+  "descripcionBasesReguladoras": "Bases generals i específiques per l'obtenció de subvenció pel suport a esportistes en categoria individual i parelles, residents al municipi de Montmeló",
+  "urlBasesReguladoras": "http://bop.diba.cat/anunci/3314363/aprovacio-inicial-de-les-bases-per-a-la-concessio-de-subvencions-pel-suport-a-esportistes-residents-al-municipi-per a l-any-2022-ajuntament-de-montmelo",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": "2026-11-02",
+  "fechaFinSolicitud": "2026-11-20",
+  "textInicio": null,
+  "textFin": null,
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1542799,
+      "descripcion": "Documento de la convocatoria en lengua cooficial",
+      "nombreFic": "Convocatòria per a la concessió de subvencions per al suport a esportistes en categoria individual i parelles, residents al municipi de  Montmeló.docx",
+      "long": 90473,
+      "datMod": "2026-10-22",
+      "datPublicacion": "2026-10-22"
+    },
+    {
+      "id": 1542798,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "Convocatoria para la concesión de subvenciones para el apoyo a deportistas en categoria individual y parejas, residentes en el municipio deMontmeló.docx",
+      "long": 90475,
+      "datMod": "2026-10-22",
+      "datPublicacion": "2026-10-22"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

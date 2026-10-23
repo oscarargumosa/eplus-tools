@@ -1,0 +1,72 @@
+{
+  "id": 1138932,
+  "organo": {
+    "nivel1": "AUTONOMICA",
+    "nivel2": "GALICIA",
+    "nivel3": "CONSELLERÍA DE EMPLEO, COMERCIO Y EMIGRACIÓN"
+  },
+  "sedeElectronica": "https://sede.xunta.gal/portada",
+  "codigoBDNS": "937371",
+  "fechaRecepcion": "2026-10-22",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 2501000,
+  "mrr": false,
+  "descripcion": "CONVOCATORIA de la 2ª edición del año 2026 del Programa de dinamización e incentivación del consumo en los comercios minoristas de la Comunidad Autónoma de Galicia a través de los bonos Activa comercio (código de procedimiento CO301B).",
+  "descripcionLeng": "CONVOCATORIA da 2ª edición do ano 2026 do Programa de dinamización e incentivación do consumo nos comercios retallistas da Comunidade Autónoma de Galicia a través dos bonos Activa comercio (código de procedemento CO301B)",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Comercio al por menor",
+      "codigo": "47"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES11 - GALICIA"
+    }
+  ],
+  "descripcionFinalidad": "Comercio, Turismo y Pymes",
+  "descripcionBasesReguladoras": "Bases reguladoras para la concesión en el año 2026 de las ayudas del programa de dinamización e incentivación del consumo en los comercios minoristas de Galicia, a través de los Bonos Activa Comercio",
+  "urlBasesReguladoras": "https://www.xunta.gal/dog/Publicados/2026/20260326/AnuncioG0767-130326-0004_es.html",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "o día seguinte a publicación no DOG",
+  "textFin": "esgotamento do crédito",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1542918,
+      "descripcion": "Texto en otra lengua de la convocatoria",
+      "nombreFic": "CO301B-2026- 2ª edición bonos_gal_20261022_190800.pdf",
+      "long": 162823,
+      "datMod": "2026-10-22",
+      "datPublicacion": "2026-10-22"
+    },
+    {
+      "id": 1542917,
+      "descripcion": "Texto en castellano de la convocatoria",
+      "nombreFic": "CO301B-2026- 2ª edición bonos_es_20261022_190728.pdf",
+      "long": 170872,
+      "datMod": "2026-10-22",
+      "datPublicacion": "2026-10-22"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

@@ -1,0 +1,75 @@
+{
+  "id": 1138422,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "DELTEBRE",
+    "nivel3": "AYUNTAMIENTO DE DELTEBRE"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "936861",
+  "fechaRecepcion": "2026-10-21",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concesión directa - canónica",
+  "presupuestoTotal": 7900,
+  "mrr": false,
+  "descripcion": "ACUERDO DE LA JUNTA DE GOBIERNO LOCAL DEL AYUNTAMIENTO DE DELTEBRE, DE FECHA 21 DE OCTUBRE DE 2026 POR EL QUE SE APRUEBA LA MODIFICACIÓN DE LA CONVOCATORIA DE PREMIOS DEPORTE Y BIENESTAR 2026.",
+  "descripcionLeng": "ACORD DE LA JUNTA DE GOVERN LOCAL DE L'AJUNTAMENT DE DELTEBRE, DE DATA 21 D'OCTUBRE DE 2026 PEL QUAL S'APROVA LA MODIFICACIÓ DE LA CONVOCATÒRIA DE PREMIS ESPORT I BENESTAR 2026.",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    },
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "OTROS SERVICIOS",
+      "codigo": "T"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES514 - Tarragona"
+    }
+  ],
+  "descripcionFinalidad": "Cultura",
+  "descripcionBasesReguladoras": "Bases reguladoras de los premios Deporte y Bienestar.",
+  "urlBasesReguladoras": "https://www.dipta.cat/bopt/web/anuncio/164801/bases-reguladores-dels-premis-esport-i-benestar-aprovacio-definitiva-ajuntament-deltebre",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "A partir de la publicación de la convocatoria.",
+  "textFin": "El último día del mes siguiente a la publicación de la convocatoria.",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1541526,
+      "descripcion": "Documento de la convocatoria en lengua cooficial",
+      "nombreFic": "Modificació convocatòria premis esports i benestar 2026 II.pdf",
+      "long": 177355,
+      "datMod": "2026-10-21",
+      "datPublicacion": "2026-10-22"
+    },
+    {
+      "id": 1541524,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "Modificació convocatòria premis esports i benestar 2026 II.ca.es.pdf",
+      "long": 288869,
+      "datMod": "2026-10-21",
+      "datPublicacion": "2026-10-22"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

@@ -1,0 +1,100 @@
+[
+  {
+    "section": "1. Admissibility conditions: Proposal page limit and layout",
+    "label": "call document",
+    "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/imcap/wp-call/2027/call-fiche_imcap-2027-infome_en.pdf",
+    "ext": ".pdf",
+    "is_downloadable": true
+  },
+  {
+    "section": "5a. Evaluation and award: Submission and evaluation processes",
+    "label": "Online Manual",
+    "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/common/guidance/om_en.pdf",
+    "ext": ".pdf",
+    "is_downloadable": true
+  },
+  {
+    "section": "Call document and annexes:",
+    "label": "Standard application form (IMCAP)",
+    "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/imcap/temp-form/af/af_imcap_en.pdf",
+    "ext": ".pdf",
+    "is_downloadable": true
+  },
+  {
+    "section": "Call document and annexes:",
+    "label": "Detailed budget table (IMCAP)",
+    "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/imcap/temp-form/af/detailed-budget-table_imcap_en.xlsm",
+    "ext": ".xlsm",
+    "is_downloadable": true
+  },
+  {
+    "section": "Call document and annexes:",
+    "label": "IMCAP General MGA v1.0",
+    "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/imcap/agr-contr/mga_imcap_en.pdf",
+    "ext": ".pdf",
+    "is_downloadable": true
+  },
+  {
+    "section": "Call document and annexes:",
+    "label": "MGA - Annex 2A - EC unit travel costs",
+    "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/common/guidance/additional-information-on-unit-costs-and-contributions_en.pdf",
+    "ext": ".pdf",
+    "is_downloadable": true
+  },
+  {
+    "section": "Call document and annexes:",
+    "label": "Calculation EC unit travel costs",
+    "url": "https://commission.europa.eu/funding-and-tenders/procedures-guidelines-tenders/information-contractors-and-beneficiaries/calculate-unit-costs-eligible-travel-costs_en",
+    "ext": "",
+    "is_downloadable": false
+  },
+  {
+    "section": "Call document and annexes:",
+    "label": "Commission Decision (compulsory) unit costs for travel/subsistence/accomodation",
+    "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/common/guidance/unit-cost-decision-travel_en.pdf",
+    "ext": ".pdf",
+    "is_downloadable": true
+  },
+  {
+    "section": "Call document and annexes:",
+    "label": "IMCAP Impact Indicator",
+    "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/imcap/temp-form/report/communication-indicators-form_imcap_en.xlsx",
+    "ext": ".xlsx",
+    "is_downloadable": true
+  },
+  {
+    "section": "Call document and annexes:",
+    "label": "Detailed cost reporting table template",
+    "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/imcap/temp-form/report/detailed-cost-reporting-table_imcap_en.xlsm",
+    "ext": ".xlsm",
+    "is_downloadable": true
+  },
+  {
+    "section": "Call document and annexes:",
+    "label": "Periodic Report template",
+    "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/imcap/temp-form/report/periodic-report_imcap_en.pdf",
+    "ext": ".pdf",
+    "is_downloadable": true
+  },
+  {
+    "section": "Call document and annexes:",
+    "label": "Activities report template (Bimestrial report)",
+    "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/imcap/temp-form/report/activities-report_imcap_en.docx",
+    "ext": ".docx",
+    "is_downloadable": true
+  },
+  {
+    "section": "Additional documents:",
+    "label": "2021/2116",
+    "url": "https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=CELEX:32021R2116",
+    "ext": "",
+    "is_downloadable": true
+  },
+  {
+    "section": "Additional documents:",
+    "label": "EU Financial Regulation",
+    "url": "https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=OJ:L_202402509",
+    "ext": "",
+    "is_downloadable": true
+  }
+]

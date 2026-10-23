@@ -1,0 +1,69 @@
+{
+  "source": "bdns",
+  "source_id": "937059",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / ALCALÁ DEL RÍO / AYUNTAMIENTO DE ALCALÁ DEL RÍO",
+  "nuts_codes": [
+    "ES618"
+  ],
+  "nuts_primary": "ES618",
+  "title": "Convocatoria Concurso Elección del Cartel Anunciador de la Semana Santa en Alcalá de Rio del año 2027",
+  "title_lang": "es",
+  "summary": "Cultura",
+  "status": "open",
+  "publication_date": "2026-10-22",
+  "open_date": null,
+  "deadline": "2026-12-30",
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 600,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "S",
+      "descripcion": "ACTIVIDADES ARTÍSTICAS, DEPORTIVAS Y DE ENTRETENIMIENTO"
+    }
+  ],
+  "apply_url": null,
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/937059",
+  "documents": [
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    },
+    {
+      "label": "BOP 205 DE 22-10-2026 BOP 205 DE 22-10-2026 BASES REGULADORAS CONCURSO CARTEL SEMANA SANTA 2027",
+      "url": null
+    },
+    {
+      "label": "RESOLUCION 2026-1299 [Bases reguladoras Concurso Cartel Semana Santa 2027]",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://bopsevilla.dipusevilla.es/publica/buscador-anuncios/anuncio/Bases-del-concurso-del-cartel-anunciador-de-la-Semana-Santa-2027/",
+  "text_inicio": "día posterior a la publicación del extracto de la convocatoria en BOP",
+  "text_fin": null,
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-10-23T04:05:23.681Z"
+}

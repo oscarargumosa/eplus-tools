@@ -47,6 +47,13 @@
     },
     {
       "section": "Call document and annexes:",
+      "label": "Standard application form",
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/edf/temp-form/af/af_edip-and-usi_en.pdf",
+      "ext": ".pdf",
+      "is_downloadable": true
+    },
+    {
+      "section": "Call document and annexes:",
       "label": "Participant Info (EDIP and USI)",
       "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/edf/temp-form/af/participant-information_edip-and-usi_en.docx",
       "ext": ".docx",
@@ -123,5 +130,5 @@
       "is_downloadable": false
     }
   ],
-  "fetchedAt": "2026-10-21T04:06:28.636Z"
+  "fetchedAt": "2026-10-23T04:01:58.759Z"
 }

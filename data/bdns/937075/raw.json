@@ -1,0 +1,72 @@
+{
+  "id": 1138636,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "HUÉTOR VEGA",
+    "nivel3": "AYUNTAMIENTO DE HUÉTOR VEGA"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "937075",
+  "fechaRecepcion": "2026-10-22",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 30000,
+  "mrr": false,
+  "descripcion": "Extracto Convocatoria de las Bases Específicas de Subvenciones de concurrencia competitiva de la Línea 1 de Cultura del Ayuntamiento de Huétor Vega para el ejercicio 2026.",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "OTROS SERVICIOS",
+      "codigo": "T"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES614 - Granada"
+    }
+  ],
+  "descripcionFinalidad": "Cultura",
+  "descripcionBasesReguladoras": "Extracto Convocatoria de las Bases Específicas de Subvenciones de concurrencia competitiva de la Línea 1 de Cultura del Ayuntamiento de Huétor Vega para el ejercicio 2026.",
+  "urlBasesReguladoras": "SUBVENCIÓN CONCURRENCIA COMPETITIVA LÍNEA 1 CULTURA",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": "2026-10-29",
+  "fechaFinSolicitud": "2026-11-13",
+  "textInicio": null,
+  "textFin": null,
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1542093,
+      "descripcion": "BASES LÍNEA 1 CULTURA 2026",
+      "nombreFic": "20261014_Otros_BASES CULTURA-IGUALDAD-EDUCACIÓN 2026.pdf",
+      "long": 652986,
+      "datMod": "2026-10-22",
+      "datPublicacion": "2026-10-22"
+    },
+    {
+      "id": 1542092,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "20261022_Otros_EXTRACTO CONVOCATORIA BASES LINEA 1 CULTURA 2026.pdf",
+      "long": 276817,
+      "datMod": "2026-10-22",
+      "datPublicacion": "2026-10-22"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

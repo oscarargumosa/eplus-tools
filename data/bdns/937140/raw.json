@@ -1,0 +1,64 @@
+{
+  "id": 1138701,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "LENA",
+    "nivel3": "AYUNTAMIENTO DE LENA"
+  },
+  "sedeElectronica": "SEDE ELECTRÓNICA DEL AYUNTAMIENTO DE LENA",
+  "codigoBDNS": "937140",
+  "fechaRecepcion": "2026-10-22",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 10000,
+  "mrr": false,
+  "descripcion": "CONVOCATORIA PARA LA CONCESIÓN DE AYUDAS ECONÓMICAS MUNICIPALES PARA AFRONTAR OBLIGACIONES DERIVADAS DE LA TITULARIDAD DE LA VIVIENDA HABITUAL DURANTE EL EJERCICIO 2025",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "OTROS SERVICIOS",
+      "codigo": "T"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES12 - PRINCIPADO DE ASTURIAS"
+    }
+  ],
+  "descripcionFinalidad": "Servicios Sociales y Promoción Social",
+  "descripcionBasesReguladoras": "CONVOCATORIA PARA LA CONCESIÓN DE AYUDAS ECONÓMICAS MUNICIPALES PARA AFRONTAR OBLIGACIONES DERIVADAS DE LA TITULARIDAD DE LA VIVIENDA HABITUAL DURANTE EL EJERCICIO 2025",
+  "urlBasesReguladoras": "https://miprincipado.asturias.es/bopa/disposiciones?p_p_id=pa_sede_bopa_web_portlet_SedeBopaDispositionWeb&p_p_lifecycle=0&_pa_sede_bopa_web_portlet_SedeBopaDispositionWeb_mvcRenderCommandName=%2Fdisposition%2Fdetail&p_r_p_dispositionText=2026-08253&p_r_p",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "A partir del día siguiente al de la publicación de este anuncio en BOPA",
+  "textFin": "Un mes a contar desde el día siguiente al de la publicación de la convocatoria en el BOPA",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1542302,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "Resolución Nº 1607 de 21_10_2026 _RESOLUCIÓN AYUDAS ECONÓMICAS TITULARIDAD DE VIVIVIENDA HABITUAL (IBI)  2026_ - SEGRA 31898 (1).pdf",
+      "long": 593444,
+      "datMod": "2026-10-22",
+      "datPublicacion": "2026-10-22"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

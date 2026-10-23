@@ -1,0 +1,69 @@
+{
+  "source": "bdns",
+  "source_id": "937108",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / LASARTE-ORIA / AYUNTAMIENTO DE LASARTE-ORIA",
+  "nuts_codes": [
+    "ES212"
+  ],
+  "nuts_primary": "ES212",
+  "title": "Decreto de Alcaldia nº 2026/1663 del 14/07/2026, del Ayuntamiento de Lasarte-Oria, por lo que se aprueba la convocatoria de Subvenciones 2026 a programas de actividades en el ámbito de la promoción y difusión cultural",
+  "title_lang": "es",
+  "summary": "Cultura",
+  "status": "open",
+  "publication_date": "2026-10-22",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 10705.8,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "S",
+      "descripcion": "ACTIVIDADES ARTÍSTICAS, DEPORTIVAS Y DE ENTRETENIMIENTO"
+    }
+  ],
+  "apply_url": "http://www.lasarte-oria.eus",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/937108",
+  "documents": [
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    },
+    {
+      "label": "Bases regulardoras de la convocatoria de Subvenciones 2026 a programas de actividades en el ámbito de la promoción y difusión cultural",
+      "url": null
+    },
+    {
+      "label": "Documento de la convocatoria en lengua cooficial",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://egoitza.gipuzkoa.eus/es/bog?p_p_id=BoletinOficial_WAR_LEEboletinOficialportlet&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_BoletinOficial_WAR_LEEboletinOficialportlet_myaction=detalleAnuncio&_BoletinOficial_WAR_LEEboletinOficialportlet_pdf=htt",
+  "text_inicio": "A partir del día siguiente a su publicacion en el BOG Boletín Oficial de Gipuzkoa",
+  "text_fin": "Treinta días desde el día siguiente a su publicación en el BOG Boletín Oficial de Gipuzkoa",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-10-23T04:05:23.695Z"
+}
