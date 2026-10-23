@@ -23,7 +23,7 @@ const Estadisticas = (() => {
   const AZUL = '#4312d8', TINTA = '#1b0759', TEXTO2 = '#55577a', LINEA = '#efe8fe', LAVANDA = '#b392f6', MAGENTA = '#c2408f';
   const SERIES = ['#4312d8', '#c2408f', '#6f8500', '#9b7cf4'];
   const RAMPA = ['#efe8fe', '#cdb9fa', '#a487f5', '#7349f0', '#4312d8', '#2a0b8f', '#1b0759'];
-  const SIN_DATO = '#ebeaf0';
+  const SIN_DATO = '#ebeaf0', MEDIA = '#8a8aa3';
 
   const VISTAS = [
     { id: 'paises',   nombre: 'Países',          icono: 'public' },
@@ -348,7 +348,8 @@ const Estadisticas = (() => {
         const fn = cfg.valor || M.v;
         const serie = Array.from({ length: n }, (_, k) => fn(p, k, k) || 0);
         const [ra, rb] = rangoIdx(cfg);
-        spark = sparkSvg(serie, 168, 34, { desde: ra, hasta: rb });
+        const media = mediaPaises(cfg.datos, cfg.valor ? 'mapa:' + cfg.titulo : S.metrica, fn);
+        spark = sparkSvg(serie, 168, 34, { desde: ra, hasta: rb }, media) + leyendaSpark(p.nombre, 'media');
       }
       tt.hidden = false;
       tt.innerHTML = `<b>${esc(p ? p.nombre : (nombrePais(code) || code))}</b>${p ? `<span class="est-tt__v">${esc(fmt(valorDe(p, cfg)))}</span><span class="est-tt__t">${esc(cfg.titulo || M.t)} · ${esc(periodoTxt(...(cfg.rango || [S.f.desde, S.f.hasta])))}</span>${spark}<span class="est-tt__t">${cfg.datos.años[0]}–${cfg.datos.años[1]}, año a año</span>` : '<span class="est-tt__t">Sin proyectos con estos filtros</span>'}`;
@@ -600,15 +601,36 @@ const Estadisticas = (() => {
     });
   }
 
-  // Sparkline; con {desde, hasta} sombrea el periodo elegido.
-  function sparkSvg(vals, w = 92, h = 26, marca = null) {
-    const max = Math.max(...vals, 1);
+  // Sparkline; con {desde, hasta} sombrea el periodo elegido y con `media`
+  // añade la serie de referencia (discontinua, gris) en la misma escala.
+  function sparkSvg(vals, w = 92, h = 26, marca = null, media = null) {
+    const max = Math.max(...vals, ...(media || []), 1);
     const pasos = vals.length - 1 || 1;
     const X = i => i / pasos * (w - 4) + 2;
-    const pts = vals.map((v, i) => `${X(i).toFixed(1)},${(h - 3 - v / max * (h - 6)).toFixed(1)}`).join(' ');
+    const puntos = serie => serie.map((v, i) => `${X(i).toFixed(1)},${(h - 3 - (v || 0) / max * (h - 6)).toFixed(1)}`).join(' ');
+    const pts = puntos(vals);
     const ult = pts.split(' ').pop().split(',');
     const banda = marca ? `<rect x="${(X(marca.desde) - 3).toFixed(1)}" y="0" width="${(X(marca.hasta) - X(marca.desde) + 6).toFixed(1)}" height="${h}" rx="3" fill="${LINEA}"/>` : '';
-    return `<svg width="${w}" height="${h}" viewBox="0 0 ${w} ${h}" aria-hidden="true">${banda}<polyline fill="none" stroke="${AZUL}" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" points="${pts}"/><circle cx="${ult[0]}" cy="${ult[1]}" r="2.5" fill="${AZUL}"/></svg>`;
+    const ref = media ? `<polyline fill="none" stroke="${MEDIA}" stroke-width="1.5" stroke-dasharray="3 3" stroke-linejoin="round" points="${puntos(media)}"/>` : '';
+    return `<svg width="${w}" height="${h}" viewBox="0 0 ${w} ${h}" aria-hidden="true">${banda}${ref}<polyline fill="none" stroke="${AZUL}" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" points="${pts}"/><circle cx="${ult[0]}" cy="${ult[1]}" r="2.5" fill="${AZUL}"/></svg>`;
+  }
+  const leyendaSpark = (nombre, media) => `<span class="est-spark-ley"><i class="est-spark-ley__a"></i>${esc(nombre)}<i class="est-spark-ley__m"></i>${esc(media)}</span>`;
+
+  // Media año a año de los países que coordinan algún proyecto (los mismos
+  // que usa «Frente a la media»), para la línea de referencia de los sparklines.
+  const mediasCache = new WeakMap();
+  function mediaPaises(datos, clave, fn) {
+    let m = mediasCache.get(datos);
+    if (!m) mediasCache.set(datos, m = new Map());
+    if (m.has(clave)) return m.get(clave);
+    const n = datos.años[1] - datos.años[0] + 1;
+    const base = datos.paises.filter(p => p.coord > 0);
+    const out = Array.from({ length: n }, (_, k) => {
+      const vs = base.map(p => fn(p, k, k)).filter(v => v > 0);
+      return vs.length ? vs.reduce((a, b) => a + b, 0) / vs.length : 0;
+    });
+    m.set(clave, out);
+    return out;
   }
 
   // 100 puntos: de cada 100 solicitudes, cuántas salen.
@@ -915,13 +937,15 @@ const Estadisticas = (() => {
       if (!p) { panel.innerHTML = `<div class="est-panel__head"><h2>${esc(nombrePais(code))}</h2><p>Sin proyectos con estos filtros.</p></div>`; Mapa.arcos(null); return; }
       const rol = M.rol;
       const hab = METRICAS.hab.v(p, ra, rb);
-      const serie = p[rol === 'part' ? 'pY' : 'cY'];
+      const clave = rol === 'part' ? 'pY' : 'cY';
+      const serie = p[clave];
+      const media = mediaPaises(d, clave, (x, a, b) => suma(x[clave], a, b));
       panel.innerHTML = `
         <div class="est-panel__head">
           <h2>${esc(p.nombre)}</h2>
           <p>${val(p) > 0 ? `Puesto <b>${rankDe(code)}</b> de ${conDato.length} · ${esc(M.corto.toLowerCase())}` : 'Sin dato para esta medida'}</p>
         </div>
-        <div class="est-panel__spark">${sparkSvg(serie, 300, 46, { desde: ra, hasta: rb })}<small>Proyectos que ${rol === 'part' ? 'participa' : 'coordina'} por año, ${d.años[0]}–${d.años[1]}</small></div>
+        <div class="est-panel__spark">${sparkSvg(serie, 300, 46, { desde: ra, hasta: rb }, media)}<small>Proyectos que ${rol === 'part' ? 'participa' : 'coordina'} por año, ${d.años[0]}–${d.años[1]}</small>${leyendaSpark(p.nombre, 'media de los países')}</div>
         <dl class="est-datos">
           ${dato('Coordina', fmtN(p.coord))}
           ${dato('Participa', fmtN(p.part))}
@@ -1129,6 +1153,12 @@ const Estadisticas = (() => {
     if (!vivo()) return;
     frase(d.kpis.proyectos);
 
+    // Media año a año de las líneas con proyectos ese año: la referencia de los sparklines.
+    const mediaLineas = (d.porLinea[0]?.spark || []).map((_, k) => {
+      const vs = d.porLinea.map(l => l.spark[k]).filter(v => v > 0);
+      return vs.length ? vs.reduce((a, b) => a + b, 0) / vs.length : 0;
+    });
+
     // Pasar por una línea = verla en el mapa; pulsar la fila = dejarla fijada.
     let previaT = null, previaId = null;
     const verEnMapa = async id => {
@@ -1158,7 +1188,7 @@ const Estadisticas = (() => {
             <h3>${esc(l.nombre)}</h3>
             <p class="est-nota">${esc(nombreGrupo(l.grupo))} · ${esc(gestionTxt(l.gestion))}</p>
           </div>
-          <div class="est-panel__spark">${sparkSvg(l.spark, 300, 46)}<small>Proyectos por año, ${periodoTxt()}</small></div>
+          <div class="est-panel__spark">${sparkSvg(l.spark, 300, 46, null, mediaLineas)}<small>Proyectos por año, ${periodoTxt()}</small>${leyendaSpark('esta línea', 'media de las líneas')}</div>
           <dl class="est-datos">
             ${dato('Proyectos', fmtN(l.proyectos), `${fmtN(l.porAño)} al año`)}
             ${dato('Dinero', fmtEur(l.importe))}
@@ -1190,7 +1220,7 @@ const Estadisticas = (() => {
         <button type="button" id="est-csv" class="est-btn est-btn--ghost"><span class="material-symbols-outlined">download</span>CSV</button>
       </div>
       <div class="est-tabla-wrap"><table class="est-tabla" id="est-tabla-lineas"></table></div>
-      <p class="est-nota mt-2">Marca hasta 4 líneas para compararlas. «Al año» divide entre los años con concesiones. «${esc(nombrePais(foco))} coord./partic.» = proyectos que coordina o en los que participa alguna entidad de ${esc(nombrePais(foco))}.</p>`;
+      <p class="est-nota mt-2">Marca hasta 4 líneas para compararlas. «Al año» divide entre los años con concesiones. En «Tendencia», la línea gris discontinua es la media de las líneas. «${esc(nombrePais(foco))} coord./partic.» = proyectos que coordina o en los que participa alguna entidad de ${esc(nombrePais(foco))}.</p>`;
 
     const marcadas = new Set(S.comp.tipo === 'linea' ? S.comp.ids : []);
     const actualizarComp = () => { $('#est-comp-n').textContent = marcadas.size; $('#est-comp-sel').disabled = marcadas.size < 2; };
@@ -1205,7 +1235,7 @@ const Estadisticas = (() => {
       { k: 'alTope', t: 'Al tope' },
       { k: 'focoCoord', t: `${foco} coord.` },
       { k: 'focoPart', t: `${foco} partic.` },
-      { k: 'crecimiento', t: 'Tendencia', title: 'Proyectos por año dentro del periodo' },
+      { k: 'crecimiento', t: 'Tendencia', title: 'Proyectos por año dentro del periodo · discontinua: media de las líneas' },
       { k: 'cierre2026', t: 'Cierre 2026', txt: true },
     ];
 
@@ -1234,7 +1264,7 @@ const Estadisticas = (() => {
             <td class="n">${l.alTope == null ? '<span class="est-tenue">—</span>' : pct(l.alTope)}</td>
             <td class="n">${fmtN(l.focoCoord)}</td>
             <td class="n">${fmtN(l.focoPart)}</td>
-            <td class="n" title="${l.spark.join(' · ')}">${sparkSvg(l.spark)}</td>
+            <td class="n" title="Proyectos por año: ${l.spark.join(' · ')} · media de las líneas: ${mediaLineas.map(v => Math.round(v)).join(' · ')}">${sparkSvg(l.spark, 92, 26, null, mediaLineas)}</td>
             <td class="est-nowrap">${l.cierre2026 ? fecha(l.cierre2026, true) : '<span class="est-tenue">—</span>'}</td>
           </tr>`).join('') || `<tr><td colspan="${cols.length + 1}" class="est-vacio-td">Ninguna línea coincide con «${esc(S.buscar)}».</td></tr>`}</tbody>`;
       enlazarLineas($('#est-tabla-lineas'));
