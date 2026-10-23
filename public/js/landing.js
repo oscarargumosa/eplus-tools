@@ -12,10 +12,17 @@
   var params = new URLSearchParams(location.search);
 
   /* ── Destino tras entrar ─────────────────────────────────────── */
+  // Solo rutas de este mismo sitio: se resuelve como URL y se exige el mismo
+  // origen («//x», «/\x», «/%09/x»… salen fuera). Devuelve ruta + búsqueda + ancla.
   function rutaInterna(v) {
-    return typeof v === 'string' && v.charAt(0) === '/' && v.charAt(1) !== '/' && v.charAt(1) !== '\\' && v.length < 500;
+    if (typeof v !== 'string' || v.charAt(0) !== '/' || v.length >= 500) return null;
+    try {
+      var u = new URL(v, location.origin);
+      // «/.//x» se resuelve a la ruta «//x», que el navegador leería como otro sitio.
+      return u.origin === location.origin ? '/' + u.pathname.replace(/^\/+/, '') + u.search + u.hash : null;
+    } catch (e) { return null; }
   }
-  var volver = rutaInterna(params.get('volver')) ? params.get('volver') : null;
+  var volver = rutaInterna(params.get('volver'));
   var hash = location.hash.slice(1);
   // Un hash que no es un ancla de esta página es una sección de la app (#convocatorias…)
   if (!volver && hash && /^[a-z0-9-]{2,40}$/i.test(hash) && !document.getElementById(hash)) {

@@ -108,6 +108,7 @@ const Account = (() => {
     } else {
       currentWrap.classList.remove('hidden');
     }
+    renderDelete();
   }
 
   function msg(el, text, ok) {
@@ -151,7 +152,9 @@ const Account = (() => {
     const btn = document.getElementById('account-save-pw');
     btn.disabled = true;
     try {
-      await API.post('/auth/change-password', { current_password: current, new_password: next });
+      // Cambiarla cierra todas las sesiones; esta sigue con el token nuevo.
+      const r = await API.post('/auth/change-password', { current_password: current, new_password: next });
+      if (r && r.access_token) API.setToken(r.access_token);
       document.getElementById('account-current-pw').value = '';
       document.getElementById('account-new-pw').value = '';
       document.getElementById('account-confirm-pw').value = '';
@@ -164,6 +167,86 @@ const Account = (() => {
       msg(out, e.message || 'No se pudo cambiar', false);
     } finally {
       btn.disabled = false;
+    }
+  }
+
+  /* ── Tus datos: descargar copia (RGPD) ────────────────────── */
+  async function exportData() {
+    const out = document.getElementById('account-export-msg');
+    const btn = document.getElementById('account-export-btn');
+    btn.disabled = true;
+    out.className = 'text-sm text-on-surface-variant';
+    out.textContent = 'Preparando el archivo…';
+    try {
+      const get = () => fetch('/v1/auth/me/export', { headers: { 'Authorization': 'Bearer ' + API.getToken() }, credentials: 'include' });
+      let res = await get();
+      if (res.status === 401 && await API.tryRefresh()) res = await get();
+      if (!res.ok) {
+        const j = await res.json().catch(() => null);
+        throw (j && j.error) || new Error('No se pudo preparar el archivo');
+      }
+      const blob = await res.blob();
+      const name = (/filename="([^"]+)"/.exec(res.headers.get('Content-Disposition') || '') || [])[1] || 'mis-datos.json';
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url; a.download = name;
+      document.body.appendChild(a); a.click(); a.remove();
+      setTimeout(() => URL.revokeObjectURL(url), 10000);
+      msg(out, 'Descargado', true);
+    } catch (e) {
+      msg(out, e.message || 'No se pudo preparar el archivo', false);
+    } finally {
+      btn.disabled = false;
+    }
+  }
+
+  /* ── Tus datos: eliminar la cuenta ────────────────────────── */
+  function renderDelete() {
+    if (!me) return;
+    const isAdmin = me.role === 'admin';
+    document.getElementById('account-delete-admin')?.classList.toggle('hidden', !isAdmin);
+    document.getElementById('account-delete-form')?.classList.toggle('hidden', isAdmin);
+    // Cuenta solo de Google: sin contraseña, se confirma escribiendo el email.
+    const google = me.has_password === false;
+    document.getElementById('account-delete-pw-wrap')?.classList.toggle('hidden', google);
+    document.getElementById('account-delete-email-wrap')?.classList.toggle('hidden', !google);
+    updateDeleteBtn();
+  }
+
+  function updateDeleteBtn() {
+    const btn = document.getElementById('account-delete-btn');
+    if (!btn || !me) return;
+    const google = me.has_password === false;
+    const cred = google
+      ? document.getElementById('account-delete-email').value.trim().length > 3
+      : document.getElementById('account-delete-pw').value.length > 0;
+    btn.disabled = !(cred && document.getElementById('account-delete-confirm').checked);
+  }
+
+  async function deleteAccount() {
+    const out = document.getElementById('account-delete-msg');
+    const btn = document.getElementById('account-delete-btn');
+    const google = me && me.has_password === false;
+    const body = { confirm: document.getElementById('account-delete-confirm').checked };
+    if (google) body.email = document.getElementById('account-delete-email').value.trim();
+    else body.password = document.getElementById('account-delete-pw').value;
+    if (!window.confirm('Última comprobación: ¿eliminar tu cuenta y todos tus datos para siempre?')) return;
+    btn.disabled = true;
+    out.className = 'text-sm text-on-surface-variant';
+    out.textContent = 'Eliminando…';
+    try {
+      await API.post('/auth/me/delete', body, { save: false });
+      API.stopAutoRefresh();
+      API.clearToken();
+      if (window.SaveStatus) SaveStatus.reset();
+      const card = document.getElementById('account-delete-form');
+      if (card) {
+        card.innerHTML = '<p class="text-sm font-semibold text-on-surface" role="status">Tu cuenta se ha eliminado. Te hemos enviado un correo de confirmación. Gracias por haber usado EU Funding Studio.</p>';
+      }
+      setTimeout(() => { if (typeof App !== 'undefined') App.onLogout(); else location.replace('/'); }, 4000);
+    } catch (e) {
+      msg(out, e.message || 'No se pudo eliminar la cuenta', false);
+      updateDeleteBtn();
     }
   }
 
@@ -183,6 +266,12 @@ const Account = (() => {
     document.getElementById('account-save-pw')?.addEventListener('click', savePassword);
     document.getElementById('account-avatar-input')?.addEventListener('change', e => { uploadAvatar(e.target.files[0]); e.target.value = ''; });
     document.getElementById('account-avatar-remove')?.addEventListener('click', removeAvatar);
+    document.getElementById('account-export-btn')?.addEventListener('click', exportData);
+    ['account-delete-pw', 'account-delete-email', 'account-delete-confirm'].forEach(id => {
+      const el = document.getElementById(id);
+      el?.addEventListener(el.type === 'checkbox' ? 'change' : 'input', updateDeleteBtn);
+    });
+    document.getElementById('account-delete-btn')?.addEventListener('click', deleteAccount);
   }
 
   /* ── Init (al navegar a una ruta account-*) ───────────────── */

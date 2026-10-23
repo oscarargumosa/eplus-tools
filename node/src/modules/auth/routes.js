@@ -52,6 +52,17 @@ const emailLimiterOpts = {
 const loginEmailLimiter  = rateLimit({ ...emailLimiterOpts, skipSuccessfulRequests: true });
 const emailActionLimiter = rateLimit(emailLimiterOpts);
 
+/* ── RGPD: copia de datos (3 por hora) y baja (5 intentos / 15 min), por persona ── */
+const userKey = req => 'user:' + req.user.id;   // van detrás de requireAuth
+const exportLimiter = rateLimit({
+  windowMs: 60 * 60 * 1000, max: 3, standardHeaders: true, legacyHeaders: false, keyGenerator: userKey,
+  message: { ok: false, error: { code: 'RATE_LIMITED', message: 'Ya has descargado tus datos varias veces. Prueba dentro de una hora.' } }
+});
+const deleteLimiter = rateLimit({
+  windowMs: 15 * 60 * 1000, max: 5, standardHeaders: true, legacyHeaders: false, keyGenerator: userKey,
+  message: { ok: false, error: { code: 'RATE_LIMITED', message: 'Demasiados intentos. Prueba en 15 minutos.' } }
+});
+
 /* ── Endpoints ───────────────────────────────────────────────── */
 router.post('/register', authLimiter, validate({ email: 'required', password: 'required', name: 'required' }), controller.register);
 router.post('/login',    authLimiter, loginEmailLimiter, validate({ email: 'required', password: 'required' }), controller.login);
@@ -67,6 +78,8 @@ router.patch('/me',      requireAuth, validate({ name: 'required' }), controller
 router.post  ('/me/avatar', requireAuth, uploadAvatar.single('avatar'), imageUploadGuard(), controller.uploadAvatar);
 router.delete('/me/avatar', requireAuth, controller.deleteAvatar);
 router.post('/change-password', authLimiter, requireAuth, controller.changePassword);
+router.get ('/me/export', requireAuth, exportLimiter, controller.exportMe);
+router.post('/me/delete', requireAuth, deleteLimiter, controller.deleteMe);
 router.get('/session-status', controller.sessionStatus);
 router.post('/logout',   controller.logout);
 router.post('/logout-all', requireAuth, controller.logoutAll);

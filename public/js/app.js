@@ -13,11 +13,18 @@ const App = (() => {
   const AUTH_PATHS = { '/entrar': 'login', '/crear-cuenta': 'register', '/recuperar': 'forgot' };
   const TAB_PATHS  = { login: '/entrar', register: '/crear-cuenta', forgot: '/recuperar' };
 
-  // ?volver=<ruta interna> — adónde quería ir antes de entrar.
+  // ?volver=<ruta interna> — adónde quería ir antes de entrar. Se resuelve
+  // como URL y solo vale si es de este mismo sitio (cubre «//x», «/\x»,
+  // «/%09/x», «javascript:»…); se devuelve solo ruta + búsqueda + ancla.
   function safeVolver() {
     const v = new URLSearchParams(location.search).get('volver');
-    if (!v || !v.startsWith('/') || v.startsWith('//') || v.startsWith('/\\')) return null;
-    return v;
+    if (!v || v.length > 500 || v.charAt(0) !== '/') return null;
+    try {
+      const u = new URL(v, location.origin);
+      if (u.origin !== location.origin) return null;
+      // «/.//x» se resuelve a la ruta «//x», que el navegador leería como otro sitio.
+      return '/' + u.pathname.replace(/^\/+/, '') + u.search + u.hash;
+    } catch { return null; }
   }
 
   // Cookie-pista con la que el servidor elige landing o app en «/».
@@ -365,7 +372,7 @@ const App = (() => {
   // Workspace "Mi Cuenta": el sidebar entero pasa a ser el menú de la
   // cuenta (perfil/seguridad/facturación/…). Todas comparten el panel
   // #panel-account; la ruta decide qué sección se muestra.
-  const ACCOUNT_ROUTES = ['account-profile', 'account-org', 'account-security', 'account-billing', 'account-preferences'];
+  const ACCOUNT_ROUTES = ['account-profile', 'account-org', 'account-security', 'account-billing', 'account-preferences', 'account-data'];
   // Rutas de cuenta con panel propio (no #panel-account). «Mi entidad» vive
   // en Mi Cuenta y, en segundo plano, también en Entidades (#my-org): las
   // dos rutas muestran el mismo panel.
@@ -508,6 +515,7 @@ const App = (() => {
       'account-security':    'Seguridad',
       'account-billing':     'Facturación',
       'account-preferences': 'Preferencias',
+      'account-data':        'Tus datos',
       'my-projects':    'Mis Proyectos',
       'my-evaluations': 'Mis Evaluaciones',
       create:           'Diseñar',
