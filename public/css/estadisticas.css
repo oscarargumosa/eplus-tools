@@ -476,3 +476,7 @@
 .est-check input { accent-color: var(--est-azul); width: 16px; height: 16px; }
 .est-mas { display: flex; align-items: center; gap: 12px; margin-top: 10px; }
 #est-tabla-ent .est-td-nombre { min-width: 300px; }
+.est-periodo-aviso { display: flex; align-items: center; flex-wrap: wrap; gap: 8px 12px; background: #f8ffd9; border: 1px solid var(--est-lima); border-radius: 14px; padding: 8px 12px; font-size: 12.5px; margin-bottom: 10px; }
+.est-periodo-aviso > .material-symbols-outlined { color: var(--est-azul); font-size: 20px; }
+.est-periodo-aviso > span:not(.material-symbols-outlined) { flex: 1 1 260px; }
+.est-periodo-aviso .est-btn { padding: 5px 12px; font-size: 12px; }
