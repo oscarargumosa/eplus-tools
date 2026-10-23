@@ -422,6 +422,8 @@ const App = (() => {
     if (!currentUser) { openAuth('login'); return; }
     // Estadísticas: «estadisticas/<vista>?<filtros>» → ruta + subruta.
     let estSub = null;
+    // El antiguo «Análisis» (ranking de entidades, solo admin) vive ahora en Estadísticas.
+    if (route === 'analysis') { route = 'estadisticas/entidades'; history.replaceState(null, '', '#estadisticas/entidades'); }
     const estM = /^estadisticas(?:[/?](.*))?$/.exec(route);
     if (estM) { estSub = estM[1] || ''; route = 'estadisticas'; }
     if ((ADMIN_ROUTES.includes(route) && !isAdmin()) || (['admin-users', 'admin-org-claims'].includes(route) && currentUser.role !== 'admin')
