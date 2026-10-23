@@ -68,13 +68,14 @@ tailwind.config = {
 
 <!-- ═══ TOP BAR común (la comparten la app, la academia y las páginas públicas) ═══ -->
 <link rel="stylesheet" href="/css/topbar.css?v=20261023k">
+<link rel="stylesheet" href="/css/perfil.css?v=20261023a">
 <!-- Fase beta: pantalla «Solicitar acceso», etiquetas y avisos (js/beta-access.js) -->
 <link rel="stylesheet" href="/css/beta.css">
 <!-- Indicador global «Guardando… / Guardado» (js/save-status.js) -->
 <link rel="stylesheet" href="/css/save-status.css?v=20261016g">
 <!-- Diseñar y Escribir en móvil: sin desborde horizontal (tarjetas, tablas con scroll propio) -->
 <link rel="stylesheet" href="/css/movil.css?v=20261016a">
-<link rel="stylesheet" href="/css/estadisticas.css?v=20261023c">
+<link rel="stylesheet" href="/css/estadisticas.css?v=20261023d">
 <link rel="stylesheet" href="/css/presentaciones.css?v=20261021a">
 </head>
 
@@ -435,12 +436,6 @@ tailwind.config = {
             <span class="material-symbols-outlined text-[20px]">admin_panel_settings</span>
             Data E+
           </a>
-          <a href="#analysis"
-            class="nav-link flex items-center gap-3 px-3 py-2.5 rounded-lg text-white/70 hover:bg-white/10 transition-colors text-sm font-medium"
-            data-route="analysis">
-            <span class="material-symbols-outlined text-[20px]">leaderboard</span>
-            Análisis
-          </a>
           <a href="#engagement"
             class="nav-link flex items-center gap-3 px-3 py-2.5 rounded-lg text-white/70 hover:bg-white/10 transition-colors text-sm font-medium"
             data-route="engagement">
@@ -537,6 +532,11 @@ tailwind.config = {
           class="nav-link flex items-center gap-3 px-3 py-2.5 rounded-lg text-white/70 hover:bg-white/10 transition-colors text-sm font-medium">
           <span class="material-symbols-outlined text-[20px]">target</span>
           Tasas de éxito
+        </a>
+        <a href="#estadisticas/entidades" data-est-vista="entidades"
+          class="nav-link flex items-center gap-3 px-3 py-2.5 rounded-lg text-white/70 hover:bg-white/10 transition-colors text-sm font-medium">
+          <span class="material-symbols-outlined text-[20px]">leaderboard</span>
+          Ranking de entidades
         </a>
         <div class="mt-3 mb-1 px-3 text-[10px] font-semibold tracking-[.2em] uppercase text-lavender-soft/60">Desde aquí</div>
         <a href="#convocatorias"
@@ -694,6 +694,9 @@ tailwind.config = {
             </p>
           </div>
         </div>
+
+        <!-- Completar el perfil (js/perfil.js): solo si falta algo -->
+        <div id="perfil-home-card" class="hidden mb-10"></div>
 
         <!-- Three phases — Main CTAs -->
         <div class="grid grid-cols-1 md:grid-cols-3 gap-5 mb-10">
@@ -908,6 +911,8 @@ tailwind.config = {
                     <span id="account-profile-msg" class="text-sm"></span>
                   </div>
                 </div>
+                <!-- Tu perfil: foto, teléfono, entidad, ubicación y sobre ti (js/perfil.js) -->
+                <div id="perfil-account-card" class="bg-white rounded-xl border border-outline-variant/30 p-6 mt-5"></div>
               </div>
 
               <!-- SECTION: Seguridad -->
@@ -3454,7 +3459,7 @@ tailwind.config = {
 <script src="/js/entities.js?v=20261016a"></script>
 <script src="/js/shortlists.js?v=20260426b"></script>
 <script src="/js/atlas-stats.js?v=20260426k"></script>
-<script src="/js/estadisticas.js?v=20261023c"></script>
+<script src="/js/estadisticas.js?v=20261023d"></script>
 <script src="/js/presentaciones.js?v=20261021a"></script>
 <script src="/js/analysis.js?v=20260627a"></script>
 <script src="/js/documents.js"></script>
@@ -3472,7 +3477,8 @@ tailwind.config = {
 <script src="/js/evaluator.js?v=20261016g"></script>
 <script src="/js/budget.js?v=20261016g"></script>
 <script src="/js/voice-input.js"></script>
-<script src="/js/account.js?v=20261016g"></script>
+<script src="/js/account.js?v=20261023p"></script>
+<script src="/js/perfil.js?v=20261023a"></script>
 <script src="/js/sandbox.js"></script>
 
 <!-- ── Mini modal (reemplaza prompt/confirm nativos) ────────── -->

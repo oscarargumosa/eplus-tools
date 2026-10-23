@@ -5402,6 +5402,7 @@ const AdminUsers = (() => {
         <td class="p-3 min-w-[200px]">
           <div class="font-semibold text-on-surface">${esc(u.name)}${u.role === 'admin' ? ' <span class="text-[10px] uppercase font-bold text-primary">admin</span>' : ''}</div>
           <div class="text-xs text-on-surface-variant break-all">${esc(u.email)}</div>
+          ${u.phone ? `<div class="text-xs text-on-surface-variant mt-0.5"><a class="hover:text-primary" href="tel:${esc(u.phone.replace(/\s/g, ''))}">${esc(u.phone)}</a></div>` : ''}
           ${u.email_verified ? '' : '<div class="text-[11px] text-error font-semibold mt-0.5">Email sin verificar</div>'}
         </td>
         <td class="p-3">${state.areas.map(a => switchHtml(u, a)).join('')}</td>

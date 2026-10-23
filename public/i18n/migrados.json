@@ -14,7 +14,8 @@
     "public/js/movilidades.js",
     "public/js/movilidades-utils.js",
     "public/js/convocatorias.js",
-    "public/js/vision.js"
+    "public/js/vision.js",
+    "public/js/perfil.js"
   ],
   "servidor": [
     "node/src/modules/auth/controller.js",
@@ -31,6 +32,8 @@
     "node/src/modules/convocatorias/curation.js",
     "node/src/modules/vision/controller.js",
     "node/src/modules/vision/model.js",
-    "node/src/modules/vision/routes.js"
+    "node/src/modules/vision/routes.js",
+    "node/src/modules/profile/model.js",
+    "node/src/modules/profile/routes.js"
   ]
 }

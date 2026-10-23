@@ -73,6 +73,7 @@ const Account = (() => {
       }, { key: 'POST /auth/me/avatar' });
       setAvatar(json.data);
       if (typeof App !== 'undefined' && App.refreshAvatar) App.refreshAvatar();
+      if (typeof Perfil !== 'undefined') Perfil.load().catch(() => {});
       Toast.show(_t('Foto actualizada'), 'ok');
     } catch (e) { Toast.show(e.message || _t('No se pudo subir la foto'), 'error'); }
   }
@@ -81,6 +82,7 @@ const Account = (() => {
     try {
       setAvatar(await API.del('/auth/me/avatar'));
       if (typeof App !== 'undefined' && App.refreshAvatar) App.refreshAvatar();
+      if (typeof Perfil !== 'undefined') Perfil.load().catch(() => {});
     } catch (e) { Toast.show(e.message || _t('No se pudo quitar la foto'), 'error'); }
   }
 
@@ -189,6 +191,8 @@ const Account = (() => {
   async function init(route) {
     wire();
     showSection(sectionFromRoute(route));
+    // Lista «Tu perfil» al día (la entidad o la foto pudieron cambiar en otra pantalla).
+    if (sectionFromRoute(route) === 'profile' && typeof Perfil !== 'undefined') Perfil.load().catch(() => {});
     // Ya cargamos /me una vez; sólo refrescamos datos la primera vez o si no hay.
     if (!me) {
       const cached = typeof App !== 'undefined' ? App.getCurrentUser() : null;
