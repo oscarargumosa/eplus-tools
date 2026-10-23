@@ -37,6 +37,11 @@
     return new Date(t).toLocaleDateString('es-ES', { day: 'numeric', month: 'short', year: 'numeric' });
   }
   const linkHost = (u) => { try { return new URL(u).hostname.replace(/^www\./, ''); } catch { return u; } };
+  // Bandera en PNG servida por Studio (los emoji de bandera salen como letras en Windows).
+  const flag = (code) => /^[A-Z]{2}$/.test(code || '')
+    ? `<img class="cm-flag" src="/img/banderas/${code.toLowerCase()}.png" srcset="/img/banderas/${code.toLowerCase()}@2x.png 2x" width="20" height="15" alt="" loading="lazy">`
+    : '';
+  const NO_ORG = 'Sin entidad';
 
   // Avatar: foto → logo de la entidad → iniciales. Si la imagen falla, iniciales.
   function av(p, size = '') {
@@ -238,14 +243,15 @@
     const tags = [
       p.seeks_partners ? `<span class="cm-chip cm-chip--partner">${ms('person_search')}Busca socios</span>` : '',
       p.offers_partner ? `<span class="cm-chip cm-chip--lav">${ms('handshake')}Se ofrece como socio</span>` : '',
+      ...p.roles.slice(0, 2).map(s => `<span class="cm-chip cm-chip--role">${esc(label('roles', s))}</span>`),
       ...p.sectors.slice(0, 2).map(s => `<span class="cm-chip">${esc(label('sectors', s))}</span>`),
-      ...p.actions.slice(0, 2).map(s => `<span class="cm-chip">${esc(label('actions', s).split(' · ')[0])}</span>`),
+      ...p.actions.slice(0, 1).map(s => `<span class="cm-chip">${esc(label('actions', s).split(' · ')[0])}</span>`),
     ].join('');
-    const where = [p.org && p.org.name, p.country_label].filter(Boolean).join(' · ');
+    const orgTxt = p.org ? p.org.name : (p.no_organization ? NO_ORG : '');
     return `<a class="cm-person" href="/comunidad/personas/${encodeURIComponent(p.id)}" data-nav data-person="${esc(p.id)}">
       <div class="cm-person__top">${av(p)}<div class="cm-person__who"><b>${esc(p.name)}${p.is_me ? ' (tú)' : ''}</b>
         ${p.headline ? `<small>${esc(p.headline)}</small>` : ''}</div></div>
-      ${where ? `<div class="cm-person__org">${ms(p.org ? 'apartment' : 'public')}<span>${esc(where)}</span></div>` : ''}
+      ${orgTxt || p.country_label ? `<div class="cm-person__org">${ms(p.org ? 'apartment' : 'person')}<span>${esc(orgTxt)}${orgTxt && p.country_label ? ' · ' : ''}${flag(p.country)}${esc(p.country_label || '')}</span></div>` : ''}
       ${tags ? `<div class="cm-chips">${tags}</div>` : ''}
     </a>`;
   }
@@ -255,7 +261,7 @@
     document.title = 'Comunidad — EU Funding Studio';
     const view = shell('personas');
     const qs = new URLSearchParams(location.search);
-    const f = { q: qs.get('q') || '', sector: qs.get('ambito') || '', action: qs.get('accion') || '', country: qs.get('pais') || '', seeks: qs.get('socios') === '1' };
+    const f = { q: qs.get('q') || '', role: qs.get('rol') || '', sector: qs.get('ambito') || '', action: qs.get('accion') || '', country: qs.get('pais') || '', seeks: qs.get('socios') === '1' };
     const p = me.profile;
     const nudge = !p.visible
       ? `<div class="cm-note"><p><b>Tu perfil aún no es visible.</b> Complétalo y decide si quieres aparecer en el directorio y en el mapa. Nadie lo verá hasta que lo actives.</p>
@@ -266,6 +272,7 @@
     view.innerHTML = `${nudge}
       <form class="cm-filters" id="cm-filters" role="search" aria-label="Filtrar personas">
         <div class="cm-field cm-field--q"><label for="f-q">Buscar</label><input id="f-q" type="search" name="q" value="${esc(f.q)}" placeholder="Nombre, entidad, ciudad…" autocomplete="off"></div>
+        <div class="cm-field"><label for="f-role">Rol</label><select id="f-role" name="role">${opt('roles', f.role, 'Todos')}</select></div>
         <div class="cm-field"><label for="f-sector">Ámbito</label><select id="f-sector" name="sector">${opt('sectors', f.sector, 'Todos')}</select></div>
         <div class="cm-field"><label for="f-action">Acción</label><select id="f-action" name="action">${opt('actions', f.action, 'Todas')}</select></div>
         <div class="cm-field"><label for="f-country">País</label><select id="f-country" name="country">${opt('countries', f.country, 'Todos')}</select></div>
@@ -280,7 +287,7 @@
     let shown = 24;
     let data = null;
     const form = $('#cm-filters');
-    const read = () => ({ q: form.q.value.trim(), sector: form.sector.value, action: form.action.value, country: form.country.value, seeks: form.seeks.checked });
+    const read = () => ({ q: form.q.value.trim(), role: form.role.value, sector: form.sector.value, action: form.action.value, country: form.country.value, seeks: form.seeks.checked });
 
     function paintList() {
       const list = data.people;
@@ -295,12 +302,13 @@
       const v = read();
       const params = new URLSearchParams();
       if (v.q) params.set('q', v.q);
+      if (v.role) params.set('rol', v.role);
       if (v.sector) params.set('ambito', v.sector);
       if (v.action) params.set('accion', v.action);
       if (v.country) params.set('pais', v.country);
       if (v.seeks) params.set('socios', '1');
       history.replaceState({}, '', '/comunidad' + (params.toString() ? '?' + params : ''));
-      const api = new URLSearchParams({ q: v.q, sector: v.sector, action: v.action, country: v.country, seeks: v.seeks ? '1' : '' });
+      const api = new URLSearchParams({ q: v.q, role: v.role, sector: v.sector, action: v.action, country: v.country, seeks: v.seeks ? '1' : '' });
       data = await API.get('/community/people?' + api);
       shown = 24;
       paintList();
@@ -357,7 +365,8 @@
         <div>
           <section class="cm-card">
             <div class="cm-id">${av(p, 'lg')}<div><h1>${esc(p.name)}</h1>${p.headline ? `<p>${esc(p.headline)}</p>` : ''}
-              ${p.country_label || (p.location && p.location.label) ? `<p class="cm-muted">${ms('location_on')} ${esc([p.location && p.location.label, p.country_label].filter(Boolean).join(', '))}</p>` : ''}</div></div>
+              ${p.country_label || (p.location && p.location.label) ? `<p class="cm-muted cm-where">${ms('location_on')} ${esc(p.location && p.location.label ? p.location.label + (p.country_label ? ', ' : '') : '')}${flag(p.country)}${esc(p.country_label || '')}</p>` : ''}</div></div>
+            ${!p.org && p.no_organization ? `<div class="cm-org"><span class="cm-av" aria-hidden="true">${ms('person')}</span><div><b>${NO_ORG}</b><small>No pertenece a ninguna entidad</small></div></div>` : ''}
             ${p.org ? `<div class="cm-org">${av({ avatar_url: p.org.logo_url, avatar_source: 'organization', initials: p.org.name.slice(0, 2).toUpperCase() })}
               <div><b>${esc(p.org.name)}${p.org.verified ? `<span class="cm-verified" title="Entidad verificada por el equipo de EU Funding Studio">${ms('verified')}Verificada</span>` : ''}</b>
               ${p.org.city ? `<small>${esc(p.org.city)}</small>` : ''}</div></div>` : ''}
@@ -377,9 +386,9 @@
         <aside>
           <section class="cm-card">
             <h2>Trabaja en</h2>
+            <h3>Roles</h3>${chips('roles', p.roles, 'cm-chip--role')}
             <h3>Ámbitos</h3>${chips('sectors', p.sectors)}
             <h3>Acciones que le interesan</h3>${chips('actions', p.actions)}
-            <h3>Idiomas</h3>${chips('languages', p.languages)}
           </section>
           ${p.location ? `<section class="cm-card"><h2>Dónde está</h2><div class="cm-map cm-map--sm" id="cm-pmap"></div>
             <p class="cm-muted" style="margin:8px 0 0">${p.location.precision === 'exact' ? 'Ubicación exacta' : 'Ubicación aproximada (unos 1-2 km)'}</p></section>` : ''}
@@ -444,20 +453,19 @@
         </section>
         <section class="cm-card">
           <h2>Tu entidad</h2>
-          ${orgs.length ? `<p class="cm-muted">Se muestra su nombre, su logo y si está verificada. Viene de <a href="/#account-org">Mi entidad</a>.</p>
-            <div class="cm-grid2"><div><label class="cm-label" for="pf-org">Entidad</label><select id="pf-org" name="organization_id">
-              <option value="">No mostrar ninguna</option>${orgs.map(o => `<option value="${esc(o.id)}" ${o.id === orgSel ? 'selected' : ''}>${esc(o.name)}${o.verified ? ' (verificada)' : ''}</option>`).join('')}</select></div>
-              <div><label class="cm-label" for="pf-country">País</label><select id="pf-country" name="country"><option value="">—</option>
-              ${me.catalog.countries.map(c => `<option value="${c.key}" ${c.key === p.country ? 'selected' : ''}>${esc(c.label)}</option>`).join('')}</select></div></div>`
-          : `<p class="cm-muted">Aún no tienes ninguna entidad. Puedes añadirla o reclamarla en <a href="/#account-org">Mi entidad</a>; después aparecerá aquí.</p>
-            <div class="cm-grid2"><div><label class="cm-label" for="pf-country">País</label><select id="pf-country" name="country"><option value="">—</option>
-              ${me.catalog.countries.map(c => `<option value="${c.key}" ${c.key === p.country ? 'selected' : ''}>${esc(c.label)}</option>`).join('')}</select></div></div>`}
+          <label class="cm-check cm-noorg" style="margin:0 0 12px"><input type="checkbox" name="no_organization" ${p.no_organization ? 'checked' : ''}> No pertenezco a ninguna entidad</label>
+          ${orgs.length ? `<div id="pf-org-box"><p class="cm-muted">Se muestra su nombre, su logo y si está verificada. Viene de <a href="/#account-org">Mi entidad</a>.</p>
+            <div class="cm-row"><label class="cm-label" for="pf-org">Entidad</label><select id="pf-org" name="organization_id">
+              <option value="">No mostrar ninguna</option>${orgs.map(o => `<option value="${esc(o.id)}" ${o.id === orgSel ? 'selected' : ''}>${esc(o.name)}${o.verified ? ' (verificada)' : ''}</option>`).join('')}</select></div></div>`
+          : `<p class="cm-muted" id="pf-org-box">Aún no tienes ninguna entidad. Puedes añadirla o reclamarla en <a href="/#account-org">Mi entidad</a>; después aparecerá aquí.</p>`}
+          <div class="cm-grid2"><div><label class="cm-label" for="pf-country">País</label><div class="cm-flag-pick"><span id="pf-flag">${flag(p.country)}</span><select id="pf-country" name="country"><option value="">—</option>
+            ${me.catalog.countries.map(c => `<option value="${c.key}" ${c.key === p.country ? 'selected' : ''}>${esc(c.label)}</option>`).join('')}</select></div></div></div>
         </section>
         <section class="cm-card">
           <h2>En qué trabajas</h2>
-          <h3 class="cm-label">Ámbitos</h3>${checks('sectors', 'sectors', p.sectors)}
+          <h3 class="cm-label">Roles</h3>${checks('roles', 'roles', p.roles)}
+          <h3 class="cm-label" style="margin-top:16px">Ámbitos</h3>${checks('sectors', 'sectors', p.sectors)}
           <h3 class="cm-label" style="margin-top:16px">Acciones que te interesan</h3>${checks('actions', 'actions', p.actions)}
-          <h3 class="cm-label" style="margin-top:16px">Idiomas en los que puedes trabajar</h3>${checks('languages', 'languages', p.languages)}
           <h3 class="cm-label" style="margin-top:16px">Socios</h3>
           <div class="cm-pick"><label class="cm-check"><input type="checkbox" name="seeks_partners" ${p.seeks_partners ? 'checked' : ''}> Busco socios</label>
             <label class="cm-check"><input type="checkbox" name="offers_partner" ${p.offers_partner ? 'checked' : ''}> Me ofrezco como socio</label></div>
@@ -465,6 +473,7 @@
         <section class="cm-card" id="ubicacion">
           <h2>Tu lugar en el mapa</h2>
           <p class="cm-muted">Es voluntario. No usamos tu ubicación del navegador ni tu dirección: solo el punto que elijas.</p>
+          <p class="cm-loc-hidden" id="pf-loc-hidden" hidden>${ms('visibility_off')} Tu perfil está oculto: puedes preparar tu punto, pero no saldrá en el mapa hasta que actives «Mostrar mi perfil en la comunidad».</p>
           <div class="cm-radios" id="pf-mode">
             ${radio('location_mode', 'none', mode0, 'No aparecer en el mapa')}
             ${radio('location_mode', 'organization', mode0, 'La ciudad de mi entidad')}
@@ -472,7 +481,7 @@
           </div>
           <p class="cm-muted" id="pf-orgloc-note" hidden style="margin:8px 0 0"></p>
           <div id="pf-manual" class="cm-row" hidden>
-            <p class="cm-muted" style="margin:0 0 8px">Pulsa en el mapa para colocar tu punto; puedes arrastrarlo.</p>
+            <p class="cm-muted" style="margin:0 0 8px">Pulsa en el mapa para colocar la chincheta; después puedes arrastrarla.</p>
             <div class="cm-map cm-map--pick" id="pf-map"></div>
           </div>
           <div id="pf-loc-opts" class="cm-row">
@@ -493,7 +502,17 @@
     let pick = p.own_location && p.location_source === 'manual' ? { ...p.own_location } : null;
     let pickMap = null, pickMarker = null;
 
-    function orgLoc() { const o = orgs.find(x => x.id === (form.organization_id ? form.organization_id.value : '')); return o || null; }
+    function orgLoc() {
+      if (form.no_organization.checked) return null;
+      return orgs.find(x => x.id === (form.organization_id ? form.organization_id.value : '')) || null;
+    }
+    // Chincheta roja como la de Google Maps; la punta (abajo) marca el punto.
+    function redPin() {
+      const el = document.createElement('div');
+      el.setAttribute('aria-label', 'Tu punto en el mapa');
+      el.innerHTML = `<svg class="cm-redpin" viewBox="0 0 30 42" aria-hidden="true"><path d="M15 0C6.7 0 0 6.6 0 14.8 0 25.9 15 42 15 42s15-16.1 15-27.2C30 6.6 23.3 0 15 0z" fill="#EA4335"/><path d="M15 0C6.7 0 0 6.6 0 14.8 0 25.9 15 42 15 42s15-16.1 15-27.2C30 6.6 23.3 0 15 0z" fill="none" stroke="#B31412" stroke-width="1.2"/><circle cx="15" cy="14.5" r="5.2" fill="#B31412"/></svg>`;
+      return el;
+    }
     async function ensurePickMap() {
       if (pickMap) { pickMap.resize(); return; }
       const center = pick ? [pick.lng, pick.lat] : [5, 47];
@@ -501,7 +520,7 @@
       const place = (lngLat) => {
         pick = { lat: lngLat.lat, lng: lngLat.lng };
         if (!pickMarker) {
-          pickMarker = new maplibregl.Marker({ element: pinEl({ ...p, is_me: true }), draggable: true }).setLngLat(lngLat).addTo(pickMap);
+          pickMarker = new maplibregl.Marker({ element: redPin(), anchor: 'bottom', draggable: true }).setLngLat(lngLat).addTo(pickMap);
           pickMarker.on('dragend', () => { const l = pickMarker.getLngLat(); pick = { lat: l.lat, lng: l.lng }; });
         } else pickMarker.setLngLat(lngLat);
       };
@@ -515,7 +534,11 @@
       const orgRadio = form.querySelector('input[name=location_mode][value=organization]');
       orgRadio.disabled = !(o && o.has_location);
       const note = $('#pf-orgloc-note');
-      if (!o) { note.hidden = false; note.textContent = 'Para usar la ciudad de tu entidad, elige antes tu entidad.'; }
+      const noOrg = form.no_organization.checked;
+      $('#pf-org-box').hidden = noOrg;
+      $('#pf-flag').innerHTML = flag(form.country.value);
+      if (noOrg) { note.hidden = false; note.textContent = 'Sin entidad: marca tu punto en el mapa si quieres aparecer.'; }
+      else if (!o) { note.hidden = false; note.textContent = 'Para usar la ciudad de tu entidad, elige antes tu entidad.'; }
       else if (!o.has_location) { note.hidden = false; note.textContent = 'Tu entidad aún no tiene ubicación en «Mi entidad». Puedes marcar un punto.'; }
       else note.hidden = true;
       if (orgRadio.disabled && mode === 'organization') form.querySelector('input[name=location_mode][value=manual]').checked = true;
@@ -523,7 +546,8 @@
       $('#pf-manual').hidden = m2 !== 'manual';
       $('#pf-loc-opts').hidden = m2 === 'none';
       if (m2 === 'manual') ensurePickMap().catch(() => {});
-      $('#ubicacion').style.opacity = visible ? '' : '.6';
+      // Antes se atenuaba toda la sección (opacity .6) y parecía que el mapa fallaba.
+      $('#pf-loc-hidden').hidden = visible || m2 === 'none';
     }
     form.addEventListener('change', sync);
     sync();
@@ -539,8 +563,9 @@
       }
       const body = {
         visible: form.visible.checked, headline: form.headline.value, bio: form.bio.value,
-        organization_id: form.organization_id ? form.organization_id.value : '', country: form.country.value,
-        sectors: all('sectors'), actions: all('actions'), languages: all('languages'),
+        no_organization: form.no_organization.checked,
+        organization_id: form.organization_id && !form.no_organization.checked ? form.organization_id.value : '', country: form.country.value,
+        roles: all('roles'), sectors: all('sectors'), actions: all('actions'),
         seeks_partners: form.seeks_partners.checked, offers_partner: form.offers_partner.checked,
         location_mode: mode, lat: pick ? pick.lat : null, lng: pick ? pick.lng : null, location_label: form.location_label.value,
         location_precision: form.location_precision.value, location_audience: form.location_audience.value,

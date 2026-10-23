@@ -24,7 +24,7 @@ const PASS_FILE = process.env.COMMUNITY_DEMO_PASS_FILE || '/root/scripts-studio/
 const DOMAIN = '@example.invalid';
 
 const PEOPLE = [
-  // key, nombre, rol, área, cargo, país, lat, lng, precisión, audiencia, sectores, acciones, idiomas, busca, ofrece, entidad
+  // key, nombre, rol, área, cargo, país, lat, lng, precisión, audiencia, sectores, acciones, idiomas (ya no se usan), busca, ofrece, entidad
   ['admin', 'Equipo Comunidad (DEMO)', 'admin', false, 'Equipo de EU Funding Studio', 'ES', 43.46, -3.80, 'approx', 'members', 'adultos,juventud', 'ka1,ka2', 'es,en', 0, 0, null],
   ['ana', 'Ana Ruiz (DEMO)', 'user', true, 'Coordinadora de proyectos europeos', 'ES', 43.462306, -3.809980, 'exact', 'connections', 'fp,adultos', 'ka1,ka2', 'es,en,fr', 1, 0, 'cantabria'],
   ['marco', 'Marco Bianchi (DEMO)', 'user', true, 'Responsabile progetti europei', 'IT', 45.44, 12.33, 'approx', 'members', 'juventud,deporte', 'ka2,ces', 'it,en,es', 0, 1, 'venezia'],
@@ -38,6 +38,13 @@ const PEOPLE = [
   ['ines', 'Inés Martín (DEMO)', 'user', true, 'Técnica de juventud', 'ES', 40.42, -3.70, 'approx', 'members', 'juventud', 'ka1,ces,cerv', 'es,en', 1, 0, null],
   ['mikko', 'Mikko Virtanen (DEMO)', 'user', true, 'Cultural producer', 'FI', 60.17, 24.94, 'approx', 'members', 'adultos', 'creativa', 'fi,en,sv', 0, 1, null],
 ];
+
+// Roles de cada persona DEMO (constants.ROLES). Quien no tiene entidad sale como «Sin entidad».
+const DEMO_ROLES = {
+  admin: 'formador', ana: 'redactor,manager', marco: 'manager,logistica', lena: 'redactor,evaluador',
+  sofia: 'formador', eleni: 'logistica,formador', jan: 'manager', claire: 'evaluador,redactor',
+  pieter: 'formador,logistica', ines: 'redactor', mikko: 'manager',
+};
 
 const ORGS = {
   cantabria: ['DEMO · Asociación Formación Cantábrica', 'Spain', 'Santander', 43.4623, -3.81],
@@ -94,11 +101,11 @@ async function seed(c) {
       if (key === 'sinarea') continue;
       const places = prec === 'exact' ? 6 : 2;
       await c.query(
-        `INSERT INTO community_profiles (user_id, visible, headline, bio, sectors, actions, languages, seeks_partners, offers_partner,
-           organization_id, country, location_label, lat, lng, location_source, location_precision, location_audience)
-         VALUES (?,1,?,?,?,?,?,?,?,?,?,?,?,?, 'manual', ?, ?)`,
+        `INSERT INTO community_profiles (user_id, visible, headline, bio, roles, sectors, actions, seeks_partners, offers_partner,
+           organization_id, no_organization, country, location_label, lat, lng, location_source, location_precision, location_audience)
+         VALUES (?,1,?,?,?,?,?,?,?,?,?,?,?,?,?, 'manual', ?, ?)`,
         [id, headline, `Perfil de demostración (DEMO). ${headline}. Me interesa encontrar socios con experiencia y compartir lo que aprendemos en cada convocatoria.`,
-         sectors || null, actions || null, langs || null, seeks, offers, org ? orgIds[org] : null, country,
+         DEMO_ROLES[key] || null, sectors || null, actions || null, seeks, offers, org ? orgIds[org] : null, org ? 0 : 1, country,
          org ? ORGS[org][2] : null, lat == null ? null : Number(lat.toFixed(places)), lng == null ? null : Number(lng.toFixed(places)), prec, aud]);
     }
     // Grupos
