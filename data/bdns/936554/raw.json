@@ -1,0 +1,64 @@
+{
+  "id": 1138115,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "RIVAS-VACIAMADRID",
+    "nivel3": "AYUNTAMIENTO DE RIVAS-VACIAMADRID"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "936554",
+  "fechaRecepcion": "2026-10-20",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 50000,
+  "mrr": false,
+  "descripcion": "BASES PARA LA CONVOCATORIA DE SUBVENCIONES DESTINADAS A CLU-BES Y ENTIDADES DEPORTIVAS CON CONVENIO DE COLABORACIÓN EN VI-GOR CON EL AYUNTAMIENTO DE RIVAS VACIAMADRID EN EL QUE SE ES-TABLECE EN SUS CLÁUSULAS LA GESTIÓN DE UNA ESCUELA DEPORTIVA MUNICIPAL A",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "EDUCACIÓN",
+      "codigo": "Q"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES30 - COMUNIDAD DE MADRID"
+    }
+  ],
+  "descripcionFinalidad": "Cultura",
+  "descripcionBasesReguladoras": "BASES EJECUCIÓN PRESUPUESTO 2026",
+  "urlBasesReguladoras": "https://www.rivasciudad.es/wp-content/uploads/2026/01/Bases-de-ejecucion-Presupuesto-2026.pdf",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "diez días hábiles contados desde el día siguiente al de la publicación del extracto de la convocator",
+  "textFin": "diez días hábiles contados desde el día siguiente al de la publicación del extracto de la convocator",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1540500,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "20261007_Otros_COPIA ADMON 2026-0584 [BASES CONVENIO-ESCUELA 2026].pdf",
+      "long": 536232,
+      "datMod": "2026-10-20",
+      "datPublicacion": "2026-10-23"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

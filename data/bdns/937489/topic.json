@@ -1,0 +1,69 @@
+{
+  "source": "bdns",
+  "source_id": "937489",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / CIGALES / AYUNTAMIENTO DE CIGALES",
+  "nuts_codes": [
+    "ES418"
+  ],
+  "nuts_primary": "ES418",
+  "title": "Resolución nº 2026-0965 de fecha 22 de octubre de 2026, de la Alcaldía, por la que se convocan subvenciones para las actividades culturales realizadas en el 2026.",
+  "title_lang": "es",
+  "summary": "Cultura",
+  "status": "open",
+  "publication_date": "2026-10-23",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 12000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "91",
+      "descripcion": "Actividades de bibliotecas, archivos, museos y otras actividades culturales"
+    }
+  ],
+  "apply_url": "https://cigales.sedelectronica.es/info",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/937489",
+  "documents": [
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    },
+    {
+      "label": "Anexo I Solicitud",
+      "url": null
+    },
+    {
+      "label": "Anexo II Cuenta justificativa",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://cigales.sedelectronica.es/preview-document/bb5edd31-3344-48cb-bcff-f62584b6a0c9/",
+  "text_inicio": "Día siguiente a la publicación del extracto en el BOP ",
+  "text_fin": "10 días hábiles a partir del siguiente a la publicación del extracto en el BOP",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-10-24T04:09:30.876Z"
+}

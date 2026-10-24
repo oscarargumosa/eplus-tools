@@ -1,0 +1,64 @@
+{
+  "id": 1139017,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "POZUELO DE ALARCÓN",
+    "nivel3": "AYUNTAMIENTO DE POZUELO DE ALARCÓN"
+  },
+  "sedeElectronica": "https://sede.pozuelodealarcon.es/sede/action/main?method=enter",
+  "codigoBDNS": "937456",
+  "fechaRecepcion": "2026-10-23",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 4000,
+  "mrr": false,
+  "descripcion": "Convocatoria y bases del VII premio de novela histórica escritores con la historia de Pozuelo de Alarcón",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "ACTIVIDADES ARTÍSTICAS, DEPORTIVAS Y DE ENTRETENIMIENTO",
+      "codigo": "S"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES30 - COMUNIDAD DE MADRID"
+    }
+  ],
+  "descripcionFinalidad": "Cultura",
+  "descripcionBasesReguladoras": "Ordenanza general reguladora de subvenciones del Ayuntamiento de Pozuelo de Alarcón",
+  "urlBasesReguladoras": "https://www.bocm.es/boletin/CM_Orden_BOCM/2012/12/10/BOCM-20121210-61.PDF",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "desde el día siguiente a la publicación del extracto en el BOCM",
+  "textFin": "hasta el 8 de diciembre de 2026",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1543107,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "Anuncio JGL 21-10-26.pdf",
+      "long": 826005,
+      "datMod": "2026-10-23",
+      "datPublicacion": "2026-10-23"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

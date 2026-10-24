@@ -1,0 +1,62 @@
+{
+  "source": "bdns",
+  "source_id": "937487",
+  "source_lang": "es",
+  "level": "ccaa",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "AUTONOMICA / EXTREMADURA / DIRECCIÓN GENERAL DE INNOVACIÓN E INCLUSIÓN EDUCATIVA",
+  "nuts_codes": [
+    "ES431",
+    "ES432"
+  ],
+  "nuts_primary": "ES431",
+  "title": "Ayudas 2026 para la participación en actividades de formación del profesorado, s/Decreto 171/2026 de 6 de octubre por la que se establecen las bases reguladoras de las ayudas y se aprueba la convocatoria para el año 2026",
+  "title_lang": "es",
+  "summary": "Educación",
+  "status": "open",
+  "publication_date": "2026-10-23",
+  "open_date": null,
+  "deadline": "2026-10-31",
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 81163,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "85.5",
+      "descripcion": "Otra educación"
+    }
+  ],
+  "apply_url": " https://www.juntaex.es/w/0703324",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/937487",
+  "documents": [
+    {
+      "label": "Texto en castellano de la convocatoria",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://doe.juntaex.es/",
+  "text_inicio": "A partir del día siguiente a la publicación de la convocatoria y su extracto en el DOE",
+  "text_fin": null,
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-10-24T04:09:30.875Z"
+}

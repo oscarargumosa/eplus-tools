@@ -1,0 +1,61 @@
+{
+  "source": "bdns",
+  "source_id": "937629",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / CREVILLENT / AYUNTAMIENTO DE CREVILLENT",
+  "nuts_codes": [
+    "ES521"
+  ],
+  "nuts_primary": "ES521",
+  "title": "CONVOCATORIA PROCEDIMIENTO DE SELECCIÓN ENTIDAD COLABORADORA PARA LA GESTIÓN DEL BONO CONSUMO CREVILLENT  2026",
+  "title_lang": "es",
+  "summary": "Comercio, Turismo y Pymes",
+  "status": "open",
+  "publication_date": "2026-10-23",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 15000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "G",
+      "descripcion": "COMERCIO AL POR MAYOR Y AL POR MENOR"
+    }
+  ],
+  "apply_url": "https://crevillent.sedipualba.es/carpetaciudadana/tramite.aspx?idtramite=17947",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/937629",
+  "documents": [
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "www.crevillent.es",
+  "text_inicio": "AL DIA SIGUIENTE DE SU PUBLICACIÓN EN EL BOP ALICANTE",
+  "text_fin": "7 DÍAS HÁBILES DESDE EL DÍA SIGUIENTE AL DE SU PUBLICACIÓN EN EL BOP",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-10-24T04:09:30.898Z"
+}

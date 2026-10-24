@@ -1,0 +1,85 @@
+{
+  "source": "bdns",
+  "source_id": "937103",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / BENILLOBA / AYUNTAMIENTO DE BENILLOBA",
+  "nuts_codes": [
+    "ES521"
+  ],
+  "nuts_primary": "ES521",
+  "title": "BASES CONVOCATORIA DE AYUDAS BONOS CONSUMO DEL MUNICIPIO DE BENILLOBA PARA LA ACTIVACION DEL CONSUMO. EJERCICIO 2026",
+  "title_lang": "es",
+  "summary": "Comercio, Turismo y Pymes",
+  "status": "open",
+  "publication_date": "2026-10-22",
+  "open_date": "2026-11-02",
+  "deadline": "2026-12-09",
+  "deadline_model": "single-stage",
+  "deadlines_extra": null,
+  "budget_total_eur": 34151,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "G",
+      "descripcion": "COMERCIO AL POR MAYOR Y AL POR MENOR"
+    },
+    {
+      "codigo": "I",
+      "descripcion": "HOSTELERÍA"
+    },
+    {
+      "codigo": "T",
+      "descripcion": "OTROS SERVICIOS"
+    }
+  ],
+  "apply_url": "https://benilloba.sedelectronica.es/info.0",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/937103",
+  "documents": [
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    },
+    {
+      "label": "ANEXO I-SOLICITUD ADHESIÓN",
+      "url": null
+    },
+    {
+      "label": "ANEXO IV - MANTENIMIENTO TERCEROS",
+      "url": null
+    },
+    {
+      "label": "ANEXO III - CUENTA JUSTIFICATIVA",
+      "url": null
+    },
+    {
+      "label": "ANEXO II-SOLICITUD BONO",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://benilloba.sedelectronica.es/preview-document/2169cf7b-427e-4cf8-9ef1-536f3db43fa2",
+  "text_inicio": null,
+  "text_fin": null,
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-10-24T04:09:30.794Z"
+}

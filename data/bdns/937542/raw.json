@@ -1,0 +1,160 @@
+{
+  "id": 1139103,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "UTRERA",
+    "nivel3": "AYUNTAMIENTO DE UTRERA"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "937542",
+  "fechaRecepcion": "2026-10-23",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 127000,
+  "mrr": false,
+  "descripcion": "Convocatoria de  la concesión de subvenciones en régimen de concurrencia competitiva del Excmo. Ayuntamiento de Utrera para la Línea Estratégica 6 de Deporte y Juventud, LS1, LS3 y LS4 del ejercicio 2026 vinculadas al plan estratégico 2024-2026",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "ACTIVIDADES ARTÍSTICAS, DEPORTIVAS Y DE ENTRETENIMIENTO",
+      "codigo": "S"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES618 - Sevilla"
+    }
+  ],
+  "descripcionFinalidad": "Otras Prestaciones económicas",
+  "descripcionBasesReguladoras": "Convocatoria de  la concesión de subvenciones en régimen de concurrencia competitiva del Excmo. Ayuntamiento de Utrera para la Línea Estratégica 6 de Deporte y Juventud, LS1, LS3 y LS4 del ejercicio 2026 vinculadas al plan estratégico 2024-2026",
+  "urlBasesReguladoras": "www.utrera.org",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "Plazo de  5 días hábiles, contados a partir de la fecha de publicación del extracto en el BOP",
+  "textFin": "Transcurrido el plazo de 5 días hábiles contados a partir de la inserción del anuncio en BOP ",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1543280,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "Convocatoria Bases.pdf",
+      "long": 628337,
+      "datMod": "2026-10-23",
+      "datPublicacion": "2026-10-23"
+    },
+    {
+      "id": 1543282,
+      "descripcion": "Solicitud",
+      "nombreFic": "1. Solicitud subvencion.pdf",
+      "long": 58141,
+      "datMod": "2026-10-23",
+      "datPublicacion": "2026-10-23"
+    },
+    {
+      "id": 1543284,
+      "descripcion": "Modelo 1 Proyecto",
+      "nombreFic": "2. Modelo 1 Proyecto.pdf",
+      "long": 52844,
+      "datMod": "2026-10-23",
+      "datPublicacion": "2026-10-23"
+    },
+    {
+      "id": 1543285,
+      "descripcion": "Modelo 2 Certificado representación",
+      "nombreFic": "3. Modelo 2 Certificado Representacion.pdf",
+      "long": 41383,
+      "datMod": "2026-10-23",
+      "datPublicacion": "2026-10-23"
+    },
+    {
+      "id": 1543288,
+      "descripcion": "Modelo 3 Criterios específicos L6 LS1",
+      "nombreFic": "9. Modelo 3 Criterios especificos L6 LS1.pdf",
+      "long": 59111,
+      "datMod": "2026-10-23",
+      "datPublicacion": "2026-10-23"
+    },
+    {
+      "id": 1543289,
+      "descripcion": "Modelo 3 Criterios específicos L6 LS3",
+      "nombreFic": "10. Modelo 3 Criterios especificos L6 LS3.pdf",
+      "long": 49911,
+      "datMod": "2026-10-23",
+      "datPublicacion": "2026-10-23"
+    },
+    {
+      "id": 1543303,
+      "descripcion": "Certificado aplicación fondos",
+      "nombreFic": "9. Certificado aplicacion fondos.pdf",
+      "long": 7369,
+      "datMod": "2026-10-23",
+      "datPublicacion": "2026-10-23"
+    },
+    {
+      "id": 1543292,
+      "descripcion": "Modelo 4 Aceptación-Reformulación",
+      "nombreFic": "7.- Modelo 4 Aceptación Reformulacion.pdf",
+      "long": 84114,
+      "datMod": "2026-10-23",
+      "datPublicacion": "2026-10-23"
+    },
+    {
+      "id": 1543295,
+      "descripcion": "Modelo 5 Cuenta justificativa",
+      "nombreFic": "8. Modelo 5 Cuenta justificativa.pdf",
+      "long": 76507,
+      "datMod": "2026-10-23",
+      "datPublicacion": "2026-10-23"
+    },
+    {
+      "id": 1543298,
+      "descripcion": "Criterios específicos L6 LS1",
+      "nombreFic": "4. Criterios especificos L6 LS1.pdf",
+      "long": 80073,
+      "datMod": "2026-10-23",
+      "datPublicacion": "2026-10-23"
+    },
+    {
+      "id": 1543301,
+      "descripcion": "Criterios específicos L6 LS3",
+      "nombreFic": "5. Criterios especificos L6 LS3.pdf",
+      "long": 71211,
+      "datMod": "2026-10-23",
+      "datPublicacion": "2026-10-23"
+    },
+    {
+      "id": 1543302,
+      "descripcion": "Criterios específicos L6 LS4",
+      "nombreFic": "6. Criterios especificos L6 LS4.pdf",
+      "long": 86067,
+      "datMod": "2026-10-23",
+      "datPublicacion": "2026-10-23"
+    },
+    {
+      "id": 1543290,
+      "descripcion": "Modelo 3 Criterios específicos L6 LS4",
+      "nombreFic": "11. Modelo 3 Criterios especificos L6 LS4.pdf",
+      "long": 50793,
+      "datMod": "2026-10-23",
+      "datPublicacion": "2026-10-23"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

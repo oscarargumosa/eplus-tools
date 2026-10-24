@@ -1,0 +1,72 @@
+{
+  "id": 1139080,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "FOLGOSO DE LA RIBERA",
+    "nivel3": "AYUNTAMIENTO DE FOLGOSO DE LA RIBERA"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "937519",
+  "fechaRecepcion": "2026-10-23",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 3000,
+  "mrr": false,
+  "descripcion": "“Bases y convocatoria por la que se regula la concesión de ayudas para la adquisición de libros de texto y material escolar para el curso 2026/2027”",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "EDUCACIÓN",
+      "codigo": "Q"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES413 - León"
+    }
+  ],
+  "descripcionFinalidad": "Educación",
+  "descripcionBasesReguladoras": "“Bases y convocatoria para ayudas de libros y material escolar 2026/2027”",
+  "urlBasesReguladoras": "https://folgosodelaribera.sedelectronica.es",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "“15 días naturales desde la publicación en el BOP de León”",
+  "textFin": "“15 días naturales desde la publicación en el BOP de León”",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1543283,
+      "descripcion": "ANEXO I -MODELO DE SOLICITUD",
+      "nombreFic": "ANEXO I- SOLICITUD.pdf",
+      "long": 674600,
+      "datMod": "2026-10-23",
+      "datPublicacion": "2026-10-23"
+    },
+    {
+      "id": 1543275,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "APROBACIÓN BASES Y CONVOCATORIA AYDAS LIBROS Y MATERIAL ESCOLAR 2026 2027.pdf",
+      "long": 178196,
+      "datMod": "2026-10-23",
+      "datPublicacion": "2026-10-23"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

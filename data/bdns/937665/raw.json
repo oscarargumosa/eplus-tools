@@ -1,0 +1,64 @@
+{
+  "id": 1139226,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "BARLOVENTO",
+    "nivel3": "AYUNTAMIENTO DE BARLOVENTO"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "937665",
+  "fechaRecepcion": "2026-10-23",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 10000,
+  "mrr": false,
+  "descripcion": "Resolución de Alcaldía nº 384/2026 de fecha 23/10/2026 por la que se convocan las Ayudas por nacimiento de hijo o adopción de niños menores de tres años del Ilustre Ayuntamiento de Barlovento. Anualidad 2026.",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "OTROS SERVICIOS",
+      "codigo": "T"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES707 - La Palma"
+    }
+  ],
+  "descripcionFinalidad": "Otras Prestaciones económicas",
+  "descripcionBasesReguladoras": "Bases reguladoras de ayudas por nacimiento de hijo o adopción de niños menores de tres años del Ilustre Ayuntamiento de Barlovento",
+  "urlBasesReguladoras": "https://www.bopsantacruzdetenerife.es/bopsc2/index.php",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "A partir del día siguiente a la publicación en el BOP",
+  "textFin": "DIEZ DÍAS HÁBILES a partir del día siguiente a la publicación en el BOP",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1543604,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "Decreto Alcaldía convocatoria subvenciones nacimiento de hijo o adopción de menor anualidad 2026.pdf",
+      "long": 347936,
+      "datMod": "2026-10-23",
+      "datPublicacion": "2026-10-23"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

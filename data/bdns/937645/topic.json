@@ -1,0 +1,77 @@
+{
+  "source": "bdns",
+  "source_id": "937645",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / MOGENTE/MOIXENT / AYUNTAMIENTO DE MOGENTE/MOIXENT",
+  "nuts_codes": [
+    "ES523"
+  ],
+  "nuts_primary": "ES523",
+  "title": "CONCURSO DE POSTALES DE NAVIDAD 2026 DIRIGIDO AL CICLO DE PRIMARIA DEL CEIP PADRE MORENO Y CENTRO OCUPACIONAL DE MOIXENT",
+  "title_lang": "es",
+  "summary": "Cultura",
+  "status": "open",
+  "publication_date": "2026-10-23",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 300,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "S",
+      "descripcion": "ACTIVIDADES ARTÍSTICAS, DEPORTIVAS Y DE ENTRETENIMIENTO"
+    },
+    {
+      "codigo": "85.6",
+      "descripcion": "Actividades auxiliares a la educación"
+    },
+    {
+      "codigo": "85.2",
+      "descripcion": "Educación primaria"
+    },
+    {
+      "codigo": "85.5",
+      "descripcion": "Otra educación"
+    }
+  ],
+  "apply_url": "https://moixent.sedelectronica.es/info.3",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/937645",
+  "documents": [
+    {
+      "label": "Documento de la convocatoria en lengua cooficial",
+      "url": null
+    },
+    {
+      "label": "Documento de la convocatoria en español",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "https://moixent.sedelectronica.es/transparency/9fe4d488-7d93-4626-9a8e-489f4e1796be/",
+  "text_inicio": "Desde el día siguiente al de la publicación del extracto de la convocatoria en el BOP",
+  "text_fin": "01/12/2026",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-10-24T04:09:30.904Z"
+}

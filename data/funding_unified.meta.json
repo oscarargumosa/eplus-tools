@@ -1,26 +1,26 @@
 {
-  "generatedAt": "2026-10-23T04:05:29.216Z",
-  "total": 14231,
+  "generatedAt": "2026-10-24T04:09:36.510Z",
+  "total": 14334,
   "bySource": {
-    "sedia": 1771,
-    "bdns": 12383,
+    "sedia": 1772,
+    "bdns": 12485,
     "salto": 77
   },
   "byCategory": {
-    "call_for_proposals": 14154,
+    "call_for_proposals": 14257,
     "training": 77
   },
   "byLevel": {
-    "eu": 1848,
-    "ccaa": 2610,
+    "eu": 1849,
+    "ccaa": 2626,
     "estado": 341,
-    "local": 8258,
-    "otros": 1174
+    "local": 8328,
+    "otros": 1190
   },
   "byStatus": {
-    "open": 13689,
-    "forthcoming": 538,
-    "closed": 4
+    "open": 13818,
+    "forthcoming": 511,
+    "closed": 5
   },
   "byProgramme": {
     "European Solidarity Corps": 3,
@@ -30,7 +30,7 @@
     "Horizon Europe": 1082,
     "ERC": 8,
     "Creative Europe": 48,
-    "NDICI / EuropeAid": 162,
+    "NDICI / EuropeAid": 163,
     "Pericles IV": 2,
     "EP": 7,
     "Single Market Programme": 9,
@@ -53,8 +53,8 @@
     "EUBA": 18,
     "ED": 1,
     "EU Anti-Fraud": 8,
-    "Concurrencia competitiva - canónica": 11074,
-    "Concesión directa - canónica": 1309,
+    "Concurrencia competitiva - canónica": 11166,
+    "Concesión directa - canónica": 1319,
     "UCPM": 2,
     "Pilot Projects": 9,
     "European Defence Fund": 71,
@@ -65,6 +65,6 @@
     "HUMA": 1
   },
   "curatedEnrichmentCount": 1,
-  "sumBudgetEur": 390993091523.3993,
-  "summaryEsPendingCount": 1848
+  "sumBudgetEur": 391011231697.0293,
+  "summaryEsPendingCount": 1849
 }

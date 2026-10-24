@@ -1,0 +1,64 @@
+{
+  "id": 1139069,
+  "organo": {
+    "nivel1": "AUTONOMICA",
+    "nivel2": "EXTREMADURA",
+    "nivel3": "ENTE PÚBLICO EXTREMEÑO DE SERVICIOS EDUCATIVOS COMPLEMENTARIOS"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "937508",
+  "fechaRecepcion": "2026-10-23",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 100000,
+  "mrr": false,
+  "descripcion": "Ayudas Curso 26/27 Linea B. Transporte fin de semana, al alumnado enseñanzas postobligatorias no universitarias centros públicos Extremadura, según Resolución de 1 de octubre de 2026.",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "Educación terciaria",
+      "codigo": "85.4"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES43 - EXTREMADURA"
+    }
+  ],
+  "descripcionFinalidad": "Educación",
+  "descripcionBasesReguladoras": "Decreto 62/2016, de 10 de mayo, de bases reguladoras de las ayudas para el alumnado de enseñanzas postobligatorias no universitarias, matriculado en centros públicos de Extremadura",
+  "urlBasesReguladoras": "http://doe.juntaex.es/pdfs/doe/2016/920o/16040069.pdf",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "AL DIA SIGUIENTE DE LA PUBLICACIÓN CONVOCATORIA EN DOE",
+  "textFin": "15 DIAS HÁBILES CONTADOS A PARTIR DEL SIGUIENTE AL DE LA PUBLICACIÓN EN EL DOE",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1543267,
+      "descripcion": "Texto en castellano de la convocatoria",
+      "nombreFic": "RESOLUCION DE CONVOCATORIA POSTOBLIG_ 26-27.PDF",
+      "long": 542835,
+      "datMod": "2026-10-23",
+      "datPublicacion": "2026-10-23"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

@@ -1,0 +1,72 @@
+{
+  "id": 1139028,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "DÉNIA",
+    "nivel3": "AYUNTAMIENTO DE DÉNIA"
+  },
+  "sedeElectronica": "www.ayto-denia.es",
+  "codigoBDNS": "937467",
+  "fechaRecepcion": "2026-10-23",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 5800,
+  "mrr": false,
+  "descripcion": "BASES DE LA CONVOCATORIA DEL CONCURSO DE ESCAPARATISMO DE AMBIENTACIÓN NAVIDEÑA 2026 DEL MUNICIPIO DE DÉNIA",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "COMERCIO AL POR MAYOR Y AL POR MENOR",
+      "codigo": "G"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES521 - Alicante / Alacant"
+    }
+  ],
+  "descripcionFinalidad": "Comercio, Turismo y Pymes",
+  "descripcionBasesReguladoras": "BASES DE LA CONVOCATORIA DEL CONCURSO DE ESCAPARATISMO DE AMBIENTACIÓN NAVIDEÑA 2026 DEL MUNICIPIO DE DÉNIA",
+  "urlBasesReguladoras": "www.ayto-denia.es",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "A partir del día siguiente al de publicación del extracto de las bases de la convocatoria en el BOP",
+  "textFin": "10 días hábiles a partir del día siguiente de la publicación del extracto en el BOP de Alicante",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1543154,
+      "descripcion": "Documento de la convocatoria en lengua cooficial",
+      "nombreFic": "Bases Escaparatismo Ambientación Navideña-Valenciano-definitivas.pdf",
+      "long": 109524,
+      "datMod": "2026-10-23",
+      "datPublicacion": "2026-10-23"
+    },
+    {
+      "id": 1543153,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "Bases Escaparatismo Ambientación Navideña-Castellano-definitivas.pdf",
+      "long": 121597,
+      "datMod": "2026-10-23",
+      "datPublicacion": "2026-10-23"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

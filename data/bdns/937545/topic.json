@@ -1,0 +1,65 @@
+{
+  "source": "bdns",
+  "source_id": "937545",
+  "source_lang": "es",
+  "level": "otros",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "OTROS / UNIVERSIDAD JAUME I DE CASTELLÓN",
+  "nuts_codes": [
+    "ES52"
+  ],
+  "nuts_primary": "ES52",
+  "title": "Convocatoria y bases de ayudas de matrícula para estudiantado de grado en Maestro o Maestra que supere las pruebas de acreditación de CertAcles de nivel B1 de inglés, mayo de 2026",
+  "title_lang": "es",
+  "summary": "Educación",
+  "status": "open",
+  "publication_date": "2026-10-23",
+  "open_date": null,
+  "deadline": null,
+  "deadline_model": "continuous",
+  "deadlines_extra": null,
+  "budget_total_eur": 1190,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "85.4",
+      "descripcion": "Educación terciaria"
+    }
+  ],
+  "apply_url": "ujiapps.uji.es/seu/info-adm/tao/convocatoriesRH?pArId=89889",
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/937545",
+  "documents": [
+    {
+      "label": "Texto en otra lengua de la convocatoria",
+      "url": null
+    },
+    {
+      "label": "Texto en castellano de la convocatoria",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "ujiapps.uji.es/seu/info-adm/tao/convocatoriesRH?pArId=89889",
+  "text_inicio": "Periodo de entrega de solicitudes abierto desde  hasta .",
+  "text_fin": "Periodo de de entrega de solicitudes cerrado el dia .",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-10-24T04:09:30.891Z"
+}

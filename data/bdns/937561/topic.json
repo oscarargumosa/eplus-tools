@@ -1,0 +1,65 @@
+{
+  "source": "bdns",
+  "source_id": "937561",
+  "source_lang": "es",
+  "level": "local",
+  "programme": "Concurrencia competitiva - canónica",
+  "sub_programme": null,
+  "publishing_authority_code": "LOCAL / DIPUTACIÓN PROV. DE GIRONA / DIPUTACIÓN PROVINCIAL DE GIRONA",
+  "nuts_codes": [
+    "ES512"
+  ],
+  "nuts_primary": "ES512",
+  "title": "Convocatòria anticipada, en règim de concurrència no competitiva, per a la concessió de subvencions adreçades als ajuntaments de les comarques gironines per a la realització del Cicle d¿Orquestra ¿ temporada 2026-2027",
+  "title_lang": "es",
+  "summary": "Cultura",
+  "status": "open",
+  "publication_date": "2026-10-23",
+  "open_date": "2026-10-15",
+  "deadline": "2026-12-31",
+  "deadline_model": "single-stage",
+  "deadlines_extra": null,
+  "budget_total_eur": 87000,
+  "budget_per_project_min_eur": null,
+  "budget_per_project_max_eur": null,
+  "expected_grants": null,
+  "cofinancing_pct": null,
+  "duration_months": null,
+  "audience": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA",
+  "eligible_orgs": [
+    "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+  ],
+  "eligible_countries": [
+    "ES"
+  ],
+  "sectores": [
+    {
+      "codigo": "90",
+      "descripcion": "Actividades de creación artística y artes escénicas"
+    }
+  ],
+  "apply_url": null,
+  "details_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/937561",
+  "documents": [
+    {
+      "label": "Texto en otra lengua de la convocatoria",
+      "url": null
+    },
+    {
+      "label": "Texto en castellano de la convocatoria",
+      "url": null
+    }
+  ],
+  "bases_reguladoras_url": "http://www.ddgi.cat/basescast/2026/Bases_Cicle_Concerts_Cobla_Orquestra.pdf",
+  "text_inicio": "El termini de presentació de sol·licituds és de 10 dies hàbils",
+  "text_fin": "des de l¿endemà de la publicació de l¿extracte de la convocatòria al BOP.",
+  "se_publica_diario_oficial": true,
+  "ayuda_estado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectores_productos": [],
+  "anuncios": [],
+  "mrr_flag": false,
+  "fetchedAt": "2026-10-24T04:09:30.893Z"
+}

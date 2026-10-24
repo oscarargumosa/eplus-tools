@@ -1,0 +1,96 @@
+{
+  "id": 1139196,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "CONSEJO COMARCAL DE BIERZO, EL",
+    "nivel3": "CONSEJO COMARCAL DE  EL BIERZO"
+  },
+  "sedeElectronica": "https://portal.ccbierzo.com/portal/entidades.do?ent_id=1&idioma=1",
+  "codigoBDNS": "937635",
+  "fechaRecepcion": "2026-10-23",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 16000,
+  "mrr": false,
+  "descripcion": "Convocatoria para la concesión de subvenciones, en régimen de concurrencia competitiva, para el fomento de actividades culturales y deportivas en la Comarca del Bierzo 2026",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "ACTIVIDADES ARTÍSTICAS, DEPORTIVAS Y DE ENTRETENIMIENTO",
+      "codigo": "S"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "ES413 - León"
+    }
+  ],
+  "descripcionFinalidad": "Cultura",
+  "descripcionBasesReguladoras": "Ordenanza General de Subvenciones del Consejo Comarcal del Bierzo",
+  "urlBasesReguladoras": "https://bop.dipuleon.es/export/sites/bop/publica/boletines-anteriores/.galleries/Boletines-Anteriores/2243992_20161004.pdf",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "Día hábil siguiente publicación del extracto de la convocatoria en el BOP",
+  "textFin": "10 días hábiles a partir del día siguiente a publicación del extracto de la convocatoria en el BOP",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1543527,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "CERTIFICADO JG 23_10_2026 APROBACIÓN CONVOCATORIA ÍNTEGRA DE AYUDAS DEPORTE Y CULTURA 2026.PDF",
+      "long": 991246,
+      "datMod": "2026-10-23",
+      "datPublicacion": "2026-10-23"
+    },
+    {
+      "id": 1543534,
+      "descripcion": "Anexo I",
+      "nombreFic": "ANEXO I. AYUDAS DEPORTE Y CULTURA 2026.docx",
+      "long": 1254027,
+      "datMod": "2026-10-23",
+      "datPublicacion": "2026-10-23"
+    },
+    {
+      "id": 1543553,
+      "descripcion": "Anexo IV",
+      "nombreFic": "ANEXO IV. AYUDAS DEPORTE Y CULTURA 2026.docx",
+      "long": 1254975,
+      "datMod": "2026-10-23",
+      "datPublicacion": "2026-10-23"
+    },
+    {
+      "id": 1543547,
+      "descripcion": "Anexo III",
+      "nombreFic": "ANEXO III. AYUDAS DEPORTE Y CULTURA 2026.docx",
+      "long": 1254504,
+      "datMod": "2026-10-23",
+      "datPublicacion": "2026-10-23"
+    },
+    {
+      "id": 1543537,
+      "descripcion": "Anexo II",
+      "nombreFic": "ANEXO II. AYUDAS DEPORTE Y CULTURA 2026.docx",
+      "long": 1254007,
+      "datMod": "2026-10-23",
+      "datPublicacion": "2026-10-23"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}

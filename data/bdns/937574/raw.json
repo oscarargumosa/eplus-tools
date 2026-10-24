@@ -1,0 +1,72 @@
+{
+  "id": 1139135,
+  "organo": {
+    "nivel1": "LOCAL",
+    "nivel2": "BLANES",
+    "nivel3": "AYUNTAMIENTO DE BLANES"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "937574",
+  "fechaRecepcion": "2026-10-23",
+  "instrumentos": [
+    {
+      "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+    }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 68000,
+  "mrr": false,
+  "descripcion": "ÁREA DE NUEVA CIUDADANÍA Y SOLIDARIDAD CONVOCATORIA PARA EL OTORGAMIENTO DE SUBVENCIONES EN RÉGIMEN DE COMPETENCIA COMPETITIVA DESTINADAS A PROYECTOS DE COOPERACIÓN AL DESARROLLO EN EL ÁMBITO INTERNACIONAL PARA EL AÑO 2026",
+  "descripcionLeng": "ÀREA DE NOVA CIUTADANIA I SOLIDARITAT CONVOCATÒRIA PER A L’ATORGAMENT DE SUBVENCIONS EN RÈGIM DE COMPETÈNCIA COMPETITIVA DESTINADES A PROJECTES DE COOPERACIÓ AL DESENVOLUPAMENT EN L’ÀMBIT INTERNACIONAL PER A L’ANY 2026",
+  "tiposBeneficiarios": [
+    {
+      "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+    }
+  ],
+  "sectores": [
+    {
+      "descripcion": "OTROS SERVICIOS",
+      "codigo": "T"
+    }
+  ],
+  "regiones": [
+    {
+      "descripcion": "XXXX - TODO EL MUNDO"
+    }
+  ],
+  "descripcionFinalidad": "Cooperación internacional para el desarrollo y cultural",
+  "descripcionBasesReguladoras": "BASES REGULADORAS DE LAS SUBVENCIONES PARA PROYECTOS DE COOPERACIÓN AL DESARROLLO INTERNACIONAL",
+  "urlBasesReguladoras": "https://www.blanes.cat/acciosocial",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": "2026-10-27",
+  "fechaFinSolicitud": "2026-11-24",
+  "textInicio": null,
+  "textFin": null,
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": [],
+  "documentos": [
+    {
+      "id": 1543405,
+      "descripcion": "Documento de la convocatoria en lengua cooficial",
+      "nombreFic": "Convocatoria subvencions projectes 2026_cat.pdf",
+      "long": 208485,
+      "datMod": "2026-10-23",
+      "datPublicacion": "2026-10-23"
+    },
+    {
+      "id": 1543401,
+      "descripcion": "Documento de la convocatoria en español",
+      "nombreFic": "Convocatoria subvencions projectes 2026_cast.pdf",
+      "long": 233350,
+      "datMod": "2026-10-23",
+      "datPublicacion": "2026-10-23"
+    }
+  ],
+  "anuncios": [],
+  "advertencia": "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública."
+}
